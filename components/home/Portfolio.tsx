@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import portfolio1 from "../../public/images/portfolio1.png"
 import portfolio2 from "../../public/images/portfolio2.png"
 import portfolio3 from "../../public/images/portfolio3.png"
@@ -14,7 +14,17 @@ import {
   } from "@/components/ui/dialog";
   import popup1 from "../../public/images/popup1.jpg"
 
+  import AOS from "aos"
+import 'aos/dist/aos.css';
+
+
 const Portfolio = () => {
+  useEffect(() => {
+      AOS.init({
+        duration: 1200, // Animation duration
+        once: true, // Whether animation should happen only once - while scrolling down
+      });
+    }, []);
     const portfolio = [
         {
             id:1,
@@ -43,7 +53,7 @@ const Portfolio = () => {
         <div className='grid grid-cols-3 gap-4 m-3'>
             {portfolio.map((item:any)=>{
                 return(
-                    <div className='flex flex-col' key={item.id}>
+                    <div className='flex flex-col' key={item.id} data-aos="fade-up">
      <div className='relative h-[475px] w-[366px]'>
       <Image src={item.img} alt="" className='w-full h-full' />
       <div className='absolute inset-0 bg-black opacity-50'></div>

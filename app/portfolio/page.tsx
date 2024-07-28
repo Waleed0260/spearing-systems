@@ -1,8 +1,14 @@
-import React from 'react'
+import Loader from '@/components/home/Loader'
+import React, { Suspense, lazy } from 'react'
+const Hero = lazy(() => import('@/components/portfolio/Hero'));
+const Portfolio = lazy(() => import('@/components/portfolio/Portfolio'));
 
 const page = () => {
   return (
-    <div>Coming soons</div>
+    <Suspense fallback={<Loader/>}>
+      <Hero/>
+      <Portfolio/>
+    </Suspense>
   )
 }
 

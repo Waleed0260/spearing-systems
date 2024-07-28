@@ -1,4 +1,5 @@
-import React from 'react'
+"use client"
+import React, {useEffect} from 'react'
 import { CiLaptop } from "react-icons/ci";
 import { HiOutlineSpeakerphone } from "react-icons/hi";
 import { AiTwotoneCreditCard } from "react-icons/ai";
@@ -6,11 +7,18 @@ import { IoSettingsOutline } from "react-icons/io5";
 import service1 from "../../public/images/service1.png"
 import service2 from "../../public/images/service2.png"
 import Image from 'next/image';
-
-const SecondSection = () => {
+import AOS from "aos"
+import 'aos/dist/aos.css';
+    const SecondSection = () => {
+    useEffect(() => {
+      AOS.init({
+        duration: 1200, // Animation duration
+        once: true, // Whether animation should happen only once - while scrolling down
+      });
+    }, []);
   return (
     <div className='w-full flex justify-center items-center'>
-        <div className='w-[80%] flex flex-row justify-between m-[30px]'>
+        <div className='w-[80%] flex flex-row justify-between m-[30px]' data-aos="fade-up">
             <div className='flex flex-col '>
                 <p className='font-bold text-3xl heading'>WEBSITE DESIGN & BUILD</p>
                 <p className='text mt-[30px]'>Websites can no longer just make sales, as in this day and age they also need to be able to engage and entertain. This is where we can help.</p>

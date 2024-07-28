@@ -1,13 +1,21 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Header from '../home/Header'
 import Image from 'next/image'
 import servicedetail from "../../public/images/servicedetail.png"
+import AOS from "aos"
+import 'aos/dist/aos.css';
 const Hero = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200, // Animation duration
+      once: true, // Whether animation should happen only once - while scrolling down
+    });
+  }, []);
   return (
     <div className='w-full '>
         <Header/>
 
-        <div className='flex justify-between items-center flex-row h-[50rem] '>
+        <div className='flex justify-between items-center flex-row h-[50rem] ' data-aos="fade-up">
 
             <div className='flex flex-col items-center p-[100px]'>
                 <p className='font-bold text-6xl heading'>Web Design & Competitor Analysis</p>

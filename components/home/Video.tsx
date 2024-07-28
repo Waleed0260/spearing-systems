@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, {useEffect} from "react";
 import { Button } from "../ui/button";
 import { FaPlay } from "react-icons/fa";
 import {
@@ -9,21 +10,31 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import AOS from "aos"
+import 'aos/dist/aos.css';
+
 const Video = () => {
+  useEffect(() => {
+      AOS.init({
+        duration: 1200, // Animation duration
+        once: true, // Whether animation should happen only once - while scrolling down
+      });
+    }, []);
   return (
     <div
       className="relative w-full h-[40rem] p-6 bg-black flex flex-row justify-around items-center"
       style={{
         backgroundImage: `url('https://up2client.com/envato/azota/assets/images/hero/hero-1.jpg')`,
       }}
+      data-aos="fade-up"
     >
             <div className='absolute inset-0 bg-black opacity-50'></div>
 
       <div className=" relative z-10 flex flex-col w-[40%] text-white">
-        <p className="font-bold text-4xl heading">
+        <p className="font-bold text-4xl heading" data-aos="fade-up">
           Mission is to Protect your Businesses & Much More
         </p>
-        <Button className="mt-2 w-[200px] rounded-[100px] font-bold bg-transparent text-white" variant={"outline"}>CHECK OUT PLAN</Button>
+        <Button className="mt-2 w-[200px] rounded-[100px] font-bold bg-transparent text-white" variant={"outline"} data-aos="fade-right">CHECK OUT PLAN</Button>
       </div>
 
       <div>

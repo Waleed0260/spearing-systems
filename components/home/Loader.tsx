@@ -1,13 +1,12 @@
 import React from 'react'
-
+import Image from 'next/image'
+import logo from "../../public/images/logo.png"
 const Loader = () => {
   return (
-    <div className='w-full h-full flex justify-center items-center '>
- <div className="rotate-svg">
-                <svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<circle cx="70" cy="70" r="69" stroke="#FD8558" strokeWidth="2" strokeDasharray="8 8"></circle>
-								</svg>
-            </div>
+    <div className='w-full h-[100vh] bg-[#0D2137] flex items-center justify-center'>
+        <div className='w-[200px] h-[100px]'>
+            <Image src={logo} alt="logo"/>
+        </div>
     </div>
   )
 }

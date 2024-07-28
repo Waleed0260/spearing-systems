@@ -5,17 +5,17 @@ import { Button } from '../ui/button'
 
 const Hero = () => {
   return (
-    <div className='relative w-full bg-cover' style={{backgroundImage: `url('/images/banner.jpg')`}}>
-    <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
-    <div className="relative z-10 text-white">
+    <div className='w-full flex flex-col items-center justify-center'>
     <Header/>
-        <div className='flex items-center justify-center p-[100px] flex-col '>
-            <p className='text-6xl heading'>A <b className='font-bold'>CREATIVE</b>Team</p>
-            <Button  className='mt-4 h-[60px] w-[250px] rounded-xl bg-transparent' variant={"outline"}>HAVE A PROJECT ? </Button>
-        </div>
-        </div> 
-
-        </div>
+    {/* <div className=' flex items-center justify-center m-[200px]'> */}
+    <div className='w-full flex flex-col items-center justify-center bg-cover relative h-[37rem]' style={{backgroundImage: `url('/images/banner5.png')`}}>
+        <p className='font-bold text-3xl text-white heading'>
+        Services
+        </p>
+    <div className='absolute inset-0 bg-black opacity-50'></div>
+        {/* <p >Our crew was tasked with the challenge to take the world of data engineering and turn it upside down to create a soothing</p> */}
+    </div>
+    </div>  
         )
 }
 

@@ -1,20 +1,21 @@
 "use client"
-import Testimonial from '@/components/home/Testimonial'
-import Video from '@/components/home/Video'
-import Hero from '@/components/serviceDetail/Hero'
-import SecondSection from '@/components/serviceDetail/SecondSection'
-import ThirdSection from '@/components/serviceDetail/ThirdSection'
-import React from 'react'
+import Loader from '@/components/home/Loader';
+import React, {Suspense, lazy} from 'react'
+const Testimonial = lazy(() => import('@/components/home/Testimonial'));
+const Video = lazy(() => import('@/components/home/Video'));
+const Hero = lazy(() => import('@/components/serviceDetail/Hero'));
+const SecondSection = lazy(() => import('@/components/serviceDetail/SecondSection'));
+const ThirdSection = lazy(() => import('@/components/serviceDetail/ThirdSection'));
 
 const page = ({ params }: { params: { ID: string } }) => {
   return (
-    <div>
+    <Suspense fallback={<Loader/>}>
       <Hero/>
       <SecondSection/>
       <ThirdSection/>
       <Testimonial/>
       <Video/>
-    </div>
+      </Suspense>
   )
 }
 

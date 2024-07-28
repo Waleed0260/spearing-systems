@@ -18,6 +18,7 @@ import Testimonial from '@/components/home/Testimonial'
 import Footer from '@/components/home/Footer'
 
 export default function Page() {
+  
   return (
     <>
     {/* <Suspense fallback={<p>Loading</p>}> */}
