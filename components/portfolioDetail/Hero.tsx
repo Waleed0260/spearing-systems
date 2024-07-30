@@ -3,7 +3,7 @@ import Header from '../home/Header'
 
 const Hero = () => {
   return (
-    <div className='w-full flex flex-col items-center justify-center'>
+    <div className='w-full flex flex-col'>
         <Header/>
         {/* <div className=' flex items-center justify-center m-[200px]'> */}
         <div className='w-full flex flex-col items-center justify-center bg-[#edf2f2] h-[30rem] m-[30px]'>

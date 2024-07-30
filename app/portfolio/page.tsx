@@ -1,3 +1,4 @@
+import Footer from '@/components/home/Footer';
 import Loader from '@/components/home/Loader'
 import React, { Suspense, lazy } from 'react'
 const Hero = lazy(() => import('@/components/portfolio/Hero'));
@@ -8,6 +9,7 @@ const page = () => {
     <Suspense fallback={<Loader/>}>
       <Hero/>
       <Portfolio/>
+      <Footer/>
     </Suspense>
   )
 }

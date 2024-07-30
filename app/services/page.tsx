@@ -1,4 +1,5 @@
 // "use client"
+import Footer from '@/components/home/Footer';
 import Loader from '@/components/home/Loader'
 import React, { Suspense, lazy } from 'react'
 const Testimonial = lazy(() => import('@/components/home/Testimonial'));
@@ -8,14 +9,15 @@ const Services = lazy(() => import('@/components/service/Services'));
 
 const page = () => {
   return (
-    <>
-    <Suspense fallback={<Loader/>}>
+    <div>
+    {/* <Suspense fallback={<Loader/>}> */}
     <Hero/>
     <Services/>
     <Testimonial/>
     <Video/>
-    </Suspense>
-    </>
+    <Footer/>
+    {/* </Suspense> */}
+    </div>
   )
 }
 

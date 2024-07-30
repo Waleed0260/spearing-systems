@@ -1,4 +1,5 @@
 "use client"
+import Footer from '@/components/home/Footer';
 import Loader from '@/components/home/Loader';
 import React, {Suspense, lazy} from 'react'
 const Hero = lazy(() => import('@/components/portfolioDetail/Hero'));
@@ -14,6 +15,7 @@ const page = ({ params }: { params: { ID: string } }) => {
         <Role/>
         <Client/>
         <Solution/>
+        <Footer/>
       </Suspense>
     </div>
   )

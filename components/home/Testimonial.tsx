@@ -20,7 +20,7 @@ const Testimonial = () => {
   const swiper = useSwiper();
 
   return (
-    <div className="flex flex-col justify-center items-center p-4 m-5 text-white ">
+    <div className="flex flex-col justify-center items-center p-4 m-5 mt-[130px] text-white ">
       <p className="font-bold text-2xl text-black">Testimonial</p>
 
       <Swiper

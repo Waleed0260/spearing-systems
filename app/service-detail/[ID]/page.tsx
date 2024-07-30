@@ -1,4 +1,5 @@
 "use client"
+import Footer from '@/components/home/Footer';
 import Loader from '@/components/home/Loader';
 import React, {Suspense, lazy} from 'react'
 const Testimonial = lazy(() => import('@/components/home/Testimonial'));
@@ -15,6 +16,7 @@ const page = ({ params }: { params: { ID: string } }) => {
       <ThirdSection/>
       <Testimonial/>
       <Video/>
+      <Footer/>
       </Suspense>
   )
 }

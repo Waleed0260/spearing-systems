@@ -16,6 +16,7 @@ import Video from '@/components/home/Video'
 import Portfolio from '@/components/home/Portfolio'
 import Testimonial from '@/components/home/Testimonial'
 import Footer from '@/components/home/Footer'
+import Process from '@/components/home/Process';
 
 export default function Page() {
   
@@ -27,6 +28,7 @@ export default function Page() {
       <Services />
       <Video />
       <Portfolio />
+      <Process/>
       <Testimonial />
       <Footer />
     {/* </Suspense> */}
