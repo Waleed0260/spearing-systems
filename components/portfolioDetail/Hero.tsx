@@ -6,7 +6,7 @@ const Hero = () => {
     <div className='w-full flex flex-col'>
         <Header/>
         {/* <div className=' flex items-center justify-center m-[200px]'> */}
-        <div className='w-full flex flex-col items-center justify-center bg-[#edf2f2] h-[30rem] m-[30px]'>
+        <div className='w-full flex flex-col items-center justify-center bg-[#edf2f2] h-[35rem] '>
             <p className='font-bold text-3xl heading'>
             Gateway Website Design Project case
             </p>

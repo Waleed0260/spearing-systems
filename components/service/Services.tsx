@@ -45,14 +45,14 @@ const Services = () => {
             },
         ]
   return (
-    <div className='flex flex-col items-center justify-center m-5'>
+    <div className='flex flex-col items-center justify-center m-5 bg-transparent'>
         <p className='font-bold heading'>What we offer</p>
         <p  className='font-bold text-5xl heading'> What We’re Offering Creative
         Digital Service</p>
-        <div className='grid grid-cols-3 gap-3 m-8'>
+        <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-3 m-8'>
             {services.map((item:any, index:any)=>{
                 return (
-                    <div className='w-[22vw] h-[23rem] m-4 flex flex-col justify-center items-left border-[1px] border-black rounded-10px servicebox' key={index}>
+                    <div className='lg:w-[22vw] sm:w-[34vw] w-[70vw] h-[23rem] m-4 flex flex-col justify-center items-left border-[1px] border-black rounded-10px servicebox' key={item.id}>
                         <Link href={"/service-detail/34"}>
                         <div className='p-5'>
                         <p className='font-bold text-4xl '>{item.icon}</p>

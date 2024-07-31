@@ -22,7 +22,7 @@ const Video = () => {
     }, []);
   return (
     <div
-      className="relative w-full h-[40rem] p-6 bg-black flex flex-row justify-around items-center"
+      className="relative w-full h-[40rem] p-6 bg-black flex md:flex-row bg-cover bg-center flex-col justify-around items-center"
       style={{
         backgroundImage: `url('https://up2client.com/envato/azota/assets/images/hero/hero-1.jpg')`,
       }}
@@ -30,7 +30,7 @@ const Video = () => {
     >
             <div className='absolute inset-0 bg-black opacity-50'></div>
 
-      <div className=" relative z-10 flex flex-col w-[40%] text-white">
+      <div className=" relative z-10 flex flex-col w-[90%] text-white">
         <p className="font-bold text-4xl heading" data-aos="fade-up">
           Mission is to Protect your Businesses & Much More
         </p>

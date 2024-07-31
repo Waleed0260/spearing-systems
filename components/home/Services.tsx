@@ -57,7 +57,7 @@ const Services = () => {
   return (
     <div className='flex flex-col justify-center items-center p-6' data-aos="fade-up">
         <b className='font-bold text-3xl heading'>Services</b>
-        <div className='grid grid-cols-3 p-4 gap-3'>
+        <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 p-4 gap-3'>
             {services.map((item:any, index:any)=>{
                 return(
                     <div className='flex flex-col gap-3' key={item.id}>

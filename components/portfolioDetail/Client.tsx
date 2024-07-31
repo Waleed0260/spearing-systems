@@ -12,7 +12,7 @@ const Client = () => {
     });
   }, []);
   return (
-    <div className='w-[80%] flex flex-row jusitfy-between m-[50px]'>
+    <div className='w-[80%] flex md:flex-row flex-col jusitfy-between m-[50px]'>
         <div className='flex flex-col' data-aos="fade-left">
             <p className='font-bold text-3xl heading'>The Client</p>
             <p className='text mt-[20px]'>Websites can no longer just make sales, as in this day and age they also need to be able to engage and entertain. This is where we can help.</p>
@@ -22,7 +22,7 @@ const Client = () => {
             </div>
         </div>
 
-        <div className='flex flex-col' data-aos="fade-right">
+        <div className='flex flex-col mt-[20px] md:mt-0' data-aos="fade-right">
             <p className='font-bold text-3xl heading'>The Goal</p>
             <p className='text mt-[20px]'>Websites can no longer just make sales, as in this day and age they also need to be able to engage and entertain. This is where we can help.</p>
             <Image src={case5} alt="" className='w-[300px] h-[250px]'/>

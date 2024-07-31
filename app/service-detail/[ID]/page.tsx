@@ -14,7 +14,7 @@ const page = ({ params }: { params: { ID: string } }) => {
       <Hero/>
       <SecondSection/>
       <ThirdSection/>
-      <Testimonial/>
+      {/* <Testimonial/> */}
       <Video/>
       <Footer/>
       </Suspense>

@@ -12,8 +12,8 @@ const Solution = () => {
     });
   }, []);
   return (
-    <div className="w-[80%] flex flex-row justify-between m-[30px]" data-aos='fade-up'>
-      <div className="flex flex-col w-[50%]">
+    <div className="md:w-[80%] w-[85vw] flex md:flex-row flex-col justify-between m-[30px]" data-aos='fade-up'>
+      <div className="flex flex-col md:w-[50%]">
         <p className="heading text-3xl font-bold">Our Solution</p>
         <p className="mid-heading mt-[20px]">
           Our crew proudly accomplished the approach of custom user interaction
@@ -31,7 +31,7 @@ const Solution = () => {
           by implementing unique water transitions & subtle animations.
         </p>
       </div>
-      <div className="w-[50%]">
+      <div className="md:w-[50%] mt-[20px] md:mt-0">
         <div className="flex flex-col gap-4">
           <div className="flex flex-row gap-3">
             <p className="text-4xl">

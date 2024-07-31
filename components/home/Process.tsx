@@ -14,29 +14,29 @@ const Process = () => {
       }}>
         <div className='flex items-center justify-center'>
          <div className='absolute inset-0 bg-black opacity-50'></div>
-        <div className='w-[80%] flex flex-col relative z-10 text-white pt-[100px]'>
+        <div className='w-[80%] flex flex-col items-center sm:items-start relative z-10 text-white pt-[100px]'>
             <p className='text-4xl font-bold heading'>Our flawless process</p>
             <p className='mt-[20px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo et esse rerum ut modi, harum nesciunt aliquam porro iusto dolore voluptatibus saepe officia dicta cum error asperiores eius optio nihil beatae dolor eligendi facere? Ab quia atque nostrum? Veniam, obcaecati?</p>
-            <div className='grid grid-cols-4 mt-[20px]'>
-                <div className='w-[200px] h-[200px] rounded-[200px] flex items-center flex-col justify-center border-[2px] border-white ml-[13px]'>
+            <div className='grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 mt-[20px]'>
+                <div className='w-[200px] h-[200px] rounded-[200px] mt-[10px] flex items-center flex-col justify-center border-[2px] border-white ml-[13px]'>
                     <p className='font-bold text-5xl heading'>
                     <AiOutlineFileSearch />
                     </p>
                     Page Search
                 </div>
-                <div className='w-[200px] h-[200px] rounded-[200px] flex items-center flex-col justify-center border-[2px] border-white ml-[13px]'>
+                <div className='w-[200px] h-[200px] rounded-[200px] mt-[10px] flex items-center flex-col justify-center border-[2px] border-white ml-[13px]'>
                     <p className='font-bold text-5xl heading'>
                     <LuAtom />
                     </p>
                     Developer
                 </div>
-                <div className='w-[200px] h-[200px] rounded-[200px] flex items-center flex-col justify-center border-[2px] border-white ml-[13px]'>
+                <div className='w-[200px] h-[200px] rounded-[200px] mt-[10px] flex items-center flex-col justify-center border-[2px] border-white ml-[13px]'>
                     <p className='font-bold text-5xl heading'>
                     <TbSettingsCog />
                     </p>
                     Testing
                 </div>
-                <div className='w-[200px] h-[200px] rounded-[200px] flex items-center flex-col justify-center border-[2px] border-white ml-[13px]'>
+                <div className='w-[200px] h-[200px] rounded-[200px] mt-[10px] flex items-center flex-col justify-center border-[2px] border-white ml-[13px]'>
                     <p className='font-bold text-5xl heading'>
                     <SiTicktick />
                     </p>
@@ -47,14 +47,14 @@ const Process = () => {
         </div>
         </div>
         <div className='flex items-center justify-center'>
-        <div className='w-[80%] h-[400px] rounded-[20px] bg-white flex flex-row items-center justify-between relative top-[110px] shadow-md'>
-            <div className='w-[50%]'>
-            <Image src={portfolio2} alt="" className='h-[400px]'/>
+        <div className='w-[80%] sm:h-[400px] h-[500px] rounded-[20px] bg-white flex sm:flex-row flex-col items-center justify-between relative top-[110px] shadow-md'>
+            <div className='sm:w-[50%] w-[100%]'>
+            <Image src={portfolio2} alt="" className='sm:h-[400px] h-[200px]'/>
             </div>
             <div className='w-[70%]'>
             <p className='font-bold text-4xl'>Do You Need Best Help For Business Corporating Related Issues !
             </p>
-            <Button className='bg-blue-700 mt-[50px]'>FREE CONSULTATION</Button>
+            <Button className='bg-blue-700 mt-[30px]'>FREE CONSULTATION</Button>
             </div>
         </div>
         </div>

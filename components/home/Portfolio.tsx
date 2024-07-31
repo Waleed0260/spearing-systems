@@ -50,24 +50,21 @@ const Portfolio = () => {
         <p className='font-bold text-4xl heading'>
             portfolio
         </p>
-        <div className='grid grid-cols-3 gap-4 m-3'>
+        <div className='grid md:grid-cols-3 grid-cols-1 gap-4 m-3'>
             {portfolio.map((item:any)=>{
                 return(
                     <div className='flex flex-col' key={item.id} data-aos="fade-up">
-     <div className='relative h-[475px] w-[366px]'>
+     <div className='relative h-[475px] md:w-[25vw] w-[70vw]'>
       <Image src={item.img} alt="" className='w-full h-full' />
       <div className='absolute inset-0 bg-black opacity-50'></div>
     </div>
 
                         <Dialog>
           <DialogTrigger>
-          <div className='w-[310px] bg-black text-white relative bottom-[140px] flex justify-evenly flex-row hover:bg-orange-700 transition-all'>
+          <div className='md:w-[21vw] w-[60vw] bg-black text-white relative bottom-[140px] flex justify-evenly hover:bg-orange-700 transition-all'>
                             <div>
                             <p className='p-4 mid-heading text'>{item.bold}</p>
                             <p className='p-4 font-bold text-4xl heading'>{item.heading}</p>
-                            </div>
-                            <div>
-                            <p className='text-white p-6'><FaArrowRight/></p>
                             </div>
                         </div>
           </DialogTrigger>

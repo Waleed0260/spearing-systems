@@ -17,14 +17,14 @@ import 'aos/dist/aos.css';
       });
     }, []);
   return (
-    <div className='w-full flex justify-center items-center'>
-        <div className='w-[80%] flex flex-row justify-between m-[30px]' data-aos="fade-up">
+    <div className='w-full flex justify-center items-center relative'>
+        <div className='w-[80%] flex md:flex-row flex-col justify-between m-[30px]' data-aos="fade-up">
             <div className='flex flex-col '>
                 <p className='font-bold text-3xl heading'>WEBSITE DESIGN & BUILD</p>
                 <p className='text mt-[30px]'>Websites can no longer just make sales, as in this day and age they also need to be able to engage and entertain. This is where we can help.</p>
                 <p className='mt-4 font-bold text-2xl'>Services include</p>
 
-                <div className='grid grid-cols-2 gap-2 p-7 mt-4'>
+                <div className='grid sm:grid-cols-2 grid-cols-1 gap-2 p-7 mt-4'>
                     <div className='flex flex-col items-center'>
                         <p className='text-4xl'><CiLaptop/></p>
                         <p className='text text-center w-[180px]'>Full Custom Website development</p>
@@ -45,7 +45,7 @@ import 'aos/dist/aos.css';
             </div>
 
             <div className='flex flex-col justify-center'>
-                <div className='w-[520px] h-[496px]'>
+                <div className='md:w-[40vw] sm:w-[80vw] w-[90vw] h-[496px]'>
                     <Image src={service1} alt="sss"/>
                 </div>
                 <div className='w-[412] h-[400px] relative bottom-[160px] left-[50px]'>

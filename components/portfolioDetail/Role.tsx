@@ -15,8 +15,8 @@ const Role = () => {
         });
       }, []);
   return (
-        <div className='w-[80%] flex flex-row justify-between m-[70px]' data-aos="fade-up">
-            <div className='flex flex-col w-[50%]'>
+        <div className='md:w-[80%] w-[85vw] flex md:flex-row flex-col justify-between m-[70px]' data-aos="fade-up">
+            <div className='flex flex-col md:w-[50%]'>
                 <p className='heading font-bold text-2xl '>OUR ROLE</p>
                 <div className='grid grid-cols-4 mt-[30px]'>
                     <div>
@@ -40,7 +40,7 @@ const Role = () => {
                 <p className='text mt-[40px]'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even Lorem Ipsum</p>
             </div>
 
-            <div className='w-[50%]'>
+            <div className='md:w-[50%]'>
                 <Image src={vector} alt="" className=' h-[250px]'/>
             </div>
         </div>

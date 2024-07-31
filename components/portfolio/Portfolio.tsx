@@ -28,13 +28,13 @@ const Portfolio = () => {
     <div className='w-full flex items-center justify-center'>
         <div className='w-[80%] flex flex-col items-center justify-center m-[30px]'>
             <p className='heading font-bold text-3xl'>Portfolio</p>
-            <div className='grid grid-cols-3 '>
+            <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1'>
                 {images.map((item:any)=>{
                     return(
                         <div className='flex p-[20px]'>
                             <Link href={"/portfolio-detail/22"}>
                         <div className='relative'>
-                            <Image src={item.src} alt="" className='w-[350px] h-[500px] rounded-md'/>
+                            <Image src={item.src} alt="" className='md:w-[27vw] sm:w-[39vw] w-[70vw] h-[500px] rounded-md'/>
                             <div className='absolute inset-0 flex items-center justify-center '>
                                 <div className='text-left bg-orange-700 bg-opacity-50 p-4 m-6 text-white'>
                                     <p>{item.heading}</p>
