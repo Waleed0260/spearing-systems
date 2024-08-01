@@ -20,7 +20,7 @@ const Growth = () => {
                 <div className='w-[450px] h-[500px]'>
                 <Image src={about2} alt=""/>
                     </div>
-                    <div className='w-[400px] h-[300px] relative right-[60px] top-[90px]'>
+                    <div className='w-[400px] h-[300px] hidden md:flex relative right-[60px] top-[90px]'>
                 <Image src={about3} alt=""/>
                     </div>
             </div>
@@ -32,13 +32,13 @@ const Growth = () => {
                 <p className='mt-[20px] text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit laboriosam, magni asperiores repellendus veritatis maxime labore! Dolores distinctio sed, saepe et corporis esse est aliquid consequuntur accusamus suscipit, nobis animi aliquam id perferendis? Veniam amet, magnam consectetur impedit at assumenda!</p>
 
                 <div className='flex flex-row gap-4 '>
-                    <div className='flex flex-col p-4 bg-slate-600'>
-                        <p><IoCloudDoneOutline/></p>
-                        <p>For marketing professionals</p>
+                    <div className='flex flex-col p-4 bg-[#f0f0f0] mt-2 w-[200px]'>
+                        <p className='text-xl'><IoCloudDoneOutline/></p>
+                        <p className='text'>For marketing professionals</p>
                     </div>
-                    <div className='flex flex-col p-4 bg-slate-600 '>
-                        <p><IoCloudDoneOutline/></p>
-                        <p>Event marketing opportunities</p>
+                    <div className='flex flex-col p-4 bg-[#f0f0f0] mt-2 w-[200px] '>
+                        <p className='text-xl'><IoCloudDoneOutline/></p>
+                        <p className='text'>Event marketing opportunities</p>
                     </div>
                 </div>
 

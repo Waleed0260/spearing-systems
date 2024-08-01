@@ -24,7 +24,9 @@ export default function Page() {
     <>
     {/* <Suspense fallback={<p>Loading</p>}> */}
     <Hero />
+    <div className='w-full flex justify-center'>
       <About />
+    </div>
       <Services />
       <Video />
       <Portfolio />

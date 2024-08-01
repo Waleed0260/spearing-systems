@@ -17,27 +17,27 @@ const WhyUs = () => {
     <div className='w-full flex items-center justify-center '>
         <div className='w-[80%] m-[30px] flex flex-row justify-between'>
             <div className='flex flex-col p-[30px] w-[80%]' data-aos="fade-right">
-                <b>WHy US</b>
-                <p className='font-bold text-3xl heading'>Lorem ipsum dolor sit amet.</p>
-                <p className='text mt-[30px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam obcaecati tenetur quos ipsam facere magnam, totam excepturi! Quibusdam, vel voluptatum corporis totam unde atque similique dolore suscipit aperiam, nulla quis quasi odio esse iste neque doloribus facere? Eveniet odit voluptatum maxime praesentium? Consequatur excepturi sint mollitia explicabo quis modi maxime?</p>
+                <b className='mid-heading'>WHy US</b>
+                <p className='font-bold text-6xl heading'>We Give You Digital Solutions</p>
+                <p className='text mt-[30px]'>Sed lectus vestibulum mattis ullamcorper velit sed ullamcorperbi. Fusce id velit ut tortor pretium viverra suspendisse fuis ultricies lacus sed turpis tincidunt id aliquet. Sed viverra tellus sed lectus vestibulum mattis</p>
                 <div className='w-[400px] flex justify-between items-center mt-[30px]'>
-                    <p>Website developmetn</p>
+                    <p className='text'>Website development</p>
                     <p>90%</p>
                 </div>
-                <Progress value={80}/>
+                <Progress value={90} className='h-[5px] bg-[#f0f0f0]'/>
 
-                <div className='w-[400px] flex justify-between items-center'>
-                    <p>Digital products</p>
+                <div className='w-[400px] flex justify-between items-center mt-[14px]'>
+                    <p className='text' >Digital products</p>
                     <p>90%</p>
                 </div>
-                <Progress value={80}/>
+                <Progress value={90} className='h-[5px] bg-[#f0f0f0]'/>
 
 
-                <div className='w-[400px] flex justify-between items-center'>
-                    <p>Website developmetn</p>
+                <div className='w-[400px] flex justify-between items-center mt-[14px]'>
+                    <p className='text'>Website development</p>
                     <p>90%</p>
                 </div>
-                <Progress value={80}/>
+                <Progress value={90} className='h-[5px] bg-[#f0f0f0]'/>
 
 
             </div>

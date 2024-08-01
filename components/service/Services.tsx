@@ -10,37 +10,37 @@ const Services = () => {
             {
                 id:1,
                 icon: <FaRocket/>,
-                heading:"Design Department",
+                heading:"SEM",
                 text: "Need something changed or is there something not quite working Aellente humour or randomised words"
             },
             {
                 id:2,
                 icon: <FaIdCard/>,
-                heading:"Design Department",
+                heading:"PPC",
                 text: "Need something changed or is there something not quite working Aellente humour or randomised words"
             },
             {
                 id:3,
                 icon: <TbTargetArrow/>,
-                heading:"Design Department",
+                heading:"Advertisement",
                 text: "Need something changed or is there something not quite working Aellente humour or randomised words"
             },
             {
                 id:4,
                 icon: <ImPen/>,
-                heading:"Design Department",
+                heading:"BRANDING",
                 text: "Need something changed or is there something not quite working Aellente humour or randomised words"
             },
             {
                 id:5,
                 icon: <MdContentPasteGo/>,
-                heading:"Design Department",
+                heading:"WEBSITE DEVELOPMENT",
                 text: "Need something changed or is there something not quite working Aellente humour or randomised words"
             },
             {
                 id:6,
                 icon: <GrSystem/>,
-                heading:"Design Department",
+                heading:"MOJMASTI",
                 text: "Need something changed or is there something not quite working Aellente humour or randomised words"
             },
         ]
@@ -52,7 +52,7 @@ const Services = () => {
         <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-3 m-8'>
             {services.map((item:any, index:any)=>{
                 return (
-                    <div className='lg:w-[22vw] sm:w-[34vw] w-[70vw] h-[23rem] m-4 flex flex-col justify-center items-left border-[1px] border-black rounded-10px servicebox' key={item.id}>
+                    <div className='lg:w-[22vw] sm:w-[34vw] w-[70vw] h-[23rem] m-4 flex flex-col justify-center items-left border-[1px] border-black rounded-10px servicebox bg-[#f5f6f7] rounded-md' key={item.id}>
                         <Link href={"/service-detail/34"}>
                         <div className='p-5'>
                         <p className='font-bold text-4xl '>{item.icon}</p>

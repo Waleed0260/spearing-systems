@@ -1,4 +1,5 @@
 // "use client"
+import WhyUs from '@/components/about/WhyUs';
 import Footer from '@/components/home/Footer';
 import Loader from '@/components/home/Loader'
 import React, { Suspense, lazy } from 'react'
@@ -13,7 +14,8 @@ const page = () => {
     {/* <Suspense fallback={<Loader/>}> */}
     <Hero/>
     <Services/>
-    <Testimonial/>
+    {/* <Testimonial/> */}
+    <WhyUs/>
     <Video/>
     <Footer/>
     {/* </Suspense> */}
