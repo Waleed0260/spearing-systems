@@ -69,6 +69,9 @@
     @apply bg-background text-foreground;
   }
 }
+/* *{
+  overflow-x: visible;
+} */
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -118,16 +121,29 @@
     }
 }
 
-@keyframes zoomIn {
+/* @keyframes zoomIn {
   0% {
     transform: scale(1);
   }
   100% {
-    transform: scale(1.09); /* Adjust the scale as needed */
+    transform: scale(1.09);
   }
-}
+} */
 
 .hero-animation {
   animation: zoomIn 1s ease-in-out forwards ;
-  overflow: hidden;
+  /* overflow: hidden; */
+}
+
+.animation {
+  margin-top: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s, transform 1s;
+}
+
+.port-box:hover .animation {
+  opacity: 1;
+  transform: translateY(0);
+  margin-top: 0px;
 }

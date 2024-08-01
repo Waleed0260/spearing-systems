@@ -26,17 +26,22 @@ const Portfolio = () => {
 
   return (
     <div className='w-full flex items-center justify-center'>
-        <div className='w-[80%] flex flex-col items-center justify-center m-[30px]'>
-            <p className='heading font-bold text-3xl'>Portfolio</p>
+        <div className='w-[80%] flex flex-col items-start justify-center m-[30px]'>
+            <div className='flex flex-row gap-4 ml-[20px]'>
+            <p className='mid-heading font-semibold text-xl'>ALL</p>
+            <p className='mid-heading font-semibold text-xl'>Marketing</p>
+            <p className='mid-heading font-semibold text-xl'>Application</p>
+            <p className='mid-heading font-semibold text-xl'>Design</p>
+            </div>
             <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1'>
                 {images.map((item:any)=>{
                     return(
-                        <div className='flex p-[20px]'>
+                        <div className='flex p-[20px]' key={item.src}>
                             <Link href={"/portfolio-detail/22"}>
-                        <div className='relative'>
+                        <div className='relative port-box'>
                             <Image src={item.src} alt="" className='md:w-[27vw] sm:w-[39vw] w-[70vw] h-[500px] rounded-md'/>
                             <div className='absolute inset-0 flex items-center justify-center '>
-                                <div className='text-left bg-orange-700 bg-opacity-50 p-4 m-6 text-white'>
+                                <div className='text-left bg-orange-700 bg-opacity-50 p-4 m-6 text-white animation'>
                                     <p>{item.heading}</p>
                                     <p className='text-2xl font-bold heading'>{item.text}</p>
                                 </div>

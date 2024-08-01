@@ -30,7 +30,7 @@ const Video = () => {
     >
             <div className='absolute inset-0 bg-black opacity-50'></div>
 
-      <div className=" relative z-10 flex flex-col w-[90%] text-white">
+      <div className=" relative z-10 flex flex-col text-white">
         <p className="font-bold text-4xl heading" data-aos="fade-up">
           Mission is to Protect your Businesses & Much More
         </p>
