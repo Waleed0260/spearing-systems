@@ -16,7 +16,7 @@ export default function Page() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 10);
+    }, 1000);
 
     // Cleanup the timer
     return () => clearTimeout(timer);
