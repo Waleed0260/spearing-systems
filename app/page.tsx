@@ -1,14 +1,5 @@
 "use client"
-import React, { Suspense, lazy } from 'react';
-
-// const Hero = lazy(() => import('@/components/home/Hero'));
-// const About = lazy(() => import('@/components/home/About'));
-// const Services = lazy(() => import('@/components/home/Services'));
-// const Video = lazy(() => import('@/components/home/Video'));
-// const Portfolio = lazy(() => import('@/components/home/Portfolio'));
-// const Testimonial = lazy(() => import('@/components/home/Testimonial'));
-// const Footer = lazy(() => import('@/components/home/Footer'));
-
+import React, {useState, useEffect} from 'react';
 import Hero from '@/components/home/Hero'
 import About from '@/components/home/About'
 import Services from '@/components/home/Services'
@@ -17,12 +8,25 @@ import Portfolio from '@/components/home/Portfolio'
 import Testimonial from '@/components/home/Testimonial'
 import Footer from '@/components/home/Footer'
 import Process from '@/components/home/Process';
+import Loader from '@/components/home/Loader';
 
 export default function Page() {
-  
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 10);
+
+    // Cleanup the timer
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
   return (
     <>
-    {/* <Suspense fallback={<p>Loading</p>}> */}
     <Hero />
     <div className='w-full flex justify-center'>
       <About />
@@ -33,7 +37,6 @@ export default function Page() {
       <Process/>
       <Testimonial />
       <Footer />
-    {/* </Suspense> */}
     </>
   );
 }
