@@ -15,8 +15,8 @@ const About = () => {
   }, []);
   return (
       <div className="md:w-[80%] m-[50px] w-[89vw] flex md:flex-row flex-col gap-5">
-        <div className="flex md:flex-col flex-col justify-between items-start md:w-[50%]">
-        <div className="md:w-[80%] h-[330px] overflow-hidden" data-aos="fade-right">
+        <div className="flex md:flex-col flex-col justify-between items-start md:w-[50%]" data-aos="fade-right">
+        <div className="md:w-[80%] h-[330px] overflow-hidden" >
   <Image src={about2} alt="" className="w-full h-full object-cover" />
 </div>
           <p className="font-bold text-4xl heading mt-3">
@@ -28,7 +28,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="flex flex-col justify-between md:w-[50%]">
+        <div className="flex flex-col justify-between md:w-[50%]" data-aos="fade-left">
           <b className="font-bold text-md mid-heading">BUSINESS GROWTH</b>
           <p className="text-3xl heading">
             BEST DIGITAL CREATIVE AGENCY

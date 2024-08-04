@@ -27,7 +27,7 @@ const Hero = () => {
     slidesToScroll: 1
   };
   return (
-    // <div className='w-full h-[50rem] bg-cover' style={{backgroundImage: `url('/images/banner.jpg')`}}>
+    // <div className='w-full h-[50rem] bg-cover bg-center' style={{backgroundImage: `url('/images/banner.jpg')`}}>
     //  
     //     <div className='flex items-center justify-center p-[100px] flex-col'>
     //         <p className='text-6xl heading'>A <b className='font-bold'>CREATIVE</b>Team</p>
@@ -55,7 +55,7 @@ const Hero = () => {
     loop={true}
     className="h-[44rem] "
     >
-    <SwiperSlide className='relative w-full bg-cover hero-animation' style={{backgroundImage: `url('/images/banner.jpg')`}}>
+    <SwiperSlide className='relative w-full bg-cover bg-center hero-animation' style={{backgroundImage: `url('/images/banner.jpg')`}}>
     <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
     <div className="relative z-10 text-white flex items-center justify-center">
         <div className='flex items-center justify-center p-[100px] flex-col mt-[150px]'>
@@ -66,7 +66,7 @@ const Hero = () => {
 
     </SwiperSlide>
 
-    <SwiperSlide className='relative w-full bg-cover' style={{backgroundImage: `url('/images/banner.jpg')`}}>
+    <SwiperSlide className='relative w-full bg-cover bg-center' style={{backgroundImage: `url('/images/banner.jpg')`}}>
     <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
     <div className="relative z-10 text-white">
         <div className='flex items-center justify-center p-[100px] flex-col mt-[150px]'>
@@ -77,7 +77,7 @@ const Hero = () => {
 
     </SwiperSlide>
 
-    <SwiperSlide className='relative w-full bg-cover' style={{backgroundImage: `url('/images/banner.jpg')`}}>
+    <SwiperSlide className='relative w-full bg-cover bg-center' style={{backgroundImage: `url('/images/banner.jpg')`}}>
     <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
     <div className="relative z-10 text-white">
         <div className='flex items-center justify-center p-[100px] flex-col mt-[150px]'>
@@ -94,7 +94,7 @@ const Hero = () => {
   </div>
 
   //   <Slider {...settings}>
-  //  <div className='w-full h-[50rem] bg-cover' style={{backgroundImage: `url('/images/banner.jpg')`}}>
+  //  <div className='w-full h-[50rem] bg-cover bg-center' style={{backgroundImage: `url('/images/banner.jpg')`}}>
   //    
   //       <div className='flex items-center justify-center p-[100px] flex-col'>
   //           <p className='text-6xl heading'>A <b className='font-bold'>CREATIVE</b>Team</p>

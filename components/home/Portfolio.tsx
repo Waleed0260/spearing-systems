@@ -64,7 +64,7 @@ const Portfolio = () => {
           <div className='md:w-[21vw] w-[60vw] bg-black text-white relative bottom-[140px] flex justify-evenly hover:bg-orange-700 transition-all'>
                             <div>
                             <p className='p-4 mid-heading text'>{item.bold}</p>
-                            <p className='p-4 font-bold text-4xl heading'>{item.heading}</p>
+                            <p className='p-4 font-bold md:text-4xl text-2xl heading'>{item.heading}</p>
                             </div>
                         </div>
           </DialogTrigger>

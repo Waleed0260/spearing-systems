@@ -31,7 +31,7 @@ const Video = () => {
             <div className='absolute inset-0 bg-black opacity-50'></div>
 
       <div className=" relative z-10 flex flex-col text-white">
-        <p className="font-bold text-4xl heading" data-aos="fade-up">
+        <p className="font-bold text-4xl heading w-[60%]" data-aos="fade-up">
           Mission is to Protect your Businesses & Much More
         </p>
         <Button className="mt-2 w-[200px] rounded-[100px] font-bold bg-transparent text-white" variant={"outline"} data-aos="fade-right">CHECK OUT PLAN</Button>

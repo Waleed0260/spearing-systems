@@ -1,21 +1,27 @@
 "use client"
 import Footer from '@/components/home/Footer';
+import Header from '@/components/home/Header';
 import Loader from '@/components/home/Loader';
+import Benefits from '@/components/serviceDetail/Benefits';
+import Help from '@/components/serviceDetail/Help';
+import Results from '@/components/serviceDetail/Results';
+import Tell from '@/components/serviceDetail/Tell';
+import Testimonial from '@/components/serviceDetail/Testimonial';
+import Visibility from '@/components/serviceDetail/Visibility';
+import WhyUs from '@/components/serviceDetail/WhyUs';
 import React, {Suspense, lazy} from 'react'
-const Testimonial = lazy(() => import('@/components/home/Testimonial'));
-const Video = lazy(() => import('@/components/home/Video'));
-const Hero = lazy(() => import('@/components/serviceDetail/Hero'));
-const SecondSection = lazy(() => import('@/components/serviceDetail/SecondSection'));
-const ThirdSection = lazy(() => import('@/components/serviceDetail/ThirdSection'));
 
 const page = ({ params }: { params: { ID: string } }) => {
   return (
     <Suspense fallback={<Loader/>}>
-      <Hero/>
-      <SecondSection/>
-      <ThirdSection/>
-      {/* <Testimonial/> */}
-      <Video/>
+      <Header/>
+      <Visibility/>
+      <WhyUs/>
+      <Help/>
+      <Benefits/>
+      <Results/>
+      <Testimonial/>
+      <Tell/>
       <Footer/>
       </Suspense>
   )

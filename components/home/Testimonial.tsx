@@ -2,8 +2,6 @@
 import React from "react";
 import client1 from "../../public/images/client1.png";
 import Image from "next/image";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -19,7 +17,6 @@ import test4 from "../../public/images/test4.png"
 import test5 from "../../public/images/test5.png"
 
 const Testimonial = () => {
-  const swiper = useSwiper();
 
   return (
     <div className="flex flex-col justify-center items-center p-4 m-5 mt-[130px] text-white ">
@@ -35,7 +32,7 @@ const Testimonial = () => {
       >
         <SwiperSlide>
           <div className="flex flex-row items-center justify-center p-4">
-            <div className="flex flex-row items-center justify-around">
+            <div className="flex md:flex-row flex-col items-center justify-around">
               <div className="w-[200px] h-[200px] rounded-[100px]">
                 <Image
                   src={client1}
@@ -47,7 +44,7 @@ const Testimonial = () => {
                   }}
                 />
               </div>
-              <div className="flex flex-col w-[60%]">
+              <div className="flex flex-col md:w-[60%]">
                 <p className="text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
                   tempora eos ipsum voluptatem quam maiores consectetur veniam
@@ -67,7 +64,7 @@ const Testimonial = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex flex-row items-center justify-center p-4">
-            <div className="flex flex-row items-center justify-around">
+            <div className="flex md:flex-row flex-col items-center justify-around">
               <div className="w-[200px] h-[200px] rounded-[100px]">
                 <Image
                   src={client1}
@@ -79,7 +76,7 @@ const Testimonial = () => {
                   }}
                 />
               </div>
-              <div className="flex flex-col w-[60%]">
+              <div className="flex flex-col md:w-[60%]">
                 <p className="text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
                   tempora eos ipsum voluptatem quam maiores consectetur veniam
@@ -99,7 +96,7 @@ const Testimonial = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex flex-row items-center justify-center p-4">
-            <div className="flex flex-row items-center justify-around">
+            <div className="flex md:flex-row flex-col items-center justify-around">
               <div className="w-[200px] h-[200px] rounded-[100px]">
                 <Image
                   src={client1}
@@ -111,7 +108,7 @@ const Testimonial = () => {
                   }}
                 />
               </div>
-              <div className="flex flex-col w-[60%]">
+              <div className="flex flex-col md:w-[60%]">
                 <p className="text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
                   tempora eos ipsum voluptatem quam maiores consectetur veniam
@@ -133,8 +130,20 @@ const Testimonial = () => {
 
       <Swiper
         // spaceBetween={50}
-        slidesPerView={5}
-        onSlideChange={() => console.log("slide change")}
+        breakpoints={{
+          0:{
+            slidesPerView: 1,
+          },
+          480:{
+            slidesPerView: 2,
+          },
+          768:{
+            slidesPerView: 3,
+          },
+          980:{
+            slidesPerView: 5,
+          }
+        }}        onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
         autoplay={{
           delay: 1000,
@@ -146,29 +155,29 @@ const Testimonial = () => {
         className="w-[80%] h-[80px] bg-black"
       >
         <SwiperSlide>
-          <div className="w-full h-[20px] m-[20px] ">
+          <div className="w-[200px] h-[20px] m-[20px] ">
             <Image src={test1} alt=""/>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-full h-[20px] m-[20px]">
+          <div className="w-[200px] h-[20px] m-[20px]">
             <Image src={test2} alt=""/>
           </div>
         </SwiperSlide> <SwiperSlide>
-          <div className="w-full h-[20px] m-[20px]">
+          <div className="w-[200px] h-[20px] m-[20px]">
             <Image src={test3} alt=""/>
           </div>
         </SwiperSlide> <SwiperSlide>
-          <div className="w-full h-[20px] m-[20px]">
+          <div className="w-[200px] h-[20px] m-[20px]">
             <Image src={test4} alt=""/>
           </div>
         </SwiperSlide> <SwiperSlide>
-          <div className="w-full h-[20px] m-[20px]">
+          <div className="w-[200px] h-[20px] m-[20px]">
             <Image src={test5} alt=""/>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-full h-[20px] m-[20px]">
+          <div className="w-[200px] h-[20px] m-[20px]">
             <Image src={test5} alt=""/>
           </div>
         </SwiperSlide>
