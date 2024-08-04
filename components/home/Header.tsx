@@ -14,7 +14,8 @@ import {
 } from "@/components/ui/sheet";
 import { IoMenu } from "react-icons/io5";
 
-const Header = () => {
+const Header = (color:any) => {
+  console.log("color", color)
   const [bgColor, setBgColor] = useState("[#ffffff]");
   // const[color, setColor] = useState("[#ffffff]")
 
@@ -37,10 +38,10 @@ const Header = () => {
   return (
     <>
       <div
-        className={`sm:flex hidden flex-row items-center justify-around w-full fixed transition-all z-50 bg-${bgColor}`}
+        className={`sm:flex hidden flex-row items-center justify-around w-full fixed transition-all h-[80px] z-50 bg-${color.color ? color.color: bgColor}`}
       >
-        <div className="h-[100px] w-[100px] relative z-10">
-          <Image src={logo} alt="" height={200} width={200} />
+        <div className="h-[170px] z-10">
+          <Image src={logo} alt="" className="w-full h-full " />
         </div>
         <div>
           <ul className={`flex flex-row gap-4 relative z-10 text-white`}>

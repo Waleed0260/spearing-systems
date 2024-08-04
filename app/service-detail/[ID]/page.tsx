@@ -9,12 +9,18 @@ import Tell from '@/components/serviceDetail/Tell';
 import Testimonial from '@/components/serviceDetail/Testimonial';
 import Visibility from '@/components/serviceDetail/Visibility';
 import WhyUs from '@/components/serviceDetail/WhyUs';
-import React, {Suspense, lazy} from 'react'
+import React, {Suspense, useEffect} from 'react'
 
 const page = ({ params }: { params: { ID: string } }) => {
+  useEffect(() => {
+    fetch('/api/serviceDetails/search_engine')
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.error('Error fetching data:', error));
+  }, []);
   return (
     <Suspense fallback={<Loader/>}>
-      <Header/>
+      <Header color="[#0D2137]"/>
       <Visibility/>
       <WhyUs/>
       <Help/>

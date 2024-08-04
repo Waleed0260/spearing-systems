@@ -53,7 +53,7 @@ const Services = () => {
             {services.map((item:any, index:any)=>{
                 return (
                     <div className='lg:w-[22vw] sm:w-[34vw] w-[70vw] h-[23rem] m-4 flex flex-col justify-center items-left border-[1px] border-black rounded-10px servicebox bg-[#f5f6f7] rounded-md' key={item.id}>
-                        <Link href={"/service-detail/34"}>
+                        <Link href={"/service-detail/search_engine"}>
                         <div className='p-5'>
                         <p className='font-bold text-4xl '>{item.icon}</p>
                         <p className='font-bold text-3xl heading mt-3'>{item.heading}</p>

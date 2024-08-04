@@ -25,8 +25,8 @@ const Testimonial = () => {
       <Swiper
         // spaceBetween={50}
         slidesPerView={1}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
+        // onSlideChange={() => console.log("slide change")}
+        // onSwiper={(swiper) => console.log(swiper)}
         modules={[Navigation]}
         className="w-[80%] bg-black"
       >
