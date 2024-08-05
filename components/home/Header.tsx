@@ -15,7 +15,6 @@ import {
 import { IoMenu } from "react-icons/io5";
 
 const Header = (color:any) => {
-  console.log("color", color)
   const [bgColor, setBgColor] = useState("[#ffffff]");
   // const[color, setColor] = useState("[#ffffff]")
 

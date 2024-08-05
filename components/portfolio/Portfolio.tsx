@@ -106,20 +106,9 @@ import {
             <DialogHeader>
               {/* <DialogTitle>Are you absolutely sure?</DialogTitle> */}
               <DialogDescription>
-                <div>
-                <Image src={portfolio1} alt='' />
+                <div className="flex flex-col items-start">
+                  <p className="font-bold text-3xl heading"></p>
                 </div>
-                <b className='font-bold text-4xl'>Developing A Small Finance Framework                </b>
-                <p>Business growth is a phenomenon that occurs when business owners, employees and outside factors influence the success of a company. A business grows when it expands a customer base, increases revenue or produces more product. Growth is the goal of most businesses and is the reason behind many decisions that affect the daily workings of a company both internally and externally. Business growth is impacted by consumer trends, market opportunities and decisions made by company leadership.</p>
-
-                <b className='font-bold text-3xl'> Finance growth strategies</b>
-                <ul>
-                    <li>Market penetration</li>
-                    <li>Product development</li>
-                    <li>Market expansion</li>
-                    <li>New businee models</li>
-                    <li>Market suggestions</li>
-                </ul>
               </DialogDescription>
             </DialogHeader>
           </DialogContent>

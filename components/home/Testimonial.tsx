@@ -143,8 +143,7 @@ const Testimonial = () => {
           980:{
             slidesPerView: 5,
           }
-        }}        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
+        }}
         autoplay={{
           delay: 1000,
           disableOnInteraction: false,

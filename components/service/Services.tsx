@@ -11,37 +11,43 @@ const Services = () => {
                 id:1,
                 icon: <FaRocket/>,
                 heading:"SEM",
-                text: "Need something changed or is there something not quite working Aellente humour or randomised words"
+                text: "Need something changed or is there something not quite working Aellente humour or randomised words",
+                href:"social_media_marketing"
             },
             {
                 id:2,
                 icon: <FaIdCard/>,
                 heading:"PPC",
-                text: "Need something changed or is there something not quite working Aellente humour or randomised words"
+                text: "Need something changed or is there something not quite working Aellente humour or randomised words",
+                href:"page_per_click",
             },
             {
                 id:3,
                 icon: <TbTargetArrow/>,
                 heading:"Advertisement",
-                text: "Need something changed or is there something not quite working Aellente humour or randomised words"
+                text: "Need something changed or is there something not quite working Aellente humour or randomised words",
+                href:"search_engine"
             },
             {
                 id:4,
                 icon: <ImPen/>,
                 heading:"BRANDING",
-                text: "Need something changed or is there something not quite working Aellente humour or randomised words"
+                text: "Need something changed or is there something not quite working Aellente humour or randomised words",
+                href:"branding",
             },
             {
                 id:5,
                 icon: <MdContentPasteGo/>,
                 heading:"WEBSITE DEVELOPMENT",
-                text: "Need something changed or is there something not quite working Aellente humour or randomised words"
+                text: "Need something changed or is there something not quite working Aellente humour or randomised words",
+                href:"website_development"
             },
             {
                 id:6,
                 icon: <GrSystem/>,
-                heading:"MOJMASTI",
-                text: "Need something changed or is there something not quite working Aellente humour or randomised words"
+                heading:"Email Marketing",
+                text: "Need something changed or is there something not quite working Aellente humour or randomised words",
+                href:"email_marketing"
             },
         ]
   return (
@@ -52,15 +58,15 @@ const Services = () => {
         <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-3 m-8'>
             {services.map((item:any, index:any)=>{
                 return (
+                        <Link href={`/service-detail/${item.href}`}>
                     <div className='lg:w-[22vw] sm:w-[34vw] w-[70vw] h-[23rem] m-4 flex flex-col justify-center items-left border-[1px] border-black rounded-10px servicebox bg-[#f5f6f7] rounded-md' key={item.id}>
-                        <Link href={"/service-detail/search_engine"}>
                         <div className='p-5'>
                         <p className='font-bold text-4xl '>{item.icon}</p>
                         <p className='font-bold text-3xl heading mt-3'>{item.heading}</p>
                         <p className='text mt-6'>{item.text}</p>
                         </div>
-                        </Link>
                     </div>
+                        </Link>
                 )
             })}
         </div>
