@@ -97,6 +97,7 @@
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
+    color: #FF8E2B;
   }
 
   .text{
@@ -114,10 +115,10 @@
 
 @keyframes borderTransition {
     0% {
-        box-shadow: inset 0 150px 0 0 #FF8E2B;
+        box-shadow: inset 0 150px 0 0 #0D2137;
     }
     100% {
-        box-shadow: inset 0 400px 0 0 #FF8E2B, inset 0 350px 0 0 rgba(10,60,116,1);
+        box-shadow: inset 0 400px 0 0 #0D2137, inset 0 350px 0 0 rgba(10,60,116,1);
     }
 }
 

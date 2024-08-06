@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const PortfolioPopUp = () => {
   return (
-    <div className='flex flex-col text-black'>
+    <div className='flex flex-col text-black bg-[#0D2137] text-white'>
         <p className='font-bold text-4xl heading '>Jumped Paid Traffic from 3 to 1,958, a more than 65,000% Increase        </p>
         <p className='text text-xl mt-1'>Lorem ipsum dolor sit amet.</p>
         <p className='text-3xl text mt-4'>How Spiral Marketing Orchestrated a 65,167% Increase in Paid Traffic for This SaaS Technology Company</p>
@@ -25,7 +25,7 @@ const PortfolioPopUp = () => {
             </div>
         </div>
 
-        <div className='mt-[30px] bg-blue-700 text-white p-4 flex md:flex-row flex-col items-center'>
+        <div className='mt-[30px] bg-[#0D2137] text-white p-4 flex md:flex-row flex-col items-center'>
             <div className='md:w-[50%] flex flex-col'>
 
             <p className='font-bold text-2xl heading'>Solution</p>

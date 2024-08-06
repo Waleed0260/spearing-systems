@@ -93,7 +93,7 @@ import PortfolioPopUp from "./PortfolioPopUp";
                       className="md:w-[27vw] sm:w-[39vw] w-[70vw] h-[500px] rounded-md"
                       />
                     <div className="absolute inset-0 flex items-center justify-center ">
-                      <div className="text-left bg-orange-700 bg-opacity-50 p-4 m-6 text-white animation">
+                      <div className="text-left bg-[#0D2137] bg-opacity-50 p-4 m-6 text-white animation">
                         <p>{item.heading}</p>
                         <p className="text-2xl font-bold heading">
                           {item.text}
@@ -103,7 +103,7 @@ import PortfolioPopUp from "./PortfolioPopUp";
                   </div>
               </div>
           </DialogTrigger>
-          <DialogContent className="sm:max-w-[90vw] h-[85%] overflow-auto">
+          <DialogContent className="sm:max-w-[90vw] h-[85%] overflow-auto bg-[#0D2137] border-none text-white">
             <DialogHeader>
               {/* <DialogTitle>Are you absolutely sure?</DialogTitle> */}
               <DialogDescription>

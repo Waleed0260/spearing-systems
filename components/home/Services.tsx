@@ -14,6 +14,7 @@ import { Navigation } from "swiper/modules";
 import { Pagination } from "swiper/modules";
 import "swiper/css/pagination";
 import { FaArrowRight } from "react-icons/fa6";
+import { Button } from "../ui/button";
 
 const Services = () => {
   useEffect(() => {
@@ -114,6 +115,7 @@ const Services = () => {
           );
         })}
       </Swiper>
+      <Button className="bg-[#0D2137] text-white rounded-[100px]">View All Services</Button>
     </div>
   );
 };

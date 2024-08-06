@@ -2,6 +2,7 @@
 import React, {useEffect} from 'react'
 import { Progress } from "@/components/ui/progress"
 import about3 from "../../public/images/about5.png"
+import digitalSolutions from "../../public/images/digitalSolutions.jpg"
 import Image from 'next/image'
 import AOS from "aos"
 import 'aos/dist/aos.css';
@@ -43,7 +44,7 @@ const WhyUs = () => {
             </div>
 
             <div className='w-[100%] h-[100%]' data-aos="fade-left">
-                <Image src={about3} alt="asas"/>
+                <Image src={digitalSolutions} alt="asas"/>
                 </div>
         </div>
     </div>

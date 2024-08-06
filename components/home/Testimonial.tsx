@@ -19,8 +19,8 @@ import test5 from "../../public/images/test5.png"
 const Testimonial = () => {
 
   return (
-    <div className="flex flex-col justify-center items-center p-4 m-5 mt-[130px] text-white ">
-      <p className="font-bold text-2xl text-black">Testimonial</p>
+    <div className="flex flex-col justify-center items-center mt-[160px] mb-[100px] text-white bg-[#0D2137]">
+      <p className="font-bold text-2xl m-3">Testimonial</p>
 
       <Swiper
         // spaceBetween={50}
@@ -28,7 +28,7 @@ const Testimonial = () => {
         // onSlideChange={() => console.log("slide change")}
         // onSwiper={(swiper) => console.log(swiper)}
         modules={[Navigation]}
-        className="w-[80%] bg-black"
+        className="w-[80%]"
       >
         <SwiperSlide>
           <div className="flex flex-row items-center justify-center p-4">
@@ -151,7 +151,7 @@ const Testimonial = () => {
         speed={1000}
         modules={[Navigation, Pagination, Autoplay]}
         loop={true}
-        className="w-[80%] h-[80px] bg-black"
+        className="w-[80%] h-[80px]"
       >
         <SwiperSlide>
           <div className="w-[200px] h-[20px] m-[20px] ">

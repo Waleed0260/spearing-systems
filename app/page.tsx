@@ -4,11 +4,11 @@ import Hero from '@/components/home/Hero'
 import About from '@/components/home/About'
 import Services from '@/components/home/Services'
 import Video from '@/components/home/Video'
-import Portfolio from '@/components/home/Portfolio'
 import Testimonial from '@/components/home/Testimonial'
 import Footer from '@/components/home/Footer'
 import Process from '@/components/home/Process';
 import Loader from '@/components/home/Loader';
+import Portfolio from '@/components/portfolio/Portfolio';
 
 export default function Page() {
   const [loading, setLoading] = useState(true);
@@ -33,7 +33,8 @@ export default function Page() {
     </div>
       <Services />
       <Video />
-      <Portfolio />
+      {/* <Portfolio /> */}
+      <Portfolio/>
       <Process/>
       <Testimonial />
       <Footer />
