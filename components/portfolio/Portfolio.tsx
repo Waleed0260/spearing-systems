@@ -19,6 +19,7 @@ import {
     DialogTitle,
     DialogTrigger,
   } from "@/components/ui/dialog";
+import PortfolioPopUp from "./PortfolioPopUp";
   
   const Portfolio = () => {
   const images = [
@@ -102,12 +103,12 @@ import {
                   </div>
               </div>
           </DialogTrigger>
-          <DialogContent className="sm:max-w-[925px] h-[85%] overflow-auto">
+          <DialogContent className="sm:max-w-[90vw] h-[85%] overflow-auto">
             <DialogHeader>
               {/* <DialogTitle>Are you absolutely sure?</DialogTitle> */}
               <DialogDescription>
                 <div className="flex flex-col items-start">
-                  <p className="font-bold text-3xl heading"></p>
+                  <PortfolioPopUp/>
                 </div>
               </DialogDescription>
             </DialogHeader>
