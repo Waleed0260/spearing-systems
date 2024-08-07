@@ -1,7 +1,7 @@
 // "use client"
 import React, { useEffect } from "react";
 import Image from "next/image";
-import about2 from "../../public/images/about2.png";
+import marketing from "../../public/images/marketing.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { SiTicktick } from "react-icons/si";
@@ -17,7 +17,7 @@ const About = () => {
       <div className="md:w-[80%] m-[50px] w-[89vw] flex md:flex-row flex-col gap-5">
         <div className="flex md:flex-col flex-col justify-between items-start md:w-[50%]" data-aos="fade-right">
         <div className="md:w-[80%] h-[330px] overflow-hidden" >
-  <Image src={about2} alt="" className="w-full h-full object-cover" />
+  <Image src={marketing} alt="" className="w-full h-full object-cover" />
 </div>
           <p className="font-bold text-4xl heading mt-3">
             Incredibly fast and amazing features{" "}

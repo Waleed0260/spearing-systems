@@ -10,6 +10,7 @@ import Loader from '@/components/home/Loader';
 import Portfolio from '@/components/portfolio/Portfolio';
 import Consultation from '@/components/home/Consultation';
 import Technologies from '@/components/home/Technologies';
+import Slider from '@/components/home/Slider';
 
 export default function Page() {
   const [loading, setLoading] = useState(true);
@@ -29,6 +30,7 @@ export default function Page() {
   return (
     <>
     <Hero />
+    <Slider/>
     <div className='w-full flex justify-center'>
       <About />
     </div>

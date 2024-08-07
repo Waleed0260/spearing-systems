@@ -1,61 +1,143 @@
-import React from 'react'
-import problem from "../../public/images/problem.jpg"
-import solution from "../../public/images/solution.jpg"
-import result from "../../public/images/result.png"
-import Image from 'next/image'
-
-const PortfolioPopUp = () => {
+"use client"
+import React, {useState, useEffect} from "react";
+import problem from "../../public/images/problem.jpg";
+import solution from "../../public/images/solution.jpg";
+import result from "../../public/images/result.png";
+import Image from "next/image";
+import demoCase from "../../public/images/demoCase.jpg";
+import Loader from "../home/Loader";
+const PortfolioPopUp = ({id}:any) => {
+    console.log("id", id)
+    const [data, setData] = useState<any>([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+  
+    useEffect(() => {
+        const fetchData = async () => {
+          try {
+            const res = await fetch(`/api/caseStudies/${id}`);
+            if (!res.ok) {
+              throw new Error('Network response was not ok');
+            }
+            const result = await res.json();
+            setData(result);
+            setLoading(false)
+            console.log("result", result)
+          } catch (error) {
+            // setError(error.message);
+            console.log(error)
+          } finally {
+            setLoading(false);
+          }
+        };
+    
+        fetchData();
+      }, [id]);
   return (
-    <div className='flex flex-col text-black bg-[#0D2137] text-white'>
-        <p className='font-bold text-4xl heading '>Jumped Paid Traffic from 3 to 1,958, a more than 65,000% Increase        </p>
-        <p className='text text-xl mt-1'>Lorem ipsum dolor sit amet.</p>
-        <p className='text-3xl text mt-4'>How Spiral Marketing Orchestrated a 65,167% Increase in Paid Traffic for This SaaS Technology Company</p>
-        <div className='flex md:flex-row flex-col'>
-            <div className='md:w-[50%] flex flex-col'>
+    <>
+    {loading ? (
+        <Loader/>
+    ) : (
+
+    <div className="flex flex-col text-black bg-[#0D2137]  text-white">
+        <div className="flex flex-col items-center justify-center">
+
+      <Image
+        src={demoCase}
+        alt=""
+        className="w-[400px] h-[300px] overflow-hidden"
+      />
+      <p className="font-bold text-4xl heading ">
+        {data.title}
+      </p>
+      {/* <p className='text text-xl mt-1'>Lorem ipsum dolor sit amet.</p>
+        <p className='text-3xl text mt-4'>How Spiral Marketing Orchestrated a 65,167% Increase in Paid Traffic for This SaaS Technology Company</p> */}
+      <p className="font-bold text-2xl mid-heading mt-4">The Client</p>
+      <p className="text mt-3 text-center">
+        {data.client}
+      </p>
+
+      <p className="mt-[40px] mid-heading text-2xl font-bold">The Problem</p>
+      <p className="mt-3 text text-center">
+        {data.problem}
+      </p>
+      </div>
+
+      <p className="mt-[40px] mid-heading text-2xl font-bold flex items-center justify-center">The Solution</p>
+      <p className="mt-3 text flex justify-center">
+      THINK partnered with Spearing Systems to develop and execute a robust digital marketing strategy. Our approach included:
+      </p>
+
+      <div className="flex items-start text flex-col">
+        <p className="font-bold">Search Engine Optimization</p>
+        <ul className="list-disc ml-4">
+          <li>
+            Conducted an in-depth SEO audit to identify areas for improvement.
+          </li>
+            <li>
+              Optimized website content with targeted keywords to improve search
+              engine rankings.
+            </li>
+            <li>
+              Implemented technical SEO enhancements to boost site performance
+              and user experience.
+            </li>
+        </ul>
+      </div>
+
+      <div className="flex items-start text flex-col  mt-7">
+        <p className="font-bold">Google Adwords Campaign</p>
+        <ul className="list-disc ml-4">
+          <li>
+            Developed targeted AdWords campaigns to reach THINK’s specific
+            audience segments.
+          </li>
+            <li>
+              Created engaging ad copies and designed compelling visuals to
+              attract clicks.
+            </li>
+            <li>
+              Monitored and adjusted campaigns regularly to maximize ROI and
+              lead generation.
+            </li>
+        </ul>
+      </div>
+
+      <p className="mt-[40px] mid-heading text-2xl font-bold flex justify-center">The Result</p>
+      <p className="mt-3 text flex justify-center">
+      Our collaborative efforts yielded significant results for THINK:      </p>
+
+      <div className="flex items-start text flex-col">
+        <p className="font-bold">Increased Lead generation</p>
+        <ul className="list-disc ml-4">
+          <li>
+            Conducted an in-depth SEO auEnhanced lead generation through diverse paid advertising channels, resulting in a higher volume of quality leads.dit to identify areas for improvement.
+          </li>
+        </ul>
+
+        <p className="font-bold mt-6">Improved Digital Presence</p>
+        <ul className="list-disc ml-4">
+          <li>
+          Achieved better search engine rankings, increasing organic traffic to the website.
+          </li>
+          <li>
+          Successfully showcased new product lines through targeted content, attracting potential clients.
+          </li>
+        </ul>
+        <p className="font-bold mt-6">Optimized Ad Campaigns</p>
+        <ul className="list-disc ml-4">
+          <li>
+          Delivered higher click-through rates (CTR) and conversions from Google AdWords campaigns, maximizing THINK’s advertising budget.          </li>
+        </ul>
+      </div>
 
 
-        <p className='text font-bold mt-5 text-2xl'> Problem</p>
-        <p className='text'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt recusandae hic libero blanditiis beatae harum esse doloribus praesentium optio quis, neque, minus delectus eaque ipsam distinctio. Molestias, labore? Error sunt numquam tenetur quisquam ad nulla dolorem aut cupiditate quis dolore fugiat recusandae, atque pariatur debitis nihil aperiam odio eos, praesentium possimus! Rem hic, non a temporibus id error expedita, quos eveniet corporis tempore assumenda illo obcaecati distinctio ullam laborum? Minima, eius! Facilis aperiam consequuntur repudiandae laudantium ea pariatur dignissimos sunt!</p>
-
-        <p className='font-bold text-lg'>Problem Summary</p>
-        <p className='text'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, accusamus! Aliquid magni explicabo officia, deserunt at inventore consequatur maiores? Quod modi aliquid enim explicabo natus doloremque blanditiis error mollitia maiores, quo minima inventore dicta harum corrupti atque ratione at architecto assumenda pariatur libero? Culpa voluptates totam amet tenetur quam omnis, est quidem quos dicta ab nesciunt maxime explicabo ex reprehenderit.</p>
-            </div>
-            <div className='md:w-[50%] flex flex-col'>
-                <Image src={problem} alt="" className='w-full h-full overflow-hidden'/>
-            </div>
-        </div>
-
-        <div className='mt-[30px] bg-[#0D2137] text-white p-4 flex md:flex-row flex-col items-center'>
-            <div className='md:w-[50%] flex flex-col'>
-
-            <p className='font-bold text-2xl heading'>Solution</p>
-            <p className="text">To reach the company’s goals, Spiral Marketing implemented a digital marketing strategy that included monthly content creation (blog, newsletter, and social posts), as well as pay-per-click (PPC) Google Ads and paid social media advertising.To track results, demonstrate successes, and adjust strategy where needed, monthly reporting was provided.</p>
-            <p className='text font-bold'>Solution Summary</p>
-            <ul className='mt-3 list-disc ml-3'>
-                <li>Implemented a digital marketing campaign that included content creation and paid advertising efforts</li>
-                <li>Underpinned the campaign with SEO strategy and reporting</li>
-            </ul>
-            </div>
-
-            <div className='md:w-[50%] flex flex-col'>
-                <Image src={solution} alt="" className='w-full h-full overflow-hidden'/>
-            </div>
-        </div>
-
-
-        <div className='mt-[30px] flex md:flex-row flex-col items-center'>
-            <div className='md:w-[50%] flex flex-col'>
-
-            <p className='font-bold heading text-2xl'>The Results</p>
-            <p className='text'>After Spiral Marketing’s efforts, this client saw traffic increases across the site and social media channels. Facebook likes increased annually by 234%, and LinkedIn traffic increased annually by 450%. Total traffic increased annually by 288%. Leads and conversions were boosted as well. Total leads across all channels increased annually by 350%, and site conversions increased annually by 620%. The most significant strides were made in paid traffic. Increases could be seen monthly and annually, but the lifetime data is most telling. Total paid traffic increased from 3 in August 2018 to 1,958 in December 2019, for a lifetime increase of 65,167%.
-            </p>
-            </div>
-            <div className='md:w-[50%] flex flex-col'>
-                <Image src={result} alt="" className='w-full h-full overflow-hidden'/>
-            </div>
-        </div>
     </div>
-  )
-}
+        )}
 
-export default PortfolioPopUp
+    </>
+
+  );
+};
+
+export default PortfolioPopUp;

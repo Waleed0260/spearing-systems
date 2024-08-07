@@ -3,9 +3,15 @@ import { AiOutlineFileSearch } from "react-icons/ai";
 import { LuAtom } from "react-icons/lu";
 import { TbSettingsCog } from "react-icons/tb";
 import { SiTicktick } from "react-icons/si";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import { GoGoal } from "react-icons/go";
+import { FaCode } from "react-icons/fa6";
+import { FaRocket } from "react-icons/fa6";
+import { BsFillRocketTakeoffFill } from "react-icons/bs";
+
 const Process = () => {
   return (
-    <div className='relative w-full h-full bg-cover' style={{
+    <div className='relative w-full h-full bg-cover bg-fixed' style={{
         backgroundImage: `url('/images/process.jpg')`,
       }}>
         <div className='flex items-center justify-center'>
@@ -16,15 +22,15 @@ const Process = () => {
             <div className='grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 mt-[20px]'>
                 <div className='w-[200px] h-[200px] rounded-[200px] mt-[10px] flex items-center flex-col justify-center border-[2px] border-white ml-[13px]'>
                     <p className='font-bold text-5xl heading'>
-                    <AiOutlineFileSearch />
+                    <GoGoal/>
                     </p>
-                    Page Search
+                    Strategy
                 </div>
                 <div className='w-[200px] h-[200px] rounded-[200px] mt-[10px] flex items-center flex-col justify-center border-[2px] border-white ml-[13px]'>
                     <p className='font-bold text-5xl heading'>
-                    <LuAtom />
+                    <FaCode/>
                     </p>
-                    Developer
+                    Development
                 </div>
                 <div className='w-[200px] h-[200px] rounded-[200px] mt-[10px] flex items-center flex-col justify-center border-[2px] border-white ml-[13px]'>
                     <p className='font-bold text-5xl heading'>
@@ -34,7 +40,7 @@ const Process = () => {
                 </div>
                 <div className='w-[200px] h-[200px] rounded-[200px] mt-[10px] flex items-center flex-col justify-center border-[2px] border-white ml-[13px]'>
                     <p className='font-bold text-5xl heading'>
-                    <SiTicktick />
+                    <BsFillRocketTakeoffFill/>
                     </p>
                     Launch
                 </div>

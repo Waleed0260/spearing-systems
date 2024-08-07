@@ -27,26 +27,31 @@ import PortfolioPopUp from "./PortfolioPopUp";
       src: case1,
       heading: "STRATEGY",
       text: "Digital Experience Development Case",
+      link:"google_ads1"
     },
     {
       src: case2,
       heading: "STRATEGY",
       text: "Digital Experience Development Case",
+      link:"google_ads2"
     },
     {
       src: case3,
       heading: "STRATEGY",
       text: "Digital Experience Development Case",
+      link:"google_ads3"
     },
     {
       src: case4,
       heading: "STRATEGY",
       text: "Digital Experience Development Case",
+      link:"google_ads4"
     },
     {
       src: case5,
       heading: "STRATEGY",
       text: "Digital Experience Development Case",
+      link:"google_ads5"
     },
     {
       src: case6,
@@ -83,9 +88,9 @@ import PortfolioPopUp from "./PortfolioPopUp";
           {images.map((item: any) => {
             return (
                 <>
-              <Dialog>
+              <Dialog key={item.heading}>
           <DialogTrigger>
-          <div className="flex p-[20px]" key={item.src}>
+          <div className="flex p-[20px]" >
                   <div className="relative port-box">
                     <Image
                       src={item.src}
@@ -108,7 +113,7 @@ import PortfolioPopUp from "./PortfolioPopUp";
               {/* <DialogTitle>Are you absolutely sure?</DialogTitle> */}
               <DialogDescription>
                 <div className="flex flex-col items-start">
-                  <PortfolioPopUp/>
+                  <PortfolioPopUp id={item.link}/>
                 </div>
               </DialogDescription>
             </DialogHeader>
