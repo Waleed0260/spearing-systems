@@ -105,6 +105,10 @@
     line-height: 1.75rem;
   }
 
+  .bg{
+    background-color: #0D2137;
+  }
+
 
   .servicebox:hover{
     animation: borderTransition 0.5s forwards;

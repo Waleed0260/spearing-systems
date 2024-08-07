@@ -1,5 +1,4 @@
 import { FaHelmetSafety } from "react-icons/fa6";
-
   const transcriptsData: any = {
     search_engine: {
       video_id: 'search_engine',

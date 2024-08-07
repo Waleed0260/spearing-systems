@@ -12,7 +12,7 @@ const Hero = () => {
 >
   <div
     className="w-full h-full flex flex-col items-center justify-center bg-cover bg-center hero-animation"
-    style={{ backgroundImage: `url('/images/banner5.png')` }}
+    style={{ backgroundImage: `url('/images/service.jpg')` }}
   >
     <div className="absolute inset-0 bg-black opacity-50"></div>
     <p className="font-bold text-3xl text-white heading relative">Services</p>
