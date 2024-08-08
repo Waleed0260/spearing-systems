@@ -7,10 +7,10 @@ import Testimonial from '@/components/home/Testimonial'
 import Footer from '@/components/home/Footer'
 import Process from '@/components/home/Process';
 import Loader from '@/components/home/Loader';
-import Portfolio from '@/components/portfolio/Portfolio';
 import Consultation from '@/components/home/Consultation';
 import Technologies from '@/components/home/Technologies';
 import Slider from '@/components/home/Slider';
+import Portfolio from '@/components/home/Portfolio';
 
 export default function Page() {
   const [loading, setLoading] = useState(true);
@@ -36,6 +36,7 @@ export default function Page() {
     </div>
       <Services />
       <Process/>
+      {/* <Portfolio/> */}
       <Portfolio/>
       <Technologies/>
       {/* <Testimonial /> */}

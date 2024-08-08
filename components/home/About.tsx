@@ -20,11 +20,7 @@ const About = () => {
   <Image src={marketing} alt="" className="w-full h-full object-cover" />
 </div>
           <p className="font-bold text-4xl heading mt-3">
-            Incredibly fast and amazing features{" "}
-          </p>
-          <p className="md:w-[100%] text mt-3">
-            We provide digital experience services to startups and small
-            businesses velit purus aliquet, massa fringilla
+          We Have an Incredibly Rich Past and Amazing Future Ahead
           </p>
         </div>
 
@@ -34,34 +30,26 @@ const About = () => {
             BEST DIGITAL CREATIVE AGENCY
           </p>
           <p className="mt-[10px] md:w-[70%]  mid-heading">
-            There are many variations of passages of lorem in free market to
-            available, but the majority have suffered alteration in some form,
-            by injected humour, or randomised words
+          At Spearing Systems, we don't just follow digital trends—we set them. As a premier digital marketing agency, we combine innovative strategies with creative excellence to deliver results that exceed expectations. 
           </p>
           <div className="flex flex-row gap-3 items-center border-[1px] p-3 mt-2 bg-[#f5f4f2] border-[#1c1c1c]">
             <p className="text-[#FF8E2B]">
             <SiTicktick />
             </p>
-            <p className="text ">For marketing professionals </p>
+            <p className="text ">Data Driven Strategies </p>
           </div>
           <div className="flex flex-row gap-3 items-center border-[1px] p-3 mt-2 bg-[#f5f4f2] border-[#1c1c1c]">
             <p className="text-[#FF8E2B]">
             <SiTicktick />
             </p>
-            <p className="text ">For marketing professionals </p>
+            <p className="text ">Client Centric Approach </p>
           </div>
           <div className="flex flex-row gap-3 items-center border-[1px] p-3 mt-2 bg-[#f5f4f2] border-[#1c1c1c]">
             <p className="text-[#FF8E2B]">
             <SiTicktick />
             </p>
-            <p className="text ">For marketing professionals </p>
+            <p className="text ">End to End Solutions </p>
           </div>
-          <p className="text md:w-[70%] mt-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-            fuga voluptatum minima, officiis accusantium obcaecati quo
-            consectetur praesentium fugit qui nemo error officia quia soluta
-            facilis voluptates! Fugit, id nesciunt.
-          </p>
         </div>
       </div>
   );

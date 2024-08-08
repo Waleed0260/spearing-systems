@@ -37,7 +37,7 @@ const Header = (color:any) => {
   return (
     <>
       <div
-        className={`sm:flex hidden flex-row items-center justify-around w-full fixed transition-all h-[80px] z-50 bg-${color.color ? color.color: bgColor}`}
+        className={`sm:flex hidden flex-row items-center justify-evenly w-full fixed transition-all h-[80px] z-50 bg-${color.color ? color.color: bgColor}`}
       >
         <div className="h-[170px] z-10">
           <Image src={logo} alt="" className="w-full h-full " />
@@ -51,17 +51,17 @@ const Header = (color:any) => {
               <Link href={"/about"}>About</Link>
             </li>
             <li className="list-none mid-heading">
-              <Link href={"/portfolio"}>Portfolio</Link>
+              <Link href={"/portfolio"}>Our Services</Link>
             </li>
             {/* <li className='list-none mid-heading'>Page</li> */}
             <li className="list-none mid-heading">
-              <Link href={"/services"}>Services</Link>
+              <Link href={"/services"}>Portfolio</Link>
             </li>
-            <li className="list-none mid-heading">Blog</li>
+            <li className="list-none mid-heading">Contact</li>
           </ul>
         </div>
         <div className="relative z-10">
-          <Button>CONTACT US</Button>
+          <Button>GET A CONSULTATION</Button>
         </div>
       </div>
 

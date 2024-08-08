@@ -21,58 +21,6 @@ import {
 import PortfolioPopUp from "./PortfolioPopUp";
   import {PPC} from "./PortfolioArray"
   const Portfolio = () => {
-  const images = [
-    {
-      src: case1,
-      heading: "STRATEGY",
-      text: "Digital Experience Development Case",
-      link:"google_ads1"
-    },
-    {
-      src: case2,
-      heading: "STRATEGY",
-      text: "Digital Experience Development Case",
-      link:"google_ads2"
-    },
-    {
-      src: case3,
-      heading: "STRATEGY",
-      text: "Digital Experience Development Case",
-      link:"google_ads3"
-    },
-    {
-      src: case4,
-      heading: "STRATEGY",
-      text: "Digital Experience Development Case",
-      link:"google_ads4"
-    },
-    {
-      src: case5,
-      heading: "STRATEGY",
-      text: "Digital Experience Development Case",
-      link:"google_ads5"
-    },
-    {
-      src: case6,
-      heading: "STRATEGY",
-      text: "Digital Experience Development Case",
-    },
-    {
-      src: case7,
-      heading: "STRATEGY",
-      text: "Digital Experience Development Case",
-    },
-    {
-      src: case8,
-      heading: "STRATEGY",
-      text: "Digital Experience Development Case",
-    },
-    {
-      src: case9,
-      heading: "STRATEGY",
-      text: "Digital Experience Development Case",
-    },
-  ];
 
   return (
     <div className="w-full flex items-center justify-center">

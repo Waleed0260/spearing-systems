@@ -18,40 +18,41 @@ import portfolio16 from "../../public/images/portfolio16.jpg";
 
 export const PPC = [
     {
+        id: 5,
+        image: portfolio5,
+        title: "Google Ads/PPC",
+        text: "Elevating THINK's Digital Presence",
+        link: "google_ads1"
+    },
+    {
         id: 1,
         image: portfolio1,
         title: "Google Ads/PPC",
         text: "Boosting Cafe Brands' Digital Presence",
-        link: "google_ads1"
+        link: "google_ads2"
     },
     {
         id: 2,
         image: portfolio2,
         title: "Google Ads/PPC",
         text: "Boosting Site Conversions for a Regional Private School",
-        link: "google_ads2"
+        link: "google_ads3"
     },
     {
         id: 3,
         image: portfolio3,
         title: "Google Ads/PPC",
         text: "Business Increases Their Conversions by 650%",
-        link: "google_ads3"
+        link: "google_ads4"
     },
     {
         id: 4,
         image: portfolio4,
         title: "Google Ads/PPC",
         text: "Local Plumbers Hire More Staff as a Result of Their Google Ads Success",
-        link: "google_ads4"
-    },
-    {
-        id: 5,
-        image: portfolio5,
-        title: "Google Ads/PPC",
-        text: "Elevating THINK's Digital Presence",
         link: "google_ads5"
-    }
+    },
+
 ];
 
 export const seo = [
