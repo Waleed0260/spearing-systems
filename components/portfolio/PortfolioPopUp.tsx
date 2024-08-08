@@ -45,7 +45,7 @@ const PortfolioPopUp = ({id}:any) => {
         <div className="flex flex-col items-center justify-center">
 
       <Image
-        src={portLogo}
+        src={data.img}
         alt=""
         className=" overflow-hidden"
       />

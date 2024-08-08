@@ -1,11 +1,24 @@
-
-
+import cafebrands from "../../../../public/images/cafebrands.jpg"
+import clinicalpartner from "../../../../public/images/clinicalpartner.png";
+import hb from "../../../../public/images/hb.png";
+import imperva from "../../../../public/images/imperva.png";
+import intra from "../../../../public/images/intra.png";
+import logan from "../../../../public/images/logan.png";
+import longhorn from "../../../../public/images/longhorn.jpeg";
+import maryaland from "../../../../public/images/maryaland.png";
+import pulp from "../../../../public/images/pulp.jpeg";
+import stovall from "../../../../public/images/stovall.jpeg";
+import think from "../../../../public/images/think.jpeg";
+import voltage from "../../../../public/images/voltage.jpeg";
+import portLogo from "../../../../public/images/portLogo.png"
+import atlas from "../../../../public/images/atlas.jpeg"
 const caseData:any = {
 
     // GOOGLE ADS PPPC //////////////
 
     "google_ads1": {
         "video_id": "google_ads1",
+        "img":think,
         "title": "Elevating THINK's Digital Presence",
         "client": "THINK, based in Dublin, is a leading name in the digital and audio-visual solutions industry. Known for their innovative approach, THINK specializes in boardroom installations, video conferencing, digital signage, and interior finishes. THINK is dedicated to elevating the corporate aesthetic and functional experience through advanced AV systems and bespoke interior finishes.",
         "problem": "THINK aimed to enhance their digital presence to reach a broader audience and effectively market their high-quality solutions. Despite their industry reputation, they faced challenges in generating consistent online leads and showcasing their new product lines to potential clients. They needed a comprehensive digital marketing strategy to improve their search engine rankings and optimize their advertising efforts.",
@@ -35,6 +48,7 @@ const caseData:any = {
         }
       },
       "google_ads2": {
+        "img": cafebrands,
         "video_id": "google_ads2",
         "title": "Boosting Cafe Brands' Digital Presence",
         "client": "Cafe Brands, a pioneer in the catering industry, specializes in eco-friendly and biodegradable food packaging solutions. Their commitment to quality and environmental responsibility has positioned them as a leader in providing packaging solutions that meet the functional needs of their clients while aligning with their branding and environmental values.",
@@ -66,6 +80,7 @@ const caseData:any = {
       },
 
       "google_ads3": {
+        "img":portLogo,
         "video_id": "google_ads3",
         "title": "Boosting Site Conversions for a Regional Private School",
         "client": "A prestigious private school in Virginia approached Spearing Systems with the goal of increasing its web and social media presence in a highly competitive educational market. With a mission to provide exceptional education and foster a nurturing environment, the school sought to boost student enrollment through a stronger online presence.",
@@ -152,9 +167,10 @@ const caseData:any = {
       },
       
       "google_ads5": {
+        "img":maryaland,
         "video_id":"google_ads5",
         "title": "Local Plumbers Hire More Staff as a Result of Their Google Ads Success",
-        "client": "Maryland-Based Plumbing Company",
+        "client": "Maryland-Based Plumbing Company This locally owned and operated plumbing company in Maryland sought to enhance their online presence through Google Ads after a successful SEO campaign with Third Marble Marketing. Their initial struggles with Google Ads prompted them to seek our expertise to drive meaningful leads and business growth. ",
         "agency": "This locally owned and operated plumbing company in Maryland sought to enhance their online presence through Google Ads after a successful SEO campaign with Third Marble Marketing. Their initial struggles with Google Ads prompted them to seek our expertise to drive meaningful leads and business growth.",
         "problem": "The plumbing company faced difficulties in generating effective leads through Google Ads. They needed a strategy that would not only increase traffic but also ensure high-quality conversions that could drive long-term business growth.",
         "solution": {
@@ -202,6 +218,7 @@ const caseData:any = {
     // SEO STAART
 
       "seo_1": {
+        "img":think,
         "video_id": "seo_1",
         "title": "Elevating THINK's Digital Presence",
         "client": "THINK, based in Dublin, is a leading name in the digital and audio-visual solutions industry. Known for their innovative approach, THINK specializes in boardroom installations, video conferencing, digital signage, and interior finishes. THINK is dedicated to elevating the corporate aesthetic and functional experience through advanced AV systems and bespoke interior finishes.",
@@ -232,6 +249,7 @@ const caseData:any = {
       },
       "seo_2":{
         "video_id": "seo_2",
+        "img": cafebrands,
         "title": "Boosting Cafe Brands' Digital Presence",
         "client": "Cafe Brands, a pioneer in the catering industry, specializes in eco-friendly and biodegradable food packaging solutions. Their commitment to quality and environmental responsibility has positioned them as a leader in providing packaging solutions that meet the functional needs of their clients while aligning with their branding and environmental values.",
         "problem": "Despite their strong market presence and reputation, Cafe Brands sought to enhance their digital footprint to reach a wider audience and improve their online lead generation. They faced challenges in achieving high visibility on search engines and optimizing their paid advertising efforts. Cafe Brands needed a comprehensive digital marketing strategy to improve their SEO rankings and maximize the effectiveness of their Google AdWords campaigns.",
@@ -262,6 +280,7 @@ const caseData:any = {
       },
       "seo_3": {
         "video_id": "seo_3",
+        "img":portLogo,
         "title": "Boosting Site Conversions for a Regional Private School",
         "client": "A prestigious private school in Virginia approached Spearing Systems with the goal of increasing its web and social media presence in a highly competitive educational market. With a mission to provide exceptional education and foster a nurturing environment, the school sought to boost student enrollment through a stronger online presence.",
         "problem": "The school faced significant challenges in standing out among larger competitors and needed a robust digital strategy to enhance its visibility and attract more students. Despite their outstanding educational offerings, they struggled with low online engagement and insufficient enrollment numbers. They required a comprehensive plan to improve their digital footprint and drive enrollment.",
@@ -304,6 +323,7 @@ const caseData:any = {
 
       "seo_4": {
         "video_id": "seo_4",
+        "img": clinicalpartner,
         "title": "Clinical Partners Achieves Significant Growth with Enhanced SEO Strategy",
         "background": "Clinical Partners is the UK’s largest private mental health partnership, offering a broad range of services to individuals, companies, and public and private sector organizations. Despite the extensive range of services provided, previous digital marketing efforts resulted in minimal visibility and organic growth.",
         "challenge": "Clinical Partners sought to improve its organic search visibility and overall web performance. The goal was to drive a significant increase in organic visitors, conversions, and keyword rankings, as previous companies had under-delivered in these areas.",
@@ -341,6 +361,7 @@ const caseData:any = {
       },
       "seo_5": {
         "video_id":"seo_5",
+        "img":atlas,
             "title": "Atlas Contract Furniture Boosts Online Performance with Blue Frontier",
             "client": "Atlas Contract Furniture (ACF) is a global provider of contract furniture specializing in hospitality projects. They needed a new website that would better represent their brand, enhance user experience, and improve their online visibility and engagement. Blue Frontier was tasked with designing and building a new website, as well as providing ongoing digital marketing services to increase website traffic, conversions, and brand awareness.",
             "problem": "The existing ACF website was restrictive and outdated, limiting engagement and SEO performance. ACF needed a modern, responsive website that would cater to both UK and international audiences, specifically in France and Sweden. They also required a robust SEO and digital marketing strategy to boost their online presence.",
