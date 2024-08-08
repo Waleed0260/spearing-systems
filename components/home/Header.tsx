@@ -89,9 +89,8 @@ const Header = (color:any) => {
                     <Link href={"/portfolio"}>Portfolio</Link>
                   </li>
                   <li className="list-none mid-heading">
-                    <Link href={"/services"}>Services</Link>
+                    <Link href={"/services"}>Our Services</Link>
                   </li>
-                  <li className="list-none mid-heading">Blog</li>
                 </ul>
               </SheetDescription>
             </SheetHeader>

@@ -14,9 +14,9 @@ const page = () => {
     {/* <Suspense fallback={<Loader/>}> */}
     <Hero/>
     <Services/>
-    {/* <Testimonial/> */}
     <WhyUs/>
-    <Video/>
+    <Testimonial/>
+    {/* <Video/> */}
     <Footer/>
     {/* </Suspense> */}
     </div>

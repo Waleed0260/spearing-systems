@@ -1,10 +1,7 @@
 // "use client"
 import React, { useEffect } from "react";
-import { GoLightBulb } from "react-icons/go";
-import { PiBeerBottleDuotone, PiTimerBold } from "react-icons/pi";
-import { TbTargetArrow } from "react-icons/tb";
-import { FcSmartphoneTablet } from "react-icons/fc";
-import { FaPenRuler } from "react-icons/fa6";
+import { FaCode, FaSearch, FaBullhorn, FaShareAlt, FaGoogle } from 'react-icons/fa';
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -26,31 +23,31 @@ const Services = () => {
   const services = [
     {
       id: 1,
-      icon: <GoLightBulb />,
+      icon: <FaCode />,
       heading: "Web Development",
       text: "Transform your online presence with visually stunning, responsive websites that captivate and convert. At Spearing Systems, we blend creativity with cutting-edge technology to build digital experiences that not only look amazing but drive real results.",
     },
     {
       id: 2,
-      icon: <PiBeerBottleDuotone />,
+      icon: <FaSearch />,
       heading: "SEO",
       text: "Unlock the power of search engines with our proven SEO strategies. We’ll propel your website to the top of search results, ensuring your brand gets noticed by the right audience at the right time, driving organic traffic and boosting your business.",
     },
     {
       id: 3,
-      icon: <PiTimerBold />,
+      icon: <FaBullhorn />,
       heading: "Branding",
       text: "Elevate your brand with a distinct identity that resonates. Our branding services are tailored to craft a memorable and impactful presence that tells your story and sets you apart from the competition, creating a lasting impression on your audience.",
     },
     {
       id: 4,
-      icon: <FcSmartphoneTablet />,
+      icon: <FaShareAlt />,
       heading: "Social Media Marketing",
       text: "Engage, connect, and grow your audience on the platforms that matter most. Our social media marketing services deliver tailored content and strategic campaigns that spark conversations and build a loyal community around your brand.",
     },
     {
       id: 5,
-      icon: <TbTargetArrow />,
+      icon: <FaGoogle />,
       heading: "Google Ads/PPC",
       text: "Maximize your ROI with expertly managed Google Ads campaigns. Our PPC specialists create targeted, data-driven campaigns that put your brand in front of high-intent customers, driving clicks, conversions, and measurable growth.",
     }

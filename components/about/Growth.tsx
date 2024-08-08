@@ -6,6 +6,8 @@ import about2 from "../../public/images/about2.png"
 import about3 from "../../public/images/about3.png"
 import AOS from "aos"
 import 'aos/dist/aos.css';
+import { SiTicktick } from "react-icons/si";
+
 const Growth = () => {
     useEffect(() => {
         AOS.init({
@@ -25,26 +27,33 @@ const Growth = () => {
                     </div>
             </div>
 
-            <div className='flex flex-col p-[20px] ' data-aos="fade-right">
-                <p className='font-bold heading'>Business Growth</p>
-                <p className='text-4xl heading font-bold mt-[20px]'>Best Digital
-                Creative Agency</p>
-                <p className='mt-[20px] text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit laboriosam, magni asperiores repellendus veritatis maxime labore! Dolores distinctio sed, saepe et corporis esse est aliquid consequuntur accusamus suscipit, nobis animi aliquam id perferendis? Veniam amet, magnam consectetur impedit at assumenda!</p>
-
-                <div className='flex flex-row gap-4 '>
-                    <div className='flex flex-col p-4 bg-[#f0f0f0] mt-2 w-[200px]'>
-                        <p className='text-xl'><IoCloudDoneOutline/></p>
-                        <p className='text'>For marketing professionals</p>
-                    </div>
-                    <div className='flex flex-col p-4 bg-[#f0f0f0] mt-2 w-[200px] '>
-                        <p className='text-xl'><IoCloudDoneOutline/></p>
-                        <p className='text'>Event marketing opportunities</p>
-                    </div>
-                </div>
-
-                <p className='heading text-2xl mt-[40px]'>We Design & Build Powerful Websites</p>
-                <p className='text mt-[10px]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum veritatis iure quidem sint quasi saepe minus eos unde iusto aspernatur! Eligendi aperiam nihil iure nam porro, deleniti natus magni aut!</p>
-            </div>
+            <div className="flex flex-col justify-between md:w-[50%]" data-aos="fade-left">
+          <b className="font-bold text-md mid-heading">BUSINESS GROWTH</b>
+          <p className="text-3xl heading">
+            BEST DIGITAL CREATIVE AGENCY
+          </p>
+          <p className="mt-[10px] md:w-[70%]  mid-heading">
+          At Spearing Systems, we don't just follow digital trends—we set them. As a premier digital marketing agency, we combine innovative strategies with creative excellence to deliver results that exceed expectations. 
+          </p>
+          <div className="flex flex-row gap-3 items-center border-[1px] p-3 mt-2 bg-[#f5f4f2] border-[#1c1c1c]">
+            <p className="text-[#FF8E2B]">
+            <SiTicktick />
+            </p>
+            <p className="text ">Data Driven Strategies </p>
+          </div>
+          <div className="flex flex-row gap-3 items-center border-[1px] p-3 mt-2 bg-[#f5f4f2] border-[#1c1c1c]">
+            <p className="text-[#FF8E2B]">
+            <SiTicktick />
+            </p>
+            <p className="text ">Client Centric Approach </p>
+          </div>
+          <div className="flex flex-row gap-3 items-center border-[1px] p-3 mt-2 bg-[#f5f4f2] border-[#1c1c1c]">
+            <p className="text-[#FF8E2B]">
+            <SiTicktick />
+            </p>
+            <p className="text ">End to End Solutions </p>
+          </div>
+        </div>
         </div>
 
     </div>

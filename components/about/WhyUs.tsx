@@ -6,6 +6,7 @@ import digitalSolutions from "../../public/images/digitalSolutions.jpg"
 import Image from 'next/image'
 import AOS from "aos"
 import 'aos/dist/aos.css';
+import whyAbout from "../../public/images/whyAbout.jpg"
 
 const WhyUs = () => {
     useEffect(() => {
@@ -16,18 +17,43 @@ const WhyUs = () => {
       }, []);
   return (
     <div className='w-full flex items-center justify-center '>
-        <div className='w-[80%] m-[30px] flex flex-row justify-between'>
-            <div className='flex flex-col p-[30px] w-[50%]' data-aos="fade-right">
+        <div className='w-[80%] m-[30px] flex md:flex-row flex-col items-center justify-between'>
+            <div className='flex flex-col p-[30px] md:w-[50%]' data-aos="fade-right">
                 <b className='mid-heading'>WHy US</b>
-                <p className='font-bold text-6xl heading'>We Give You Digital Solutions</p>
-                <p className='text mt-[30px]'>Sed lectus vestibulum mattis ullamcorper velit sed ullamcorperbi. Fusce id velit ut tortor pretium viverra suspendisse fuis ultricies lacus sed turpis tincidunt id aliquet. Sed viverra tellus sed lectus vestibulum mattis</p>
-                <br /><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nobis eius, accusantium, fugiat consequatur ut labore at itaque reprehenderit asperiores laudantium neque ea accusamus perspiciatis expedita. Nesciunt harum labore delectus nostrum ipsa quis temporibus explicabo ipsam. Quod velit pariatur, accusantium unde, amet reprehenderit esse placeat porro commodi saepe autem. Repellendus!</p>
+                <p className='font-bold text-4xl heading'>We Have an Incredibly Rich Past and Amazing Future Ahead </p>
+                <p className='text mt-[30px]'>Spearing Systems has a storied history of transforming brands and leading them to new heights. Our journey is marked by innovative campaigns, long-lasting partnerships, and a relentless pursuit of excellence. </p>
+                <ul className="list-disc pl-5">
+  <li className='mt-2'>
+    <div className='flex flex-col gap-2'>
+      <p className='font-bold'>Proven Expertise:</p>
+      <p className='text'>With years of experience across diverse industries, we bring a wealth of knowledge and a results-driven approach to every project.</p>
+    </div>
+  </li>
+  <li className='mt-2'>
+    <div className='flex flex-col gap-2'>
+      <p className='font-bold'>Tailored Solutions:</p>
+      <p className='text'>We understand that no two businesses are alike. That’s why we create customized strategies that align with your unique goals and target audience.</p>
+    </div>
+  </li>
+  <li className='mt-2'>
+    <div className='flex flex-col gap-2'>
+      <p className='font-bold'>Innovative Approach:</p>
+      <p className='text'>We stay ahead of the curve, leveraging the latest technologies and trends to keep your business at the forefront of your industry.</p>
+    </div>
+  </li>
+  <li className='mt-2'>
+    <div className='flex flex-col gap-2'>
+      <p className='font-bold'>Commitment to Quality:</p>
+      <p className='text'>We don’t just meet expectations—we exceed them. Our meticulous attention to detail ensures that every aspect of our work is of the highest quality.</p>
+    </div>
+  </li>
+</ul>
 
 
             </div>
 
-            <div className='w-[50%] h-full' data-aos="fade-left">
-                <Image src={digitalSolutions} alt="asas"/>
+            <div className='md:w-[50%] h-full' data-aos="fade-left">
+                <Image src={whyAbout} alt="asas"/>
                 </div>
         </div>
     </div>

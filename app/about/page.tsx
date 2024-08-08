@@ -7,6 +7,8 @@ const Hero = dynamic(() => import('@/components/about/Hero'));
 const WhyUs = dynamic(() => import('@/components/about/WhyUs'));
 import Loader from '@/components/home/Loader'
 import Footer from '@/components/home/Footer';
+import Testimonial from '@/components/home/Testimonial';
+// import Cta from '@/components/home/cta';
 
 const page = () => {
   return (
@@ -15,6 +17,8 @@ const page = () => {
       <Growth/>
       <WhyUs/>
       <Faq/>
+      <Testimonial/>
+      {/* <Cta/> */}
       <Footer/>
       </Suspense>
   )

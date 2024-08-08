@@ -34,9 +34,9 @@ export const PPC = [
     {
         id: 2,
         image: portfolio2,
-        title: "Google Ads/PPC",
-        text: "Boosting Site Conversions for a Regional Private School",
-        link: "google_ads3"
+        title: "Website Dev",
+        text: "Intra Home Systems Transforms Online Presence with Comprehensive Web and SEO Overhaul",
+        link: "web_dev_2"
     },
     {
         id: 3,
@@ -48,11 +48,17 @@ export const PPC = [
     {
         id: 4,
         image: portfolio4,
-        title: "Google Ads/PPC",
-        text: "Local Plumbers Hire More Staff as a Result of Their Google Ads Success",
-        link: "google_ads5"
+        title: "Website Dev",
+        text: "Elevating THINK's Digital Presence",
+        link: "web_dev_5"
     },
-
+    {
+        id: 3,
+        image: portfolio8,
+        title: "SEO",
+        text: "Boosting Site Conversions for a Regional Private School",
+        link: "seo_3"
+    },
 ];
 
 export const seo = [
