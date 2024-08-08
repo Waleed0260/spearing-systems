@@ -10,18 +10,19 @@ const caseData:any = {
         "client": "THINK, based in Dublin, is a leading name in the digital and audio-visual solutions industry. Known for their innovative approach, THINK specializes in boardroom installations, video conferencing, digital signage, and interior finishes. THINK is dedicated to elevating the corporate aesthetic and functional experience through advanced AV systems and bespoke interior finishes.",
         "problem": "THINK aimed to enhance their digital presence to reach a broader audience and effectively market their high-quality solutions. Despite their industry reputation, they faced challenges in generating consistent online leads and showcasing their new product lines to potential clients. They needed a comprehensive digital marketing strategy to improve their search engine rankings and optimize their advertising efforts.",
         "solution": {
-          "seo": {
-            "heading":"SEO OPTIMIZATION",
-            "audit": "Conducted an in-depth SEO audit to identify areas for improvement.",
-            "contentOptimization": "Optimized website content with targeted keywords to improve search engine rankings.",
-            "technicalEnhancements": "Implemented technical SEO enhancements to boost site performance and user experience."
-          },
-          "adwordsCampaigns": {
-            "heading":"Google AdWords Campaigns:",
-            "development": "Developed targeted AdWords campaigns to reach THINK’s specific audience segments.",
-            "creative": "Created engaging ad copies and designed compelling visuals to attract clicks.",
-            "monitoring": "Monitored and adjusted campaigns regularly to maximize ROI and lead generation."
-          }
+          "text":"THINK partnered with Spearing Systems to develop and execute a robust digital marketing strategy. Our approach included:",
+          "point1":"Search Engine Optimization", 
+          "seo": [
+            "Conducted an in-depth SEO audit to identify areas for improvement.",
+            "Optimized website content with targeted keywords to improve search engine rankings.",
+            "Implemented technical SEO enhancements to boost site performance and user experience."
+        ],
+        "point2":"Google Adwords Campaign",
+        "adsCampaign": [
+          "Developed targeted AdWords campaigns to reach THINK’s specific audience segments.",
+          "Created engaging ad copies and designed compelling visuals to attract clicks.",
+          "Monitored and adjusted campaigns regularly to maximize ROI and lead generation."
+      ]
         },
         "result": {
           "leadGeneration": "Enhanced lead generation through diverse paid advertising channels, resulting in a higher volume of quality leads.",
@@ -39,18 +40,19 @@ const caseData:any = {
         "client": "Cafe Brands, a pioneer in the catering industry, specializes in eco-friendly and biodegradable food packaging solutions. Their commitment to quality and environmental responsibility has positioned them as a leader in providing packaging solutions that meet the functional needs of their clients while aligning with their branding and environmental values.",
         "problem": "Despite their strong market presence and reputation, Cafe Brands sought to enhance their digital footprint to reach a wider audience and improve their online lead generation. They faced challenges in achieving high visibility on search engines and optimizing their paid advertising efforts. Cafe Brands needed a comprehensive digital marketing strategy to improve their SEO rankings and maximize the effectiveness of their Google AdWords campaigns.",
         "solution": {
-          "seo": {
-            "heading": "Search Engine Optimization (SEO):",
-            "audit": "Conducted a thorough SEO audit to identify opportunities for improvement.",
-            "contentOptimization": "Optimized on-page elements, including meta tags, headings, and content, to target relevant keywords.",
-            "technicalEnhancements": "Improved site structure and internal linking to enhance user experience and search engine crawlability."
-          },
-          "adwordsCampaigns": {
-            "heading": "Google AdWords Campaigns:",
-            "development": "Created targeted AdWords campaigns aimed at specific audience segments interested in eco-friendly packaging.",
-            "creative": "Developed compelling ad copy and visuals to increase click-through rates and conversions.",
-            "monitoring": "Continuously monitored and refined campaigns to ensure optimal performance and return on investment (ROI)."
-          }
+          "text":"THINK partnered with Spearing Systems to develop and execute a robust digital marketing strategy. Our approach included:",
+          "point1":"Search Engine Optimization", 
+          "seo": [
+            "Conducted an in-depth SEO audit to identify areas for improvement.",
+            "Optimized website content with targeted keywords to improve search engine rankings.",
+            "Implemented technical SEO enhancements to boost site performance and user experience."
+        ],
+        "point2":"Google Adwords Campaign",
+        "adsCampaign": [
+          "Developed targeted AdWords campaigns to reach THINK’s specific audience segments.",
+          "Created engaging ad copies and designed compelling visuals to attract clicks.",
+          "Monitored and adjusted campaigns regularly to maximize ROI and lead generation."
+      ]
         },
         "result": {
           "roi": "Achieved a 300% increase in ROI from Google Ads campaigns, significantly enhancing their advertising efficiency and profitability.",
@@ -69,27 +71,28 @@ const caseData:any = {
         "client": "A prestigious private school in Virginia approached Spearing Systems with the goal of increasing its web and social media presence in a highly competitive educational market. With a mission to provide exceptional education and foster a nurturing environment, the school sought to boost student enrollment through a stronger online presence.",
         "problem": "The school faced significant challenges in standing out among larger competitors and needed a robust digital strategy to enhance its visibility and attract more students. Despite their outstanding educational offerings, they struggled with low online engagement and insufficient enrollment numbers. They required a comprehensive plan to improve their digital footprint and drive enrollment.",
         "solution": {
-          "googleAdsCampaign": {
-            "heading": "Google Ads Campaign:",
-            "development": "Launched targeted pay-per-click (PPC) campaigns to reach potential students and parents searching for private schools in Virginia.",
-            "creative": "Created engaging ad copies and strategically placed them to maximize visibility and clicks."
-          },
-          "seo": {
-            "heading": "Search Engine Optimization (SEO):",
-            "keywordResearch": "Conducted extensive keyword research to optimize the school’s website content.",
-            "onPageOptimization": "Improved on-page SEO elements such as meta tags, headings, and content structure to enhance search engine rankings."
-          },
-          "webDesignDevelopment": {
-            "heading": "Web Design and Development:",
-            "redesign": "Redesigned the school’s website to provide a user-friendly and visually appealing experience.",
-            "responsiveDesign": "Implemented responsive design to ensure accessibility across all devices."
-          },
-          "conversionTrackingReporting": {
-            "heading": "Conversion Tracking and Reporting:",
-            "newConversionGoals": "Introduced new conversion goals, such as open house registrations and contact form submissions, to accurately measure success.",
-            "focusedMetrics": "Removed non-conversion metrics like 'time on site' and 'contact us' views to focus on actionable data.",
-            "detailedReports": "Provided detailed reports and continuously refined the strategy based on performance data."
-          }
+          "text": "After detailed discussions with the faculty and an in-depth assessment of their current digital presence, Spearing Systems devised a multi-faceted digital marketing strategy tailored to their needs. The plan included:",
+          "point1": "Google Ads Campaign",
+          "adsCampaign": [
+              "Launched targeted pay-per-click (PPC) campaigns to reach potential students and parents searching for private schools in Virginia.",
+              "Created engaging ad copies and strategically placed them to maximize visibility and clicks."
+          ],
+          "point2": "Search Engine Optimization (SEO)",
+          "seo": [
+              "Conducted extensive keyword research to optimize the school’s website content.",
+              "Improved on-page SEO elements such as meta tags, headings, and content structure to enhance search engine rankings."
+          ],
+          "point3": "Web Design and Development",
+          "webDesign": [
+              "Redesigned the school’s website to provide a user-friendly and visually appealing experience.",
+              "Implemented responsive design to ensure accessibility across all devices."
+          ],
+          "point4": "Conversion Tracking and Reporting",
+          "conversionTracking": [
+              "Introduced new conversion goals, such as open house registrations and contact form submissions, to accurately measure success.",
+              "Removed non-conversion metrics like 'time on site' and 'contact us' views to focus on actionable data.",
+              "Provided detailed reports and continuously refined the strategy based on performance data."
+          ]
         },
         "result": {
           "ppcLeads": "Annual increase in total PPC leads by 900%, tracked through calls and conversions.",
@@ -111,19 +114,30 @@ const caseData:any = {
         "agency": "Third Marble Marketing specializes in helping small businesses optimize their Google Ads campaigns to drive meaningful traffic and maximize conversions. This locally owned car wrapping and accessories service from Tennessee sought to improve their digital presence and lead generation while working with a limited budget.",
         "problem": "The client aimed to increase local traffic and new customer acquisitions while managing a small budget. They needed a targeted approach to Google Ads to achieve significant growth in conversions and reduce their cost per lead.",
         "solution": {
-          "firstMonth": {
-            "heading": "The First Month:",
-            "campaignSetup": "Our Account Management team, alongside Optimization Specialists, created a tailored Google Ads campaign focused on driving local traffic and new customers to the client's car wrapping services.",
-            "conversionTracking": "Our Conversion Specialist implemented effective conversion tracking on the client’s landing page to accurately measure campaign performance."
+          "text": "The Solution",
+          "phase1": {
+              "title": "The First Month",
+              "campaignSetup": [
+                  "Our Account Management team, alongside Optimization Specialists, created a tailored Google Ads campaign focused on driving local traffic and new customers to the client's car wrapping services."
+              ],
+              "conversionTracking": [
+                  "Our Conversion Specialist implemented effective conversion tracking on the client’s landing page to accurately measure campaign performance."
+              ]
           },
-          "secondMonth": {
-            "heading": "The Second Month:",
-            "ongoingOptimization": "Continuous adjustments were made to improve keyword performance, bidding strategies, and ad copy.",
-            "results": "Leads increased by 400% while the cost per lead was reduced by 79%."
+          "phase2": {
+              "title": "The Second Month",
+              "ongoingOptimization": [
+                  "Continuous adjustments were made to improve keyword performance, bidding strategies, and ad copy."
+              ],
+              "results": [
+                  "Leads increased by 400% while the cost per lead was reduced by 79%."
+              ]
           },
-          "theNow": {
-            "heading": "The Now:",
-            "sustainedSuccess": "Regular optimizations and performance monitoring led to a 650% increase in conversions and an 87% decrease in cost per lead since the start of the campaign."
+          "phase3": {
+              "title": "The Now",
+              "sustainedSuccess": [
+                  "Regular optimizations and performance monitoring led to a 650% increase in conversions and an 87% decrease in cost per lead since the start of the campaign."
+              ]
           }
         },
         "result": {
@@ -144,22 +158,32 @@ const caseData:any = {
         "agency": "This locally owned and operated plumbing company in Maryland sought to enhance their online presence through Google Ads after a successful SEO campaign with Third Marble Marketing. Their initial struggles with Google Ads prompted them to seek our expertise to drive meaningful leads and business growth.",
         "problem": "The plumbing company faced difficulties in generating effective leads through Google Ads. They needed a strategy that would not only increase traffic but also ensure high-quality conversions that could drive long-term business growth.",
         "solution": {
+          "text": "The Solution",
           "steps": {
-            "heading": "The Steps:",
-            "campaignDevelopment": "We built a targeted Google Ads campaign focusing on the company's service area.",
-            "abTestingOptimization": "Implemented A/B testing and frequent optimization to refine ads and keywords for better performance."
+              "campaignDevelopment": [
+                  "We built a targeted Google Ads campaign focusing on the company's service area."
+              ],
+              "aBTestingAndOptimization": [
+                  "Implemented A/B testing and frequent optimization to refine ads and keywords for better performance."
+              ]
           },
-          "firstMonth": {
-            "heading": "The First Month:",
-            "initialResults": "The campaign generated 3 conversions within the first month. Although the cost per conversion appeared high initially, these leads were highly valuable. They represented repeat clients, word-of-mouth referrals, and increased brand recognition."
+          "phase1": {
+              "title": "The First Month",
+              "initialResults": [
+                  "The campaign generated 3 conversions within the first month. Although the cost per conversion appeared high initially, these leads were highly valuable. They represented repeat clients, word-of-mouth referrals, and increased brand recognition."
+              ]
           },
-          "thirdMonth": {
-            "heading": "The Third Month:",
-            "enhancedPerformance": "By the third month, we had streamlined keywords and ads, resulting in consistent traffic and more effective lead generation."
+          "phase2": {
+              "title": "The Third Month",
+              "enhancedPerformance": [
+                  "By the third month, we had streamlined keywords and ads, resulting in consistent traffic and more effective lead generation."
+              ]
           },
-          "theNow": {
-            "heading": "The Now:",
-            "sustainedGrowth": "With ongoing optimization, the plumbing company continues to see steady conversions at a consistent cost. Their business has expanded significantly, allowing them to hire additional staff and invest in new work vans."
+          "phase3": {
+              "title": "The Now",
+              "sustainedGrowth": [
+                  "With ongoing optimization, the plumbing company continues to see steady conversions at a consistent cost. Their business has expanded significantly, allowing them to hire additional staff and invest in new work vans."
+              ]
           }
         },
         "result": {
@@ -212,18 +236,19 @@ const caseData:any = {
         "client": "Cafe Brands, a pioneer in the catering industry, specializes in eco-friendly and biodegradable food packaging solutions. Their commitment to quality and environmental responsibility has positioned them as a leader in providing packaging solutions that meet the functional needs of their clients while aligning with their branding and environmental values.",
         "problem": "Despite their strong market presence and reputation, Cafe Brands sought to enhance their digital footprint to reach a wider audience and improve their online lead generation. They faced challenges in achieving high visibility on search engines and optimizing their paid advertising efforts. Cafe Brands needed a comprehensive digital marketing strategy to improve their SEO rankings and maximize the effectiveness of their Google AdWords campaigns.",
         "solution": {
-          "seo": {
-            "heading": "Search Engine Optimization (SEO):",
-            "audit": "Conducted a thorough SEO audit to identify opportunities for improvement.",
-            "contentOptimization": "Optimized on-page elements, including meta tags, headings, and content, to target relevant keywords.",
-            "technicalEnhancements": "Improved site structure and internal linking to enhance user experience and search engine crawlability."
-          },
-          "adwordsCampaigns": {
-            "heading": "Google AdWords Campaigns:",
-            "development": "Created targeted AdWords campaigns aimed at specific audience segments interested in eco-friendly packaging.",
-            "creative": "Developed compelling ad copy and visuals to increase click-through rates and conversions.",
-            "monitoring": "Continuously monitored and refined campaigns to ensure optimal performance and return on investment (ROI)."
-          }
+          "text":"THINK partnered with Spearing Systems to develop and execute a robust digital marketing strategy. Our approach included:",
+          "point1":"Search Engine Optimization", 
+          "seo": [
+            "Conducted an in-depth SEO audit to identify areas for improvement.",
+            "Optimized website content with targeted keywords to improve search engine rankings.",
+            "Implemented technical SEO enhancements to boost site performance and user experience."
+        ],
+        "point2":"Google Adwords Campaign",
+        "adsCampaign": [
+          "Developed targeted AdWords campaigns to reach THINK’s specific audience segments.",
+          "Created engaging ad copies and designed compelling visuals to attract clicks.",
+          "Monitored and adjusted campaigns regularly to maximize ROI and lead generation."
+      ]
         },
         "result": {
           "roi": "Achieved a 300% increase in ROI from Google Ads campaigns, significantly enhancing their advertising efficiency and profitability.",
@@ -241,27 +266,28 @@ const caseData:any = {
         "client": "A prestigious private school in Virginia approached Spearing Systems with the goal of increasing its web and social media presence in a highly competitive educational market. With a mission to provide exceptional education and foster a nurturing environment, the school sought to boost student enrollment through a stronger online presence.",
         "problem": "The school faced significant challenges in standing out among larger competitors and needed a robust digital strategy to enhance its visibility and attract more students. Despite their outstanding educational offerings, they struggled with low online engagement and insufficient enrollment numbers. They required a comprehensive plan to improve their digital footprint and drive enrollment.",
         "solution": {
-          "googleAdsCampaign": {
-            "heading": "Google Ads Campaign:",
-            "development": "Launched targeted pay-per-click (PPC) campaigns to reach potential students and parents searching for private schools in Virginia.",
-            "creative": "Created engaging ad copies and strategically placed them to maximize visibility and clicks."
-          },
-          "seo": {
-            "heading": "Search Engine Optimization (SEO):",
-            "keywordResearch": "Conducted extensive keyword research to optimize the school’s website content.",
-            "onPageOptimization": "Improved on-page SEO elements such as meta tags, headings, and content structure to enhance search engine rankings."
-          },
-          "webDesignDevelopment": {
-            "heading": "Web Design and Development:",
-            "redesign": "Redesigned the school’s website to provide a user-friendly and visually appealing experience.",
-            "responsiveDesign": "Implemented responsive design to ensure accessibility across all devices."
-          },
-          "conversionTrackingReporting": {
-            "heading": "Conversion Tracking and Reporting:",
-            "newConversionGoals": "Introduced new conversion goals, such as open house registrations and contact form submissions, to accurately measure success.",
-            "focusedMetrics": "Removed non-conversion metrics like 'time on site' and 'contact us' views to focus on actionable data.",
-            "detailedReports": "Provided detailed reports and continuously refined the strategy based on performance data."
-          }
+          "text": "After detailed discussions with the faculty and an in-depth assessment of their current digital presence, Spearing Systems devised a multi-faceted digital marketing strategy tailored to their needs. The plan included:",
+          "point1": "Google Ads Campaign",
+          "adsCampaign": [
+              "Launched targeted pay-per-click (PPC) campaigns to reach potential students and parents searching for private schools in Virginia.",
+              "Created engaging ad copies and strategically placed them to maximize visibility and clicks."
+          ],
+          "point2": "Search Engine Optimization (SEO)",
+          "seo": [
+              "Conducted extensive keyword research to optimize the school’s website content.",
+              "Improved on-page SEO elements such as meta tags, headings, and content structure to enhance search engine rankings."
+          ],
+          "point3": "Web Design and Development",
+          "webDesign": [
+              "Redesigned the school’s website to provide a user-friendly and visually appealing experience.",
+              "Implemented responsive design to ensure accessibility across all devices."
+          ],
+          "point4": "Conversion Tracking and Reporting",
+          "conversionTracking": [
+              "Introduced new conversion goals, such as open house registrations and contact form submissions, to accurately measure success.",
+              "Removed non-conversion metrics like 'time on site' and 'contact us' views to focus on actionable data.",
+              "Provided detailed reports and continuously refined the strategy based on performance data."
+          ]
         },
         "result": {
           "ppcLeads": "Annual increase in total PPC leads by 900%, tracked through calls and conversions.",
@@ -316,38 +342,39 @@ const caseData:any = {
       "seo_5": {
         "video_id":"seo_5",
             "title": "Atlas Contract Furniture Boosts Online Performance with Blue Frontier",
-            "background": "Atlas Contract Furniture (ACF) is a global provider of contract furniture specializing in hospitality projects. They needed a new website that would better represent their brand, enhance user experience, and improve their online visibility and engagement. Blue Frontier was tasked with designing and building a new website, as well as providing ongoing digital marketing services to increase website traffic, conversions, and brand awareness.",
-            "challenge": "The existing ACF website was restrictive and outdated, limiting engagement and SEO performance. ACF needed a modern, responsive website that would cater to both UK and international audiences, specifically in France and Sweden. They also required a robust SEO and digital marketing strategy to boost their online presence.",
-            "strategy": {
-              "websiteDesignAndBuild": {
-                "heading": "1. Website Design and Build:",
-                "responsiveDesign": "Developed a new website using Joomla, focusing on a responsive design that ensures an optimal user experience across all devices.",
-                "userExperience": "Enhanced the site’s UX by optimizing the main menu structure and ensuring key product and service pages received appropriate link value.",
-                "contentManagementSystem": "Implemented an easy-to-use CMS to support content marketing efforts."
-              },
-              "seoServices": {
-                "heading": "2. SEO Services:",
-                "keywordResearch": "Conducted comprehensive keyword research to target the audience effectively and optimize key pages.",
-                "onPageSEO": "Focused on improving content, metadata, and overall site structure.",
-                "internationalSEO": "Applied hreflang tags and managed the translation process for the French website.",
-                "continuousOptimization": "Regularly updated and expanded the site, conducted competitor research, and restructured the website to enhance indexation."
-              },
-              "conversionRateOptimization": {
-                "heading": "3. Conversion Rate Optimization (CRO):",
-                "abTesting": "Used Google Optimize, Hotjar, and Google Analytics to test different design elements (colors, copy, buttons) and identify what drove the best results.",
-                "performanceMonitoring": "Continuously monitored and tweaked site elements based on test results to improve performance."
-              },
-              "contentMarketing": {
-                "heading": "4. Content Marketing:",
-                "longTailKeywords": "Utilized keyword research to find new opportunities for blog posts and content updates.",
-                "regularUpdates": "Produced and optimized blog posts and case studies showcasing ACF’s latest projects.",
-                "engagingContent": "Ensured content was regularly updated with enticing images to attract and engage visitors."
-              },
-              "integratedCampaignManagement": {
-                "heading": "5. Integrated Campaign Management:",
-                "seoPpcSocialMedia": "Managed an integrated campaign using SEO, PPC, and social media to drive traffic and conversions.",
-                "collaboration": "Maintained close collaboration with ACF, sharing insights and recommendations to improve their web visibility and results."
-              }
+            "client": "Atlas Contract Furniture (ACF) is a global provider of contract furniture specializing in hospitality projects. They needed a new website that would better represent their brand, enhance user experience, and improve their online visibility and engagement. Blue Frontier was tasked with designing and building a new website, as well as providing ongoing digital marketing services to increase website traffic, conversions, and brand awareness.",
+            "problem": "The existing ACF website was restrictive and outdated, limiting engagement and SEO performance. ACF needed a modern, responsive website that would cater to both UK and international audiences, specifically in France and Sweden. They also required a robust SEO and digital marketing strategy to boost their online presence.",
+            "solution": {
+              "point1": "Website Design and Build",
+              "websiteDesignAndBuild": [
+                  "Responsive Design: Developed a new website using Joomla, focusing on a responsive design that ensures an optimal user experience across all devices.",
+                  "User Experience (UX): Enhanced the site’s UX by optimizing the main menu structure and ensuring key product and service pages received appropriate link value.",
+                  "Content Management System (CMS): Implemented an easy-to-use CMS to support content marketing efforts."
+              ],
+              "point2": "SEO Services",
+              "seoServices": [
+                  "Keyword Research: Conducted comprehensive keyword research to target the audience effectively and optimize key pages.",
+                  "On-Page SEO: Focused on improving content, metadata, and overall site structure.",
+                  "International SEO: Applied hreflang tags and managed the translation process for the French website.",
+                  "Continuous Optimization: Regularly updated and expanded the site, conducted competitor research, and restructured the website to enhance indexation."
+              ],
+              "point3": "Conversion Rate Optimization (CRO)",
+              "cro": [
+                  "A/B Testing: Used Google Optimize, Hotjar, and Google Analytics to test different design elements (colors, copy, buttons) and identify what drove the best results.",
+                  "Performance Monitoring: Continuously monitored and tweaked site elements based on test results to improve performance."
+              ],
+              "point4": "Content Marketing",
+              "contentMarketing": [
+                  "Long-Tail Keywords: Utilized keyword research to find new opportunities for blog posts and content updates.",
+                  "Regular Updates: Produced and optimized blog posts and case studies showcasing ACF’s latest projects.",
+                  "Engaging Content: Ensured content was regularly updated with enticing images to attract and engage visitors."
+              ],
+              "point5": "Integrated Campaign Management",
+              "integratedCampaignManagement": [
+                  "SEO, PPC, Social Media: Managed an integrated campaign using SEO, PPC, and social media to drive traffic and conversions.",
+                  "Collaboration: Maintained close collaboration with ACF, sharing insights and recommendations to improve their web visibility and results."
+              ]
+          
             },
             "results": {
               "organicTraffic": "14% Increase in Organic Traffic: Significant growth in organic search visibility and traffic.",

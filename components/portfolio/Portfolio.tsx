@@ -9,8 +9,7 @@ import case7 from "../../public/images/case7.png";
 import case8 from "../../public/images/case8.png";
 import case9 from "../../public/images/case9.png";
 import Image from "next/image";
-import portfolio1 from "../../public/images/portfolio1.png"
-
+// import portfolio1 from "../../public/images/portfolio1.png"
 import {
     Dialog,
     DialogContent,
@@ -20,7 +19,7 @@ import {
     DialogTrigger,
   } from "@/components/ui/dialog";
 import PortfolioPopUp from "./PortfolioPopUp";
-  
+  import {PPC} from "./PortfolioArray"
   const Portfolio = () => {
   const images = [
     {
@@ -80,26 +79,26 @@ import PortfolioPopUp from "./PortfolioPopUp";
       <div className="w-[80%] flex flex-col items-start justify-center m-[30px]">
         <div className="flex flex-row gap-4 ml-[20px]">
           <p className="mid-heading font-semibold text-xl">ALL</p>
-          <p className="mid-heading font-semibold text-xl">Marketing</p>
-          <p className="mid-heading font-semibold text-xl">Application</p>
-          <p className="mid-heading font-semibold text-xl">Design</p>
+          <p className="mid-heading font-semibold text-xl">Google Ads</p>
+          <p className="mid-heading font-semibold text-xl">Website Development</p>
+          <p className="mid-heading font-semibold text-xl">SEO</p>
         </div>
         <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
-          {images.map((item: any) => {
+          {PPC.map((item: any) => {
             return (
                 <>
-              <Dialog key={item.heading}>
+              <Dialog key={item.id}>
           <DialogTrigger>
           <div className="flex p-[20px]" >
                   <div className="relative port-box">
                     <Image
-                      src={item.src}
+                      src={item.image}
                       alt=""
                       className="md:w-[27vw] sm:w-[39vw] w-[70vw] h-[500px] rounded-md"
                       />
                     <div className="absolute inset-0 flex items-center justify-center ">
                       <div className="text-left bg-[#0D2137] bg-opacity-50 p-4 m-6 text-white animation">
-                        <p>{item.heading}</p>
+                        <p>{item.title}</p>
                         <p className="text-2xl font-bold heading">
                           {item.text}
                         </p>

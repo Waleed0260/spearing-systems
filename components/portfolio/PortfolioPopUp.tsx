@@ -4,7 +4,9 @@ import problem from "../../public/images/problem.jpg";
 import solution from "../../public/images/solution.jpg";
 import result from "../../public/images/result.png";
 import Image from "next/image";
-import demoCase from "../../public/images/demoCase.jpg";
+// import demoCase from "../../public/images/demoCase.jpg";
+import portLogo from "../../public/images/portLogo.png"
+
 import Loader from "../home/Loader";
 const PortfolioPopUp = ({id}:any) => {
     console.log("id", id)
@@ -43,11 +45,11 @@ const PortfolioPopUp = ({id}:any) => {
         <div className="flex flex-col items-center justify-center">
 
       <Image
-        src={demoCase}
+        src={portLogo}
         alt=""
-        className="w-[400px] h-[300px] overflow-hidden"
+        className=" overflow-hidden"
       />
-      <p className="font-bold text-4xl heading ">
+      <p className="font-bold text-4xl heading mt-3">
         {data.title}
       </p>
       {/* <p className='text text-xl mt-1'>Lorem ipsum dolor sit amet.</p>
@@ -65,13 +67,18 @@ const PortfolioPopUp = ({id}:any) => {
 
       <p className="mt-[40px] mid-heading text-2xl font-bold flex items-center justify-center">The Solution</p>
       <p className="mt-3 text flex justify-center">
-      THINK partnered with Spearing Systems to develop and execute a robust digital marketing strategy. Our approach included:
+      {data.solution?.text}
       </p>
 
       <div className="flex items-start text flex-col">
-        <p className="font-bold">Search Engine Optimization</p>
+        <p className="font-bold">{data.solution?.point1}</p>
         <ul className="list-disc ml-4">
-          <li>
+          {data.solution?.seo?.map((item:any, index:any)=>{
+            return(
+              <li>{item}</li>
+            )
+          })}
+          {/* <li>
             Conducted an in-depth SEO audit to identify areas for improvement.
           </li>
             <li>
@@ -81,25 +88,18 @@ const PortfolioPopUp = ({id}:any) => {
             <li>
               Implemented technical SEO enhancements to boost site performance
               and user experience.
-            </li>
+            </li> */}
         </ul>
       </div>
 
       <div className="flex items-start text flex-col  mt-7">
-        <p className="font-bold">Google Adwords Campaign</p>
+        <p className="font-bold">{data.solution?.point2}</p>
         <ul className="list-disc ml-4">
-          <li>
-            Developed targeted AdWords campaigns to reach THINK’s specific
-            audience segments.
-          </li>
-            <li>
-              Created engaging ad copies and designed compelling visuals to
-              attract clicks.
-            </li>
-            <li>
-              Monitored and adjusted campaigns regularly to maximize ROI and
-              lead generation.
-            </li>
+          {data.solution?.adsCampaign?.map((item:any, index:any)=>{
+            return(
+              <li>{item}</li>
+            )
+          })}
         </ul>
       </div>
 
