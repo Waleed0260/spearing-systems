@@ -4,7 +4,6 @@ import React, {useEffect} from 'react'
 import { IoCloudDoneOutline } from "react-icons/io5";
 import about2 from "../../public/images/about2.png"
 import about3 from "../../public/images/about3.png"
-import aboutGrowth from "../../public/images/aboutGrowth.jpg"
 import AOS from "aos"
 import 'aos/dist/aos.css';
 const Growth = () => {
@@ -17,13 +16,16 @@ const Growth = () => {
   return (
     <div className='w-full flex  justify-center items-center'>
         <div className='w-[90%] m-[30px] flex lg:flex-row flex-col'>
-            <div className='flex items-center justify-center w-[50%]' data-aos="fade-left">
+            <div className='flex items-center justify-center' data-aos="fade-left">
                 <div className='w-[450px] h-[500px]'>
-                <Image src={aboutGrowth} alt=""/>
+                <Image src={about2} alt=""/>
+                    </div>
+                    <div className='w-[400px] h-[300px] hidden md:flex relative right-[60px] top-[90px]'>
+                <Image src={about3} alt=""/>
                     </div>
             </div>
 
-            <div className='flex flex-col p-[20px]' data-aos="fade-right">
+            <div className='flex flex-col p-[20px] ' data-aos="fade-right">
                 <p className='font-bold heading'>Business Growth</p>
                 <p className='text-4xl heading font-bold mt-[20px]'>Best Digital
                 Creative Agency</p>

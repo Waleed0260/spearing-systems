@@ -51,11 +51,11 @@ const Header = (color:any) => {
               <Link href={"/about"}>About</Link>
             </li>
             <li className="list-none mid-heading">
-              <Link href={"/portfolio"}>Our Services</Link>
+              <Link href={"/services"}>Our Services</Link>
             </li>
             {/* <li className='list-none mid-heading'>Page</li> */}
             <li className="list-none mid-heading">
-              <Link href={"/services"}>Portfolio</Link>
+              <Link href={"/portfolio"}>Portfolio</Link>
             </li>
             <li className="list-none mid-heading">Contact</li>
           </ul>

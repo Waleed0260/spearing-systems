@@ -38,6 +38,7 @@ export default function Page() {
       <Process/>
       {/* <Portfolio/> */}
       <Portfolio/>
+      <Testimonial/>
       <Technologies/>
       {/* <Testimonial /> */}
       <Consultation/>

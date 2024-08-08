@@ -1,5 +1,5 @@
 import cafebrands from "../../../../public/images/cafebrands.jpg"
-import clinicalpartner from "../../../../public/images/clinicalpartner.png";
+import clinicalpartner from "../../../../public/images/clinicalPartner.png";
 import hb from "../../../../public/images/hb.png";
 import imperva from "../../../../public/images/imperva.png";
 import intra from "../../../../public/images/intra.png";

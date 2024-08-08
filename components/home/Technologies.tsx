@@ -14,7 +14,7 @@ import wordpress from "../../public/images/wordpress.png"
 
 const Technologies = () => {
   return (
-    <div className='flex flex-col items-center '>
+    <div className='flex flex-col items-center m-[30px]'>
         <p className='font-bold text-2xl heading'>Experts  in Best Class Technology Platforms</p>
         <div className='w-[80%] flex flex-col items-center justify-center'>
             <div className="grid grid-cols-6 gap-3">

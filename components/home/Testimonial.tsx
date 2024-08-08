@@ -17,169 +17,70 @@ import test5 from "../../public/images/test5.png"
 
 const Testimonial = () => {
 
+  const testimonial = [
+    {
+        review: "Spearing Systems transformed our online presence. Within months, we saw a 50% increase in organic traffic and a significant boost in lead generation. Their SEO expertise is unparalleled.",
+        name: "Jane D.",
+        position: "Marketing Director"
+    },
+    {
+        review: "We were struggling with poor search rankings, but Spearing Systems' tailored SEO strategy changed everything. Our website now ranks on the first page, and our customer inquiries have doubled!",
+        name: "John S.",
+        position: "Business Owner"
+    },
+    {
+        review: "Spearing Systems transformed our PPC strategy. We've seen a 40% increase in leads with reduced ad spend.",
+        name: "Anna K.",
+        position: "Retail Business Owner"
+    },
+    {
+        review: "Their expertise in Google Ads management boosted our online sales by 35% within three months.",
+        name: "Mark S.",
+        position: "E-commerce Manager"
+    },
+    {
+        review: "Professional, creative, and data-driven. Spearing Systems delivers results.",
+        name: "Tom W.",
+        position: "Tech Startup CEO"
+    },
+    {
+        review: "Their expertise in automation and segmentation has greatly improved our customer retention.",
+        name: "John D.",
+        position: "Tech Startup Founder"
+    }
+];
+
   return (
-    <div className="flex flex-col justify-center items-center mt-[160px] mb-[100px] text-white bg-[#0D2137]">
-      <p className="font-bold text-2xl m-3">Testimonial</p>
+    <div className="flex flex-col justify-center items-center w-full ">
+      <div className="w-[80%] flex flex-col items-center justify-center m-[30px]"></div>
+      <p className="font-bold text-2xl m-3">What Our Clients Are Saying</p>
 
-      <Swiper
-        // spaceBetween={50}
-        slidesPerView={1}
-        // onSlideChange={() => console.log("slide change")}
-        // onSwiper={(swiper) => console.log(swiper)}
-        modules={[Navigation]}
-        className="w-[80%]"
-      >
-        <SwiperSlide>
-          <div className="flex flex-row items-center justify-center p-4">
-            <div className="flex md:flex-row flex-col items-center justify-around">
-              <div className="w-[200px] h-[200px] rounded-[100px]">
-                <Image
-                  src={client1}
-                  alt=""
-                  style={{
-                    height: "100%",
-                    width: "100%",
-                    borderRadius: "100px",
-                  }}
-                />
-              </div>
-              <div className="flex flex-col md:w-[60%]">
-                <p className="text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-                  tempora eos ipsum voluptatem quam maiores consectetur veniam
-                  quos, sunt aspernatur. Minus eum voluptates pariatur illum
-                  rerum. Quis, praesentium explicabo tempore culpa iste vel
-                  expedita dolorem optio, voluptas doloribus minima maxime.
-                </p>
-                <div className="flex justify-between items-center">
-                  <div className="mt-[10px]">
-                    <b className="font-bold text-2xl heading">angela</b>
-                    <p className="text">CTO, INTERPID</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="flex flex-row items-center justify-center p-4">
-            <div className="flex md:flex-row flex-col items-center justify-around">
-              <div className="w-[200px] h-[200px] rounded-[100px]">
-                <Image
-                  src={client1}
-                  alt=""
-                  style={{
-                    height: "100%",
-                    width: "100%",
-                    borderRadius: "100px",
-                  }}
-                />
-              </div>
-              <div className="flex flex-col md:w-[60%]">
-                <p className="text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-                  tempora eos ipsum voluptatem quam maiores consectetur veniam
-                  quos, sunt aspernatur. Minus eum voluptates pariatur illum
-                  rerum. Quis, praesentium explicabo tempore culpa iste vel
-                  expedita dolorem optio, voluptas doloribus minima maxime.
-                </p>
-                <div className="flex justify-between items-center">
-                  <div className="mt-[10px]">
-                    <b className="font-bold text-2xl heading">angela</b>
-                    <p className="text">CTO, INTERPID</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="flex flex-row items-center justify-center p-4">
-            <div className="flex md:flex-row flex-col items-center justify-around">
-              <div className="w-[200px] h-[200px] rounded-[100px]">
-                <Image
-                  src={client1}
-                  alt=""
-                  style={{
-                    height: "100%",
-                    width: "100%",
-                    borderRadius: "100px",
-                  }}
-                />
-              </div>
-              <div className="flex flex-col md:w-[60%]">
-                <p className="text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-                  tempora eos ipsum voluptatem quam maiores consectetur veniam
-                  quos, sunt aspernatur. Minus eum voluptates pariatur illum
-                  rerum. Quis, praesentium explicabo tempore culpa iste vel
-                  expedita dolorem optio, voluptas doloribus minima maxime.
-                </p>
-                <div className="flex justify-between items-center">
-                  <div className="mt-[10px]">
-                    <b className="font-bold text-2xl heading">angela</b>
-                    <p className="text">CTO, INTERPID</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-      </Swiper>
+      <div className="w-[70%]">
+            <Swiper
+            slidesPerView={1}
+          modules={[Navigation, Pagination, Autoplay]}
+          pagination={{clickable:true}}
+          loop={true}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          className="w-full h-[150px]"
+            >
+                {testimonial?.map((item:any)=>{
+                    return(
+                        <SwiperSlide>
+                            <div className='flex flex-col items-center justfiy-center p-3'>
 
-      <Swiper
-        // spaceBetween={50}
-        breakpoints={{
-          0:{
-            slidesPerView: 1,
-          },
-          480:{
-            slidesPerView: 2,
-          },
-          768:{
-            slidesPerView: 3,
-          },
-          980:{
-            slidesPerView: 5,
-          }
-        }}
-        autoplay={{
-          delay: 1000,
-          disableOnInteraction: false,
-        }}
-        speed={1000}
-        modules={[Navigation, Pagination, Autoplay]}
-        loop={true}
-        className="w-[80%] h-[80px]"
-      >
-        <SwiperSlide>
-          <div className="w-[200px] h-[20px] m-[20px] ">
-            <Image src={test1} alt=""/>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="w-[200px] h-[20px] m-[20px]">
-            <Image src={test2} alt=""/>
-          </div>
-        </SwiperSlide> <SwiperSlide>
-          <div className="w-[200px] h-[20px] m-[20px]">
-            <Image src={test3} alt=""/>
-          </div>
-        </SwiperSlide> <SwiperSlide>
-          <div className="w-[200px] h-[20px] m-[20px]">
-            <Image src={test4} alt=""/>
-          </div>
-        </SwiperSlide> <SwiperSlide>
-          <div className="w-[200px] h-[20px] m-[20px]">
-            <Image src={test5} alt=""/>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="w-[200px] h-[20px] m-[20px]">
-            <Image src={test5} alt=""/>
-          </div>
-        </SwiperSlide>
-      </Swiper>
+                            <p className='text text-center text-xl'>{item.review}</p>
+                            <p className='heading'>{item.name}</p>
+                            <p className='mid-heading'>{item.position}</p>
+                            </div>
+                        </SwiperSlide>
+                    )
+                })}
+            </Swiper>
+        </div>
     </div>
   );
 };
