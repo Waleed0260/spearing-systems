@@ -8,7 +8,7 @@ const WhyUs = dynamic(() => import('@/components/about/WhyUs'));
 import Loader from '@/components/home/Loader'
 import Footer from '@/components/home/Footer';
 import Testimonial from '@/components/home/Testimonial';
-// import Cta from '@/components/home/cta';
+import CallTo from '@/components/home/CallTo';
 
 const page = () => {
   return (
@@ -18,7 +18,7 @@ const page = () => {
       <WhyUs/>
       <Faq/>
       <Testimonial/>
-      {/* <Cta/> */}
+      <CallTo/>
       <Footer/>
       </Suspense>
   )

@@ -36,7 +36,7 @@ export const PPC = [
         image: portfolio2,
         title: "Website Dev",
         text: "Intra Home Systems Transforms Online Presence with Comprehensive Web and SEO Overhaul",
-        link: "web_dev_2"
+        link: "website_dev_2"
     },
     {
         id: 3,
@@ -49,8 +49,8 @@ export const PPC = [
         id: 4,
         image: portfolio4,
         title: "Website Dev",
-        text: "Elevating THINK's Digital Presence",
-        link: "web_dev_5"
+        text: "Atlas Contract Furniture Boosts Online Performance with Blue Frontier",
+        link: "website_dev_3"
     },
     {
         id: 3,

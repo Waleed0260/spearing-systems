@@ -14,7 +14,7 @@ const Consultation = () => {
         <div className="flex md:flex-row flex-col m-6 gap-4">
           <div className="md:w-[50%] flex flex-col mt-9 text-white">
             <div className="flex flex-row gap-4">
-              <p className="h-[40px] w-[40px] text-center flex  items-center justify-center bg-white rounded-[100px] bg-[#FF8E2B] gap-3">
+              <p className="h-[40px] w-[40px] text-center flex  items-center justify-center rounded-[100px] bg-[#FF8E2B] gap-3">
                 <FaArrowLeft />
               </p>
               <div>
@@ -27,7 +27,7 @@ const Consultation = () => {
               </div>
             </div>
             <div className="flex flex-row gap-4 mt-[20px]">
-              <p className="h-[40px] w-[70px] text-center flex  items-center justify-center bg-white rounded-[100px] bg-[#FF8E2B] gap-3">
+              <p className="h-[40px] w-[70px] text-center flex  items-center justify-center rounded-[100px] bg-[#FF8E2B] gap-3">
                 1
               </p>
               <div>
@@ -40,7 +40,7 @@ const Consultation = () => {
             </div>
 
             <div className="flex flex-row gap-4 mt-4">
-              <p className="h-[40px] w-[80px] text-center flex  items-center justify-center bg-white rounded-[100px] bg-[#FF8E2B]">
+              <p className="h-[40px] w-[80px] text-center flex  items-center justify-center rounded-[100px] bg-[#FF8E2B]">
                 2
               </p>
               <div>
@@ -53,7 +53,7 @@ const Consultation = () => {
             </div>
 
             <div className="flex flex-row gap-4 mt-4">
-              <p className="h-[40px] w-[70px] text-center flex  items-center justify-center bg-white rounded-[100px] bg-[#FF8E2B]">
+              <p className="h-[40px] w-[70px] text-center flex  items-center justify-center rounded-[100px] bg-[#FF8E2B]">
                 3
               </p>
               <div>

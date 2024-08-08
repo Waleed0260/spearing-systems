@@ -12,6 +12,7 @@ import think from "../../../../public/images/think.jpeg";
 import voltage from "../../../../public/images/voltage.jpeg";
 import portLogo from "../../../../public/images/portLogo.png"
 import atlas from "../../../../public/images/atlas.jpeg"
+import portfolio15 from "../../../../public/images/portfolio15.jpg"
 const caseData:any = {
 
     // GOOGLE ADS PPPC //////////////
@@ -123,9 +124,10 @@ const caseData:any = {
       },
 
       "google_ads4": {
+        "img": portfolio15,
         "video_id":"google_ads4",
         "title": "Business Increases Their Conversions by 650%",
-        "client": "Tennessee-Based Car Wrapping & Accessories Service",
+        "client": "Tennessee-Based Car Wrapping & Accessories Service,  Third Marble Marketing specializes in helping small businesses optimize their Google Ads campaigns to drive meaningful traffic and maximize conversions. This locally owned car wrapping and accessories service from Tennessee sought to improve their digital presence and lead generation while working with a limited budget.",
         "agency": "Third Marble Marketing specializes in helping small businesses optimize their Google Ads campaigns to drive meaningful traffic and maximize conversions. This locally owned car wrapping and accessories service from Tennessee sought to improve their digital presence and lead generation while working with a limited budget.",
         "problem": "The client aimed to increase local traffic and new customer acquisitions while managing a small budget. They needed a targeted approach to Google Ads to achieve significant growth in conversions and reduce their cost per lead.",
         "solution": {
@@ -506,26 +508,28 @@ const caseData:any = {
         }
       },
       "website_dev_2": {
+        "img": intra,
         "video_id":"website_dev_2",
           "title": "Intra Home Systems Transforms Online Presence with Comprehensive Web and SEO Overhaul",
-          "background": "Intra Home Systems (IHS) is a premier electronic systems integrator, recognized among the 'Top 100 Integrators' by CE Pro magazine. Specializing in home automation and electronic system integration, IHS provides cutting-edge solutions to enhance modern homes.",
-          "challenge": "Intra Home Systems faced a highly competitive market and needed to revamp their brand image, improve their online visibility, and drive more traffic and leads. They required a new website and a robust SEO strategy to stand out in the crowded home automation market.",
-          "strategy": {
-            "websiteRedesign": {
-              "heading": "1. Website Redesign:",
-              "modernization": "Re-designed the website from the ground up, updating the brand image and logo to reflect a modern, user-friendly interface.",
-              "searchEngineOptimization": "Optimized the new site for search engines to enhance visibility and user engagement."
-            },
-            "contentCreation": {
-              "heading": "2. Content Creation:",
-              "servicePages": "Developed numerous unique-content service pages to showcase IHS’s diverse offerings and expertise.",
-              "blog": "Created a media-rich blog with hundreds of relevant articles to engage users and improve search engine rankings."
-            },
-            "seoCampaign": {
-              "heading": "3. SEO Campaign:",
-              "linkBuilding": "Launched a comprehensive link-building campaign to boost Google rankings and drive search engine traffic.",
-              "nationalSEO": "Focused on national SEO to expand reach and attract more leads across a broader audience."
-            }
+          "client": "Intra Home Systems (IHS) is a premier electronic systems integrator, recognized among the 'Top 100 Integrators' by CE Pro magazine. Specializing in home automation and electronic system integration, IHS provides cutting-edge solutions to enhance modern homes.",
+          "problem": "Intra Home Systems faced a highly competitive market and needed to revamp their brand image, improve their online visibility, and drive more traffic and leads. They required a new website and a robust SEO strategy to stand out in the crowded home automation market.",
+          "solution": {
+            "text": "Spearing Systems devised a comprehensive plan to meet IHS's goals:",
+            "point1": "Website Redesign",
+            "seo": [
+              "Re-designed the site from the ground up, modernizing the brand image and logo.",
+              "Ensured the new design was user-friendly, visually appealing, and optimized for search engines."
+            ],
+            "point2": "Content Creation",
+            "adsCampaign": [
+              "Developed dozens of unique-content service pages to highlight IHS’s diverse offerings.",
+              "Created a media-rich blog featuring hundreds of relevant, unique-content articles to boost user engagement and search engine visibility."
+            ],
+            "point3": "SEO Campaign",
+            "seoCampaign": [
+              "Launched a comprehensive link-building campaign to enhance IHS's Google rankings and drive search engine traffic.",
+              "Focused on national SEO to reach a broader audience and attract more leads."
+            ]
           },
           "results": {
             "increasedTraffic": "Significant increase in website traffic due to enhanced search engine rankings.",
@@ -544,40 +548,42 @@ const caseData:any = {
         },
 
         "website_dev_3": {
+          "img":atlas,
           "video_id":"website_dev_3",
               "title": "Atlas Contract Furniture Boosts Online Performance with Blue Frontier",
-              "background": "Atlas Contract Furniture (ACF) is a global provider of contract furniture specializing in hospitality projects. They needed a new website that would better represent their brand, enhance user experience, and improve their online visibility and engagement. Blue Frontier was tasked with designing and building a new website, as well as providing ongoing digital marketing services to increase website traffic, conversions, and brand awareness.",
-              "challenge": "The existing ACF website was restrictive and outdated, limiting engagement and SEO performance. ACF needed a modern, responsive website that would cater to both UK and international audiences, specifically in France and Sweden. They also required a robust SEO and digital marketing strategy to boost their online presence.",
-              "strategy": {
-                "websiteDesignAndBuild": {
-                  "heading": "1. Website Design and Build:",
-                  "responsiveDesign": "Developed a new website using Joomla, focusing on a responsive design that ensures an optimal user experience across all devices.",
-                  "userExperience": "Enhanced the site’s UX by optimizing the main menu structure and ensuring key product and service pages received appropriate link value.",
-                  "contentManagementSystem": "Implemented an easy-to-use CMS to support content marketing efforts."
-                },
-                "seoServices": {
-                  "heading": "2. SEO Services:",
-                  "keywordResearch": "Conducted comprehensive keyword research to target the audience effectively and optimize key pages.",
-                  "onPageSEO": "Focused on improving content, metadata, and overall site structure.",
-                  "internationalSEO": "Applied hreflang tags and managed the translation process for the French website.",
-                  "continuousOptimization": "Regularly updated and expanded the site, conducted competitor research, and restructured the website to enhance indexation."
-                },
-                "conversionRateOptimization": {
-                  "heading": "3. Conversion Rate Optimization (CRO):",
-                  "abTesting": "Used Google Optimize, Hotjar, and Google Analytics to test different design elements (colors, copy, buttons) and identify what drove the best results.",
-                  "performanceMonitoring": "Continuously monitored and tweaked site elements based on test results to improve performance."
-                },
-                "contentMarketing": {
-                  "heading": "4. Content Marketing:",
-                  "longTailKeywords": "Utilized keyword research to find new opportunities for blog posts and content updates.",
-                  "regularUpdates": "Produced and optimized blog posts and case studies showcasing ACF’s latest projects.",
-                  "engagingContent": "Ensured content was regularly updated with enticing images to attract and engage visitors."
-                },
-                "integratedCampaignManagement": {
-                  "heading": "5. Integrated Campaign Management:",
-                  "seoPpcSocialMedia": "Managed an integrated campaign using SEO, PPC, and social media to drive traffic and conversions.",
-                  "collaboration": "Maintained close collaboration with ACF, sharing insights and recommendations to improve their web visibility and results."
-                }
+              "client": "Atlas Contract Furniture (ACF) is a global provider of contract furniture specializing in hospitality projects. They needed a new website that would better represent their brand, enhance user experience, and improve their online visibility and engagement. Blue Frontier was tasked with designing and building a new website, as well as providing ongoing digital marketing services to increase website traffic, conversions, and brand awareness.",
+              "problem": "The existing ACF website was restrictive and outdated, limiting engagement and SEO performance. ACF needed a modern, responsive website that would cater to both UK and international audiences, specifically in France and Sweden. They also required a robust SEO and digital marketing strategy to boost their online presence.",
+              "solution": {
+                "text": "Strategy",
+                "point1": "Website Design and Build",
+                "seo": [
+                  "Responsive Design: Developed a new website using Joomla, focusing on a responsive design that ensures an optimal user experience across all devices.",
+                  "User Experience (UX): Enhanced the site’s UX by optimizing the main menu structure and ensuring key product and service pages received appropriate link value.",
+                  "Content Management System (CMS): Implemented an easy-to-use CMS to support content marketing efforts."
+                ],
+                "point2": "SEO Services",
+                "seoCampaign": [
+                  "Keyword Research: Conducted comprehensive keyword research to target the audience effectively and optimize key pages.",
+                  "On-Page SEO: Focused on improving content, metadata, and overall site structure.",
+                  "International SEO: Applied hreflang tags and managed the translation process for the French website.",
+                  "Continuous Optimization: Regularly updated and expanded the site, conducted competitor research, and restructured the website to enhance indexation."
+                ],
+                "point3": "Conversion Rate Optimization (CRO)",
+                "adsCampaign": [
+                  "A/B Testing: Used Google Optimize, Hotjar, and Google Analytics to test different design elements (colors, copy, buttons) and identify what drove the best results.",
+                  "Performance Monitoring: Continuously monitored and tweaked site elements based on test results to improve performance."
+                ],
+                "point4": "Content Marketing",
+                "contentMarketing": [
+                  "Long-Tail Keywords: Utilized keyword research to find new opportunities for blog posts and content updates.",
+                  "Regular Updates: Produced and optimized blog posts and case studies showcasing ACF’s latest projects.",
+                  "Engaging Content: Ensured content was regularly updated with enticing images to attract and engage visitors."
+                ],
+                "point5": "Integrated Campaign Management",
+                "integratedCampaignManagement": [
+                  "SEO, PPC, Social Media: Managed an integrated campaign using SEO, PPC, and social media to drive traffic and conversions.",
+                  "Collaboration: Maintained close collaboration with ACF, sharing insights and recommendations to improve their web visibility and results."
+                ]
               },
               "results": {
                 "organicTraffic": "14% Increase in Organic Traffic: Significant growth in organic search visibility and traffic.",

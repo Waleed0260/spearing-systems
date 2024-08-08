@@ -12,6 +12,8 @@ import { Pagination } from "swiper/modules";
 import "swiper/css/pagination";
 import { FaArrowRight } from "react-icons/fa6";
 import { Button } from "../ui/button";
+import { FaChartLine } from "react-icons/fa";
+import Link from "next/link";
 
 const Services = () => {
   useEffect(() => {
@@ -41,7 +43,7 @@ const Services = () => {
     },
     {
       id: 4,
-      icon: <FaShareAlt />,
+      icon: <FaChartLine />,
       heading: "Social Media Marketing",
       text: "Engage, connect, and grow your audience on the platforms that matter most. Our social media marketing services deliver tailored content and strategic campaigns that spark conversations and build a loyal community around your brand.",
     },
@@ -90,22 +92,25 @@ const Services = () => {
           },
         }}
         loop={true}
-        className="w-[88%] h-[500px] flex items-center justify-center"
+        className="w-[88%] h-[530px] flex items-center justify-center"
       >
         {services.map((item) => {
           return (
             <SwiperSlide key={item.id} className="flex justify-center items-center">
-              <div className="flex flex-col gap-3 lg:w-[19vw] md:w-[33vw] w-[71vw] h-[450px] servicebox transition-all items-center  bg-[#f2f2f2] m-[20px] lg:ml-[20px] sm:ml-[40px] ml-[9px]" key={item.id}>
-                <p className=" text-6xl mt-[30px]">{item.icon}</p>
+              <div className="flex flex-col gap-3 lg:w-[19vw] md:w-[33vw] w-[71vw] h-[460px] servicebox transition-all items-center  bg-[#f2f2f2] m-[20px] lg:ml-[20px] sm:ml-[40px] ml-[9px] shadow-2xl cursor-pointer">
+                <p className=" text-4xl mt-[30px] bg-[#FF8E2B] p-5 rounded-[100px]">{item.icon}</p>
                 <b className="font-bold text-2xl mid-heading mt-[15px] text-center">{item.heading}</b>
                 <p className="w-[90%] text-center text text-sm">{item.text}</p>
-                <p className='font-bold text-xl bg-gray-700 bg-opacity-20 text-center p-[15px] mt-[10px] flex items-center rounded-[100px]'><FaArrowRight/></p>
+                <p className='font-bold text-xl bg-gray-700 bg-opacity-20 text-center p-[15px] mt-[10px] flex items-center rounded-[100px] icon'><FaArrowRight/></p>
               </div>
             </SwiperSlide>
           );
         })}
       </Swiper>
+      <Link href={"/services"}>
       <Button className="bg-[#0D2137] text-white rounded-[100px]">View All Services</Button>
+      
+      </Link>
     </div>
   );
 };

@@ -70,6 +70,61 @@ const PortfolioPopUp = ({id}:any) => {
       {data.solution?.text}
       </p>
 
+      {data.solution?.phase1 && (
+  <div className="flex items-start text flex-col mt-7">
+    <p className="font-bold">{data.solution.phase1.title}</p>
+    {data.solution.phase1.campaignSetup && (
+      <ul className="list-disc ml-4">
+        {data.solution.phase1.campaignSetup.map((item:string, index:number) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+    )}
+    {data.solution.phase1.conversionTracking && (
+      <ul className="list-disc ml-4 mt-2">
+        {data.solution.phase1.conversionTracking.map((item:string, index:number) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+    )}
+  </div>
+)}
+
+{/* Phase 2 */}
+{data.solution?.phase2 && (
+  <div className="flex items-start text flex-col mt-7">
+    <p className="font-bold">{data.solution.phase2.title}</p>
+    {data.solution.phase2.ongoingOptimization && (
+      <ul className="list-disc ml-4">
+        {data.solution.phase2.ongoingOptimization.map((item:string, index:number) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+    )}
+    {data.solution.phase2.results && (
+      <ul className="list-disc ml-4 mt-2">
+        {data.solution.phase2.results.map((item:string, index:number) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+    )}
+  </div>
+)}
+
+{/* Phase 3 */}
+{data.solution?.phase3 && (
+  <div className="flex items-start text flex-col mt-7">
+    <p className="font-bold">{data.solution.phase3.title}</p>
+    {data.solution.phase3.sustainedSuccess && (
+      <ul className="list-disc ml-4">
+        {data.solution.phase3.sustainedSuccess.map((item:string, index:number) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+    )}
+  </div>
+)}
+
       <div className="flex items-start text flex-col">
         <p className="font-bold">{data.solution?.point1}</p>
         <ul className="list-disc ml-4">
@@ -78,17 +133,6 @@ const PortfolioPopUp = ({id}:any) => {
               <li>{item}</li>
             )
           })}
-          {/* <li>
-            Conducted an in-depth SEO audit to identify areas for improvement.
-          </li>
-            <li>
-              Optimized website content with targeted keywords to improve search
-              engine rankings.
-            </li>
-            <li>
-              Implemented technical SEO enhancements to boost site performance
-              and user experience.
-            </li> */}
         </ul>
       </div>
 
@@ -96,6 +140,39 @@ const PortfolioPopUp = ({id}:any) => {
         <p className="font-bold">{data.solution?.point2}</p>
         <ul className="list-disc ml-4">
           {data.solution?.adsCampaign?.map((item:any, index:any)=>{
+            return(
+              <li>{item}</li>
+            )
+          })}
+        </ul>
+      </div>
+
+      <div className="flex items-start text flex-col  mt-7">
+        <p className="font-bold">{data.solution?.point3}</p>
+        <ul className="list-disc ml-4">
+          {data.solution?.seoCampaign?.map((item:any, index:any)=>{
+            return(
+              <li>{item}</li>
+            )
+          })}
+        </ul>
+      </div>
+
+      <div className="flex items-start text flex-col  mt-7">
+        <p className="font-bold">{data.solution?.point4}</p>
+        <ul className="list-disc ml-4">
+          {data.contentMarketing?.adsCampaign?.map((item:any, index:any)=>{
+            return(
+              <li>{item}</li>
+            )
+          })}
+        </ul>
+      </div>
+
+      <div className="flex items-start text flex-col  mt-7">
+        <p className="font-bold">{data.solution?.point3}</p>
+        <ul className="list-disc ml-4">
+          {data.integratedCampaignManagement?.seoCampaign?.map((item:any, index:any)=>{
             return(
               <li>{item}</li>
             )
