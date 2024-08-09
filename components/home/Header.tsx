@@ -37,7 +37,7 @@ const Header = (color:any) => {
   return (
     <>
       <div
-        className={`sm:flex hidden flex-row items-center justify-evenly w-full fixed transition-all h-[80px] z-50 bg-${color.color ? color.color: bgColor}`}
+        className={`md:flex hidden flex-row items-center justify-evenly w-full fixed transition-all h-[80px] z-50 bg-${color.color ? color.color: bgColor}`}
       >
         <div className="h-[170px] z-10">
           <Image src={logo} alt="" className="w-full h-full " />
@@ -57,15 +57,16 @@ const Header = (color:any) => {
             <li className="list-none mid-heading">
               <Link href={"/portfolio"}>Portfolio</Link>
             </li>
-            <li className="list-none mid-heading">Contact</li>
-          </ul>
+            <li className="list-none mid-heading">
+              <Link href={"/contact"}>Contact</Link>
+            </li>          </ul>
         </div>
         <div className="relative z-10">
           <Button>GET A CONSULTATION</Button>
         </div>
       </div>
 
-      <div className="flex sm:hidden flex-row justify-around items-center w-full bg-[#0D2137]">
+      <div className="flex md:hidden flex-row justify-around items-center w-full bg-[#0D2137]">
         <div className="h-[100px] w-[100px] relative z-10">
           <Image src={logo} alt="" height={200} width={200} />
         </div>
@@ -78,20 +79,25 @@ const Header = (color:any) => {
             <SheetHeader>
               <SheetTitle></SheetTitle>
               <SheetDescription>
-                <ul className={`flex flex-col gap-4 relative z-10 text-white`}>
+                <ul className={`flex flex-col gap-4 relative z-10 text-white items-start`}>
                   <li className="list-none mid-heading">
                     <Link href={"/"}>Home</Link>
                   </li>
                   <li className="list-none mid-heading">
-                    <Link href={"/about"}>About</Link>
+                    <Link href={"/services"}>Our Services</Link>
                   </li>
                   <li className="list-none mid-heading">
                     <Link href={"/portfolio"}>Portfolio</Link>
                   </li>
                   <li className="list-none mid-heading">
-                    <Link href={"/services"}>Our Services</Link>
+                    <Link href={"/about"}>About</Link>
                   </li>
+                  <li className="list-none mid-heading">
+                    <Link href={"/contact"}>Contact</Link>
+                  </li>
+                <Button>GET A CONSULTATION</Button>
                 </ul>
+
               </SheetDescription>
             </SheetHeader>
           </SheetContent>

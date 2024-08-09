@@ -1,38 +1,46 @@
-import React from "react";
-import case1 from "../../public/images/case1.png";
-import case2 from "../../public/images/case2.png";
-import case3 from "../../public/images/case3.png";
-import case4 from "../../public/images/case4.png";
-import case5 from "../../public/images/case5.png";
-import case6 from "../../public/images/case6.png";
-import case7 from "../../public/images/case7.png";
-import case8 from "../../public/images/case8.png";
-import case9 from "../../public/images/case9.png";
-import Image from "next/image";
-// import portfolio1 from "../../public/images/portfolio1.png"
+"use client"
+import React, {useEffect} from 'react'
+import Image from 'next/image'
 import {
     Dialog,
     DialogContent,
     DialogDescription,
     DialogHeader,
-    DialogTitle,
     DialogTrigger,
   } from "@/components/ui/dialog";
-import PortfolioPopUp from "./PortfolioPopUp";
-  import {PPC} from "./PortfolioArray"
-  const Portfolio = () => {
 
+  import AOS from "aos"
+import 'aos/dist/aos.css';
+import {PPC, seo, website} from "../portfolio/PortfolioArray"
+import PortfolioPopUp from '../portfolio/PortfolioPopUp'
+const Portfolio = (id:any) => {
+    let array = PPC;
+    if(id.id === "search_engine") {
+        array = seo;
+    } else if(id.id == "website_development"){
+        array = website
+    }
+    else if (id.id ==="page_per_click") {
+        array = PPC;
+    } else {
+        array = PPC
+    }
+  useEffect(() => {
+      AOS.init({
+        duration: 1200, // Animation duration
+        once: true, // Whether animation should happen only once - while scrolling down
+      });
+    }, []);
   return (
-    <div className="w-full flex items-center justify-center">
-      <div className="w-[80%] flex flex-col items-start justify-center m-[30px]">
-      <div className="flex flex-row gap-4 text-center breakpoint ml-3">
-  <p className="font-bold text">All</p>
-  <p className="font-bold text">Google Ads</p>
-  <p className="font-bold text">Website Development</p>
-  <p className="font-bold text">SEO</p>
-</div>
+    <div className='flex flex-col justify-center items-center w-full'>
+      <div className='flex flex-col w-[80%] m-[30px] items-center justify-center'>
+
+        <p className='font-bold text-4xl heading'>
+        Explore Our Cutting-Edge Projects
+        </p>
+
         <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
-          {PPC.map((item: any) => {
+          {array.slice(0,3).map((item: any) => {
             return (
                 <>
               <Dialog key={item.id}>
@@ -70,9 +78,11 @@ import PortfolioPopUp from "./PortfolioPopUp";
             );
           })}
         </div>
-      </div>
-    </div>
-  );
-};
 
-export default Portfolio;
+      </div>
+
+    </div>
+  )
+}
+
+export default Portfolio

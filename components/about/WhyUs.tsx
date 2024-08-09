@@ -17,8 +17,8 @@ const WhyUs = () => {
       }, []);
   return (
     <div className='w-full flex items-center justify-center '>
-        <div className='w-[80%] m-[30px] flex md:flex-row flex-col items-center justify-between'>
-            <div className='flex flex-col p-[30px] md:w-[50%]' data-aos="fade-right">
+        <div className='w-[90%] m-[30px] flex md:flex-row flex-col md:items-center items-start justify-between'>
+            <div className='flex flex-col md:w-[50%] ' data-aos="fade-right">
                 <b className='mid-heading'>WHy US</b>
                 <p className='font-bold text-4xl heading'>We Have an Incredibly Rich Past and Amazing Future Ahead </p>
                 <p className='text mt-[30px]'>Spearing Systems has a storied history of transforming brands and leading them to new heights. Our journey is marked by innovative campaigns, long-lasting partnerships, and a relentless pursuit of excellence. </p>
@@ -57,6 +57,8 @@ const WhyUs = () => {
                 </div>
         </div>
     </div>
+
+    
   )
 }
 

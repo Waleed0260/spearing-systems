@@ -4,9 +4,9 @@ import responsiveWebsite from "../../public/images/responsiveWebsite.webp"
 
 const Features = ({features}:any) => {
   return (
-    <div className='w-full flex itesm-center justify-center bg-gray-700 text-white'>
+    <div className='w-full flex itesm-center justify-center bg text-white'>
         <div className="flex flex-col items-center justify-center w-[80%] m-6">
-          <p className='font-bold text-2xl'>website features that you will love</p>
+          <p className='font-bold text-2xl mid-heading'>website features that you will love</p>
           <div className='grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 p-3 '>
             {features?.map((item:any)=>{
               return(

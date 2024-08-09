@@ -4,9 +4,9 @@ import Image from "next/image";
 import { Button } from "../ui/button";
 import { FaArrowLeft } from "react-icons/fa6";
 
-const Consultation = () => {
+const Consultation = (margin:any) => {
   return (
-    <div className="w-full flex items-center justify-center bg text-white mb-[20px]">
+    <div className={`w-full flex items-center justify-center bg text-white mb-[20px]`}>
       <div className="w-[80%] flex flex-col items-center m-[20px] ">
         <p className="font-bold text-2xl heading">
           READY TO GROW YOUR BUSINESS

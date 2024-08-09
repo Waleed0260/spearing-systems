@@ -127,14 +127,17 @@ import { FaHelmetSafety } from "react-icons/fa6";
           heading: "Why Choose Spearing System for Web Development",
           choose: [
             {
+              icon:"user-tie",
               heading: "Expertise",
               text: "Our team has extensive experience in various web development technologies, ensuring high-quality results."
             },
             {
+              icon: "cogs",
               heading: "Customization",
               text: "We offer tailored solutions to fit your specific business needs and objectives."
             },
             {
+              icon: "headset",
               heading: "Support",
               text: "We provide ongoing support and maintenance to ensure your website remains up-to-date and functional."
             }
@@ -291,18 +294,22 @@ import { FaHelmetSafety } from "react-icons/fa6";
         heading:"How Spearing System Stands out",
           choose: [
             {
+              icon: "tags",
               heading: "Cost-Efficient Leads",
               text: "We optimize your ad spend to reduce cost per lead."
             },
             {
+              icon:"chart-line",
               heading: "Faster ROI",
               text: "Achieve quicker returns with our strategic PPC campaigns."
             },
             {
+              icon:"lightbulb",
               heading: "Intelligently Designed Campaigns",
               text: "Our experts craft campaigns tailored to your business goals."
             },
             {
+              icon:"calendar-check",
               heading: "Extraordinary Event Attendance",
               text: "Drive higher attendance rates for your events with our targeted ads."
             }
@@ -455,18 +462,22 @@ import { FaHelmetSafety } from "react-icons/fa6";
       heading:"Why Choose Spearing Systems for Social Media Marketing?",
         choose: [
           {
+            icon:"sitemap",
             heading: "Tailored Strategies",
             text: "Customized plans that align with your brand’s goals."
           },
           {
+            icon:"paint-brush",
             heading: "Creative Content",
             text: "High-quality visuals and engaging content."
           },
           {
+            icon:"chart-pie",
             heading: "Advanced Analytics",
             text: "Data-driven insights for continuous improvement."
           },
           {
+            icon:"trophy",
             heading: "Proven Success",
             text: "Delivering measurable growth and ROI."
           }
@@ -609,14 +620,17 @@ import { FaHelmetSafety } from "react-icons/fa6";
       heading:"Our Email Marketing Strategy",
         choose: [
           {
+            icon:"clipboard-list",
             heading: "Account Audits and Strategy",
             text: "Comprehensive analysis and strategic planning to optimize your email marketing efforts."
           },
           {
+            icon:"broom ",
             heading: "List Health and Cleaning",
             text: "Ensuring your email lists are up-to-date and free from inactive subscribers."
           },
           {
+            icon:"shield-alt ",
             heading: "Technology Integration",
             text: "Utilizing the latest tools and platforms to enhance your campaigns."
           }
@@ -724,22 +738,26 @@ import { FaHelmetSafety } from "react-icons/fa6";
     text:"Create a memorable and impactful brand presence with our comprehensive branding and creative services. Spearing Systems specializes in crafting unique brand identities and positioning strategies that set your business apart in a crowded market.",
     CTA:"Start Your Branding Journey Today!",
     help: {
-      heading:"How We Help Shape Your Brand",
+      heading:"How We Help Shape Your Brand ?",
       text:"At Spearing Systems, we understand that a strong brand is more than just a logo. It's about creating a cohesive and compelling story that resonates with your audience. Our services include",
       services:[
         {
+          icon:"flag ",
           heading: "Brand Identity Development",
           text: "Crafting a distinctive visual identity including logos, color schemes, and typography."
         },
         {
+          icon:"bullseye ",
           heading: "Market Positioning",
           text: "Strategically positioning your brand to stand out in your industry."
         },
         {
+          icon:"comments ",
           heading: "Brand Messaging",
           text: "Developing a consistent and powerful brand voice and messaging."
         },
         {
+          icon:"palette",
           heading: "Creative Design",
           text: "Designing marketing materials that reflect your brand's personality."
         } 
@@ -770,18 +788,22 @@ import { FaHelmetSafety } from "react-icons/fa6";
       heading:"Why Choose Spearing Systems for Branding?",
       choose: [
         {
+          icon:"cogs",
           heading: "Tailored Solutions",
           text: "Customized branding strategies that align with your business goals."
         },
         {
+          icon:"user-tie",
           heading: "Experienced Team",
           text: "Our team of branding experts has a proven track record of success."
         },
         {
+          icon:"rocket",
           heading: "Innovative Approach",
           text: "We stay ahead of the latest trends to ensure your brand remains relevant."
         },
         {
+          icon:"th-large",
           heading: "Comprehensive Services",
           text: "From strategy to execution, we cover all aspects of branding and creative design."
         }
@@ -874,7 +896,7 @@ import { FaHelmetSafety } from "react-icons/fa6";
     ],
     tellUs: {
       heading:"Tell Us About your Project",
-      text:"RReady to transform your brand? Let’s discuss how we can help you achieve your branding goals.",
+      text:"Ready to transform your brand? Let’s discuss how we can help you achieve your branding goals.",
       CTA:"Contact Us Today"
     }
   }

@@ -42,7 +42,7 @@ const PortfolioPopUp = ({id}:any) => {
     ) : (
 
     <div className="flex flex-col text-black bg-[#0D2137]  text-white">
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col md:items-center items-start md:justify-center">
 
       <Image
         src={data.img}
@@ -55,18 +55,18 @@ const PortfolioPopUp = ({id}:any) => {
       {/* <p className='text text-xl mt-1'>Lorem ipsum dolor sit amet.</p>
         <p className='text-3xl text mt-4'>How Spiral Marketing Orchestrated a 65,167% Increase in Paid Traffic for This SaaS Technology Company</p> */}
       <p className="font-bold text-2xl mid-heading mt-4">The Client</p>
-      <p className="text mt-3">
+      <p className="text mt-3 text-left">
         {data.client}
       </p>
 
       <p className="mt-[40px] mid-heading text-2xl font-bold">The Problem</p>
-      <p className="mt-3 text">
+      <p className="mt-3 text text-left">
         {data.problem}
       </p>
       </div>
 
       <p className="mt-[40px] mid-heading text-2xl font-bold flex items-center justify-center">The Solution</p>
-      <p className="mt-3 text">
+      <p className="mt-3 text text-left">
       {data.solution?.text}
       </p>
 
@@ -76,14 +76,14 @@ const PortfolioPopUp = ({id}:any) => {
     {data.solution.phase1.campaignSetup && (
       <ul className="list-disc ml-4">
         {data.solution.phase1.campaignSetup.map((item:string, index:number) => (
-          <li key={index}>{item}</li>
+          <li key={index} className="text-left">{item}</li>
         ))}
       </ul>
     )}
     {data.solution.phase1.conversionTracking && (
       <ul className="list-disc ml-4 mt-2">
         {data.solution.phase1.conversionTracking.map((item:string, index:number) => (
-          <li key={index}>{item}</li>
+          <li key={index} className="text-left">{item}</li>
         ))}
       </ul>
     )}
@@ -97,14 +97,14 @@ const PortfolioPopUp = ({id}:any) => {
     {data.solution.phase2.ongoingOptimization && (
       <ul className="list-disc ml-4">
         {data.solution.phase2.ongoingOptimization.map((item:string, index:number) => (
-          <li key={index}>{item}</li>
+          <li key={index} className="text-left">{item}</li>
         ))}
       </ul>
     )}
     {data.solution.phase2.results && (
       <ul className="list-disc ml-4 mt-2">
         {data.solution.phase2.results.map((item:string, index:number) => (
-          <li key={index}>{item}</li>
+          <li key={index} className="text-left">{item}</li>
         ))}
       </ul>
     )}
@@ -118,7 +118,7 @@ const PortfolioPopUp = ({id}:any) => {
     {data.solution.phase3.sustainedSuccess && (
       <ul className="list-disc ml-4">
         {data.solution.phase3.sustainedSuccess.map((item:string, index:number) => (
-          <li key={index}>{item}</li>
+          <li key={index} className="text-left">{item}</li>
         ))}
       </ul>
     )}
@@ -181,7 +181,75 @@ const PortfolioPopUp = ({id}:any) => {
       </div>
 
       <p className="mt-[40px] mid-heading text-2xl font-bold flex justify-center">The Result</p>
-      <p className="mt-3 text flex justify-center">
+      {data.result && (
+  <div className="flex flex-col mt-7">
+    {/* Render the introductory text */}
+    {data.result.text && (
+      <p className="font-bold">{data.result.text}</p>
+    )}
+
+    {/* Render PPC Leads */}
+    {data.result.point1 && data.result.leadGeneration && (
+      <div className="mt-4">
+        <p className="font-semibold">{data.result.point1}</p>
+        <ul className="list-disc ml-4">
+          {data.result.leadGeneration.map((item:any, index:any) => (
+            <li key={index} className="text-left">{item}</li>
+          ))}
+        </ul>
+      </div>
+    )}
+
+    {/* Render Google Ads Clicks */}
+    {data.result.point2 && data.result.digitalPresence && (
+      <div className="mt-4">
+        <p className="font-semibold">{data.result.point2}</p>
+        <ul className="list-disc ml-4">
+          {data.result.digitalPresence.map((item:any, index:any) => (
+            <li key={index} className="text-left">{item}</li>
+          ))}
+        </ul>
+      </div>
+    )}
+
+    {/* Render PPC Traffic */}
+    {data.result.point3 && data.result.adCampaigns && (
+      <div className="mt-4">
+        <p className="font-semibold">{data.result.point3}</p>
+        <ul className="list-disc ml-4">
+          {data.result.adCampaigns.map((item:any, index:any) => (
+            <li key={index} className="text-left">{item}</li>
+          ))}
+        </ul>
+      </div>
+    )}
+
+    {/* Render Site Conversions */}
+    {data.result.point4 && data.result.coversions && (
+      <div className="mt-4">
+        <p className="font-semibold">{data.result.point4}</p>
+        <ul className="list-disc ml-4">
+          {data.result.coversions.map((item:any, index:any) => (
+            <li key={index} className="text-left">{item}</li>
+          ))}
+        </ul>
+      </div>
+    )}
+
+    {/* Render Cost Efficiency */}
+    {data.result.point5 && data.result.traffic && (
+      <div className="mt-4">
+        <p className="font-semibold">{data.result.point5}</p>
+        <ul className="list-disc ml-4">
+          {data.result.traffic.map((item:any, index:any) => (
+            <li key={index} className="text-left">{item}</li>
+          ))}
+        </ul>
+      </div>
+    )}
+  </div>
+)}
+      {/* <p className="mt-3 text flex justify-center">
       Our collaborative efforts yielded significant results for THINK:      </p>
 
       <div className="flex items-start text flex-col">
@@ -206,7 +274,7 @@ const PortfolioPopUp = ({id}:any) => {
           <li>
           Delivered higher click-through rates (CTR) and conversions from Google AdWords campaigns, maximizing THINK’s advertising budget.          </li>
         </ul>
-      </div>
+      </div> */}
 
 
     </div>

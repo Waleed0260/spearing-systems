@@ -20,14 +20,14 @@ export const PPC = [
     {
         id: 5,
         image: portfolio5,
-        title: "Google Ads/PPC",
+        title: "Google Ads/SEO",
         text: "Elevating THINK's Digital Presence",
         link: "google_ads1"
     },
     {
         id: 1,
         image: portfolio1,
-        title: "Google Ads/PPC",
+        title: "Google Ads/SEO",
         text: "Boosting Cafe Brands' Digital Presence",
         link: "google_ads2"
     },
@@ -48,16 +48,16 @@ export const PPC = [
     {
         id: 4,
         image: portfolio4,
-        title: "Website Dev",
+        title: "Website Dev/SEO",
         text: "Atlas Contract Furniture Boosts Online Performance with Blue Frontier",
         link: "website_dev_3"
     },
     {
         id: 3,
         image: portfolio8,
-        title: "SEO",
+        title: "SEO/Google Ads/Web Dev",
         text: "Boosting Site Conversions for a Regional Private School",
-        link: "seo_3"
+        link: "google_ads3"
     },
 ];
 
@@ -65,23 +65,23 @@ export const seo = [
     {
         id: 1,
         image: portfolio6,
-        title: "SEO",
+        title: "Google Ads/SEO",
         text: "Elevating THINK's Digital Presence",
-        link: "seo_1"
+        link: "google_ads1"
     },
     {
         id: 2,
         image: portfolio7,
-        title: "SEO",
+        title: "SEO/Google Ads",
         text: "Boosting Cafe Brands' Digital Presence",
-        link: "seo_2"
+        link: "google_ads2"
     },
     {
         id: 3,
         image: portfolio8,
-        title: "SEO",
+        title: "SEO/Google Ads/Website Dev",
         text: "Boosting Site Conversions for a Regional Private School",
-        link: "seo_3"
+        link: "google_ads3"
     },
     {
         id: 4,
@@ -93,7 +93,7 @@ export const seo = [
     {
         id: 5,
         image: portfolio10,
-        title: "SEO",
+        title: "SEO/Website Dev",
         text: "Atlas Contract Furniture Boosts Online Performance with Blue Frontier",
         link: "seo_5"
     },
@@ -110,9 +110,9 @@ export const website = [
     {
         id: 1,
         image: portfolio12,
-        title: "Website Dev",
+        title: "Website Dev/SEO/Google Ads",
         text: "Boosting Site Conversions for a Regional Private School",
-        link: "web_dev_1"
+        link: "google_ads3"
     },
     {
         id: 2,
@@ -123,10 +123,10 @@ export const website = [
     },
     {
         id: 3,
-        image: portfolio14,
-        title: "Website Dev",
+        image: portfolio10,
+        title: "Website Dev/SEO",
         text: "Atlas Contract Furniture Boosts Online Performance with Blue Frontier",
-        link: "web_dev_3"
+        link: "seo_5"
     },
     {
         id: 4,
@@ -135,11 +135,4 @@ export const website = [
         text: "Logan14 Salon, Spa, and Medspa – Website Redesign and Lead Generation",
         link: "web_dev_4"
     },
-    {
-        id: 5,
-        image: portfolio16,
-        title: "Website Dev",
-        text: "Elevating THINK's Digital Presence",
-        link: "web_dev_5"
-    }
 ]

@@ -1,4 +1,5 @@
 "use client"
+import CallTo from '@/components/home/CallTo'
 import Footer from '@/components/home/Footer'
 import Header from '@/components/home/Header'
 import Loader from '@/components/home/Loader'
@@ -9,6 +10,7 @@ import Choose from '@/components/serviceDetail/Choose'
 import Email from '@/components/serviceDetail/Email'
 import Features from '@/components/serviceDetail/Features'
 import Help from '@/components/serviceDetail/Help'
+import Portfolio from '@/components/serviceDetail/Portfolio'
 import Results from '@/components/serviceDetail/Results'
 import Tell from '@/components/serviceDetail/Tell'
 import Testimonial from '@/components/serviceDetail/Testimonial'
@@ -50,7 +52,7 @@ const page = ({ params }: { params: { ID: string } }) => {
     ): (
       <>
       <Header color="[#0D2137]"/>
-    <Visibility heading={data.heading} text={data.text} CTA={data.CTA}/>
+    <Visibility heading={data.heading} text={data.text} CTA={data.CTA} id={params.ID}/>
     <WhyUs help={data.help}/>
     <Choose choose={data.choose}/>
     <Help process={data.process}/>
@@ -59,10 +61,11 @@ const page = ({ params }: { params: { ID: string } }) => {
       <>
     <AdsManagement/>
     <AdsService/> 
-    </>:data.video_id === "website_development" ? <Features features={data.features}/>: data.video_id === "email_marketing" ? <Email/>:null}
-   {/* <Results/> */}
+    </>:data.video_id === "website_development" ? <Features features={data.features}/>: data.video_id === "email_marketing" ? <Email />:null}
+
+    <Portfolio id={params.ID}/>
     <Testimonial testimonial={data.testimonials}/>
-    <Tell tell={data.tellUs}/>
+    <CallTo tell={data.tellUs}/>
     <Footer/>
     </>
   )}

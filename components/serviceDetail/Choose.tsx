@@ -11,7 +11,7 @@ const Choose = ({choose}:any) => {
             {choose?.choose.map((item:any)=>{
                 return(
                     <div className='w-[90%]  m-3 p-4 flex flex-col items-center justify-center gap-3 shadow-2xl'>
-          <i className={`fas fa-brain`} style={{ fontSize: '2rem', backgroundColor:"green", padding:"15px", borderRadius:"50px" }}></i>
+          <i className={`fas fa-${item.icon}`} style={{ fontSize: '2rem', backgroundColor:"#FF8E2B", padding:"15px", borderRadius:"100px" }}></i>
           <p className='mid-heading font-bold text-2xl'>{item.heading}</p>
                         <p className='text-center text'>{item.text}</p>
                     </div>

@@ -13,7 +13,7 @@ const Services = () => {
             {
                 id:1,
                 icon: <FaShareAlt/>,
-                heading:"SEM",
+                heading:"SMM",
                 text: "Engage, connect, and grow your audience on the platforms that matter most. Our social media marketing services deliver tailored content",
                 href:"social_media_marketing"
             },

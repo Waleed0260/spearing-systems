@@ -1,9 +1,8 @@
 import React from 'react'
 
 const WhyUs = ({help}:any) => {
-  console.log(help)
   return (
-    <div className='w-full flex items-center justify-center bg-blue-700 mt-[30px]'>
+    <div className='w-full flex items-center justify-center bg mt-[30px]'>
         <div className='w-[50%] m-[30px]'>
           <p className='font-bold text-2xl heading text-center text-white'>
             {help?.heading}

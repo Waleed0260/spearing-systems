@@ -16,39 +16,40 @@ import test4 from "../../public/images/test4.png"
 import test5 from "../../public/images/test5.png"
 
 const Testimonial = () => {
-
-  const testimonial = [
-    {
-        review: "Spearing Systems transformed our online presence. Within months, we saw a 50% increase in organic traffic and a significant boost in lead generation. Their SEO expertise is unparalleled.",
-        name: "Jane D.",
-        position: "Marketing Director"
-    },
-    {
-        review: "We were struggling with poor search rankings, but Spearing Systems' tailored SEO strategy changed everything. Our website now ranks on the first page, and our customer inquiries have doubled!",
-        name: "John S.",
-        position: "Business Owner"
-    },
-    {
-        review: "Spearing Systems transformed our PPC strategy. We've seen a 40% increase in leads with reduced ad spend.",
-        name: "Anna K.",
-        position: "Retail Business Owner"
-    },
-    {
-        review: "Their expertise in Google Ads management boosted our online sales by 35% within three months.",
-        name: "Mark S.",
-        position: "E-commerce Manager"
-    },
-    {
-        review: "Professional, creative, and data-driven. Spearing Systems delivers results.",
-        name: "Tom W.",
-        position: "Tech Startup CEO"
-    },
-    {
-        review: "Their expertise in automation and segmentation has greatly improved our customer retention.",
-        name: "John D.",
-        position: "Tech Startup Founder"
-    }
-];
+    const testimonial = [
+        {
+            review: "Spearing Systems significantly improved our online presence. In just a few months, we experienced a 50% increase in organic traffic and a noticeable boost in lead generation. Their SEO expertise is unmatched.",
+            name: "Jane D.",
+            position: "Marketing Director"
+        },
+        {
+            review: "We were struggling with low search rankings, but Spearing Systems' tailored SEO strategy turned things around. Now, our website consistently ranks on the first page, and customer inquiries have doubled.",
+            name: "John S.",
+            position: "Business Owner"
+        },
+        {
+            review: "Spearing Systems completely revamped our PPC strategy. We've seen a 40% increase in leads while simultaneously reducing our ad spend. Their insights and strategies made a significant impact on our business.",
+            name: "Anna K.",
+            position: "Retail Business Owner"
+        },
+        {
+            review: "Their expertise in managing Google Ads has been a game-changer for us. We saw a 35% increase in online sales within three months, which exceeded our expectations. Highly recommend their services.",
+            name: "Mark S.",
+            position: "E-commerce Manager"
+        },
+        {
+            review: "Spearing Systems delivers professional, creative, and data-driven solutions. Their approach is focused on achieving tangible results, and they've consistently exceeded our expectations. We're thrilled with the outcomes.",
+            name: "Tom W.",
+            position: "Tech Startup CEO"
+        },
+        {
+            review: "Their expertise in automation and segmentation has greatly improved our customer retention. We've seen a noticeable improvement in our overall marketing efficiency and customer engagement.",
+            name: "John D.",
+            position: "Tech Startup Founder"
+        }
+    ];
+    
+    
 
   return (
     <div className="flex flex-col justify-center items-center w-full ">
@@ -70,7 +71,7 @@ const Testimonial = () => {
                 {testimonial?.map((item:any)=>{
                     return(
                         <SwiperSlide>
-                            <div className='flex flex-col items-center justfiy-center p-3'>
+                            <div className='flex flex-col  justfiy-center p-3'>
 
                             <p className='text text-left text-xl'>{item.review}</p>
                             <p className='heading'>{item.name}</p>

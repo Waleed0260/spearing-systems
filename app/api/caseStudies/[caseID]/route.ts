@@ -39,9 +39,20 @@ const caseData:any = {
       ]
         },
         "result": {
-          "leadGeneration": "Enhanced lead generation through diverse paid advertising channels, resulting in a higher volume of quality leads.",
-          "digitalPresence": "Achieved better search engine rankings, increasing organic traffic to the website. Successfully showcased new product lines through targeted content, attracting potential clients.",
-          "adCampaigns": "Delivered higher click-through rates (CTR) and conversions from Google AdWords campaigns, maximizing THINK’s advertising budget."
+          "text": "Our collaborative efforts yielded significant results for THINK:",
+          "point1": "Increased Lead Generation",
+          "leadGeneration": [
+              "Enhanced lead generation through diverse paid advertising channels, resulting in a higher volume of quality leads."
+          ],
+          "point2": "Improved Digital Presence",
+          "digitalPresence": [
+              "Achieved better search engine rankings, increasing organic traffic to the website.",
+              "Successfully showcased new product lines through targeted content, attracting potential clients."
+          ],
+          "point3": "Optimized Ad Campaigns",
+          "adCampaigns": [
+              "Delivered higher click-through rates (CTR) and conversions from Google AdWords campaigns, maximizing THINK’s advertising budget."
+          ]
         },
         "testimonial" : {
             "text":"Partnering with Spearing Systems has been a game-changer for our digital marketing efforts. Their expertise in SEO and AdWords has significantly boosted our online presence and lead generation. The team’s dedication to understanding our business and crafting tailored strategies has truly elevated our digital footprint. We’re thrilled with the results and look forward to continued success together.",
@@ -70,9 +81,19 @@ const caseData:any = {
       ]
         },
         "result": {
-          "roi": "Achieved a 300% increase in ROI from Google Ads campaigns, significantly enhancing their advertising efficiency and profitability.",
-          "organicTraffic": "Secured a 150% increase in organic clicks through improved search engine rankings, driving more qualified traffic to their website.",
-          "digitalPresence": "Boosted overall online visibility, making Cafe Brands a more prominent player in the digital space and attracting a larger audience."
+          "text": "Our strategic efforts delivered remarkable results for Cafe Brands:",
+          "point1": "Increased ROI from Google Ads",
+          "leadGeneration": [
+              "Achieved a 300% increase in ROI from Google Ads campaigns, significantly enhancing their advertising efficiency and profitability."
+          ],
+          "point2": "Improved Organic Traffic",
+          "digitalPresence": [
+              "Secured a 150% increase in organic clicks through improved search engine rankings, driving more qualified traffic to their website."
+          ],
+          "point3": "Enhanced Digital Presence",
+          "adCampaigns": [
+              "Boosted overall online visibility, making Cafe Brands a more prominent player in the digital space and attracting a larger audience."
+          ]
         },
         "testimonial": {
           "text": "Working with Spearing Systems has transformed our digital marketing approach. Their expertise in SEO and Google AdWords has significantly increased our online visibility and lead generation. We are thrilled with the 300% ROI increase from our ads and the substantial boost in organic traffic. The team’s dedication to understanding our business and tailoring strategies to our needs has been exceptional. We look forward to continuing our successful partnership.",
@@ -111,11 +132,27 @@ const caseData:any = {
           ]
         },
         "result": {
-          "ppcLeads": "Annual increase in total PPC leads by 900%, tracked through calls and conversions.",
-          "googleAdsClicks": "Annual increase in total Google Ads clicks by 3,337%, significantly boosting site traffic.",
-          "ppcTraffic": "Annual increase in total PPC traffic by 1,266%, bringing more prospective students to the website.",
-          "siteConversions": "Monthly increase in total site conversions by 138%, directly contributing to higher enrollment numbers.",
-          "costEfficiency": "Annual decrease in cost per click by 93%, ensuring a more cost-effective advertising strategy."
+          "text": "The implementation of Spearing Systems' strategic plan led to remarkable improvements:",
+          "point1": "PPC Leads",
+          "leadGeneration": [
+              "Annual increase in total PPC leads by 900%, tracked through calls and conversions."
+          ],
+          "point2": "Google Ads Clicks",
+          "digitalPresence": [
+              "Annual increase in total Google Ads clicks by 3,337%, significantly boosting site traffic."
+          ],
+          "point3": "PPC Traffic",
+          "adCampaigns": [
+              "Annual increase in total PPC traffic by 1,266%, bringing more prospective students to the website."
+          ],
+          "point4": "Site Conversions",
+          "coversions": [
+              "Monthly increase in total site conversions by 138%, directly contributing to higher enrollment numbers."
+          ],
+          "point5": "Cost Efficiency",
+          "traffic": [
+              "Annual decrease in cost per click by 93%, ensuring a more cost-effective advertising strategy."
+          ]
         },
         "testimonial": {
           "text": "Partnering with Spearing Systems has been a transformative experience for our school. Their expertise in digital marketing, particularly in Google Ads and SEO, has dramatically increased our online visibility and student enrollment. The strategic and meticulous approach they employed ensured our goals were not just met but exceeded. We are extremely satisfied with the 900% increase in PPC leads and the significant reduction in our cost per click. Spearing Systems truly understands the unique challenges of our sector and delivers results that matter.",
@@ -158,8 +195,15 @@ const caseData:any = {
           }
         },
         "result": {
-          "conversionGrowth": "Achieved a 650% increase in conversions, demonstrating significant improvements in campaign effectiveness and lead generation.",
-          "costEfficiency": "Reduced cost per lead by 87%, showcasing enhanced budget management and ad performance."
+          "text": "Our strategic efforts delivered outstanding results:",
+          "point1": "Conversion Growth",
+          "leadGeneration": [
+              "Achieved a 650% increase in conversions, demonstrating significant improvements in campaign effectiveness and lead generation."
+          ],
+          "point2": "Cost Efficiency",
+          "digitalPresence": [
+              "Reduced cost per lead by 87%, showcasing enhanced budget management and improved ad performance."
+          ]
         },
         "conclusion": "Third Marble Marketing’s strategic management and optimization of Google Ads campaigns have delivered impressive results for the car wrapping and accessories business. By leveraging ongoing adjustments and targeted strategies, we have significantly boosted conversions and lowered costs, helping the client achieve their growth goals.",
         "testimonial": {
@@ -219,137 +263,44 @@ const caseData:any = {
 
     // SEO STAART
 
-      "seo_1": {
-        "img":think,
-        "video_id": "seo_1",
-        "title": "Elevating THINK's Digital Presence",
-        "client": "THINK, based in Dublin, is a leading name in the digital and audio-visual solutions industry. Known for their innovative approach, THINK specializes in boardroom installations, video conferencing, digital signage, and interior finishes. THINK is dedicated to elevating the corporate aesthetic and functional experience through advanced AV systems and bespoke interior finishes.",
-        "problem": "THINK aimed to enhance their digital presence to reach a broader audience and effectively market their high-quality solutions. Despite their industry reputation, they faced challenges in generating consistent online leads and showcasing their new product lines to potential clients. They needed a comprehensive digital marketing strategy to improve their search engine rankings and optimize their advertising efforts.",
-        "solution": {
-          "seo": {
-            "heading":"SEO OPTIMIZATION",
-            "audit": "Conducted an in-depth SEO audit to identify areas for improvement.",
-            "contentOptimization": "Optimized website content with targeted keywords to improve search engine rankings.",
-            "technicalEnhancements": "Implemented technical SEO enhancements to boost site performance and user experience."
-          },
-          "adwordsCampaigns": {
-            "heading":"Google AdWords Campaigns:",
-            "development": "Developed targeted AdWords campaigns to reach THINK’s specific audience segments.",
-            "creative": "Created engaging ad copies and designed compelling visuals to attract clicks.",
-            "monitoring": "Monitored and adjusted campaigns regularly to maximize ROI and lead generation."
-          }
-        },
-        "result": {
-          "leadGeneration": "Enhanced lead generation through diverse paid advertising channels, resulting in a higher volume of quality leads.",
-          "digitalPresence": "Achieved better search engine rankings, increasing organic traffic to the website. Successfully showcased new product lines through targeted content, attracting potential clients.",
-          "adCampaigns": "Delivered higher click-through rates (CTR) and conversions from Google AdWords campaigns, maximizing THINK’s advertising budget."
-        },
-        "testimonial" : {
-            "text":"Partnering with Spearing Systems has been a game-changer for our digital marketing efforts. Their expertise in SEO and AdWords has significantly boosted our online presence and lead generation. The team’s dedication to understanding our business and crafting tailored strategies has truly elevated our digital footprint. We’re thrilled with the results and look forward to continued success together.",
-            "company":"THINK Team"
-        }
-      },
-      "seo_2":{
-        "video_id": "seo_2",
-        "img": cafebrands,
-        "title": "Boosting Cafe Brands' Digital Presence",
-        "client": "Cafe Brands, a pioneer in the catering industry, specializes in eco-friendly and biodegradable food packaging solutions. Their commitment to quality and environmental responsibility has positioned them as a leader in providing packaging solutions that meet the functional needs of their clients while aligning with their branding and environmental values.",
-        "problem": "Despite their strong market presence and reputation, Cafe Brands sought to enhance their digital footprint to reach a wider audience and improve their online lead generation. They faced challenges in achieving high visibility on search engines and optimizing their paid advertising efforts. Cafe Brands needed a comprehensive digital marketing strategy to improve their SEO rankings and maximize the effectiveness of their Google AdWords campaigns.",
-        "solution": {
-          "text":"THINK partnered with Spearing Systems to develop and execute a robust digital marketing strategy. Our approach included:",
-          "point1":"Search Engine Optimization", 
-          "seo": [
-            "Conducted an in-depth SEO audit to identify areas for improvement.",
-            "Optimized website content with targeted keywords to improve search engine rankings.",
-            "Implemented technical SEO enhancements to boost site performance and user experience."
-        ],
-        "point2":"Google Adwords Campaign",
-        "adsCampaign": [
-          "Developed targeted AdWords campaigns to reach THINK’s specific audience segments.",
-          "Created engaging ad copies and designed compelling visuals to attract clicks.",
-          "Monitored and adjusted campaigns regularly to maximize ROI and lead generation."
-      ]
-        },
-        "result": {
-          "roi": "Achieved a 300% increase in ROI from Google Ads campaigns, significantly enhancing their advertising efficiency and profitability.",
-          "organicTraffic": "Secured a 150% increase in organic clicks through improved search engine rankings, driving more qualified traffic to their website.",
-          "digitalPresence": "Boosted overall online visibility, making Cafe Brands a more prominent player in the digital space and attracting a larger audience."
-        },
-        "testimonial": {
-          "text": "Working with Spearing Systems has transformed our digital marketing approach. Their expertise in SEO and Google AdWords has significantly increased our online visibility and lead generation. We are thrilled with the 300% ROI increase from our ads and the substantial boost in organic traffic. The team’s dedication to understanding our business and tailoring strategies to our needs has been exceptional. We look forward to continuing our successful partnership.",
-          "company": "Cafe Brands Team"
-        }
-      },
-      "seo_3": {
-        "video_id": "seo_3",
-        "img":portLogo,
-        "title": "Boosting Site Conversions for a Regional Private School",
-        "client": "A prestigious private school in Virginia approached Spearing Systems with the goal of increasing its web and social media presence in a highly competitive educational market. With a mission to provide exceptional education and foster a nurturing environment, the school sought to boost student enrollment through a stronger online presence.",
-        "problem": "The school faced significant challenges in standing out among larger competitors and needed a robust digital strategy to enhance its visibility and attract more students. Despite their outstanding educational offerings, they struggled with low online engagement and insufficient enrollment numbers. They required a comprehensive plan to improve their digital footprint and drive enrollment.",
-        "solution": {
-          "text": "After detailed discussions with the faculty and an in-depth assessment of their current digital presence, Spearing Systems devised a multi-faceted digital marketing strategy tailored to their needs. The plan included:",
-          "point1": "Google Ads Campaign",
-          "adsCampaign": [
-              "Launched targeted pay-per-click (PPC) campaigns to reach potential students and parents searching for private schools in Virginia.",
-              "Created engaging ad copies and strategically placed them to maximize visibility and clicks."
-          ],
-          "point2": "Search Engine Optimization (SEO)",
-          "seo": [
-              "Conducted extensive keyword research to optimize the school’s website content.",
-              "Improved on-page SEO elements such as meta tags, headings, and content structure to enhance search engine rankings."
-          ],
-          "point3": "Web Design and Development",
-          "seoCampaign": [
-              "Redesigned the school’s website to provide a user-friendly and visually appealing experience.",
-              "Implemented responsive design to ensure accessibility across all devices."
-          ],
-          "point4": "Conversion Tracking and Reporting",
-          "contentMarketing": [
-              "Introduced new conversion goals, such as open house registrations and contact form submissions, to accurately measure success.",
-              "Removed non-conversion metrics like 'time on site' and 'contact us' views to focus on actionable data.",
-              "Provided detailed reports and continuously refined the strategy based on performance data."
-          ]
-        },
-        "result": {
-          "ppcLeads": "Annual increase in total PPC leads by 900%, tracked through calls and conversions.",
-          "googleAdsClicks": "Annual increase in total Google Ads clicks by 3,337%, significantly boosting site traffic.",
-          "ppcTraffic": "Annual increase in total PPC traffic by 1,266%, bringing more prospective students to the website.",
-          "siteConversions": "Monthly increase in total site conversions by 138%, directly contributing to higher enrollment numbers.",
-          "costEfficiency": "Annual decrease in cost per click by 93%, ensuring a more cost-effective advertising strategy."
-        },
-        "testimonial": {
-          "text": "Partnering with Spearing Systems has been a transformative experience for our school. Their expertise in digital marketing, particularly in Google Ads and SEO, has dramatically increased our online visibility and student enrollment. The strategic and meticulous approach they employed ensured our goals were not just met but exceeded. We are extremely satisfied with the 900% increase in PPC leads and the significant reduction in our cost per click. Spearing Systems truly understands the unique challenges of our sector and delivers results that matter.",
-          "company": "Virginia Private School Faculty"
-        }
-      },
-
       "seo_4": {
         "video_id": "seo_4",
         "img": clinicalpartner,
         "title": "Clinical Partners Achieves Significant Growth with Enhanced SEO Strategy",
         "background": "Clinical Partners is the UK’s largest private mental health partnership, offering a broad range of services to individuals, companies, and public and private sector organizations. Despite the extensive range of services provided, previous digital marketing efforts resulted in minimal visibility and organic growth.",
         "challenge": "Clinical Partners sought to improve its organic search visibility and overall web performance. The goal was to drive a significant increase in organic visitors, conversions, and keyword rankings, as previous companies had under-delivered in these areas.",
-        "strategy": {
-          "websiteOverhaul": {
-            "heading": "1. Website Overhaul:",
-            "userExperienceImprovement": "Redesigned the website to enhance user experience and overall structure.",
-            "technicalSEOCleanup": "Addressed and resolved technical and indexation issues that were hindering search performance."
-          },
-          "seoStrategyImplementation": {
-            "heading": "2. SEO Strategy Implementation:",
-            "onPageMetrics": "Implemented carefully planned on-page SEO improvements.",
-            "technicalSEOAudit": "Conducted a detailed audit to ensure all technical aspects were optimized for search engines."
-          },
-          "ongoingSEOservices": {
-            "heading": "3. Ongoing SEO Services:",
-            "keywordOptimization": "Focused on improving keyword rankings through targeted SEO efforts.",
-            "contentStrategy": "Enhanced content to better align with search engine algorithms and user intent."
-          }
+        "solution": {
+          "text": "A comprehensive SEO strategy was developed following a thorough analysis of the Clinical Partners’ website and competitor performance. Key steps included:",
+          "point1": "Website Overhaul",
+          "seo": [
+            "Redesigned the website to enhance user experience and overall structure.",
+            "Addressed and resolved technical and indexation issues that were hindering search performance."
+          ],
+          "point2": "SEO Strategy Implementation",
+          "adsCampaign": [
+            "Implemented carefully planned on-page SEO improvements.",
+            "Conducted a detailed audit to ensure all technical aspects were optimized for search engines."
+          ],
+          "point3": "Ongoing SEO Services",
+          "seoCampaign": [
+            "Focused on improving keyword rankings through targeted SEO efforts.",
+            "Enhanced content to better align with search engine algorithms and user intent."
+          ]
         },
-        "results": {
-          "organicVisitors": "110% Increase in Organic Visitors: Monthly organic traffic grew from approximately 4,000 to over 40,000 visitors.",
-          "conversions": "152% Increase in Conversions: Significant growth in conversion rates as a result of improved search visibility and user experience.",
-          "keywordRankings": "841% Increase in Keyword Rankings: Dramatic improvement in keyword rankings, enhancing the site's overall search engine visibility."
+        "result": {
+          "text": "The implementation of the SEO strategy led to substantial improvements:",
+          "point1": "Organic Visitors",
+          "leadGeneartion": [
+            "110% Increase in Organic Visitors: Monthly organic traffic grew from approximately 4,000 to over 40,000 visitors."
+          ],
+          "point2": "Conversions",
+          "digitalPresence": [
+            "152% Increase in Conversions: Significant growth in conversion rates as a result of improved search visibility and user experience."
+          ],
+          "point3": "Keyword Rankings",
+          "adCampaigns": [
+            "841% Increase in Keyword Rankings: Dramatic improvement in keyword rankings, enhancing the site's overall search engine visibility."
+          ]
         },
         "clientTestimonial": {
           "text": "Blue Frontier have offered us a comprehensive solution to so many of our IT issues, from being on hand to keep our equipment running, to redesigning and developing our webpages, implementing a successful social media campaign and enhancing our SEO. Whilst many companies can do some or all of these things, what makes Blue Frontier really stand out to us is the people. The entire team go above and beyond to help us. Not only do they speedily and professionally deal with any problem we pass their way, they do so with a smile and pride in the work they do. It has been a joy working with Blue Frontier and I look forward to being on the upward journey with them alongside us.",
@@ -400,12 +351,31 @@ const caseData:any = {
           
             },
             "results": {
-              "organicTraffic": "14% Increase in Organic Traffic: Significant growth in organic search visibility and traffic.",
-              "totalSiteVisits": "38% Increase in Total Site Visits: Enhanced overall site engagement.",
-              "organicGoalConversions": "74% Increase in Organic Goal Conversions: Notable improvement in conversions from organic traffic.",
-              "totalGoalConversions": "76% Increase in Total Goal Conversions: Substantial overall increase in conversions.",
-              "socialTraffic": "35% Increase in Social Traffic: Growth in traffic from social media channels.",
-              "socialConversions": "35% Increase in Social Conversions: Improved conversion rates from social media traffic."
+              "text": "Our efforts led to remarkable improvements across key performance metrics:",
+              "point1": "14% Increase in Organic Traffic",
+              "leadGeneration": [
+                  "Significant growth in organic search visibility and traffic."
+              ],
+              "point2": "38% Increase in Total Site Visits",
+              "digitalPresence": [
+                  "Enhanced overall site engagement, leading to more visits."
+              ],
+              "point3": "74% Increase in Organic Goal Conversions",
+              "adCampaigns": [
+                  "Notable improvement in conversions from organic traffic, boosting business outcomes."
+              ],
+              "point4": "76% Increase in Total Goal Conversions",
+              "conversions": [
+                  "Substantial overall increase in conversions, reflecting the success of our strategies."
+              ],
+              "point5": "35% Increase in Social Traffic",
+              "traffic": [
+                  "Growth in traffic from social media channels, driving more visitors to the site."
+              ],
+              "point6": "35% Increase in Social Conversions",
+              "increase": [
+                  "Improved conversion rates from social media traffic, enhancing the impact of social campaigns."
+              ]
             },
             "clientTestimonial": {
               "text": "Blue Frontier has been instrumental in transforming our digital presence. From redesigning our website to managing our SEO and digital marketing, they have exceeded our expectations. Their ongoing support and innovative strategies have significantly increased our online traffic, conversions, and brand visibility.",
@@ -531,10 +501,20 @@ const caseData:any = {
               "Focused on national SEO to reach a broader audience and attract more leads."
             ]
           },
-          "results": {
-            "increasedTraffic": "Significant increase in website traffic due to enhanced search engine rankings.",
-            "leadGeneration": "Substantial growth in online leads, aiding in securing more home electronic system installations.",
-            "brandRevitalization": "Successful brand revitalization with a modern website design and refreshed logo, making IHS more attractive to potential clients."
+          "result": {
+            "text": "The strategic overhaul provided by Spearing Systems led to remarkable outcomes for Intra Home Systems:",
+            "point1": "Increased Traffic",
+            "leadGeneration": [
+                "Significant boost in website traffic due to higher search engine rankings."
+            ],
+            "point2": "Lead Generation",
+            "digitalPresence": [
+                "Substantial increase in online leads, helping IHS secure more home electronic system installations."
+            ],
+            "point3": "Brand Revitalization",
+            "adCampaigns": [
+                "The refreshed logo and modern website design successfully revamped IHS's brand image, making it more appealing to potential clients."
+            ]
           },
           "clientTestimonial": {
             "text": "Spearing Systems transformed our online presence with their innovative approach. Their expertise in web design and SEO helped us not only revamp our brand but also significantly increase our traffic and leads. We're now better positioned in the market than ever before.",
@@ -546,62 +526,6 @@ const caseData:any = {
             "contentCreation": "Content Management System Tools"
           }
         },
-
-        "website_dev_3": {
-          "img":atlas,
-          "video_id":"website_dev_3",
-              "title": "Atlas Contract Furniture Boosts Online Performance with Blue Frontier",
-              "client": "Atlas Contract Furniture (ACF) is a global provider of contract furniture specializing in hospitality projects. They needed a new website that would better represent their brand, enhance user experience, and improve their online visibility and engagement. Blue Frontier was tasked with designing and building a new website, as well as providing ongoing digital marketing services to increase website traffic, conversions, and brand awareness.",
-              "problem": "The existing ACF website was restrictive and outdated, limiting engagement and SEO performance. ACF needed a modern, responsive website that would cater to both UK and international audiences, specifically in France and Sweden. They also required a robust SEO and digital marketing strategy to boost their online presence.",
-              "solution": {
-                "text": "Strategy",
-                "point1": "Website Design and Build",
-                "seo": [
-                  "Responsive Design: Developed a new website using Joomla, focusing on a responsive design that ensures an optimal user experience across all devices.",
-                  "User Experience (UX): Enhanced the site’s UX by optimizing the main menu structure and ensuring key product and service pages received appropriate link value.",
-                  "Content Management System (CMS): Implemented an easy-to-use CMS to support content marketing efforts."
-                ],
-                "point2": "SEO Services",
-                "seoCampaign": [
-                  "Keyword Research: Conducted comprehensive keyword research to target the audience effectively and optimize key pages.",
-                  "On-Page SEO: Focused on improving content, metadata, and overall site structure.",
-                  "International SEO: Applied hreflang tags and managed the translation process for the French website.",
-                  "Continuous Optimization: Regularly updated and expanded the site, conducted competitor research, and restructured the website to enhance indexation."
-                ],
-                "point3": "Conversion Rate Optimization (CRO)",
-                "adsCampaign": [
-                  "A/B Testing: Used Google Optimize, Hotjar, and Google Analytics to test different design elements (colors, copy, buttons) and identify what drove the best results.",
-                  "Performance Monitoring: Continuously monitored and tweaked site elements based on test results to improve performance."
-                ],
-                "point4": "Content Marketing",
-                "contentMarketing": [
-                  "Long-Tail Keywords: Utilized keyword research to find new opportunities for blog posts and content updates.",
-                  "Regular Updates: Produced and optimized blog posts and case studies showcasing ACF’s latest projects.",
-                  "Engaging Content: Ensured content was regularly updated with enticing images to attract and engage visitors."
-                ],
-                "point5": "Integrated Campaign Management",
-                "integratedCampaignManagement": [
-                  "SEO, PPC, Social Media: Managed an integrated campaign using SEO, PPC, and social media to drive traffic and conversions.",
-                  "Collaboration: Maintained close collaboration with ACF, sharing insights and recommendations to improve their web visibility and results."
-                ]
-              },
-              "results": {
-                "organicTraffic": "14% Increase in Organic Traffic: Significant growth in organic search visibility and traffic.",
-                "totalSiteVisits": "38% Increase in Total Site Visits: Enhanced overall site engagement.",
-                "organicGoalConversions": "74% Increase in Organic Goal Conversions: Notable improvement in conversions from organic traffic.",
-                "totalGoalConversions": "76% Increase in Total Goal Conversions: Substantial overall increase in conversions.",
-                "socialTraffic": "35% Increase in Social Traffic: Growth in traffic from social media channels.",
-                "socialConversions": "35% Increase in Social Conversions: Improved conversion rates from social media traffic."
-              },
-              "clientTestimonial": {
-                "text": "Blue Frontier has been instrumental in transforming our digital presence. From redesigning our website to managing our SEO and digital marketing, they have exceeded our expectations. Their ongoing support and innovative strategies have significantly increased our online traffic, conversions, and brand visibility.",
-                "author": "Hayley Clasby, Digital Marketer, Blue Frontier"
-              },
-              "technologyUsed": {
-                "cms": "Joomla",
-                "tools": "Google Optimize, Hotjar, Google Analytics"
-              }
-            },
 
             "website_dev_4": {
               "video_id":"website_dev_4",

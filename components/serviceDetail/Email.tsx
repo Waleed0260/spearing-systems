@@ -1,13 +1,16 @@
 import React from "react";
 import platform from "../../public/images/platform.webp";
+import automationm from "../../public/images/automation.png"
+import email1 from "../../public/images/email1.png"
+import email2 from "../../public/images/email2.png"
 import Image from "next/image";
 const Email = () => {
   return (
     <div className="w-full flex items-center justify-center">
       <div className="w-[80%] flex flex-col items-center justify-center">
         {/* FIRST SECTION */}
-        <div className="flex flex-row items-center justify-between w-[100%]">
-          <div className="flex flex-col w-[50%] ">
+        <div className="flex flex-row items-start justify-between w-[100%]">
+          <div className="flex flex-col w-[50%] mt-[50px]">
             <p className="font-bold text-xl heding">Email Platform Migration</p>
             <p className="mid-heading">
               If you’ve outgrown your platform, Northern can not only mitigate
@@ -22,13 +25,13 @@ const Email = () => {
           </div>
 
           <div className="w-[50%]">
-            <Image src={platform} alt="" className="w-[200px]  h-[100px]"/>
+            <Image src={email1} alt=""/>
           </div>
         </div>
 
         {/* SECOND SECTION */}
 
-        <div className="flex flex-row items-center justify-between mt-5">
+        <div className="flex flex-row items-start justify-between mt-5">
         <div className="flex flex-col w-[50%]">
             <p className="font-bold text-xl heding">Email Template Design & Copy            </p>
             <p className="mid-heading">
@@ -43,17 +46,13 @@ const Email = () => {
           </div>
 
           <div className="w-[50%]">
-            <Image src={platform} alt="" className="w-[200px]  h-[100px]"/>
+            <Image src={email2} alt="" />
           </div>
         </div>
 
 {/* THIRD SECTION */}
 
         <div className="flex flex-row items-center justify-between mt-5">
-          <div className="w-[50%]">
-            <Image src={platform} alt="" className="w-[200px]  h-[100px]"/>
-          </div>
-
           <div className="flex flex-col w-[50%]">
             <p className="font-bold text-xl heding">Email Marketing Automation</p>
             <p className="mid-heading">
@@ -66,6 +65,9 @@ const Email = () => {
   <li>Third-Party Platform Integrations</li>
   <li>Dynamic Content</li>
             </ul>
+          </div>
+          <div className="w-[50%]">
+            <Image src={automationm} alt=""/>
           </div>
         </div>
       </div>

@@ -17,7 +17,7 @@ const Technologies = () => {
     <div className='flex flex-col items-center m-[30px]'>
         <p className='font-bold text-2xl heading'>Experts  in Best Class Technology Platforms</p>
         <div className='w-[80%] flex flex-col items-center justify-center'>
-            <div className="grid grid-cols-6 gap-3">
+            <div className="grid md:grid-cols-6 sm:grid-cols-3 grid-cols-2 gap-3">
                 <Image src={adobe} alt="" className='w-[150px] h-[100px]'/>
                 <Image src={meta} alt="" className='w-[150px] h-[100px]'/>
                 <Image src={shopify} alt="" className='w-[150px] h-[100px]'/>
@@ -25,7 +25,7 @@ const Technologies = () => {
                 <Image src={hubspot} alt="" className='w-[150px] h-[100px]'/>
                 <Image src={kyaviyo} alt="" className='w-[150px] h-[100px]'/>
             </div>
-            <div className="grid grid-cols-4 gap-3">
+            <div className="grid md:grid-cols-4 grid-cols-2 gap-3">
             <Image src={magento} alt="" className='w-[150px] h-[100px]'/>
                 <Image src={woocommerce} alt="" className='w-[150px] h-[100px]'/>
                 <Image src={react} alt="" className='w-[150px] h-[100px]'/>

@@ -1,19 +1,13 @@
 "use client"
 import React, {useEffect} from 'react'
-import portfolio1 from "../../public/images/portfolio1.png"
-import portfolio2 from "../../public/images/portfolio2.png"
-import portfolio3 from "../../public/images/portfolio3.png"
 import Image from 'next/image'
-import { FaArrowRight } from "react-icons/fa";
 import {
     Dialog,
     DialogContent,
     DialogDescription,
     DialogHeader,
-    DialogTitle,
     DialogTrigger,
   } from "@/components/ui/dialog";
-  import popup1 from "../../public/images/popup1.jpg"
 
   import AOS from "aos"
 import 'aos/dist/aos.css';
