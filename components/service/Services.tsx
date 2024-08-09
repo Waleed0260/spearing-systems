@@ -54,7 +54,7 @@ const Services = () => {
             },
         ]
   return (
-    <div className='flex flex-col items-center justify-center m-5 bg-transparent'>
+    <div className='flex flex-col sm:items-center items-start justify-center m-5 bg-transparent'>
         <p className='font-bold text'>What we offer</p>
         <p  className='font-bold text-5xl heading'> What We’re Offering Creative
         Digital Service</p>
