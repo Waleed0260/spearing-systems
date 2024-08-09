@@ -53,7 +53,7 @@ const Testimonial = () => {
   return (
     <div className="flex flex-col justify-center items-center w-full ">
       <div className="w-[80%] flex flex-col items-center justify-center m-[30px]"></div>
-      <p className="font-bold text-2xl m-3 heading">What Our Clients Are Saying</p>
+      <p className="font-bold text-2xl m-3 heading text-center">What Our Clients Are Saying</p>
 
       <div className="w-[70%]">
             <Swiper
@@ -65,14 +65,14 @@ const Testimonial = () => {
             delay: 3000,
             disableOnInteraction: false,
           }}
-          className="w-full md:h-[150px] p-[30px]"
+          className="w-full md:h-[150px] p-[15px]"
             >
                 {testimonial?.map((item:any)=>{
                     return(
                         <SwiperSlide>
                             <div className='flex flex-col items-center justfiy-center p-3'>
 
-                            <p className='text text-center text-xl'>{item.review}</p>
+                            <p className='text text-left text-xl'>{item.review}</p>
                             <p className='heading'>{item.name}</p>
                             <p className='mid-heading'>{item.position}</p>
                             </div>

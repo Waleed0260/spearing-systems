@@ -5,16 +5,19 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import {Autoplay, Navigation, Pagination} from "swiper/modules";
 import Image from 'next/image';
-import adobe from "../../public/images/adobe.png"
-import meta from "../../public/images/meta.png"
-import shopify from "../../public/images/Shopify.png"
-import googleads from "../../public/images/googleads.png"
-import hubspot from "../../public/images/hubspot.png"
-import kyaviyo from "../../public/images/kyaviyo.png"
-import magento from "../../public/images/magento.png"
-import react from "../../public/images/react.png"
-import woocommerce from "../../public/images/woocommerce.png"
-import wordpress from "../../public/images/wordpress.png"
+import clinicalpartner from "../../public/images/clinicalPartner.png";
+import hb from "../../public/images/hb.png";
+import imperva from "../../public/images/imperva.png";
+import intra from "../../public/images/intra.png";
+import logan from "../../public/images/logan.png";
+import longhorn from "../../public/images/longhorn.jpeg";
+import maryaland from "../../public/images/maryaland.png";
+import pulp from "../../public/images/pulp.jpeg";
+import stovall from "../../public/images/stovall.jpeg";
+import think from "../../public/images/think.jpeg";
+import voltage from "../../public/images/voltage.jpeg";
+import portLogo from "../../public/images/portLogo.png"
+import atlas from "../../public/images/atlas.jpeg"
 const Slider = () => {
   return (
     <div className='w-full flex items-center justify-center'>
@@ -45,36 +48,36 @@ const Slider = () => {
         className="w-[80%] h-[120px]"
       >
         <SwiperSlide>
-          <div className="w-[200px] h-[100px] ">
-            <Image src={adobe} alt="" className='w-full h-full overflow-hidden'/>
+          <div className="w-[213px] h-[110px] ">
+            <Image src={clinicalpartner} alt="" className='w-full h-full overflow-hidden'/>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-[200px] h-[100px]">
-            <Image src={shopify} alt="" className='w-full h-full overflow-hidden'/>
+          <div className="w-[130px] h-[100px] ml-9">
+            <Image src={hb} alt="" className='w-full h-full overflow-hidden'/>
           </div>
         </SwiperSlide>  <SwiperSlide>
-          <div className="w-[200px] h-[100px]">
-            <Image src={react} alt="" className='w-full h-full overflow-hidden'/>
+          <div className="w-[130px] h-[100px]">
+            <Image src={imperva} alt="" className='w-full h-full overflow-hidden'/>
           </div>
         </SwiperSlide> <SwiperSlide>
-          <div className="w-[200px] h-[100px]">
-            <Image src={magento} alt="" className='w-full h-full overflow-hidden'/>
+          <div className="w-[130px] h-[100px]">
+            <Image src={intra} alt="" className='w-full h-full overflow-hidden'/>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-[200px] h-[100px]">
-            <Image src={meta} alt="" className='w-full h-full overflow-hidden'/>
+          <div className="w-[130px] h-[100px]">
+            <Image src={logan} alt="" className='w-full h-full overflow-hidden'/>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-[200px] h-[100px]">
-            <Image src={hubspot} alt="" className='w-full h-full overflow-hidden'/>
+          <div className="w-[130px] h-[100px]">
+            <Image src={longhorn} alt="" className='w-full h-full overflow-hidden'/>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-[200px] h-[100px]">
-            <Image src={wordpress} alt="" className='w-full h-full overflow-hidden'/>
+          <div className="w-[130px] h-[100px]">
+            <Image src={pulp} alt="" className='w-full h-full overflow-hidden'/>
           </div>
         </SwiperSlide>
       </Swiper>

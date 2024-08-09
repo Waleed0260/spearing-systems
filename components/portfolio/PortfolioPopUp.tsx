@@ -24,7 +24,7 @@ const PortfolioPopUp = ({id}:any) => {
             const result = await res.json();
             setData(result);
             setLoading(false)
-            console.log("result", result)
+            // console.log("result", result)
           } catch (error) {
             // setError(error.message);
             console.log(error)
@@ -55,18 +55,18 @@ const PortfolioPopUp = ({id}:any) => {
       {/* <p className='text text-xl mt-1'>Lorem ipsum dolor sit amet.</p>
         <p className='text-3xl text mt-4'>How Spiral Marketing Orchestrated a 65,167% Increase in Paid Traffic for This SaaS Technology Company</p> */}
       <p className="font-bold text-2xl mid-heading mt-4">The Client</p>
-      <p className="text mt-3 text-center">
+      <p className="text mt-3">
         {data.client}
       </p>
 
       <p className="mt-[40px] mid-heading text-2xl font-bold">The Problem</p>
-      <p className="mt-3 text text-center">
+      <p className="mt-3 text">
         {data.problem}
       </p>
       </div>
 
       <p className="mt-[40px] mid-heading text-2xl font-bold flex items-center justify-center">The Solution</p>
-      <p className="mt-3 text flex justify-center">
+      <p className="mt-3 text">
       {data.solution?.text}
       </p>
 
@@ -161,7 +161,7 @@ const PortfolioPopUp = ({id}:any) => {
       <div className="flex items-start text flex-col  mt-7">
         <p className="font-bold">{data.solution?.point4}</p>
         <ul className="list-disc ml-4">
-          {data.contentMarketing?.adsCampaign?.map((item:any, index:any)=>{
+          {data.solution?.contentMarketing?.map((item:any, index:any)=>{
             return(
               <li>{item}</li>
             )
@@ -170,9 +170,9 @@ const PortfolioPopUp = ({id}:any) => {
       </div>
 
       <div className="flex items-start text flex-col  mt-7">
-        <p className="font-bold">{data.solution?.point3}</p>
+        <p className="font-bold">{data.solution?.point5}</p>
         <ul className="list-disc ml-4">
-          {data.integratedCampaignManagement?.seoCampaign?.map((item:any, index:any)=>{
+          {data.solution?.integratedCampaignManagement?.map((item:any, index:any)=>{
             return(
               <li>{item}</li>
             )

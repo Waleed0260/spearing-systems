@@ -92,15 +92,15 @@ const Services = () => {
           },
         }}
         loop={true}
-        className="w-[88%] h-[530px] flex items-center justify-center"
+        className="w-[88%] sm:h-[560px] h-[650px] flex items-center justify-center"
       >
         {services.map((item) => {
           return (
             <SwiperSlide key={item.id} className="flex justify-center items-center">
-              <div className="flex flex-col gap-3 lg:w-[19vw] md:w-[33vw] w-[71vw] h-[460px] servicebox transition-all items-center  bg-[#f2f2f2] m-[20px] lg:ml-[20px] sm:ml-[40px] ml-[9px] shadow-2xl cursor-pointer">
+              <div className="flex flex-col gap-3 lg:w-[19vw] md:w-[33vw] w-[71vw] sm:h-[460px] h-[540px] servicebox transition-all items-center  bg-[#f2f2f2] m-[20px] lg:ml-[20px] sm:ml-[40px] ml-[9px] shadow-2xl cursor-pointer ">
                 <p className=" text-4xl mt-[30px] bg-[#FF8E2B] p-5 rounded-[100px]">{item.icon}</p>
                 <b className="font-bold text-2xl mid-heading mt-[15px] text-center">{item.heading}</b>
-                <p className="w-[90%] text-center text text-sm">{item.text}</p>
+                <p className="w-[90%] text-left text text-sm">{item.text}</p>
                 <p className='font-bold text-xl bg-gray-700 bg-opacity-20 text-center p-[15px] mt-[10px] flex items-center rounded-[100px] icon'><FaArrowRight/></p>
               </div>
             </SwiperSlide>

@@ -1,3 +1,4 @@
+import CallTo from '@/components/home/CallTo';
 import Footer from '@/components/home/Footer';
 import Loader from '@/components/home/Loader'
 import Testimonial from '@/components/home/Testimonial';
@@ -11,6 +12,7 @@ const page = () => {
       <Hero/>
       <Portfolio/>
       <Testimonial/>
+      <CallTo/>
       <Footer/>
     </Suspense>
   )

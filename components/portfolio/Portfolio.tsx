@@ -25,12 +25,12 @@ import PortfolioPopUp from "./PortfolioPopUp";
   return (
     <div className="w-full flex items-center justify-center">
       <div className="w-[80%] flex flex-col items-start justify-center m-[30px]">
-        <div className="flex flex-row gap-4 ml-[20px]">
-          <p className="mid-heading font-semibold text-xl">ALL</p>
-          <p className="mid-heading font-semibold text-xl">Google Ads</p>
-          <p className="mid-heading font-semibold text-xl">Website Development</p>
-          <p className="mid-heading font-semibold text-xl">SEO</p>
-        </div>
+      <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-1 text-center">
+  <p className="font-bold text">All</p>
+  <p className="font-bold text">Google Ads</p>
+  <p className="font-bold text">Website Development</p>
+  <p className="font-bold text">SEO</p>
+</div>
         <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
           {PPC.map((item: any) => {
             return (

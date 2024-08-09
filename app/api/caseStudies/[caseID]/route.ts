@@ -99,12 +99,12 @@ const caseData:any = {
               "Improved on-page SEO elements such as meta tags, headings, and content structure to enhance search engine rankings."
           ],
           "point3": "Web Design and Development",
-          "webDesign": [
+          "seoCampaign": [
               "Redesigned the school’s website to provide a user-friendly and visually appealing experience.",
               "Implemented responsive design to ensure accessibility across all devices."
           ],
           "point4": "Conversion Tracking and Reporting",
-          "conversionTracking": [
+          "contentMarketing": [
               "Introduced new conversion goals, such as open house registrations and contact form submissions, to accurately measure success.",
               "Removed non-conversion metrics like 'time on site' and 'contact us' views to focus on actionable data.",
               "Provided detailed reports and continuously refined the strategy based on performance data."
@@ -299,12 +299,12 @@ const caseData:any = {
               "Improved on-page SEO elements such as meta tags, headings, and content structure to enhance search engine rankings."
           ],
           "point3": "Web Design and Development",
-          "webDesign": [
+          "seoCampaign": [
               "Redesigned the school’s website to provide a user-friendly and visually appealing experience.",
               "Implemented responsive design to ensure accessibility across all devices."
           ],
           "point4": "Conversion Tracking and Reporting",
-          "conversionTracking": [
+          "contentMarketing": [
               "Introduced new conversion goals, such as open house registrations and contact form submissions, to accurately measure success.",
               "Removed non-conversion metrics like 'time on site' and 'contact us' views to focus on actionable data.",
               "Provided detailed reports and continuously refined the strategy based on performance data."

@@ -1,3 +1,4 @@
+"use client"
 import React, {useEffect} from 'react'
 import portfolio1 from "../../public/images/portfolio1.png"
 import portfolio2 from "../../public/images/portfolio2.png"

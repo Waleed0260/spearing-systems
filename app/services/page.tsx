@@ -1,7 +1,9 @@
 // "use client"
 import WhyUs from '@/components/about/WhyUs';
+import CallTo from '@/components/home/CallTo';
 import Footer from '@/components/home/Footer';
 import Loader from '@/components/home/Loader'
+import Portfolio from '@/components/home/Portfolio';
 import React, { Suspense, lazy } from 'react'
 const Testimonial = lazy(() => import('@/components/home/Testimonial'));
 const Video = lazy(() => import('@/components/home/Video'));
@@ -13,9 +15,11 @@ const page = () => {
     <div>
     {/* <Suspense fallback={<Loader/>}> */}
     <Hero/>
-    <Services/>
     <WhyUs/>
+    <Services/>
+    <Portfolio/>
     <Testimonial/>
+    <CallTo/>
     {/* <Video/> */}
     <Footer/>
     {/* </Suspense> */}
