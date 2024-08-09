@@ -13,7 +13,7 @@ const AdsService = () => {
         <p className="heading text-2xl">
           Google Ads Management Services that Make a Difference
         </p>
-        <div className="grid grid-cols-3 gap-3 m-6">
+        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-3 m-6">
           <div className="flex flex-col w-[90%] p-5 shadow-2xl">
             <p>Google Ads Setup and Launch</p>
             <Image src={setup} alt="" className="w-[200px] h-[200px]" />

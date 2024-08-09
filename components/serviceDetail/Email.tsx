@@ -9,8 +9,8 @@ const Email = () => {
     <div className="w-full flex items-center justify-center">
       <div className="w-[80%] flex flex-col items-center justify-center">
         {/* FIRST SECTION */}
-        <div className="flex flex-row items-start justify-between w-[100%]">
-          <div className="flex flex-col w-[50%] mt-[50px]">
+        <div className="flex md:flex-row flex-col items-start justify-between w-[100%]">
+          <div className="flex flex-col md:w-[50%] mt-[50px]">
             <p className="font-bold text-xl heding">Email Platform Migration</p>
             <p className="mid-heading">
               If you’ve outgrown your platform, Northern can not only mitigate
@@ -24,15 +24,15 @@ const Email = () => {
             </ul>
           </div>
 
-          <div className="w-[50%]">
+          <div className="md:w-[50%]">
             <Image src={email1} alt=""/>
           </div>
         </div>
 
         {/* SECOND SECTION */}
 
-        <div className="flex flex-row items-start justify-between mt-5">
-        <div className="flex flex-col w-[50%]">
+        <div className="flex md:flex-row flex-col items-start justify-between mt-5">
+        <div className="flex flex-col md:w-[50%]">
             <p className="font-bold text-xl heding">Email Template Design & Copy            </p>
             <p className="mid-heading">
             Using a combination of technical expertise, testing, and creativity, our team designs emails that drive engagement and look great on any device. Whether that’s desktop or mobile, we ensure they receive emails that are functional, beautiful, and effective.
@@ -45,15 +45,15 @@ const Email = () => {
             </ul>
           </div>
 
-          <div className="w-[50%]">
+          <div className="md:w-[50%]">
             <Image src={email2} alt="" />
           </div>
         </div>
 
 {/* THIRD SECTION */}
 
-        <div className="flex flex-row items-center justify-between mt-5">
-          <div className="flex flex-col w-[50%]">
+        <div className="flex md:flex-row flex-col items-center justify-between mt-5">
+          <div className="flex flex-col md:w-[50%]">
             <p className="font-bold text-xl heding">Email Marketing Automation</p>
             <p className="mid-heading">
             We build automated email workflows designed to connect with your audience at every stage of the buying journey. Leveraging our team’s expertise and ability to implement complex systems integrations will level up your email & SMS channels to increase revenue.
@@ -66,7 +66,7 @@ const Email = () => {
   <li>Dynamic Content</li>
             </ul>
           </div>
-          <div className="w-[50%]">
+          <div className="md:w-[50%]">
             <Image src={automationm} alt=""/>
           </div>
         </div>

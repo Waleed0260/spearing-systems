@@ -5,7 +5,7 @@ const AdsManagement = () => {
     <div className='w-full flex items-center justify-center'>
         <div className='w-[90%] flex flex-col items-center justify-center m-[20px]'>
         <p className='text-2xl font-bold heading'>Google Ads Mangement that makes a differnece</p>
-        <div className='grid grid-cols-3 m-[30px] gap-2 w-[90%]'>
+        <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 m-[30px] gap-2 w-[90%]'>
             <div className='w-[90%] flex flex-col p-2'>
                 <p className='mid-heading text-xl'>Home Service Industries</p>
                 <ul className='mt-3 ml-5 list-disc text'>

@@ -1,4 +1,10 @@
 import { FaHelmetSafety } from "react-icons/fa6";
+import pp1 from "../../../../public/images/pp1.png"
+import ppc2 from "../../../../public/images/ppc2.png"
+import ppc3 from "../../../../public/images/ppc3.png"
+import ppc4 from "../../../../public/images/ppc4.png"
+
+
   const transcriptsData: any = {
     search_engine: {
       video_id: 'search_engine',
@@ -344,18 +350,22 @@ import { FaHelmetSafety } from "react-icons/fa6";
         heading:"Our Process for Driving Targeted Traffic",
         process: [
           {
+            img: pp1,
             heading:"Keyword Research",
             text:"Identifying high-performing keywords to target the right audience."
           },
           {
+            img:ppc2,
           heading:"Analytics and Call Tracking",
           text:"Using Google Tag Manager and call tracking to measure performance."
         },
         {
+          img: ppc3,
           heading:"A/B Testing",
           text:"Implementing multivariate tests to determine the best performing ads."
         },
         {
+          img: ppc4,
           heading:"Graphics and Demographic Control",
           text:"Our developers bring the design to life using the latest technologies."
         }

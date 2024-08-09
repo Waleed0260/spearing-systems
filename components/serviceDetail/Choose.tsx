@@ -6,7 +6,7 @@ const Choose = ({choose}:any) => {
     <div className='w-full flex items-center justify-center '>
         <div className='w-[80%] flex flex-col items-center justify-center m-[20px]'>
             <p className='font-bold text-2xl heading'>{choose?.heading}</p>
-            <div className='flex flex-row m-4'>
+            <div className='lg:flex lg:flex-row grid sm:grid-cols-2 grid-cols-1 m-4'>
 
             {choose?.choose.map((item:any)=>{
                 return(

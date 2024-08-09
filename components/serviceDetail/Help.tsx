@@ -11,13 +11,13 @@ const Help = ({process}:any) => {
       <div className="w-[80%] flex flex-col items-center justify-center mt-[30px] m-[30px]">
         <p className="font-bold heading text-4xl">{process?.heading}
         </p>
-        <div className="grid grid-cols-2 gap-4 mt-4 w-full max-w-6xl">
+        <div className="grid sm:grid-cols-2 grid-cols-1 gap-4 mt-4 w-full max-w-6xl">
           {process?.process.map((item:any)=>{
             return(
-              <div className="flex flex-col items-center w-[32vw] p-3 m-3 ">
+              <div className="flex flex-col items-center sm:w-[32vw] w-[80vw] p-3 m-3 ">
             <div className="">
                 <Image
-                  src={adult}
+                  src={item.img}
                   alt="image"
                   className="w-full h-full overflow-hidden"
                 />
