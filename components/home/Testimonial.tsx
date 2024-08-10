@@ -66,11 +66,11 @@ const Testimonial = () => {
             delay: 3000,
             disableOnInteraction: false,
           }}
-          className="w-full md:h-[150px] p-[15px]"
+          className="w-full md:h-[180px] p-[15px]"
             >
-                {testimonial?.map((item:any)=>{
+                {testimonial?.map((item:any, index:any)=>{
                     return(
-                        <SwiperSlide>
+                        <SwiperSlide key={index}>
                             <div className='flex flex-col  justfiy-center p-3'>
 
                             <p className='text text-left text-xl'>{item.review}</p>

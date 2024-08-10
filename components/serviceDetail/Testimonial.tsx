@@ -22,9 +22,9 @@ const Testimonial = ({testimonial}:any) => {
           loop={true}
           className="w-full "
             >
-                {testimonial?.map((item:any)=>{
+                {testimonial?.map((item:any, index:any)=>{
                     return(
-                        <SwiperSlide>
+                        <SwiperSlide key={index}>
                             <div className='flex flex-col items-center justfiy-center p-3'>
 
                             <p className='text text-center text-xl'>{item.review}</p>

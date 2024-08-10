@@ -12,9 +12,9 @@ const Help = ({process}:any) => {
         <p className="font-bold heading text-4xl">{process?.heading}
         </p>
         <div className="grid sm:grid-cols-2 grid-cols-1 gap-4 mt-4 w-full max-w-6xl">
-          {process?.process.map((item:any)=>{
+          {process?.process.map((item:any, index:any)=>{
             return(
-              <div className="flex flex-col items-center sm:w-[32vw] w-[80vw] p-3 m-3 ">
+              <div className="flex flex-col items-center sm:w-[32vw] w-[80vw] p-3 m-3 " key={index}>
             <div className="">
                 <Image
                   src={item.img ? item.img : technical}

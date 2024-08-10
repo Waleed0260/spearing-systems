@@ -29,9 +29,8 @@ const Portfolio = () => {
         </p>
 
         <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
-          {PPC.map((item: any) => {
+          {PPC.map((item: any, index) => {
             return (
-                <>
               <Dialog key={item.id}>
           <DialogTrigger>
           <div className="flex p-[20px]" >
@@ -63,7 +62,6 @@ const Portfolio = () => {
             </DialogHeader>
           </DialogContent>
         </Dialog>
-                      </>
             );
           })}
         </div>

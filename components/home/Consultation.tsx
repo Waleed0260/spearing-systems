@@ -109,7 +109,7 @@ const Consultation = (margin:any) => {
                 placeholder="Enter Email"
                 className="p-4 bg-white border-[1px] border-[#F5F5F5]"
               />
-              <Button className="bg-white text-black mt-4 rounded-[100px]">
+              <Button className="bg-[#0D2137] hover:bg-[#FF832B] hover:text-black text-white mt-4 rounded-[100px]">
                 SUBMIT
               </Button>
             </form>

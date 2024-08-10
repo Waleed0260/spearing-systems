@@ -1,12 +1,9 @@
 "use client"
 import React, {useEffect} from 'react'
-import { Progress } from "@/components/ui/progress"
-import about3 from "../../public/images/about5.png"
-import digitalSolutions from "../../public/images/digitalSolutions.jpg"
 import Image from 'next/image'
 import AOS from "aos"
 import 'aos/dist/aos.css';
-import whyAbout from "../../public/images/whyAbout.jpg"
+import whyAbout from "../../public/images/whyAbout.png"
 
 const WhyUs = () => {
     useEffect(() => {
@@ -17,7 +14,7 @@ const WhyUs = () => {
       }, []);
   return (
     <div className='w-full flex items-center justify-center '>
-        <div className='w-[90%] m-[30px] flex md:flex-row flex-col md:items-center items-start justify-between'>
+        <div className='w-[90%] m-[30px] flex md:flex-row flex-col items-start justify-between'>
             <div className='flex flex-col md:w-[50%] ' data-aos="fade-right">
                 <b className='mid-heading'>WHy US</b>
                 <p className='font-bold text-4xl heading'>We Have an Incredibly Rich Past and Amazing Future Ahead </p>

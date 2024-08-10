@@ -48,13 +48,8 @@ const Slider = () => {
         className="w-[80%] h-[120px]"
       >
         <SwiperSlide>
-          <div className="w-[213px] h-[110px] ">
+          <div className="w-[160px] h-[100px] ">
             <Image src={clinicalpartner} alt="" className='w-full h-full overflow-hidden'/>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="w-[130px] h-[100px] ml-9">
-            <Image src={think} alt="" className='w-full h-full overflow-hidden'/>
           </div>
         </SwiperSlide>  <SwiperSlide>
           <div className="w-[130px] h-[100px]">

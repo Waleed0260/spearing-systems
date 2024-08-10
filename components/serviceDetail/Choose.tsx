@@ -8,9 +8,9 @@ const Choose = ({choose}:any) => {
             <p className='font-bold text-2xl heading'>{choose?.heading}</p>
             <div className='lg:flex lg:flex-row grid sm:grid-cols-2 grid-cols-1 m-4'>
 
-            {choose?.choose.map((item:any)=>{
+            {choose?.choose.map((item:any, index:any)=>{
                 return(
-                    <div className='w-[90%]  m-3 p-4 flex flex-col items-center justify-center gap-3 shadow-2xl'>
+                    <div className='w-[90%]  m-3 p-4 flex flex-col items-center justify-center gap-3 shadow-2xl' key={index}>
           <i className={`fas fa-${item.icon}`} style={{ fontSize: '2rem', backgroundColor:"#FF8E2B", padding:"15px", borderRadius:"100px" }}></i>
           <p className='mid-heading font-bold text-2xl'>{item.heading}</p>
                         <p className='text-center text'>{item.text}</p>

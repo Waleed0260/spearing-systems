@@ -11,18 +11,25 @@ import { FaEnvelope } from 'react-icons/fa';
 const Services = () => {
         const services = [
             {
+                id:5,
+                icon: <FaCode/>,
+                heading:"WEBSITE DEVELOPMENT",
+                text: "Transform your online presence with visually stunning, responsive websites that captivate and convert",
+                href:"website_development"
+            },
+            {
+                id:2,
+                icon: <FaGoogle/>,
+                heading:"GOOGLE ADS/PPC",
+                text: "Maximize your ROI with expertly managed Google Ads campaigns. Our PPC specialists create targeted, data-driven campaigns that put your brand in front of high-intent customers",
+                href:"page_per_click",
+            },
+            {
                 id:1,
                 icon: <FaShareAlt/>,
                 heading:"SMM",
                 text: "Engage, connect, and grow your audience on the platforms that matter most. Our social media marketing services deliver tailored content",
                 href:"social_media_marketing"
-            },
-            {
-                id:2,
-                icon: <FaGoogle/>,
-                heading:"PPC",
-                text: "Maximize your ROI with expertly managed Google Ads campaigns. Our PPC specialists create targeted, data-driven campaigns that put your brand in front of high-intent customers",
-                href:"page_per_click",
             },
             {
                 id:3,
@@ -39,17 +46,10 @@ const Services = () => {
                 href:"branding",
             },
             {
-                id:5,
-                icon: <FaCode/>,
-                heading:"WEBSITE DEVELOPMENT",
-                text: "Transform your online presence with visually stunning, responsive websites that captivate and convert",
-                href:"website_development"
-            },
-            {
                 id:6,
                 icon: <FaEnvelope/>,
                 heading:"Email Marketing",
-                text: "Need something changed or is there something not quite working Aellente humour or randomised words",
+                text: "Unlock the full potential of email marketing with Spearing Systems. Our comprehensive services are designed to increase engagement, drive sales, and build lasting customer relationships. ",
                 href:"email_marketing"
             },
         ]

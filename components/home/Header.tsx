@@ -15,7 +15,7 @@ import {
 import { IoMenu } from "react-icons/io5";
 
 const Header = (color:any) => {
-  const [bgColor, setBgColor] = useState("[#ffffff]");
+  const [bgColor, setBgColor] = useState("transparent");
   // const[color, setColor] = useState("[#ffffff]")
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const Header = (color:any) => {
       if (window.scrollY > 1) {
         setBgColor("[#0D2137]");
       } else {
-        setBgColor("[#ffffff]");
+        setBgColor("transparent");
       }
     };
 
@@ -44,25 +44,45 @@ const Header = (color:any) => {
         </div>
         <div>
           <ul className={`flex flex-row gap-4 relative z-10 text-white`}>
-            <li className="list-none mid-heading">
+            <li className="list-none mid-heading hover:text-[#FF8E2B] transition-all">
               <Link href={"/"}>Home</Link>
             </li>
-            <li className="list-none mid-heading">
+            <li className="list-none mid-heading hover:text-[#FF8E2B] transition-all">
               <Link href={"/about"}>About</Link>
             </li>
-            <li className="list-none mid-heading">
-              <Link href={"/services"}>Our Services</Link>
-            </li>
+            <li className="list-none mid-heading relative group transition-all">
+    <Link href={"/services"}>Our Services</Link>
+    <ul className="absolute left-0 top-full mt-0  bg-gray-800 p-3 hidden group-hover:flex flex-col items-start w-[240px] transition-all">
+      <li className="py-1 w-full hover:text-[#FF8E2B] transition-all">
+        <Link href={"/service-detail/website_development"} className="block w-full h-full">Website Development</Link>
+      </li>
+      <li className="py-1 w-full hover:text-[#FF8E2B] transition-all">
+        <Link href={"/service-detail/page_per_click"} className="block w-full h-full">Google Ads</Link>
+      </li>
+      <li className="py-1 w-full hover:text-[#FF8E2B] transition-all">
+        <Link href={"/service-detail/social_media_marketing"} className="block w-full h-full">Social Media Marketing</Link>
+      </li>
+      <li className="py-1 w-full hover:text-[#FF8E2B] transition-all">
+        <Link href={"/service-detail/search_engine"} className="block w-full h-full">SEO</Link>
+      </li>
+      <li className="py-1 w-full hover:text-[#FF8E2B] transition-all">
+        <Link href={"/service-detail/branding"} className="block w-full h-full">Branding</Link>
+      </li>
+        <li className="py-1 w-full hover:text-[#FF8E2B] transition-all">
+        <Link href={"/service-detail/email_marketing"} className="block w-full h-full">Email Marketing</Link>
+      </li>
+    </ul>
+  </li>
             {/* <li className='list-none mid-heading'>Page</li> */}
-            <li className="list-none mid-heading">
+            <li className="list-none mid-heading hover:text-[#FF8E2B] transition-all">
               <Link href={"/portfolio"}>Portfolio</Link>
             </li>
-            <li className="list-none mid-heading">
+            <li className="list-none mid-heading hover:text-[#FF8E2B] transition-all">
               <Link href={"/contact"}>Contact</Link>
             </li>          </ul>
         </div>
         <div className="relative z-10">
-          <Button>GET A CONSULTATION</Button>
+          <Button className="bg-[#0D2137] hover:bg-[#FF832B]">GET A CONSULTATION</Button>
         </div>
       </div>
 
@@ -80,22 +100,22 @@ const Header = (color:any) => {
               <SheetTitle></SheetTitle>
               <SheetDescription>
                 <ul className={`flex flex-col gap-4 relative z-10 text-white items-start`}>
-                  <li className="list-none mid-heading">
+                  <li className="list-none mid-heading hover:text-[#FF8E2B] transition-all">
                     <Link href={"/"}>Home</Link>
                   </li>
-                  <li className="list-none mid-heading">
+                  <li className="list-none mid-heading hover:text-[#FF8E2B] transition-all">
                     <Link href={"/services"}>Our Services</Link>
                   </li>
-                  <li className="list-none mid-heading">
+                  <li className="list-none mid-heading hover:text-[#FF8E2B] transition-all">
                     <Link href={"/portfolio"}>Portfolio</Link>
                   </li>
-                  <li className="list-none mid-heading">
+                  <li className="list-none mid-heading hover:text-[#FF8E2B] transition-all">
                     <Link href={"/about"}>About</Link>
                   </li>
-                  <li className="list-none mid-heading">
+                  <li className="list-none mid-heading hover:text-[#FF8E2B] transition-all">
                     <Link href={"/contact"}>Contact</Link>
                   </li>
-                <Button>GET A CONSULTATION</Button>
+                <Button className="bg-[#0D2137] hover:bg-[#FF832B]">GET A CONSULTATION</Button>
                 </ul>
 
               </SheetDescription>

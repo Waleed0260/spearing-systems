@@ -7,17 +7,15 @@ const Benefits = ({benefits}:any) => {
             {/* <div className='flex items-start '></div> */}
             <p className='heading text-2xl font-bold'>{benefits?.heading}</p>
             <ul className='list-disc text mt-[20px] ml-[20px]'>
-              {benefits?.benefits.map((item:any)=>{
+              {benefits?.benefits.map((item:any, index:any)=>{
                 return(
-                  <>
-                  <li className='mt-4'>
+                  <li className='mt-4' key={index}>
                   <div className='flex flex-row gap-3'>
 
                   <p className='font-bold'>{item.heading}</p>
                   <p>{item.text}</p>
                   </div>
                 </li>
-                  </>
                 )
               })}
             </ul>

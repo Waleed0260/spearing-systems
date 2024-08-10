@@ -42,7 +42,6 @@ const Portfolio = (id:any) => {
         <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
           {array.slice(0,3).map((item: any) => {
             return (
-                <>
               <Dialog key={item.id}>
           <DialogTrigger>
           <div className="flex p-[20px]" >
@@ -74,7 +73,6 @@ const Portfolio = (id:any) => {
             </DialogHeader>
           </DialogContent>
         </Dialog>
-                      </>
             );
           })}
         </div>

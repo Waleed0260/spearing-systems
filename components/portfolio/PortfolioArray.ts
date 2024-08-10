@@ -14,7 +14,7 @@ import portfolio13 from "../../public/images/portfolio13.jpg";
 import portfolio14 from "../../public/images/portfolio14.jpg";
 import portfolio15 from "../../public/images/portfolio15.jpg";
 import portfolio16 from "../../public/images/portfolio16.jpg";
-
+import case7 from "../../public/images/case7.png"
 
 export const PPC = [
     {
@@ -47,13 +47,13 @@ export const PPC = [
     },
     {
         id: 4,
-        image: portfolio4,
+        image: case7,
         title: "Website Dev/SEO",
         text: "Atlas Contract Furniture Boosts Online Performance with Blue Frontier",
         link: "seo_5"
     },
     {
-        id: 3,
+        id: 6,
         image: portfolio2,
         title: "SEO/Google Ads/Web Dev",
         text: "Boosting Site Conversions for a Regional Private School",

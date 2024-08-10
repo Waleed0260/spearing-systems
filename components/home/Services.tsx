@@ -97,7 +97,7 @@ const Services = () => {
           },
         }}
         loop={true}
-        className="w-[88%] sm:h-[580px] h-[650px] flex items-center justify-center"
+        className="w-[88%] sm:h-[580px] h-[690px] flex items-center justify-center"
       >
         {services.map((item) => {
           return (
@@ -113,7 +113,7 @@ const Services = () => {
         })}
       </Swiper>
       <Link href={"/services"}>
-      <Button className="bg-[#0D2137] text-white rounded-[100px]">View All Services</Button>
+      <Button className="bg-[#0D2137] hover:bg-[#FF832B] text-white rounded-[100px]">View All Services</Button>
       
       </Link>
     </div>

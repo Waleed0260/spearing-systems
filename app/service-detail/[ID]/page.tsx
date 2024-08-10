@@ -33,7 +33,6 @@ const page = ({ params }: { params: { ID: string } }) => {
             const result = await res.json();
             setData(result);
             setLoading(false)
-            console.log("result", result)
           } catch (error) {
             // setError(error.message);
             console.log(error)
