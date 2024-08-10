@@ -17,7 +17,7 @@ const Help = ({process}:any) => {
               <div className="flex flex-col items-center sm:w-[32vw] w-[80vw] p-3 m-3 ">
             <div className="">
                 <Image
-                  src={item.img}
+                  src={item.img ? item.img : technical}
                   alt="image"
                   className="w-full h-full overflow-hidden"
                 />

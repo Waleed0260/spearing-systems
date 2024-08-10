@@ -19,7 +19,7 @@ import portfolio16 from "../../public/images/portfolio16.jpg";
 export const PPC = [
     {
         id: 5,
-        image: portfolio5,
+        image: portfolio8,
         title: "Google Ads/SEO",
         text: "Elevating THINK's Digital Presence",
         link: "google_ads1"
@@ -33,14 +33,14 @@ export const PPC = [
     },
     {
         id: 2,
-        image: portfolio2,
+        image: portfolio10,
         title: "Website Dev",
         text: "Intra Home Systems Transforms Online Presence with Comprehensive Web and SEO Overhaul",
         link: "website_dev_2"
     },
     {
         id: 3,
-        image: portfolio3,
+        image: portfolio15,
         title: "Google Ads/PPC",
         text: "Business Increases Their Conversions by 650%",
         link: "google_ads4"
@@ -50,11 +50,11 @@ export const PPC = [
         image: portfolio4,
         title: "Website Dev/SEO",
         text: "Atlas Contract Furniture Boosts Online Performance with Blue Frontier",
-        link: "website_dev_3"
+        link: "seo_5"
     },
     {
         id: 3,
-        image: portfolio8,
+        image: portfolio2,
         title: "SEO/Google Ads/Web Dev",
         text: "Boosting Site Conversions for a Regional Private School",
         link: "google_ads3"
@@ -64,7 +64,7 @@ export const PPC = [
 export const seo = [
     {
         id: 1,
-        image: portfolio6,
+        image: portfolio8,
         title: "Google Ads/SEO",
         text: "Elevating THINK's Digital Presence",
         link: "google_ads1"
@@ -78,14 +78,14 @@ export const seo = [
     },
     {
         id: 3,
-        image: portfolio8,
+        image: portfolio2,
         title: "SEO/Google Ads/Website Dev",
         text: "Boosting Site Conversions for a Regional Private School",
         link: "google_ads3"
     },
     {
         id: 4,
-        image: portfolio9,
+        image: portfolio4,
         title: "SEO",
         text: "Clinical Partners Achieves Significant Growth with Enhanced SEO Strategy",
         link: "seo_4"

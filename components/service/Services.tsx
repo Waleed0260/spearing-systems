@@ -59,7 +59,7 @@ const Services = () => {
         <p  className='font-bold text-5xl heading'> What We’re Offering Creative
         Digital Service</p>
         <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-3 m-8'>
-            {services.map((item:any, index:any)=>{
+            {services.map((item:any)=>{
                 return (
                         <Link href={`/service-detail/${item.href}`} key={item.id}>
                     <div className='lg:w-[22vw] sm:w-[34vw] w-[70vw] h-[23rem] m-4 flex flex-col justify-center items-left border-[1px] border-black rounded-10px servicebox bg-[#f5f6f7] rounded-md' key={item.id}>

@@ -54,11 +54,11 @@ const Slider = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="w-[130px] h-[100px] ml-9">
-            <Image src={hb} alt="" className='w-full h-full overflow-hidden'/>
+            <Image src={think} alt="" className='w-full h-full overflow-hidden'/>
           </div>
         </SwiperSlide>  <SwiperSlide>
           <div className="w-[130px] h-[100px]">
-            <Image src={imperva} alt="" className='w-full h-full overflow-hidden'/>
+            <Image src={maryaland} alt="" className='w-full h-full overflow-hidden'/>
           </div>
         </SwiperSlide> <SwiperSlide>
           <div className="w-[130px] h-[100px]">
