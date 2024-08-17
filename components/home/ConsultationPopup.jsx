@@ -8,7 +8,7 @@ const ConsultationPopup = () => {
             
             <PopupButton
         url="https://calendly.com/spearingsystems"
-        rootElement={document.getElementById("root") as HTMLElement}
+        rootElement={document.getElementById("root")}
         text="Start a Conversation"
         className='bg-[#0D2137] hover:bg-[#FF832B] p-2 rounded-md text-white '
       />
