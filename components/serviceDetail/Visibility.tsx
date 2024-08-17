@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 import Image from "next/image";
 import seo from "../../public/images/seo.jpg";
 
-const Visibility = ({ heading, text, CTA, id }: any) => {
+const Visibility = ({ heading, text, CTA, img }: any) => {
 
   return (
     <div className="w-full flex flex-col items-center justify-center overflow-x-hidden">
@@ -16,13 +16,13 @@ const Visibility = ({ heading, text, CTA, id }: any) => {
             <p className="text w-[85%] mt-4">{text}</p>
             <Button
               variant={"outline"}
-              className="mt-[20px] sm:w-[400px] w-[70vw] bg-blue-700 rounded-[100px] text-white"
+              className="mt-[20px] sm:w-[150px] w-[70vw] bg-[#0D2137] hover:bg-[#FF8E2B] rounded-[100px] text-white"
             >
-              {CTA}
+              Contact Us
             </Button>
-            <div className="w-[450px] h-[350px] mt-[20px]">
+            <div className="w-[550px] h-[350px] mt-[20px]">
               <Image
-                src={seo}
+                src={img ? img: null}
                 alt="seo"
                 className="h-full sm:w-full w-[70vw] overflow-hidden"
               />
@@ -32,7 +32,7 @@ const Visibility = ({ heading, text, CTA, id }: any) => {
           <div className="flex flex-col gap-3 md:w-[35%] w-[70vw] shadow-2xl mt-[30px]">
             <div className="flex flex-col items-center justify-center p-6 mt-5">
               <p className="text-4xl text-center">
-                Get Started with Our SEO Services Today!
+                {CTA}
               </p>
 
               <form

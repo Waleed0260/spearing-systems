@@ -11,8 +11,6 @@ import Email from '@/components/serviceDetail/Email'
 import Features from '@/components/serviceDetail/Features'
 import Help from '@/components/serviceDetail/Help'
 import Portfolio from '@/components/serviceDetail/Portfolio'
-import Results from '@/components/serviceDetail/Results'
-import Tell from '@/components/serviceDetail/Tell'
 import Testimonial from '@/components/serviceDetail/Testimonial'
 import Visibility from '@/components/serviceDetail/Visibility'
 import WhyUs from '@/components/serviceDetail/WhyUs'
@@ -52,7 +50,7 @@ const page = ({ params }: { params: { ID: string } }) => {
     ): (
       <>
       <Header color="[#0D2137]"/>
-    <Visibility heading={data.heading} text={data.text} CTA={data.CTA} id={params.ID}/>
+    <Visibility heading={data.heading} text={data.text} CTA={data.CTA} img={data.img}/>
     <WhyUs help={data.help}/>
     <Choose choose={data.choose}/>
     <Help process={data.process}/>

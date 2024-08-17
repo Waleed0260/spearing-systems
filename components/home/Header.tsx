@@ -13,6 +13,8 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { IoMenu } from "react-icons/io5";
+// import ConsultationPopup from "./ConsultationPopup"
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
 
 const Header = (color:any) => {
   const [bgColor, setBgColor] = useState("[#ffffff]");
@@ -50,9 +52,29 @@ const Header = (color:any) => {
             <li className="list-none mid-heading">
               <Link href={"/about"}>About</Link>
             </li>
-            <li className="list-none mid-heading">
-              <Link href={"/services"}>Our Services</Link>
-            </li>
+            <li className="list-none mid-heading relative group transition-all">
+    <Link href={"/services"}>Our Services</Link>
+    <ul className="absolute left-0 top-full mt-0  bg-gray-800 p-3 hidden group-hover:flex flex-col items-start w-[240px] transition-all">
+      <li className="py-1 w-full hover:text-[#FF8E2B] transition-all">
+        <Link href={"/service-detail/website_development"} className="block w-full h-full">Website Development</Link>
+      </li>
+      <li className="py-1 w-full hover:text-[#FF8E2B] transition-all">
+        <Link href={"/service-detail/page_per_click"} className="block w-full h-full">Google Ads</Link>
+      </li>
+      <li className="py-1 w-full hover:text-[#FF8E2B] transition-all">
+        <Link href={"/service-detail/social_media_marketing"} className="block w-full h-full">Social Media Marketing</Link>
+      </li>
+      <li className="py-1 w-full hover:text-[#FF8E2B] transition-all">
+        <Link href={"/service-detail/search_engine"} className="block w-full h-full">SEO</Link>
+      </li>
+      <li className="py-1 w-full hover:text-[#FF8E2B] transition-all">
+        <Link href={"/service-detail/branding"} className="block w-full h-full">Branding</Link>
+      </li>
+        <li className="py-1 w-full hover:text-[#FF8E2B] transition-all">
+        <Link href={"/service-detail/email_marketing"} className="block w-full h-full">Email Marketing</Link>
+      </li>
+    </ul>
+  </li>
             {/* <li className='list-none mid-heading'>Page</li> */}
             <li className="list-none mid-heading">
               <Link href={"/portfolio"}>Portfolio</Link>
@@ -61,8 +83,9 @@ const Header = (color:any) => {
               <Link href={"/contact"}>Contact</Link>
             </li>          </ul>
         </div>
-        <div className="relative z-10">
-          <Button>GET A CONSULTATION</Button>
+        <div className="relative z-10 mb-[30px]">
+          <Button className="bg-[#0D2137] hover:bg-[#FF8E2B]">Get A Consultation</Button>
+          {/* <ConsultationPopup/> */}
         </div>
       </div>
 
@@ -103,6 +126,15 @@ const Header = (color:any) => {
           </SheetContent>
         </Sheet>
       </div>
+      <FloatingWhatsApp
+              phoneNumber="+923392073100"
+              accountName="SpearingSystem"
+              statusMessage="Replies within 15 minutes"
+              chatMessage="Hello there! How can I help you ?"
+              avatar="/images/logoAvatar.png"
+              chatboxHeight={350}
+              buttonClassName="floating-whatsapp-button"
+      />
     </>
   );
 };
