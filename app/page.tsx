@@ -11,14 +11,14 @@ import Consultation from '@/components/home/Consultation';
 import Technologies from '@/components/home/Technologies';
 import Slider from '@/components/home/Slider';
 import Portfolio from '@/components/home/Portfolio';
-
+import Script from 'next/script';
 export default function Page() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 100);
 
     // Cleanup the timer
     return () => clearTimeout(timer);
@@ -43,6 +43,7 @@ export default function Page() {
       {/* <Testimonial /> */}
       <Consultation/>
       <Footer />
+
     </>
   );
 }

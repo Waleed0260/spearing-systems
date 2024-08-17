@@ -13,12 +13,11 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { IoMenu } from "react-icons/io5";
-// import ConsultationPopup from "./ConsultationPopup"
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
+import ConsultationPopup from "./ConsultationPopup"
 
 const Header = (color:any) => {
   const [bgColor, setBgColor] = useState("[#ffffff]");
-  // const[color, setColor] = useState("[#ffffff]")
 
   useEffect(() => {
     const handleScroll = () => {
@@ -84,8 +83,8 @@ const Header = (color:any) => {
             </li>          </ul>
         </div>
         <div className="relative z-10 mb-[30px]">
-          <Button className="bg-[#0D2137] hover:bg-[#FF8E2B]">FREE CONSULTATION</Button>
-          {/* <ConsultationPopup/> */}
+          {/* <Button className="bg-[#0D2137] hover:bg-[#FF8E2B]" onClick={openCalendlyPopup}>FREE CONSULTATION</Button> */}
+          <ConsultationPopup/>
         </div>
       </div>
 
