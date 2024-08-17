@@ -14,7 +14,6 @@ import {
 } from "@/components/ui/sheet";
 import { IoMenu } from "react-icons/io5";
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
-import ConsultationPopup from "./ConsultationPopup"
 
 const Header = (color:any) => {
   const [bgColor, setBgColor] = useState("[#ffffff]");
@@ -82,19 +81,18 @@ const Header = (color:any) => {
               <Link href={"/contact"}>Contact</Link>
             </li>          </ul>
         </div>
-        <div className="relative z-10 mb-[30px]">
-          {/* <Button className="bg-[#0D2137] hover:bg-[#FF8E2B]" onClick={openCalendlyPopup}>FREE CONSULTATION</Button> */}
-          <ConsultationPopup/>
+        <div className="relative z-10">
+          <Button className="bg-[#0D2137] hover:bg-[#FF8E2B]"> <Link href={"https://calendly.com/spearingsystems"} target="blank">FREE CONSULTATION</Link> </Button>
         </div>
       </div>
 
-      <div className="flex md:hidden flex-row justify-around items-center w-full bg-[#0D2137]">
+      <div className="flex md:hidden flex-row justify-between p-2 items-center w-full bg-[#0D2137]">
         <div className="h-[100px] w-[100px] relative z-10">
           <Image src={logo} alt="" height={200} width={200} />
         </div>
 
         <Sheet>
-          <SheetTrigger className="text-white text-2xl">
+          <SheetTrigger className="text-white text-4xl">
             <IoMenu />
           </SheetTrigger>
           <SheetContent className="bg-[#0D2137] text-white">
