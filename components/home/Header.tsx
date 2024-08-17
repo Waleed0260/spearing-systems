@@ -84,7 +84,7 @@ const Header = (color:any) => {
             </li>          </ul>
         </div>
         <div className="relative z-10 mb-[30px]">
-          <Button className="bg-[#0D2137] hover:bg-[#FF8E2B]">Get A Consultation</Button>
+          <Button className="bg-[#0D2137] hover:bg-[#FF8E2B]">FREE CONSULTATION</Button>
           {/* <ConsultationPopup/> */}
         </div>
       </div>
