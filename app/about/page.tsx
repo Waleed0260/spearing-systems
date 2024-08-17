@@ -9,7 +9,7 @@ import React, {useEffect, useState} from 'react'
 import Faq from '@/components/about/Faq'
 import Growth from '@/components/about/Growth'
 import Hero from '@/components/about/Hero'
-import WhyUs from '@/components/serviceDetail/WhyUs'
+import WhyUs from '@/components/about/WhyUs'
 import Loader from '@/components/home/Loader'
 import Footer from '@/components/home/Footer';
 import Testimonial from '@/components/home/Testimonial';
