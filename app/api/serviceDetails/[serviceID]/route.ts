@@ -3,10 +3,16 @@ import pp1 from "../../../../public/images/pp1.png"
 import ppc2 from "../../../../public/images/ppc2.png"
 import ppc3 from "../../../../public/images/ppc3.png"
 import ppc4 from "../../../../public/images/ppc4.png"
-
+import seo from "../../../../public/images/seo.jpg"
+import ppc from "../../../../public/images/ppc.jpg"
+import branding from "../../../../public/images/branding.jpg"
+import email from "../../../../public/images/email.jpg"
+import marketingService from "../../../../public/images/marketingService.jpg"
+import customWebsite from "../../../../public/images/customWebsite.webp"
 
   const transcriptsData: any = {
     search_engine: {
+      img: seo,
       video_id: 'search_engine',
       heading: "Unlock Unmatched Online Visibility with Spearing Systems' SEO Services",
       text:"Transform your online presence and drive targeted traffic to your website with Spearing Systems' expert Search Engine Optimization services. Our tailored strategies ensure your business reaches its full potential by dominating search engine results.",
@@ -121,6 +127,7 @@ import ppc4 from "../../../../public/images/ppc4.png"
       }
     },
     website_development: {
+      img: customWebsite,
         video_id: 'website_development',
         heading: "Unleash the Full Potential of Your Online Presence",
         text:"At Spearing Systems, we specialize in creating dynamic, responsive, and user-friendly websites that elevate your business. Whether you need a WordPress site, a Shopify store, or a robust MERN Stack application, our team of experts is here to bring your vision to life. Partner with us to boost your online presence, engage your audience, and drive growth.",
@@ -288,6 +295,7 @@ import ppc4 from "../../../../public/images/ppc4.png"
         }
     },
     page_per_click: {
+      img: ppc,
       video_id: 'page_per_click',
       heading: "Boost Your Business with High-Impact Google Ads Campaigns",
       text:"Unlock unprecedented growth with Spearing Systems' expertly crafted Google Ads. Our PPC strategies are designed to drive targeted traffic, increase conversions, and maximize your ROI. Get ahead of your competition and see faster results with our data-driven approach.",
@@ -460,6 +468,7 @@ import ppc4 from "../../../../public/images/ppc4.png"
   },
 
   social_media_marketing: {
+    img: marketingService,
     video_id: 'social_media_marketing',
     heading: "Maximize Your Impact with Expert Social Media Marketing",
     text:"Elevate your brand's presence across all major social media platforms with Spearing Systems' comprehensive social media marketing services. From strategic management to targeted advertising, we help you connect with your audience, drive engagement, and achieve your business goals.",
@@ -618,6 +627,7 @@ import ppc4 from "../../../../public/images/ppc4.png"
     }
   },
   email_marketing: {
+    img: email,
     video_id: "email_marketing",
     heading:"Transform Your Customer Relationships with Targeted Email Marketing",
     text: "Unlock the full potential of email marketing with Spearing Systems. Our comprehensive services are designed to increase engagement, drive sales, and build lasting customer relationships. Partner with us to elevate your email marketing strategy and see real results.",
@@ -743,6 +753,7 @@ import ppc4 from "../../../../public/images/ppc4.png"
     }
   },
   branding: {
+    img: branding,
     video_id:"branding",
     heading:"Elevate Your Brand Identity and Market Positioning with Spearing Systems",
     text:"Create a memorable and impactful brand presence with our comprehensive branding and creative services. Spearing Systems specializes in crafting unique brand identities and positioning strategies that set your business apart in a crowded market.",

@@ -11,7 +11,8 @@ import Consultation from '@/components/home/Consultation';
 import Technologies from '@/components/home/Technologies';
 import Slider from '@/components/home/Slider';
 import Portfolio from '@/components/home/Portfolio';
-
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
+import logoAvatar from "../public/images/logoAvatar.png"
 export default function Page() {
   const [loading, setLoading] = useState(true);
 
@@ -43,6 +44,15 @@ export default function Page() {
       {/* <Testimonial /> */}
       <Consultation/>
       <Footer />
-    </>
+      <FloatingWhatsApp
+        phoneNumber="+923392073100"
+        accountName="Spearing Systems"
+        statusMessage="Replies within 15 minutes"
+        chatMessage="Hello there! How can I help you ?"
+        avatar='images/logoAvatar.png'
+        chatboxHeight={350}
+        buttonClassName="floating-whatsapp-button"
+        />    
+        </>
   );
 }

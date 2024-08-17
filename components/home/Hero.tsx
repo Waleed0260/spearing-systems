@@ -2,19 +2,6 @@
 import React, {useRef, useEffect} from "react";
 import Header from "./Header";
 import { Button } from "../ui/button";
-// import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-// import Hero2 from "./Hero2";
-// import banner from "../../public/images/banner.jpg";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper/css";
-// import "swiper/css/navigation";
-// import "swiper/css/pagination";
-// import { useSwiper } from "swiper/react";
-// import { Autoplay } from "swiper/modules";
-// import SwiperCore from "swiper";
-// SwiperCore.use([Navigation]);
 
 const Hero = () => {
 

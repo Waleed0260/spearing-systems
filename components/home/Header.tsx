@@ -13,7 +13,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { IoMenu } from "react-icons/io5";
-
+import ConsultationPupup from "./ConsultationPopup"
 const Header = (color:any) => {
   const [bgColor, setBgColor] = useState("transparent");
   // const[color, setColor] = useState("[#ffffff]")
@@ -81,8 +81,9 @@ const Header = (color:any) => {
               <Link href={"/contact"}>Contact</Link>
             </li>          </ul>
         </div>
-        <div className="relative z-10">
-          <Button className="bg-[#0D2137] hover:bg-[#FF832B]">GET A CONSULTATION</Button>
+        <div className="relative z-10 mb-[35px]">
+          {/* <Button className="bg-[#0D2137] hover:bg-[#FF832B]"> </Button> */}
+          <ConsultationPupup/>
         </div>
       </div>
 
