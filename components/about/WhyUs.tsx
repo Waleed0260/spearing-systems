@@ -6,7 +6,7 @@ import digitalSolutions from "../../public/images/digitalSolutions.jpg"
 import Image from 'next/image'
 import AOS from "aos"
 import 'aos/dist/aos.css';
-import whyAbout from "../../public/images/whyAbout.jpg"
+import whyAbout from "../../public/images/whyAbout.png"
 
 const WhyUs = () => {
     useEffect(() => {
