@@ -25,7 +25,7 @@ const Testimonial = ({testimonial}:any) => {
                 {testimonial?.map((item:any)=>{
                     return(
                         <SwiperSlide>
-                            <div className='flex flex-col items-center justfiy-center p-3'>
+                            <div className='flex flex-col items-start justfiy-center p-3'>
 
                             <p className='text text-center text-xl'>{item.review}</p>
                             <p className='heading'>{item.name}</p>

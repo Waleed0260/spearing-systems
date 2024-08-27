@@ -41,9 +41,9 @@ const Header = (color:any) => {
       <div
         className={`md:flex hidden flex-row items-center justify-evenly w-full fixed transition-all h-[80px] z-50 bg-${color.color ? color.color: bgColor}`}
       >
-        <div className="h-[170px] z-10">
+        <Link href={"/"} className="h-[170px] z-10">
           <Image src={logo} alt="" className="w-full h-full " />
-        </div>
+        </Link>
         <div>
           <ul className={`flex flex-row gap-4 relative z-10 text-white`}>
             <li className="list-none mid-heading">

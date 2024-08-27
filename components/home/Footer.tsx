@@ -17,26 +17,45 @@ const Footer = () => {
 
         <div className='flex flex-col items-start'>
             <p className='font-bold mid-heading md:mt-[70px] mt-[20px]'>Services</p>
+            <Link href={"/service-detail/website_development"}>
             <p className='text'>Web Design & Development</p>
+            </Link>
+            <Link href={"/service-detail/page_per_click"}>
             <p className='text'>Google Ads</p>
-            <p className='text'>PPC</p>
+            </Link>
+            <Link href={"/service-detail/social_media_marketing"}>
             <p className='text'>Social Media Marketing</p>
+            </Link>
+            <Link href={"/service-detail/search_engine"}>
+            <p className='text'>SEO</p>
+            </Link>
+            <Link href={"/service-detail/branding"}>
             <p className='text'>Branding</p>
+            </Link>
+            <Link href={"/service-detail/email_marketing"}>
+            <p className='text'>Email Marketing</p>
+            </Link>
         </div>
         <div className='flex flex-col items-start'>
             <p className='font-bold mid-heading md:mt-[70px] mt-[20px]'>Company</p>
+            <Link href={"/about"}>
             <p className='text'>About Us</p>
+            </Link>
             <p className='text'>Company Profile</p>
+            <Link href={"/portfolio"}>
             <p className='text'>Case Studies</p>
+            </Link>
+            <Link href={"/contact"}>
             <p className='text'>Contact Us</p>
+            </Link>
         </div>
         <div className='flex flex-col items-start'>
             <p className='font-bold mid-heading md:mt-[70px] mt-[20px]'>Follow</p>
             <div className='flex flex-row gap-5'>
-                <Link href={"https://facebook.com"} className='text-xl hover:text-[#FF8E2B] transition-all'><FaFacebook/></Link>
+                <Link href={"https://www.facebook.com/profile.php?id=61562738654670"} className='text-xl hover:text-[#FF8E2B] transition-all'><FaFacebook/></Link>
                 <Link href={"https://facebook.com"} className='text-xl hover:text-[#FF8E2B] transition-all'><FaTwitter/></Link>
                 <Link href={"https://facebook.com"} className='text-xl hover:text-[#FF8E2B] transition-all'><FaInstagram/></Link>
-                <Link href={"https://facebook.com"} className='text-xl hover:text-[#FF8E2B] transition-all'><FaLinkedin/></Link>
+                <Link href={"https://www.linkedin.com/company/spearing-systems/"} className='text-xl hover:text-[#FF8E2B] transition-all'><FaLinkedin/></Link>
 
             </div>
         </div>

@@ -14,8 +14,8 @@ const AdsService = () => {
           Google Ads Management Services that Make a Difference
         </p>
         <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-3 m-6">
-          <div className="flex flex-col w-[90%] p-5 shadow-2xl">
-            <p>Google Ads Setup and Launch</p>
+          <div className="flex flex-col w-[90%] justify-between p-5 shadow-2xl">
+            <p className="mid-heading text-xl">Google Ads Setup and Launch</p>
             <Image src={setup} alt="" className="w-[200px] h-[200px]" />
             <p>
               Advanced Google campaign and ads setup adhering to best practices,
@@ -61,12 +61,6 @@ const AdsService = () => {
               <p className="p-1 rounded-xl bg-orange-700 text-white">
                 <FaCheck />
               </p>
-              <p>Shopping Campaign</p>
-            </div>
-            <div className="flex flex-row items-center gap-2 mt-2">
-              <p className="p-1 rounded-xl bg-orange-700 text-white">
-                <FaCheck />
-              </p>
               <p>Display Campaign</p>
             </div>
             <div className="flex flex-row items-center gap-2 mt-2">
@@ -85,37 +79,13 @@ const AdsService = () => {
               <p className="p-1 rounded-xl bg-orange-700 text-white">
                 <FaCheck />
               </p>
-              <p>SKAG</p>
-            </div>
-            <div className="flex flex-row items-center gap-2 mt-2">
-              <p className="p-1 rounded-xl bg-orange-700 text-white">
-                <FaCheck />
-              </p>
-              <p>Keyword Optimization</p>
-            </div>
-            <div className="flex flex-row items-center gap-2 mt-2">
-              <p className="p-1 rounded-xl bg-orange-700 text-white">
-                <FaCheck />
-              </p>
-              <p>Bid Strategy</p>
-            </div>
-            <div className="flex flex-row items-center gap-2 mt-2">
-              <p className="p-1 rounded-xl bg-orange-700 text-white">
-                <FaCheck />
-              </p>
-              <p>Ads/Copy</p>
-            </div>
-            <div className="flex flex-row items-center gap-2 mt-2">
-              <p className="p-1 rounded-xl bg-orange-700 text-white">
-                <FaCheck />
-              </p>
               <p>Reporting</p>
             </div>
-            <Button className="w-[200px] rounded-[100px] mt-3">GET FREE PURPOSAl</Button>
+            <button className="w-[200px] rounded-[100px] mt-3 p-2 btn text-white transition-all">GET FREE PURPOSAl</button>
           </div>
 
-          <div className="flex flex-col w-[90%] p-5 shadow-2xl">
-            <p>Landing Page Design</p>
+          <div className="flex flex-col w-[90%] justify-between p-5 shadow-2xl">
+            <p className="mid-heading text-xl">Landing Page Design</p>
             <Image src={land} alt="" className="w-[200px] h-[200px]" />
             <p>
               No cookie-cutter approach; instead, custom landing pages tailored
@@ -131,18 +101,6 @@ const AdsService = () => {
               <p className="p-1 rounded-xl bg-orange-700 text-white">
                 <FaCheck />
               </p>
-              <p>Custom Design</p>
-            </div>
-            <div className="flex flex-row items-center mt-2 gap-2">
-              <p className="p-1 rounded-xl bg-orange-700 text-white">
-                <FaCheck />
-              </p>
-              <p>CRM Integration</p>
-            </div>
-            <div className="flex flex-row items-center mt-2 gap-2">
-              <p className="p-1 rounded-xl bg-orange-700 text-white">
-                <FaCheck />
-              </p>
               <p>Custom Images</p>
             </div>
             <div className="flex flex-row items-center mt-2 gap-2">
@@ -150,18 +108,6 @@ const AdsService = () => {
                 <FaCheck />
               </p>
               <p>Optimized Videos</p>
-            </div>
-            <div className="flex flex-row items-center mt-2 gap-2">
-              <p className="p-1 rounded-xl bg-orange-700 text-white">
-                <FaCheck />
-              </p>
-              <p>Engaging Copy</p>
-            </div>
-            <div className="flex flex-row items-center mt-2 gap-2">
-              <p className="p-1 rounded-xl bg-orange-700 text-white">
-                <FaCheck />
-              </p>
-              <p>CTA</p>
             </div>
             <div className="flex flex-row items-center mt-2 gap-2">
               <p className="p-1 rounded-xl bg-orange-700 text-white">
@@ -205,21 +151,17 @@ const AdsService = () => {
               </p>
               <p>A/B Testing</p>
             </div>
-            <Button className="w-[200px] rounded-[100px] mt-3">GET FREE PURPOSAl</Button>
+            <button className="w-[200px] rounded-[100px] mt-3 p-2 btn text-white transition-all">GET FREE PURPOSAl</button>
 
           </div>
 
-          <div className="flex flex-col w-[90%] p-5 shadow-2xl">
-            <p>Google Ads Optimization</p>
+          <div className="flex flex-col w-[90%] justify-between p-5 shadow-2xl">
+            <p className="mid-heading text-xl">Google Ads Optimization</p>
             <Image src={optimize} alt="" className="w-[200px] h-[200px]" />
             <p>
               Utilize split testing, comprehensive reporting, and data-driven
               campaign optimization to improve conversions.
             </p>
-            <div className='flex flex-row items-center mt-2 gap-2'>
-      <p className="p-1 rounded-xl bg-orange-700 text-white"><FaCheck /></p>
-      <p>A/B Testing Ads</p>
-    </div>
     <div className='flex flex-row items-center mt-2 gap-2'>
       <p className="p-1 rounded-xl bg-orange-700 text-white"><FaCheck /></p>
       <p>A/B Testing Landing Pages</p>
@@ -260,7 +202,7 @@ const AdsService = () => {
       <p className="p-1 rounded-xl bg-orange-700 text-white"><FaCheck /></p>
       <p>Reporting</p>
     </div>
-    <Button className="w-[200px] rounded-[100px] mt-3">GET FREE PURPOSAl</Button>
+    <button className="w-[200px] rounded-[100px] mt-3 p-2 btn text-white transition-all">GET FREE PURPOSAl</button>
 
           </div>
         </div>
