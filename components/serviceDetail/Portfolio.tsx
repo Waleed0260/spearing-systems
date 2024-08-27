@@ -11,14 +11,14 @@ import {
 
   import AOS from "aos"
 import 'aos/dist/aos.css';
-import {PPC, seo, website} from "../portfolio/PortfolioArray"
+import {PPC, SEO, WEBSITE} from "../portfolio/PortfolioArray"
 import PortfolioPopUp from '../portfolio/PortfolioPopUp'
 const Portfolio = (id:any) => {
     let array = PPC;
     if(id.id === "search_engine") {
-        array = seo;
+        array = SEO;
     } else if(id.id == "website_development"){
-        array = website
+        array = WEBSITE
     }
     else if (id.id ==="page_per_click") {
         array = PPC;
@@ -40,7 +40,7 @@ const Portfolio = (id:any) => {
         </p>
 
         <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
-          {array.slice(0,3).map((item: any) => {
+          {array?.slice(0,3).map((item: any) => {
             return (
                 <>
               <Dialog key={item.id}>

@@ -9,11 +9,6 @@ import "swiper/css/pagination";
 import {Autoplay, Navigation, Pagination} from "swiper/modules";
 import SwiperCore from "swiper";
 SwiperCore.use([Navigation]);
-import test1 from "../../public/images/test1.png"
-import test2 from "../../public/images/test2.png"
-import test3 from "../../public/images/test3.png"
-import test4 from "../../public/images/test4.png"
-import test5 from "../../public/images/test5.png"
 
 const Testimonial = () => {
     const testimonial = [

@@ -17,13 +17,15 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp'
 
 const Header = (color:any) => {
   const [bgColor, setBgColor] = useState("[#ffffff]");
-
+  const[btnColor, setBtnColor] = useState("[#0D2137]")
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 1) {
         setBgColor("[#0D2137]");
+        setBtnColor("white")
       } else {
         setBgColor("[#ffffff]");
+        setBtnColor("[#0D2137]")
       }
     };
 
@@ -82,7 +84,7 @@ const Header = (color:any) => {
             </li>          </ul>
         </div>
         <div className="relative z-10">
-          <Button className="bg-[#0D2137] hover:bg-[#FF8E2B]"> <Link href={"https://calendly.com/spearingsystems"} target="blank">FREE CONSULTATION</Link> </Button>
+          <Button className={`bg-${btnColor} hover:bg-[#FF8E2B] ${btnColor === "white" ? "text-black":""}`}> <Link href={"https://calendly.com/spearingsystems"} target="blank">FREE CONSULTATION</Link> </Button>
         </div>
       </div>
 

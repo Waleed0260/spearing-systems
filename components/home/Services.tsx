@@ -14,6 +14,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import { Button } from "../ui/button";
 import { FaChartLine } from "react-icons/fa";
 import Link from "next/link";
+import { FaGooglePlusG } from "react-icons/fa6";
 
 const Services = () => {
   useEffect(() => {
@@ -53,7 +54,7 @@ const Services = () => {
     },
     {
       id: 5,
-      icon: <FaGoogle />,
+      icon: <FaGooglePlusG />,
       heading: "Google Ads/PPC",
       text: "Maximize your ROI with expertly managed Google Ads campaigns. Our PPC specialists create targeted, data-driven campaigns that put your brand in front of high-intent customers, driving clicks, conversions, and measurable growth.",
       href:"page_per_click"
@@ -113,7 +114,7 @@ const Services = () => {
         })}
       </Swiper>
       <Link href={"/services"}>
-      <Button className="bg-[#0D2137] text-white rounded-[100px]">View All Services</Button>
+      <button className="btn p-3 transition-all text-white rounded-[100px]">View All Services</button>
       
       </Link>
     </div>

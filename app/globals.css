@@ -115,6 +115,12 @@
     box-shadow: 0 0 10px #cccccc;
     color: white;
 }
+.btn{
+  background-color: #0D2137;
+}
+.btn:hover{
+  background-color: #FF8E2B;
+}
 
 
 @keyframes borderTransition {

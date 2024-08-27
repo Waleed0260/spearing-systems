@@ -1,13 +1,4 @@
-import React from "react";
-import case1 from "../../public/images/case1.png";
-import case2 from "../../public/images/case2.png";
-import case3 from "../../public/images/case3.png";
-import case4 from "../../public/images/case4.png";
-import case5 from "../../public/images/case5.png";
-import case6 from "../../public/images/case6.png";
-import case7 from "../../public/images/case7.png";
-import case8 from "../../public/images/case8.png";
-import case9 from "../../public/images/case9.png";
+import React, {useState} from "react";
 import Image from "next/image";
 // import portfolio1 from "../../public/images/portfolio1.png"
 import {
@@ -19,20 +10,82 @@ import {
     DialogTrigger,
   } from "@/components/ui/dialog";
 import PortfolioPopUp from "./PortfolioPopUp";
-  import {PPC} from "./PortfolioArray"
+  import {PPC, SEO, WEBSITE} from "./PortfolioArray"
+
   const Portfolio = () => {
+    const [portfolio, setPortfolio] = useState(PPC);
+
+    const [isAllActive, setAllActive] = useState(true);
+    const [isGoogleAdsActive, setGoogleAdsActive] = useState(false);
+    const [isWebsiteDevelopmentActive, setWebsiteDevelopmentActive] = useState(false);
+    const [isSEOActive, setSEOActive] = useState(false);
+  
+    // Step 2: Create onClick handlers for each category
+    const handleAllClick = () => {
+      setAllActive(true);
+      setGoogleAdsActive(false);
+      setWebsiteDevelopmentActive(false);
+      setSEOActive(false);
+      setPortfolio(PPC)
+    };
+  
+    const handleGoogleAdsClick = () => {
+      setAllActive(false);
+      setGoogleAdsActive(true);
+      setWebsiteDevelopmentActive(false);
+      setSEOActive(false);
+      setPortfolio(PPC)
+    };
+  
+    const handleWebsiteDevelopmentClick = () => {
+      setAllActive(false);
+      setGoogleAdsActive(false);
+      setWebsiteDevelopmentActive(true);
+      setSEOActive(false);
+      setPortfolio(WEBSITE);
+    };
+  
+    const handleSEOClick = () => {
+      setAllActive(false);
+      setGoogleAdsActive(false);
+      setWebsiteDevelopmentActive(false);
+      setSEOActive(true);
+      setPortfolio(SEO)
+    };
+  
 
   return (
     <div className="w-full flex items-center justify-center">
       <div className="w-[80%] flex flex-col items-start justify-center m-[30px]">
       <div className="flex flex-row gap-4 text-center breakpoint ml-3">
-  <p className="font-bold text">All</p>
-  <p className="font-bold text">Google Ads</p>
-  <p className="font-bold text">Website Development</p>
-  <p className="font-bold text">SEO</p>
+      <p
+        className={`font-bold cursor-pointer text ${isAllActive ? 'text-[#FF8E2B]' : ''}`}
+        onClick={handleAllClick}
+      >
+        All
+      </p>
+      <p
+        className={`font-bold cursor-pointer text ${isGoogleAdsActive ? 'text-[#FF8E2B]' : ''}`}
+        onClick={handleGoogleAdsClick}
+      >
+        Google Ads
+      </p>
+      <p
+        className={`font-bold cursor-pointer text ${isWebsiteDevelopmentActive ? 'text-[#FF8E2B]' : ''}`}
+        onClick={handleWebsiteDevelopmentClick}
+      >
+        Website Development
+      </p>
+      <p
+        className={`font-bold cursor-pointer text ${isSEOActive ? 'text-[#FF8E2B]' : ''}`}
+        onClick={handleSEOClick}
+      >
+        SEO
+      </p>
+
 </div>
         <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
-          {PPC.map((item: any) => {
+          {portfolio.map((item: any) => {
             return (
                 <>
               <Dialog key={item.id}>
@@ -47,7 +100,7 @@ import PortfolioPopUp from "./PortfolioPopUp";
                     <div className="absolute inset-0 flex items-center justify-center ">
                       <div className="text-left bg-[#0D2137] bg-opacity-50 p-4 m-6 text-white animation">
                         <p>{item.title}</p>
-                        <p className="text-2xl font-bold heading">
+                        <p className="text-2xl font-bold  heading">
                           {item.text}
                         </p>
                       </div>

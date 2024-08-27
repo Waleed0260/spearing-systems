@@ -9,7 +9,7 @@ const CallTo = ({tell}:any) => {
                 <p className='font-bold text-2xl heading'> {tell?.heading ? tell.heading :"Let's Collaborate"}</p>
                 <p className='text mt-3 text-white'>{tell?.text ? tell.text :"Bring your vision to life with tailored solutions. Reach out today"}</p>
             </div>
-            <Button className='bg-[#0D2137] hover:bg-[#FF8E2B] text-black text-center'>CONTACT US TODAY</Button>
+            <Button className='bg-white hover:bg-[#FF8E2B] text-black text-center'>CONTACT US TODAY</Button>
         </div>
     </div>
   )

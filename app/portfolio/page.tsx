@@ -24,7 +24,7 @@ const page = () => {
   }
   return (
     <Suspense fallback={<Loader/>}>
-      <Hero/>
+      <Hero text="Portfolio"/>
       <Portfolio/>
       <Testimonial/>
       <CallTo/>

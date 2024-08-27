@@ -1,5 +1,6 @@
 "use client"
 import CallTo from '@/components/home/CallTo'
+import CreativeWebsite from '@/components/home/CreativeWebsite'
 import Footer from '@/components/home/Footer'
 import Header from '@/components/home/Header'
 import Loader from '@/components/home/Loader'
@@ -59,7 +60,7 @@ const page = ({ params }: { params: { ID: string } }) => {
       <>
     <AdsManagement/>
     <AdsService/> 
-    </>:data.video_id === "website_development" ? <Features features={data.features}/>: data.video_id === "email_marketing" ? <Email />:null}
+    </>:data.video_id === "website_development" ? <> <CreativeWebsite/> <Features features={data.features}/></>: data.video_id === "email_marketing" ? <Email />:null}
 
     <Portfolio id={params.ID}/>
     <Testimonial testimonial={data.testimonials}/>

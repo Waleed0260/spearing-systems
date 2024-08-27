@@ -5,6 +5,7 @@ import Footer from '@/components/home/Footer'
 import Header from '@/components/home/Header'
 import React, {useEffect, useState} from 'react'
 import Loader from '@/components/home/Loader'
+import Hero from '@/components/portfolio/Hero'
 const page = () => {
   const [loading, setLoading] = useState(true);
 
@@ -23,6 +24,7 @@ const page = () => {
   return (
     <>
     <Header/>
+    <Hero text="Contact Us"/>
     <div>
     <Contact/>
     </div>

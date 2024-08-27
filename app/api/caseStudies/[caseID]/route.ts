@@ -267,8 +267,8 @@ const caseData:any = {
         "video_id": "seo_4",
         "img": clinicalpartner,
         "title": "Clinical Partners Achieves Significant Growth with Enhanced SEO Strategy",
-        "background": "Clinical Partners is the UK’s largest private mental health partnership, offering a broad range of services to individuals, companies, and public and private sector organizations. Despite the extensive range of services provided, previous digital marketing efforts resulted in minimal visibility and organic growth.",
-        "challenge": "Clinical Partners sought to improve its organic search visibility and overall web performance. The goal was to drive a significant increase in organic visitors, conversions, and keyword rankings, as previous companies had under-delivered in these areas.",
+        "client": "Clinical Partners is the UK’s largest private mental health partnership, offering a broad range of services to individuals, companies, and public and private sector organizations. Despite the extensive range of services provided, previous digital marketing efforts resulted in minimal visibility and organic growth.",
+        "problem": "Clinical Partners sought to improve its organic search visibility and overall web performance. The goal was to drive a significant increase in organic visitors, conversions, and keyword rankings, as previous companies had under-delivered in these areas.",
         "solution": {
           "text": "A comprehensive SEO strategy was developed following a thorough analysis of the Clinical Partners’ website and competitor performance. Key steps included:",
           "point1": "Website Overhaul",
@@ -320,20 +320,20 @@ const caseData:any = {
             "problem": "The existing ACF website was restrictive and outdated, limiting engagement and SEO performance. ACF needed a modern, responsive website that would cater to both UK and international audiences, specifically in France and Sweden. They also required a robust SEO and digital marketing strategy to boost their online presence.",
             "solution": {
               "point1": "Website Design and Build",
-              "websiteDesignAndBuild": [
+              "seo": [
                   "Responsive Design: Developed a new website using Joomla, focusing on a responsive design that ensures an optimal user experience across all devices.",
                   "User Experience (UX): Enhanced the site’s UX by optimizing the main menu structure and ensuring key product and service pages received appropriate link value.",
                   "Content Management System (CMS): Implemented an easy-to-use CMS to support content marketing efforts."
               ],
               "point2": "SEO Services",
-              "seoServices": [
+              "adsCampaign": [
                   "Keyword Research: Conducted comprehensive keyword research to target the audience effectively and optimize key pages.",
                   "On-Page SEO: Focused on improving content, metadata, and overall site structure.",
                   "International SEO: Applied hreflang tags and managed the translation process for the French website.",
                   "Continuous Optimization: Regularly updated and expanded the site, conducted competitor research, and restructured the website to enhance indexation."
               ],
               "point3": "Conversion Rate Optimization (CRO)",
-              "cro": [
+              "seoCampaign": [
                   "A/B Testing: Used Google Optimize, Hotjar, and Google Analytics to test different design elements (colors, copy, buttons) and identify what drove the best results.",
                   "Performance Monitoring: Continuously monitored and tweaked site elements based on test results to improve performance."
               ],
@@ -350,7 +350,7 @@ const caseData:any = {
               ]
           
             },
-            "results": {
+            "result": {
               "text": "Our efforts led to remarkable improvements across key performance metrics:",
               "point1": "14% Increase in Organic Traffic",
               "leadGeneration": [
