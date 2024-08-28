@@ -6,6 +6,7 @@ import { FaArrowLeft } from "react-icons/fa6";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import prisma from "@/lib/prisma";
 
 const Consultation = () => {
   const schema = yup.object().shape({
@@ -26,7 +27,7 @@ const Consultation = () => {
   });
 
   const onSubmit = async (data: any) => {
-    console.log("data", data);
+    // console.log("data", data);
     try {
       fetch("/api/add-post", {
         method: "POST",
