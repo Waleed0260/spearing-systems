@@ -32,7 +32,7 @@ const page = ({ params }: { params: { ID: string } }) => {
             const result = await res.json();
             setData(result);
             setLoading(false)
-            console.log("result", result)
+            // console.log("result", result)
           } catch (error) {
             // setError(error.message);
             console.log(error)
@@ -40,7 +40,6 @@ const page = ({ params }: { params: { ID: string } }) => {
             setLoading(false);
           }
         };
-    
         fetchData();
       }, [params.ID]);
 
@@ -51,20 +50,20 @@ const page = ({ params }: { params: { ID: string } }) => {
     ): (
       <>
       <Header color="[#0D2137]"/>
-    <Visibility heading={data.heading} text={data.text} CTA={data.CTA} img={data.img}/>
-    <WhyUs help={data.help}/>
-    <Choose choose={data.choose}/>
-    <Help process={data.process}/>
-    <Benefits benefits={data.benefits}/>
-    {data.video_id === "page_per_click" ? 
+    <Visibility heading={data?.heading} text={data?.text} CTA={data?.CTA} img={data?.img}/>
+    <WhyUs help={data?.help}/>
+    <Choose choose={data?.choose}/>
+    <Help process={data?.process}/>
+    <Benefits benefits={data?.benefits}/>
+    {data?.video_id === "page_per_click" ? 
       <>
     <AdsManagement/>
     <AdsService/> 
-    </>:data.video_id === "website_development" ? <> <CreativeWebsite/> <Features features={data.features}/></>: data.video_id === "email_marketing" ? <Email />:null}
+    </>:data?.video_id === "website_development" ? <> <CreativeWebsite/> <Features features={data?.features}/></>: data?.video_id === "email_marketing" ? <Email />:null}
 
     <Portfolio id={params.ID}/>
-    <Testimonial testimonial={data.testimonials}/>
-    <CallTo tell={data.tellUs}/>
+    <Testimonial testimonial={data?.testimonials}/>
+    <CallTo tell={data?.tellUs}/>
     <Footer/>
     </>
   )}

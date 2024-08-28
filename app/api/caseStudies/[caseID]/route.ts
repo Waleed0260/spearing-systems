@@ -575,6 +575,6 @@ export async function GET(request: Request,  { params }: { params: { caseID: str
         // Do something with the matching transcript
         return Response.json(caseData[videoId])
       } else {
-        console.log("No matching video_id found.");
+        return Response.json({failed:"Not found"})
       }
   }

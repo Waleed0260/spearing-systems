@@ -3,11 +3,17 @@ import React, { useState, useEffect } from "react";
 import { Button } from "../ui/button";
 import Image from "next/image";
 import seo from "../../public/images/seo.jpg";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Visibility = ({ heading, text, CTA, img }: any) => {
-
+  useEffect(() => {
+    AOS.init({
+      duration: 1900, // Animation duration
+      once: true, // Whether animation should happen only once - while scrolling down
+    });
+  }, []);
   return (
-    <div className="w-full flex flex-col items-center justify-center overflow-x-hidden">
+    <div className="w-full flex flex-col items-center justify-center overflow-x-hidden" data-aos="fade-up">
       <div className="w-[80vw] flex flex-col items-start justify-center sm:mt-[200px] mt-[120px]">
         <p className="heading font-bold text-3xl">{heading}</p>
 

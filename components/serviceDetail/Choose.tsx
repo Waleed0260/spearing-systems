@@ -1,9 +1,16 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import '@fortawesome/fontawesome-free/css/all.min.css';
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Choose = ({choose}:any) => {
+    useEffect(() => {
+        AOS.init({
+          duration: 1900, // Animation duration
+          once: true, // Whether animation should happen only once - while scrolling down
+        });
+      }, []);
   return (
-    <div className='w-full flex items-center justify-center '>
+    <div className='w-full flex items-center justify-center ' data-aos='fade-up'>
         <div className='w-[80%] flex flex-col items-center justify-center m-[20px]'>
             <p className='font-bold text-2xl heading'>{choose?.heading}</p>
             <div className='lg:flex lg:flex-row grid sm:grid-cols-2 grid-cols-1 m-4'>
