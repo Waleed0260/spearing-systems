@@ -28,7 +28,7 @@ const Consultation = () => {
   const onSubmit = async (data: any) => {
     console.log("data", data);
     try {
-      fetch("/api/contact", {
+      fetch("/api/add-post", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
