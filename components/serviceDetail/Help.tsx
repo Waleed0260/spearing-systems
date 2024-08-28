@@ -5,6 +5,8 @@ import technical from "../../public/images/technical.png";
 import external from "../../public/images/external.png";
 import internal from "../../public/images/internal.png";
 import Image from "next/image";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 const Help = ({process}:any) => {
   return (
     <div className="w-full flex flex-col items-center justify-center">
@@ -15,13 +17,16 @@ const Help = ({process}:any) => {
           {process?.process.map((item:any)=>{
             return(
               <div className="flex flex-col items-center sm:w-[32vw] w-[80vw] p-3 m-3 ">
+                {item.icon ? <i className={`fas fa-${item.icon}`} style={{ fontSize: '2rem', padding:"15px", borderRadius:"100px" }}></i>: 
+                <>
             <div className="">
                 <Image
                   src={item.img ? item.img : technical}
                   alt="image"
                   className="w-full h-full overflow-hidden"
-                />
+                  />
               </div>
+                  </>}
               <p className="mid-heading">{item.heading}
               </p>
               <p className="text">

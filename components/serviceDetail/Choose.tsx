@@ -19,7 +19,7 @@ const Choose = ({choose}:any) => {
                 return(
                     <div className='w-[90%]  m-3 p-4 flex flex-col items-center justify-center gap-3 shadow-2xl'>
           <i className={`fas fa-${item.icon}`} style={{ fontSize: '2rem', backgroundColor:"#FF8E2B", padding:"15px", borderRadius:"100px" }}></i>
-          <p className='mid-heading font-bold text-2xl'>{item.heading}</p>
+          <p className='mid-heading font-bold text-2xl text-center'>{item.heading}</p>
                         <p className='text-center text'>{item.text}</p>
                     </div>
                 )

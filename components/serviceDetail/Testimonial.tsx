@@ -27,7 +27,7 @@ const Testimonial = ({testimonial}:any) => {
                         <SwiperSlide>
                             <div className='flex flex-col items-start justfiy-center p-3'>
 
-                            <p className='text text-center text-xl'>{item.review}</p>
+                            <p className='text text-xl'>{item.review}</p>
                             <p className='heading'>{item.name}</p>
                             <p className='mid-heading'>{item.position}</p>
                             </div>

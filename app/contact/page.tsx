@@ -2,7 +2,7 @@
 // import Contact from '@/components/Contact'
 import Consultation from '@/components/home/Consultation'
 import Footer from '@/components/home/Footer'
-import Header from '@/components/home/Header'
+// import Header from '@/components/home/Header'
 import React, {useEffect, useState} from 'react'
 import Loader from '@/components/home/Loader'
 import Hero from '@/components/portfolio/Hero'
@@ -23,7 +23,7 @@ const page = () => {
   }
   return (
     <>
-    <Header/>
+    {/* <Header/> */}
     <Hero text="Contact Us"/>
     <div>
     {/* <Contact/> */}

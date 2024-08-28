@@ -11,6 +11,7 @@ import Choose from '@/components/serviceDetail/Choose'
 import Email from '@/components/serviceDetail/Email'
 import Features from '@/components/serviceDetail/Features'
 import Help from '@/components/serviceDetail/Help'
+import Hero from '@/components/serviceDetail/Hero'
 import Portfolio from '@/components/serviceDetail/Portfolio'
 import Testimonial from '@/components/serviceDetail/Testimonial'
 import Visibility from '@/components/serviceDetail/Visibility'
@@ -49,17 +50,19 @@ const page = ({ params }: { params: { ID: string } }) => {
       <Loader/>
     ): (
       <>
-      <Header color="[#0D2137]"/>
+      {/* <Header color="[#0D2137]"/> */}
+      <Hero id={params.ID}/>
     <Visibility heading={data?.heading} text={data?.text} CTA={data?.CTA} img={data?.img}/>
     <WhyUs help={data?.help}/>
     <Choose choose={data?.choose}/>
+    {data?.video_id === "website_development" ? <CreativeWebsite/>:null}
     <Help process={data?.process}/>
     <Benefits benefits={data?.benefits}/>
-    {data?.video_id === "page_per_click" ? 
+    {data?.video_id === "google_ads" ? 
       <>
     <AdsManagement/>
     <AdsService/> 
-    </>:data?.video_id === "website_development" ? <> <CreativeWebsite/> <Features features={data?.features}/></>: data?.video_id === "email_marketing" ? <Email />:null}
+    </>: data?.video_id === "email_marketing" ? <Email />:null}
 
     <Portfolio id={params.ID}/>
     <Testimonial testimonial={data?.testimonials}/>

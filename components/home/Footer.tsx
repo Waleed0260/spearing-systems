@@ -17,22 +17,22 @@ const Footer = () => {
 
         <div className='flex flex-col items-start'>
             <p className='font-bold mid-heading md:mt-[70px] mt-[20px]'>Services</p>
-            <Link href={"/service-detail/website_development"}>
+            <Link href={"/service/website_development"}>
             <p className='text'>Web Design & Development</p>
             </Link>
-            <Link href={"/service-detail/page_per_click"}>
+            <Link href={"/service/google_ads"}>
             <p className='text'>Google Ads</p>
             </Link>
-            <Link href={"/service-detail/social_media_marketing"}>
+            <Link href={"/service/social_media_marketing"}>
             <p className='text'>Social Media Marketing</p>
             </Link>
-            <Link href={"/service-detail/search_engine"}>
+            <Link href={"/service/search_engine"}>
             <p className='text'>SEO</p>
             </Link>
-            <Link href={"/service-detail/branding"}>
+            <Link href={"/service/branding"}>
             <p className='text'>Branding</p>
             </Link>
-            <Link href={"/service-detail/email_marketing"}>
+            <Link href={"/service/email_marketing"}>
             <p className='text'>Email Marketing</p>
             </Link>
         </div>

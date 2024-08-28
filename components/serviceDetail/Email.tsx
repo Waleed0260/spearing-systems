@@ -4,6 +4,7 @@ import automationm from "../../public/images/automation.png"
 import email1 from "../../public/images/email1.png"
 import email2 from "../../public/images/email2.png"
 import Image from "next/image";
+import { Button } from "../ui/button";
 const Email = () => {
   return (
     <div className="w-full flex items-center justify-center">
@@ -13,15 +14,19 @@ const Email = () => {
           <div className="flex flex-col md:w-[50%] mt-[50px]">
             <p className="font-bold text-xl heding">Email Platform Migration</p>
             <p className="mid-heading">
-              If you’ve outgrown your platform, Northern can not only mitigate
-              any lost revenue but drive revenue growth on your new platform.
-            </p>
+            If you’ve outgrown your platform, Northern can not only mitigate any lost revenue but drive revenue growth on your new platform, ensuring a seamless transition that maximizes your business potential and provides ongoing support to help you thrive in a new environment.            </p>
             <ul className="list-disc mt-4 ml-5">
               <li className="mt-2">Migration Plan & Mapping</li>
               <li className="mt-2">IP Warming & Account Ramp-up</li>
               <li className="mt-2">Automation Replication</li>
               <li className="mt-2">Onboarding & Training</li>
             </ul>
+            <Button
+                  variant={"outline"}
+                  className="w-[240px] mt-[20px] bg-[#0D2137] hover:bg-[#FF8E2B] p-4 rounded-[100px] text-white"
+                >
+                  Start Your Email Migration Now
+                </Button>
           </div>
 
           <div className="md:w-[50%]">
@@ -46,6 +51,12 @@ const Email = () => {
               <li className="mt-2">Optimization for Devices & Dark Mode</li>
               <li className="mt-2">Creative Iteration & Testing</li>
             </ul>
+            <Button
+                  variant={"outline"}
+                  className="w-[240px] mt-[20px] bg-[#0D2137] hover:bg-[#FF8E2B] p-4 rounded-[100px] text-white"
+                >
+                  Start Designing Your Email Now
+                </Button>
           </div>
 
         </div>
@@ -65,6 +76,12 @@ const Email = () => {
   <li>Third-Party Platform Integrations</li>
   <li>Dynamic Content</li>
             </ul>
+            <Button
+                  variant={"outline"}
+                  className="w-[240px] mt-[20px] bg-[#0D2137] hover:bg-[#FF8E2B] p-4 rounded-[100px] text-white"
+                >
+                  Start Your Automated Email Now
+                </Button>
           </div>
           <div className="md:w-[50%]">
             <Image src={automationm} alt=""/>

@@ -29,14 +29,14 @@ const Services = () => {
       icon: <FaCode />,
       heading: "Web Development",
       text: "Transform your online presence with visually stunning, responsive websites that captivate and convert. At Spearing Systems, we blend creativity with cutting-edge technology to build digital experiences that not only look amazing but drive real results.",
-      href:"website_devvelopment"
+      href:"website_development"
     },
     {
       id: 2,
       icon: <FaSearch />,
       heading: "SEO",
       text: "Unlock the power of search engines with our proven SEO strategies. We’ll propel your website to the top of search results, ensuring your brand gets noticed by the right audience at the right time, driving organic traffic and boosting your business.",
-      href:"search_engin"
+      href:"search_engine"
     },
     {
       id: 3,
@@ -57,7 +57,7 @@ const Services = () => {
       icon: <FaGooglePlusG />,
       heading: "Google Ads/PPC",
       text: "Maximize your ROI with expertly managed Google Ads campaigns. Our PPC specialists create targeted, data-driven campaigns that put your brand in front of high-intent customers, driving clicks, conversions, and measurable growth.",
-      href:"page_per_click"
+      href:"google_ads"
     }
 ];
   return (
@@ -103,7 +103,7 @@ const Services = () => {
         {services.map((item) => {
           return (
             <SwiperSlide key={item.id} className="flex justify-center items-center p-[10px] ">
-              <Link className="flex flex-col gap-3 lg:w-[24vw] md:w-[37vw]  sm:h-[500px] h-[540px] servicebox transition-all items-center  bg-[#f2f2f2] m-[20px] lg:ml-[20px] sm:ml-[40px] md:ml-[9px] ml-3 shadow-2xl cursor-pointer " href={`/service-detail/${item.href}`}>
+              <Link className="flex flex-col gap-3 lg:w-[24vw] md:w-[37vw]  sm:h-[500px] h-[540px] servicebox transition-all items-center  bg-[#f2f2f2] m-[20px] lg:ml-[20px] sm:ml-[40px] md:ml-[9px] ml-3 shadow-2xl cursor-pointer " href={`/service/${item.href}`}>
                 <p className=" text-4xl mt-[30px] bg-[#FF8E2B] p-5 rounded-[100px]">{item.icon}</p>
                 <b className="font-bold text-2xl mid-heading mt-[15px] text-center">{item.heading}</b>
                 <p className="w-[90%] text-left text text-sm">{item.text}</p>

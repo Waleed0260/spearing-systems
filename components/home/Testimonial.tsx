@@ -18,11 +18,6 @@ const Testimonial = () => {
             position: "Marketing Director"
         },
         {
-            review: "We were struggling with low search rankings, but Spearing Systems' tailored SEO strategy turned things around. Now, our website consistently ranks on the first page, and customer inquiries have doubled.",
-            name: "John S.",
-            position: "Business Owner"
-        },
-        {
             review: "Spearing Systems completely revamped our PPC strategy. We've seen a 40% increase in leads while simultaneously reducing our ad spend. Their insights and strategies made a significant impact on our business.",
             name: "Anna K.",
             position: "Retail Business Owner"
@@ -54,8 +49,8 @@ const Testimonial = () => {
       <div className="w-[70%]">
             <Swiper
             slidesPerView={1}
-          modules={[Navigation, Pagination, Autoplay]}
-          pagination={{clickable:true}}
+          modules={[Autoplay]}
+        //   pagination={{clickable:true}}
           loop={true}
           autoplay={{
             delay: 3000,

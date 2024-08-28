@@ -6,18 +6,12 @@ import "swiper/css/pagination";
 import {Autoplay, Navigation, Pagination} from "swiper/modules";
 import Image from 'next/image';
 import clinicalpartner from "../../public/images/clinicalPartner.png";
-import hb from "../../public/images/hb.png";
 import imperva from "../../public/images/imperva.png";
-import intra from "../../public/images/intra.png";
 import logan from "../../public/images/logan.png";
-import longhorn from "../../public/images/longhorn.jpeg";
+import longhorn from "../../public/images/longhorn.png";
 import maryaland from "../../public/images/maryaland.png";
-import pulp from "../../public/images/pulp.jpeg";
-import stovall from "../../public/images/stovall.jpeg";
-import think from "../../public/images/think.jpeg";
-import voltage from "../../public/images/voltage.jpeg";
-import portLogo from "../../public/images/portLogo.png"
-import atlas from "../../public/images/atlas.jpeg"
+import pulp from "../../public/images/pulp.png";
+import portlogo from "../../public/images/portLogo.png"
 const Slider = () => {
   return (
     <div className='w-full flex items-center justify-center'>
@@ -48,36 +42,33 @@ const Slider = () => {
         className="w-[80%] h-[120px]"
       >
         <SwiperSlide>
-          <div className="w-[213px] h-[110px] ">
-            <Image src={clinicalpartner} alt="" className='w-full h-full overflow-hidden'/>
+          <div className="w-[150px] h-[110px] ">
+            <Image src={portlogo} alt="" className='w-full h-full overflow-hidden'/>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-[130px] h-[100px] ml-9">
-            <Image src={think} alt="" className='w-full h-full overflow-hidden'/>
+          <div className="w-[150px] h-[110px]">
+            <Image src={imperva} alt="" className='w-full h-full overflow-hidden'/>
           </div>
-        </SwiperSlide>  <SwiperSlide>
-          <div className="w-[130px] h-[100px]">
-            <Image src={maryaland} alt="" className='w-full h-full overflow-hidden'/>
-          </div>
-        </SwiperSlide> <SwiperSlide>
-          <div className="w-[130px] h-[100px]">
-            <Image src={intra} alt="" className='w-full h-full overflow-hidden'/>
-          </div>
-        </SwiperSlide>
+        </SwiperSlide>  
         <SwiperSlide>
-          <div className="w-[130px] h-[100px]">
+          <div className="w-[150px] h-[110px]">
             <Image src={logan} alt="" className='w-full h-full overflow-hidden'/>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-[130px] h-[100px]">
+          <div className="w-[150px] h-[110px]">
             <Image src={longhorn} alt="" className='w-full h-full overflow-hidden'/>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-[130px] h-[100px]">
+          <div className="w-[150px] h-[110px]">
             <Image src={pulp} alt="" className='w-full h-full overflow-hidden'/>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="w-[150px] h-[110px]">
+            <Image src={maryaland} alt="" className='w-full h-full overflow-hidden'/>
           </div>
         </SwiperSlide>
       </Swiper>

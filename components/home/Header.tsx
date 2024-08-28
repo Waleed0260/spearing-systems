@@ -49,35 +49,35 @@ const Header = (color:any) => {
             <li className="list-none mid-heading">
               <Link href={"/"}>Home</Link>
             </li>
-            <li className="list-none mid-heading">
-              <Link href={"/about"}>About</Link>
-            </li>
             <li className="list-none mid-heading relative group transition-all">
     <Link href={"/services"}>Our Services</Link>
     <ul className="absolute left-0 top-full mt-0  bg-gray-800 p-3 hidden group-hover:flex flex-col items-start w-[240px] transition-all">
       <li className="py-1 w-full hover:text-[#FF8E2B] transition-all">
-        <Link href={"/service-detail/website_development"} className="block w-full h-full">Website Development</Link>
+        <Link href={"/service/website_development"} className="block w-full h-full">Website Development</Link>
       </li>
       <li className="py-1 w-full hover:text-[#FF8E2B] transition-all">
-        <Link href={"/service-detail/page_per_click"} className="block w-full h-full">Google Ads</Link>
+        <Link href={"/service/google_ads"} className="block w-full h-full">Google Ads</Link>
       </li>
       <li className="py-1 w-full hover:text-[#FF8E2B] transition-all">
-        <Link href={"/service-detail/social_media_marketing"} className="block w-full h-full">Social Media Marketing</Link>
+        <Link href={"/service/social_media_marketing"} className="block w-full h-full">Social Media Marketing</Link>
       </li>
       <li className="py-1 w-full hover:text-[#FF8E2B] transition-all">
-        <Link href={"/service-detail/search_engine"} className="block w-full h-full">SEO</Link>
+        <Link href={"/service/search_engine"} className="block w-full h-full">SEO</Link>
       </li>
       <li className="py-1 w-full hover:text-[#FF8E2B] transition-all">
-        <Link href={"/service-detail/branding"} className="block w-full h-full">Branding</Link>
+        <Link href={"/service/branding"} className="block w-full h-full">Branding</Link>
       </li>
         <li className="py-1 w-full hover:text-[#FF8E2B] transition-all">
-        <Link href={"/service-detail/email_marketing"} className="block w-full h-full">Email Marketing</Link>
+        <Link href={"/service/email_marketing"} className="block w-full h-full">Email Marketing</Link>
       </li>
     </ul>
   </li>
             {/* <li className='list-none mid-heading'>Page</li> */}
             <li className="list-none mid-heading">
               <Link href={"/portfolio"}>Portfolio</Link>
+            </li>
+            <li className="list-none mid-heading">
+              <Link href={"/about"}>About</Link>
             </li>
             <li className="list-none mid-heading">
               <Link href={"/contact"}>Contact</Link>
@@ -89,12 +89,12 @@ const Header = (color:any) => {
       </div>
 
       <div className="flex md:hidden flex-row justify-between p-2 items-center w-full bg-[#0D2137]">
-        <div className="h-[100px] w-[100px] relative z-10">
+        <div className="h-[100px] w-[100px]  relative z-10">
           <Image src={logo} alt="" height={200} width={200} />
         </div>
 
         <Sheet>
-          <SheetTrigger className="text-white text-4xl">
+          <SheetTrigger className="text-white hover:text-[#FF8E2B]  text-4xl">
             <IoMenu />
           </SheetTrigger>
           <SheetContent className="bg-[#0D2137] text-white">
@@ -117,8 +117,8 @@ const Header = (color:any) => {
                   <li className="list-none mid-heading">
                     <Link href={"/contact"}>Contact</Link>
                   </li>
-                <Button>GET A CONSULTATION</Button>
-                </ul>
+                  <Button className={`bg-[#FF8E2B] ${btnColor === "white" ? "text-black":""}`}> <Link href={"https://calendly.com/spearingsystems"} target="blank">FREE CONSULTATION</Link> </Button>
+                  </ul>
 
               </SheetDescription>
             </SheetHeader>

@@ -24,22 +24,26 @@ import ppc from "../../../../public/images/ppc.jpg"
         heading:"Our proven SEO process",
         process: [
           {
-            heading:"Comprehensive SEO Audit",
-            text:"We conduct an in-depth analysis of your website to identify strengths, weaknesses, and opportunities."
+            heading: "Comprehensive SEO Audit",
+            text: "We conduct an in-depth analysis of your website to identify strengths, weaknesses, and opportunities.",
+            icon: "search", // icon for SEO audit (search and analysis)
           },
           {
-          heading:"Technical SEO",
-          text:"Our experts optimize your website's structure, speed, and performance to ensure it meets search engine standards."
-        },
-        {
-          heading:"Internal SEO",
-          text:"We enhance your content with strategic keyword optimization, ensuring it resonates with your target audience."
-        },
-        {
-          heading:"External SEO",
-          text:"Our link-building strategies enhance your website's authority and credibility, driving higher rankings."
-        },
-      ]
+            heading: "Technical SEO",
+            text: "Our experts optimize your website's structure, speed, and performance to ensure it meets search engine standards.",
+            icon: "cogs", // icon for technical SEO (settings and optimization)
+          },
+          {
+            heading: "Internal SEO",
+            text: "We enhance your content with strategic keyword optimization, ensuring it resonates with your target audience.",
+            icon: "pencil-alt", // icon for internal SEO (content editing and optimization)
+          },
+          {
+            heading: "External SEO",
+            text: "Our link-building strategies enhance your website's authority and credibility, driving higher rankings.",
+            icon: "link", // icon for external SEO (link building)
+          },
+        ]
       },
       benefits: {
         heading:"The Benefits of SEO with Spearing Systems",
@@ -87,22 +91,22 @@ import ppc from "../../../../public/images/ppc.jpg"
         {
           review:"Spearing Systems transformed our online presence. Within months, we saw a 50% increase in organic traffic and a significant boost in lead generation. Their SEO expertise is unparalleled.",
           name: " Jane D",
-          position:"Marketing Manager"
+          position:"Marketing Manager at IMPERVA"
         },
         {
           review:"We were struggling with poor search rankings, but Spearing Systems' tailored SEO strategy changed everything. Our website now ranks on the first page, and our customer inquiries have doubled!",
           name: "John S",
-          position:"Business Owner"
+          position:"Business Owner at PULP & PRESS"
         },
         {
           review:"The team at Spearing Systems is exceptional. Their deep understanding of SEO and dedication to our success resulted in a 40% increase in online sales. Highly recommend their services!",
           name: "Emily R",
-          position:"Ecommerce Manager"
+          position:"Ecommerce Manager at LONGHORN"
         },
         {
           review:"From day one, Spearing Systems impressed us with their professionalism and knowledge. Thanks to their SEO efforts, our local business has never been more visible, attracting more customers than ever",
           name: "Michael T",
-          position:"Store Manager"
+          position:"Store Manager at LOGAN14"
         },
       ],
       industries: [
@@ -201,30 +205,36 @@ import ppc from "../../../../public/images/ppc.jpg"
           heading:"Our Web Development process",
           process: [
             {
-              heading:"Consultation",
-              text:"We start with understanding your business needs and objectives."
+              heading: "Consultation",
+              text: "We start with understanding your business needs and objectives.",
+              icon: "comments", // icon for consultation (discussions or meetings)
             },
             {
-            heading:"Planning",
-            text:"We create a detailed plan and timeline for your project."
-          },
-          {
-            heading:"Design",
-            text:"Our designers create visually appealing and user-friendly layouts."
-          },
-          {
-            heading:"Develpment",
-            text:"Our developers bring the design to life using the latest technologies."
-          },
-          {
-            heading:"Testing",
-            text:"We thoroughly test your website to ensure it’s bug-free and performs well."
-          },
-          {
-            heading:"Launching",
-            text:"We launch your website and provide ongoing support."
-          },
-        ]
+              heading: "Planning",
+              text: "We create a detailed plan and timeline for your project.",
+              icon: "tasks", // icon for planning (task management)
+            },
+            {
+              heading: "Design",
+              text: "Our designers create visually appealing and user-friendly layouts.",
+              icon: "paint-brush", // icon for design (creative work)
+            },
+            {
+              heading: "Development",
+              text: "Our developers bring the design to life using the latest technologies.",
+              icon: "code", // icon for development (coding)
+            },
+            {
+              heading: "Testing",
+              text: "We thoroughly test your website to ensure it’s bug-free and performs well.",
+              icon: "vial", // icon for testing (testing lab)
+            },
+            {
+              heading: "Launching",
+              text: "We launch your website and provide ongoing support.",
+              icon: "rocket", // icon for launching (website launch)
+            },
+          ]
         },
         benefits: {
           heading:"The Benefits of SEO with Spearing Systems",
@@ -251,22 +261,22 @@ import ppc from "../../../../public/images/ppc.jpg"
           {
             review:"Spearing Systems transformed our outdated website into a modern, user-friendly platform. Our traffic has doubled since the launch!",
             name: " Sarah K",
-            position:"Retail Business Owner"
+            position:"Retail Business Owner at LEPRECHAUN"
           },
           {
             review:"The team at Spearing Systems is amazing. Our new Shopify store is sleek, functional, and has significantly boosted our sales",
             name: "James R",
-            position:"Ecommerce Manager"
+            position:"Ecommerce Manager at ARTIFIED INTERNATIONAL"
           },
           {
             review:"Our new MERN Stack application is a game-changer. Spearing Systems delivered exactly what we needed.",
             name: "Emily T",
-            position:"Tech Startup Foundner"
+            position:"Tech Startup Foundner at REALCUBE"
           },
           {
             review:"Working with Spearing Systems was a great experience. Their expertise in WordPress development is unmatched.",
             name: "Michael B",
-            position:"Small Business Owner"
+            position:"Small Business Owner at PURE AYURVEDA"
           },
         ],
         industries: [
@@ -293,9 +303,9 @@ import ppc from "../../../../public/images/ppc.jpg"
           CTA:"GET IN TOUCH"
         }
     },
-    page_per_click: {
+    google_ads: {
       img: ppc,
-      video_id: 'page_per_click',
+      video_id: 'google_ads',
       heading: "Boost Your Business with High-Impact Google Ads Campaigns",
       text:"Unlock unprecedented growth with Spearing Systems' expertly crafted Google Ads. Our PPC strategies are designed to drive targeted traffic, increase conversions, and maximize your ROI. Get ahead of your competition and see faster results with our data-driven approach.",
       CTA:"Get Started with Our Google Ads Services Today!",
@@ -423,22 +433,22 @@ import ppc from "../../../../public/images/ppc.jpg"
         {
           review:"Spearing Systems transformed our PPC strategy. We've seen a 40% increase in leads with reduced ad spend.",
           name: " Anna K",
-          position:"Retail Business Owner"
+          position:"Retail Business Owner at MARYALAND"
         },
         {
           review:"Their expertise in Google Ads management boosted our online sales by 35% within three months",
           name: "Mark S",
-          position:"Ecommerce Manager"
+          position:"Ecommerce Manager at PULP & PRESS"
         },
         {
           review:"Exceptional service and results. Our event attendance skyrocketed thanks to their targeted campaigns",
           name: "Lisa T",
-          position:"Event Planner"
+          position:"Event Planner at IMPREVA "
         },
         {
           review:"Professional, responsive, and effective. Spearing Systems delivers what they promise",
           name: "David R",
-          position:"Tech Startup Founder"
+          position:"Tech Startup Founder at LOGAN14"
         },
       ],
       industries: [
@@ -501,24 +511,31 @@ import ppc from "../../../../public/images/ppc.jpg"
           }
         ]
     },
-    management_services:[
+    process:{
+      heading:"Boost Your Online Presence with Our Comprehensive Social Media Strategy",
+    process: [
       {
         heading: "Account Setup and Optimization",
-        text: "Creating and optimizing profiles for maximum impact."
+        text: "Creating and optimizing profiles for maximum impact.",
+        icon: "user-cog", // icon for account setup and optimization (user management and settings)
       },
       {
         heading: "Content Creation and Scheduling",
-        text: "Developing engaging content and scheduling posts."
+        text: "Developing engaging content and scheduling posts.",
+        icon: "calendar-alt", // icon for content creation and scheduling (planning and scheduling)
       },
       {
         heading: "Community Management",
-        text: "Interacting with followers and managing your online community."
+        text: "Interacting with followers and managing your online community.",
+        icon: "comments", // icon for community management (communication and interaction)
       },
       {
         heading: "Analytics and Reporting",
-        text: "Providing detailed performance reports and insights."
-      }
+        text: "Providing detailed performance reports and insights.",
+        icon: "chart-pie", // icon for analytics and reporting (data analysis and reporting)
+      },
     ],
+  },
     advertising_services:[
       {
         heading: "Platform-Specific Campaigns",
@@ -583,22 +600,22 @@ import ppc from "../../../../public/images/ppc.jpg"
       {
         review: "Spearing Systems revolutionized our social media presence. Engagement and sales have soared!",
         name: "Lisa M.",
-        position: "E-commerce Entrepreneur"
+        position: "E-commerce Entrepreneur at LOGAN14"
       },
       {
         review: "Their team understands social media inside out. We've seen a remarkable increase in brand awareness.",
         name: "James H.",
-        position: "Marketing Director"
+        position: "Marketing Director at PULP&PRESS"
       },
       {
         review: "Exceptional service and impressive results. Our social media ads have never performed better.",
         name: "Karen S.",
-        position: "Small Business Owner"
+        position: "Small Business Owner at MARYALAND"
       },
       {
         review: "Professional, creative, and data-driven. Spearing Systems delivers results.",
         name: "Tom W.",
-        position: "Tech Startup CEO"
+        position: "Tech Startup CEO at IMPERVA"
       }
     ],
     industries: [
@@ -726,22 +743,22 @@ import ppc from "../../../../public/images/ppc.jpg"
       {
         review: "Spearing Systems transformed our email marketing strategy. We've seen a significant increase in engagement and sales.",
         name: "Sarah L.",
-        position: "Retail Owner"
+        position: "Retail Owner at LONGHORN"
       },
       {
         review: "Their expertise in automation and segmentation has greatly improved our customer retention.",
         name: "John D.",
-        position: "Tech Startup Founder"
+        position: "Tech Startup Founder at IMPERVA"
       },
       {
         review: "Professional, creative, and results-driven. Our email campaigns have never been more effective.",
         name: "Emily R.",
-        position: "E-commerce Manager"
+        position: "E-commerce Manager at PULP&PRESS"
       },
       {
         review: "The team at Spearing Systems is knowledgeable and responsive. Highly recommend their services.",
         name: "Michael T.",
-        position: "Marketing Director"
+        position: "Marketing Director at VIRGINIA INTERNATIONAL"
       }
     
     ],
@@ -831,27 +848,32 @@ import ppc from "../../../../public/images/ppc.jpg"
     },
     process: {
       heading:"Our Process",
-      process: [
+      process:[
         {
           heading: "Discovery",
-          text: "Understanding your business, goals, and target audience."
+          text: "Understanding your business, goals, and target audience.",
+          icon: "lightbulb", // icon for discovery (idea generation and understanding)
         },
         {
           heading: "Strategy",
-          text: "Developing a customized branding strategy based on research and insights."
+          text: "Developing a customized branding strategy based on research and insights.",
+          icon: "chart-line", // icon for strategy (planning and growth)
         },
         {
           heading: "Design",
-          text: "Creating visual and messaging elements that reflect your brand’s identity."
+          text: "Creating visual and messaging elements that reflect your brand’s identity.",
+          icon: "palette", // icon for design (creative work and aesthetics)
         },
         {
           heading: "Implementation",
-          text: "Rolling out your new brand across all platforms and materials."
+          text: "Rolling out your new brand across all platforms and materials.",
+          icon: "share-square", // icon for implementation (deployment and sharing)
         },
         {
           heading: "Evaluation",
-          text: "Monitoring and refining to ensure long-term success."
-        }
+          text: "Monitoring and refining to ensure long-term success.",
+          icon: "chart-bar", // icon for evaluation (monitoring and analysis)
+        },
       ]
     },
     case_studies: [
@@ -896,22 +918,22 @@ import ppc from "../../../../public/images/ppc.jpg"
       {
         review: "Spearing Systems gave our brand a fresh, modern look that resonates with our target audience.",
         name: "Jessica H.",
-        position: "Retail Owner"
+        position: "Retail Owner at IMPERVA"
       },
       {
         review: "Their strategic approach to branding helped us clearly define our market position.",
         name: "Mark P.",
-        position: "Healthcare Executive"
+        position: "Healthcare Executive at PULP&PRESS"
       },
       {
         review: "Creative and professional team. Our new brand identity is a game-changer.",
         name: "Laura T.",
-        position: "Tech Startup Founder"
+        position: "Tech Startup Founder at VIRGINIA INTERNATIONAL"
       },
       {
         review: "They transformed our brand from the ground up. Highly recommend their services.",
         name: "David R.",
-        position: "Business Owner"
+        position: "Business Owner at LOGAN14"
       }
     ],
     tellUs: {
