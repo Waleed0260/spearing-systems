@@ -1,9 +1,4 @@
 import React from 'react'
-import { FaRocket, FaIdCard } from "react-icons/fa";
-import { ImPen } from "react-icons/im";
-import { TbTargetArrow } from "react-icons/tb";
-import { MdContentPasteGo } from "react-icons/md";
-import { GrSystem } from "react-icons/gr";
 import Link from 'next/link';
 import { FaCode, FaSearch, FaBullhorn, FaShareAlt, FaGoogle } from 'react-icons/fa';
 import { FaEnvelope } from 'react-icons/fa';

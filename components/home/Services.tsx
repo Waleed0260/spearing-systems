@@ -62,22 +62,10 @@ const Services = () => {
 ];
   return (
     <div
-      className="flex flex-col justify-center items-center p-6"
+      className="flex flex-col justify-center items-center sm:p-6 "
       data-aos="fade-up"
     >
       <b className="font-bold text-3xl heading">Services</b>
-      {/* <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 p-4 gap-3'>
-            {services.map((item:any, index:any)=>{
-                return(
-                    <div className='flex flex-col gap-3' key={item.id}>
-
-                    <p className='text-blue-600 text-4xl'>{item.icon}</p>
-                    <b className='font-bold text-3xl mid-heading'>{item.heading}</b>
-                    <p>{item.text}</p>
-                    </div>
-                )
-            })}
-        </div> */}
       <Swiper
         // navigation={true}
         modules={[Pagination, Navigation]}
@@ -98,12 +86,12 @@ const Services = () => {
           },
         }}
         loop={true}
-        className="w-[88%] sm:h-[580px] h-[650px] flex items-center justify-center"
+        className="sm:w-[88%] w-[98vw] sm:h-[580px] h-[650px] mr-[20px] sm:mr-0"
       >
         {services.map((item) => {
           return (
-            <SwiperSlide key={item.id} className="flex justify-center items-center p-[10px] ">
-              <Link className="flex flex-col gap-3 lg:w-[24vw] md:w-[37vw]  sm:h-[500px] h-[540px] servicebox transition-all items-center  bg-[#f2f2f2] m-[20px] lg:ml-[20px] sm:ml-[40px] md:ml-[9px] ml-3 shadow-2xl cursor-pointer " href={`/service/${item.href}`}>
+            <SwiperSlide key={item.id} className="flex justify-center items-center sm:p-[10px] ">
+              <Link className="flex flex-col gap-3 lg:w-[24vw] md:w-[37vw] sm:h-[500px] h-[540px] servicebox transition-all items-center  bg-[#f2f2f2] m-[20px] lg:ml-[20px] sm:ml-[40px] md:ml-[9px] ml-3 shadow-2xl cursor-pointer " href={`/service/${item.href}`}>
                 <p className=" text-4xl mt-[30px] bg-[#FF8E2B] p-5 rounded-[100px]">{item.icon}</p>
                 <b className="font-bold text-2xl mid-heading mt-[15px] text-center">{item.heading}</b>
                 <p className="w-[90%] text-left text text-sm">{item.text}</p>

@@ -14,11 +14,11 @@ const Visibility = ({ heading, text, CTA, img }: any) => {
   }, []);
   return (
     <div className="w-full flex flex-col items-center justify-center overflow-x-hidden" data-aos="fade-up">
-      <div className="w-[80vw] flex flex-col items-start justify-center sm:mt-[70px] mt-[120px]">
+      <div className="w-[80vw] flex flex-col items-start justify-center sm:mt-[70px] mt-[120px] ">
         <p className="heading font-bold text-3xl">{heading}</p>
 
-        <div className="flex md:flex-row flex-col sm:justify-between items-end gap-3 mt-[50px]">
-          <div className="flex flex-col md:w-[65%] w-[90vw] gap-3 justify-between ">
+        <div className="flex lg:flex-row flex-col lg:justify-between lg:items-end items-start justify-center gap-3 mt-[50px]">
+          <div className="flex flex-col lg:w-[65%] w-[90vw] gap-3 justify-between ">
             <p className="text w-[85%] mt-4">{text}</p>
             <Button
               variant={"outline"}
@@ -35,7 +35,7 @@ const Visibility = ({ heading, text, CTA, img }: any) => {
             </div>
           </div>
 
-          <div className="flex flex-col gap-3 md:w-[35%] w-[70vw] shadow-2xl h-full mt-[30px] justify-between">
+          <div className="flex flex-col gap-3 lg:w-[35%] w-[80vw] shadow-2xl h-full mt-[30px] lg:justify-between">
             <div className="flex flex-col items-center justify-center p-6 mt-5">
               <p className="text-4xl text-center">
                 {CTA}
@@ -43,27 +43,27 @@ const Visibility = ({ heading, text, CTA, img }: any) => {
 
               <form
                 action=""
-                className="flex items-center justify-center flex-col mt-[60px]"
+                className="flex items-center justify-center flex-col lg:mt-[60px]"
               >
                 <input
                   type="text"
                   name=""
                   id=""
-                  className="sm:w-[23vw] w-[40vw] h-[40px] mt-6 rounded-md p-5 border-[2px] border-black"
+                  className="lg:w-[23vw] w-[60vw] h-[40px] mt-6 rounded-md p-5 border-[2px] border-black"
                   placeholder="Name*"
                 />
                 <input
                   type="text"
                   name=""
                   id=""
-                  className="sm:w-[23vw] w-[40vw] h-[40px] mt-6 rounded-md p-5 border-[2px] border-black"
+                  className="lg:w-[23vw] w-[60vw] h-[40px] mt-6 rounded-md p-5 border-[2px] border-black"
                   placeholder="Email*"
                 />
                 <input
                   type="text"
                   name=""
                   id=""
-                  className="sm:w-[23vw] w-[40vw] h-[40px] mt-6 rounded-md p-5 border-[2px] border-black"
+                  className="lg:w-[23vw] w-[60vw] h-[40px] mt-6 rounded-md p-5 border-[2px] border-black"
                   placeholder="Message*"
                 />
                 <Button

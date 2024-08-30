@@ -17,8 +17,8 @@ const Process = () => {
         <div className='flex items-center justify-center'>
          <div className='absolute inset-0 bg-black opacity-50'></div>
         <div className='w-[80%] flex flex-col items-center sm:items-center justify-center relative z-10 text-white m-[30px]'>
-            <p className='text-4xl font-bold heading mt-6'>Our flawless process</p>
-            <p className='mt-[20px] w-[70%] text'>We believe in a seamless approach to delivering results that exceed expectations. Our process is designed to be meticulous, efficient, and focused on your business goals, ensuring that every project we undertake is executed flawlessly from start to finish.
+            <p className='text-4xl font-bold heading mt-6 '>Our flawless process</p>
+            <p className='mt-[20px] sm:w-[70%] w-[90vw] text'>We believe in a seamless approach to delivering results that exceed expectations. Our process is designed to be meticulous, efficient, and focused on your business goals, ensuring that every project we undertake is executed flawlessly from start to finish.
             </p>
             <div className='grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 mt-[20px]'>
                 <div className='w-[200px] h-[200px] rounded-[200px] mt-[10px] flex items-center flex-col justify-center border-[2px] border-white ml-[13px]'>

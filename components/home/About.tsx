@@ -19,7 +19,7 @@ const About = () => {
         <div className="md:w-[80%] h-[330px] overflow-hidden" >
   <Image src={marketing} alt="" className="w-full h-full object-cover" />
 </div>
-          <p className="font-bold text-4xl heading mt-3">
+          <p className="font-bold sm:text-4xl text-3xl heading mt-3">
           We Have an Incredibly Rich Past and Amazing Future Ahead
           </p>
         </div>

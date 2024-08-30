@@ -6,6 +6,9 @@ import { FaArrowLeft } from "react-icons/fa6";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
 const Consultation = () => {
   const schema = yup.object().shape({
@@ -26,19 +29,30 @@ const Consultation = () => {
   });
 
   const onSubmit = async (data: any) => {
-    // console.log("data", data);
     try {
-       fetch("/api/add-post", {
+      const response = await fetch("/api/add-post", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(data),
       });
-    } catch (e) {}
+  
+      const result = await response.json();
+  
+      if (response.status === 200) {
+        toast.success("Message sent successfully");
+      } else {
+        toast.error("Failed to send message");
+      }
+    } catch (error) {
+      toast.error("An error occurred while sending the message");
+    }
   };
+  
 
   return (
+    <>
     <div className={`w-full flex items-center justify-center bg text-white`}>
       <div className="w-[80%] flex flex-col items-center m-[20px] ">
         <p className="font-bold text-2xl heading">
@@ -117,7 +131,7 @@ const Consultation = () => {
                 placeholder="Name"
                 className="p-4 bg-white border-[1px] border-[#F5F5F5]"
                 {...register("name")}
-              />
+                />
               {errors.name && (
                 <p className="text-red-500">{errors.name.message}</p>
               )}
@@ -131,7 +145,7 @@ const Consultation = () => {
                 placeholder="Enter Email"
                 className="p-4 bg-white border-[1px] border-[#F5F5F5]"
                 {...register("email")}
-              />
+                />
               {errors.email && (
                 <p className="text-red-500">{errors.email.message}</p>
               )}
@@ -166,7 +180,7 @@ const Consultation = () => {
               <button
                 type="submit"
                 className="bg-white p-3 text-black mt-4 hover:bg-[#FF8E2B] transition-all hover:text-white rounded-[100px]"
-              >
+                >
                 SUBMIT
               </button>
             </form>
@@ -174,6 +188,8 @@ const Consultation = () => {
         </div>
       </div>
     </div>
+    <ToastContainer/>
+                </>
   );
 };
 

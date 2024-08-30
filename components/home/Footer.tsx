@@ -18,35 +18,35 @@ const Footer = () => {
         <div className='flex flex-col items-start'>
             <p className='font-bold mid-heading md:mt-[70px] mt-[20px]'>Services</p>
             <Link href={"/service/website_development"}>
-            <p className='text hover:text-[#FF8E2B]'>Web Design & Development</p>
+            <p className='text hover:text-[#FF8E2B] transition-all'>Web Design & Development</p>
             </Link>
             <Link href={"/service/google_ads"}>
-            <p className='text hover:text-[#FF8E2B]'>Google Ads</p>
+            <p className='text hover:text-[#FF8E2B] transition-all'>Google Ads</p>
             </Link>
             <Link href={"/service/social_media_marketing"}>
-            <p className='text hover:text-[#FF8E2B]'>Social Media Marketing</p>
+            <p className='text hover:text-[#FF8E2B] transition-all'>Social Media Marketing</p>
             </Link>
             <Link href={"/service/search_engine"}>
-            <p className='text hover:text-[#FF8E2B]'>SEO</p>
+            <p className='text hover:text-[#FF8E2B] transition-all'>SEO</p>
             </Link>
             <Link href={"/service/branding"}>
-            <p className='text hover:text-[#FF8E2B]'>Branding</p>
+            <p className='text hover:text-[#FF8E2B] transition-all'>Branding</p>
             </Link>
             <Link href={"/service/email_marketing"}>
-            <p className='text hover:text-[#FF8E2B]'>Email Marketing</p>
+            <p className='text hover:text-[#FF8E2B] transition-all'>Email Marketing</p>
             </Link>
         </div>
         <div className='flex flex-col items-start'>
             <p className='font-bold mid-heading md:mt-[70px] mt-[20px]'>Company</p>
             <Link href={"/about"}>
-            <p className='text hover:text-[#FF8E2B]'>About Us</p>
+            <p className='text hover:text-[#FF8E2B] transition-all'>About Us</p>
             </Link>
-            <p className='text hover:text-[#FF8E2B]'>Company Profile</p>
+            <p className='text hover:text-[#FF8E2B] transition-all'>Company Profile</p>
             <Link href={"/portfolio"}>
-            <p className='text hover:text-[#FF8E2B]'>Case Studies</p>
+            <p className='text hover:text-[#FF8E2B] transition-all'>Case Studies</p>
             </Link>
             <Link href={"/contact"}>
-            <p className='text hover:text-[#FF8E2B]'>Contact Us</p>
+            <p className='text hover:text-[#FF8E2B] transition-all'>Contact Us</p>
             </Link>
         </div>
         <div className='flex flex-col items-start'>

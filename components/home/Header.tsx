@@ -88,13 +88,13 @@ const Header = (color:any) => {
         </div>
       </div>
 
-      <div className="flex md:hidden flex-row justify-between p-2 items-center w-full bg-[#0D2137]">
-        <div className="h-[100px] w-[100px]  relative z-10">
-          <Image src={logo} alt="" height={200} width={200} />
+      <div className="flex md:hidden flex-row justify-around p-2 items-center w-full h-[100px] bg-[#0D2137]">
+        <div className="h-[150px] w-[150px]  relative z-10">
+          <Image src={logo} alt="" className="h-full w-full" />
         </div>
 
         <Sheet>
-          <SheetTrigger className="text-white hover:text-[#FF8E2B]  text-4xl">
+          <SheetTrigger className="text-white hover:text-[#FF8E2B]  text-2xl">
             <IoMenu />
           </SheetTrigger>
           <SheetContent className="bg-[#0D2137] text-white">
@@ -125,6 +125,7 @@ const Header = (color:any) => {
           </SheetContent>
         </Sheet>
       </div>
+      <div className="fixed bottom-[20px] right-[100px] z-50">
       <FloatingWhatsApp
               phoneNumber="+923392073100"
               accountName="SpearingSystem"
@@ -133,7 +134,8 @@ const Header = (color:any) => {
               avatar="/images/logoAvatar.png"
               chatboxHeight={350}
               buttonClassName="floating-whatsapp-button"
-      />
+              />
+              </div>
     </>
   );
 };

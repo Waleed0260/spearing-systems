@@ -21,7 +21,7 @@ const Portfolio = () => {
       });
     }, []);
   return (
-    <div className='flex flex-col justify-center items-center w-full'>
+    <div className='flex flex-col justify-center items-center w-full' data-aos="fade-up">
       <div className='flex flex-col w-[80%] m-[30px] items-center justify-center'>
 
         <p className='font-bold text-4xl heading'>
