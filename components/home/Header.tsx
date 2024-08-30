@@ -14,6 +14,9 @@ import {
 } from "@/components/ui/sheet";
 import { IoMenu } from "react-icons/io5";
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
+import { AiOutlineDown } from "react-icons/ai";
+import { AiOutlineUp } from "react-icons/ai";
+
 
 const Header = (color:any) => {
   const [bgColor, setBgColor] = useState("[#ffffff]");
@@ -35,6 +38,12 @@ const Header = (color:any) => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const handleArrowClick = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
 
   return (
     <>
@@ -105,9 +114,49 @@ const Header = (color:any) => {
                   <li className="list-none mid-heading">
                     <Link href={"/"}>Home</Link>
                   </li>
-                  <li className="list-none mid-heading">
-                    <Link href={"/services"}>Our Services</Link>
-                  </li>
+                  <li className="list-none mid-heading w-full flex flex-col items-start">
+      <div className="w-full flex justify-between items-center">
+        <Link href={"/services"}>Our Services</Link>
+        {isDropdownOpen ? <AiOutlineUp className="inline-block cursor-pointer" onClick={handleArrowClick}/> : 
+        <AiOutlineDown className="inline-block cursor-pointer" onClick={handleArrowClick} />
+        }
+      </div>
+
+      {isDropdownOpen && (
+        <ul className="mt-2 flex flex-col  items-start transition-all w-full">
+          <li className="py-1 hover:text-[#FF8E2B] transition-all">
+            <Link href={"/service/website_development"} className="block w-full px-4">
+              Website Development
+            </Link>
+          </li>
+          <li className="py-1 hover:text-[#FF8E2B] transition-all">
+            <Link href={"/service/google_ads"} className="block w-full px-4">
+              Google Ads
+            </Link>
+          </li>
+          <li className="py-1 hover:text-[#FF8E2B] transition-all">
+            <Link href={"/service/social_media_marketing"} className="block w-full px-4">
+              Social Media Marketing
+            </Link>
+          </li>
+          <li className="py-1 hover:text-[#FF8E2B] transition-all">
+            <Link href={"/service/search_engine"} className="block w-full px-4">
+              SEO
+            </Link>
+          </li>
+          <li className="py-1 hover:text-[#FF8E2B] transition-all">
+            <Link href={"/service/branding"} className="block w-full px-4">
+              Branding
+            </Link>
+          </li>
+          <li className="py-1 hover:text-[#FF8E2B] transition-all">
+            <Link href={"/service/email_marketing"} className="block w-full px-4">
+              Email Marketing
+            </Link>
+          </li>
+        </ul>
+      )}
+    </li>
                   <li className="list-none mid-heading">
                     <Link href={"/portfolio"}>Portfolio</Link>
                   </li>

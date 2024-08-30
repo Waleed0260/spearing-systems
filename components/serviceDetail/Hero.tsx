@@ -24,7 +24,7 @@ const Hero = (id:any) => {
     style={{ backgroundImage: `url('/images/aboutBanner.png')` }}
   >
     <div className="absolute inset-0 bg-black opacity-50"></div>
-    <p className="font-bold text-3xl text-white heading relative uppercase">{formattedId}</p>
+    <p className="font-bold text-3xl text-white heading relative uppercase w-[90%] text-center">{formattedId}</p>
   </div>
 </div>
     </div>  

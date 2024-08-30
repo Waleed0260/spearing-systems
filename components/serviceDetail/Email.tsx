@@ -10,8 +10,8 @@ const Email = () => {
     <div className="w-full flex items-center justify-center">
       <div className="w-[80%] flex flex-col items-center justify-center">
         {/* FIRST SECTION */}
-        <div className="flex md:flex-row flex-col items-start justify-between w-[100%]">
-          <div className="flex flex-col md:w-[50%] mt-[50px]">
+        <div className="flex md:flex-row flex-col-reverse items-start justify-between w-[100%]">
+          <div className="flex flex-col md:w-[50%] md:mt-[50px]">
             <p className="font-bold text-xl heding">Email Platform Migration</p>
             <p className="mid-heading">
             If you’ve outgrown your platform, Northern can not only mitigate any lost revenue but drive revenue growth on your new platform, ensuring a seamless transition that maximizes your business potential and provides ongoing support to help you thrive in a new environment.            </p>
@@ -25,7 +25,7 @@ const Email = () => {
                   variant={"outline"}
                   className="w-[240px] mt-[20px] bg-[#0D2137] hover:bg-[#FF8E2B] p-4 rounded-[100px] text-white"
                 >
-                  Start Your Email Migration Now
+                 Start Your Email Marketing Now
                 </Button>
           </div>
 
@@ -55,7 +55,7 @@ const Email = () => {
                   variant={"outline"}
                   className="w-[240px] mt-[20px] bg-[#0D2137] hover:bg-[#FF8E2B] p-4 rounded-[100px] text-white"
                 >
-                  Start Designing Your Email Now
+                  Start Your Email Marketing Now
                 </Button>
           </div>
 
@@ -63,7 +63,7 @@ const Email = () => {
 
 {/* THIRD SECTION */}
 
-        <div className="flex md:flex-row flex-col items-center justify-between mt-5">
+        <div className="flex md:flex-row flex-col-reverse items-center justify-between mt-5">
           <div className="flex flex-col md:w-[50%]">
             <p className="font-bold text-xl heding">Email Marketing Automation</p>
             <p className="mid-heading">
@@ -80,7 +80,7 @@ const Email = () => {
                   variant={"outline"}
                   className="w-[240px] mt-[20px] bg-[#0D2137] hover:bg-[#FF8E2B] p-4 rounded-[100px] text-white"
                 >
-                  Start Your Automated Email Now
+                  Start Your Email Marketing Now
                 </Button>
           </div>
           <div className="md:w-[50%]">

@@ -4,11 +4,11 @@ import ppc2 from "../../../../public/images/ppc2.png"
 import ppc3 from "../../../../public/images/ppc3.png"
 import ppc4 from "../../../../public/images/ppc4.png"
 import seo from "../../../../public/images/seo.jpg";
-import marketingService from "../../../../public/images/marketingService.jpg";
+import marketingService from "../../../../public/images/marketingService.png";
 import branding from "../../../../public/images/branding.jpg";
 import email from "../../../../public/images/email.jpg";
-import customWebsite from "../../../../public/images/customWebsite.webp";
-import ppc from "../../../../public/images/ppc.jpg"
+import customWebsite from "../../../../public/images/customWebsite.jpg";
+import ppc from "../../../../public/images/ppc.png"
   const transcriptsData: any = {
     search_engine: {
       img: seo,

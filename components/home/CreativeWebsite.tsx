@@ -13,6 +13,7 @@ import { Autoplay } from "swiper/modules";
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
 const CreativeWebsite = () => {
   useEffect(() => {
     AOS.init({
@@ -39,12 +40,12 @@ const CreativeWebsite = () => {
             delivering customized e-commerce platforms and websites tailored to
             meet your business needs.
           </p>
-          <div className="flex flex-row gap-2 items-center cursor-pointer">
-            <p className="text-[#FF832B]">CREATE ME A BEAUTIFUL WEBSITE</p>
-            <p className="text-[#FF832B] text-xl">
+          <Link href={"/contact"} className="flex flex-row gap-2 items-center cursor-pointer ">
+            <p className="text-[#FF832B] hover:underline">CREATE ME A BEAUTIFUL WEBSITE</p>
+            <p className="text-[#FF832B] text-xl block">
               <FaRegArrowAltCircleRight />
             </p>
-          </div>
+          </Link>
         </div>
 
         <div className="bg-[#FF8E2B]  rounded-[30px] md:w-[40%] w-[80vw] md:absolute md:left-[50%] p-[50px] z-10"  data-aos="fade-left">

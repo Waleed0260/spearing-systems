@@ -11,7 +11,7 @@ const Benefits = ({benefits}:any) => {
                 return(
                   <>
                   <li className='mt-4'>
-                  <div className='flex flex-row gap-3'>
+                  <div className='flex sm:flex-row flex-col gap-3'>
 
                   <p className='font-bold'>{item.heading}</p>
                   <p>{item.text}</p>

@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link';
 import { FaCode, FaSearch, FaBullhorn, FaShareAlt, FaGoogle } from 'react-icons/fa';
 import { FaEnvelope } from 'react-icons/fa';
+import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
 const Services = () => {
         const services = [
@@ -62,6 +63,12 @@ const Services = () => {
                         <p className='font-bold text-4xl '>{item.icon}</p>
                         <p className='font-bold text-3xl heading mt-3'>{item.heading}</p>
                         <p className='text mt-6'>{item.text}</p>
+                        <div className="flex flex-row gap-2 items-center cursor-pointer mt-3">
+            <p className="text-[#FF8e2B] underline">See the full detail</p>
+            <p className="text-[#FF8e2B] text-xl">
+              <FaRegArrowAltCircleRight />
+            </p>
+          </div>
                         </div>
                     </div>
                         </Link>

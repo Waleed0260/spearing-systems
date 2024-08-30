@@ -15,6 +15,7 @@ import { Button } from "../ui/button";
 import { FaChartLine } from "react-icons/fa";
 import Link from "next/link";
 import { FaGooglePlusG } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 
 const Services = () => {
   useEffect(() => {
@@ -58,6 +59,13 @@ const Services = () => {
       heading: "Google Ads/PPC",
       text: "Maximize your ROI with expertly managed Google Ads campaigns. Our PPC specialists create targeted, data-driven campaigns that put your brand in front of high-intent customers, driving clicks, conversions, and measurable growth.",
       href:"google_ads"
+    },
+    {
+      id: 6,
+      icon: <MdEmail />,
+      heading: "Email Marketing",
+      text: "Unlock the full potential of email marketing with Spearing Systems. Our comprehensive services are designed to increase engagement, drive sales, and build lasting customer relationships.",
+      href:"email_marketing"
     }
 ];
   return (
@@ -90,7 +98,7 @@ const Services = () => {
       >
         {services.map((item) => {
           return (
-            <SwiperSlide key={item.id} className="flex justify-center items-center sm:p-[10px] ">
+            <SwiperSlide key={item.id} className="flex justify-between items-center sm:p-[10px] ">
               <Link className="flex flex-col gap-3 lg:w-[24vw] md:w-[37vw] sm:h-[500px] h-[540px] servicebox transition-all items-center  bg-[#f2f2f2] m-[20px] lg:ml-[20px] sm:ml-[40px] md:ml-[9px] ml-3 shadow-2xl cursor-pointer " href={`/service/${item.href}`}>
                 <p className=" text-4xl mt-[30px] bg-[#FF8E2B] p-5 rounded-[100px]">{item.icon}</p>
                 <b className="font-bold text-2xl mid-heading mt-[15px] text-center">{item.heading}</b>
