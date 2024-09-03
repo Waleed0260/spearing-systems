@@ -13,6 +13,7 @@ import voltage from "../../../../public/images/voltage.jpeg";
 import portLogo from "../../../../public/images/portLogo.png"
 import atlas from "../../../../public/images/atlas.jpeg"
 import portfolio15 from "../../../../public/images/portfolio15.jpg"
+import sydney from "../../../../public/images/sydney.webp"
 const caseData:any = {
 
     // GOOGLE ADS PPPC //////////////
@@ -57,6 +58,55 @@ const caseData:any = {
         "testimonial" : {
             "text":"Partnering with Spearing Systems has been a game-changer for our digital marketing efforts. Their expertise in SEO and AdWords has significantly boosted our online presence and lead generation. The team’s dedication to understanding our business and crafting tailored strategies has truly elevated our digital footprint. We’re thrilled with the results and look forward to continued success together.",
             "company":"THINK Team"
+        }
+      },
+      "interior": {
+        "video_id": "interior",
+        "img":sydney,
+        "title": "Sydney Extensions and Designs – Growing with Spearing Systems",
+        "client": "Custom Design and Building Services. The object was to increase brand awareness, generate qualified leads, and grow the business through targeted digital marketing efforts.",
+        "problem": "Sydney Extensions and Designs, a leading custom designers and builders firm in Sydney, faced challenges in reaching potential clients and generating consistent leads for their high-end services. Their website was outdated and not optimized for lead generation, while their digital marketing efforts were limited.",
+        "solution": {
+          "point1": "Google Ads Campaign",
+          "adsCampaign": [
+              "We created highly targeted Google Ads campaigns focused on local search intent keywords such as custom home builders Sydney and home extensions in Sydney. The goal was to attract homeowners and businesses looking for premium building services.",
+          ],
+          "point2": "Digital Marketing Strategy",
+          "seo": [
+              "We developed a content strategy that included blog posts, email newsletters, and social media content to keep their audience engaged and informed. Our SEO efforts also improved their organic search visibility, driving long-term growth.",
+          ],
+          "point3": "Website Development",
+          "seoCampaign": [
+              "We redesigned their website to create a modern, user-friendly platform that showcased their portfolio and services. The new website was optimized for search engines and featured clear calls-to-action to drive inquiries.",
+          ],
+          "point4": " Facebook Ads Campaign",
+          "contentMarketing": [
+              "We launched a series of visually compelling Facebook Ads to showcase Sydney Extensions and Designs' portfolio of completed projects. These ads targeted local audiences interested in home renovations, custom designs, and construction services.",
+          ]
+
+        },
+        "result": {
+          "text": "Within six months of implementing the new strategy, Sydney Extensions and Designs experienced significant growth in their business:",
+          "point1": "Return on Ad Spend (ROAS)",
+          "leadGeneration": [
+              " 4x on Google Ads and 3.5x on Facebook Ads"
+          ],
+          "point2": "Lead Generation",
+          "digitalPresence": [
+              "60% increase in qualified leads from the new website and ad campaigns"
+          ],
+          "point3": "Website Traffic",
+          "adCampaigns": [
+              "80% increase in organic traffic due to SEO efforts"
+          ]
+        },
+        "testimonial" : {
+            "text":"Partnering with Spearing Systems has been a game-changer for our digital marketing efforts. Their expertise in SEO and AdWords has significantly boosted our online presence and lead generation. The team’s dedication to understanding our business and crafting tailored strategies has truly elevated our digital footprint. We’re thrilled with the results and look forward to continued success together.",
+            "company":"THINK Team"
+        },
+        "conclusion": {
+          "heading":"Conclusion",
+          "text":"By leveraging the power of Google Ads, Facebook Ads, and a strategic digital marketing approach, Spearing Systems helped Sydney Extensions and Designs grow their business, increase their online presence, and generate more qualified leads. Our comprehensive approach to digital marketing provided the foundation for long-term success in the competitive custom design and building market."
         }
       },
       "google_ads2": {

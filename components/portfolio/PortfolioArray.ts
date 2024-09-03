@@ -14,7 +14,7 @@ import portfolio13 from "../../public/images/portfolio13.jpg";
 import portfolio14 from "../../public/images/portfolio14.jpg";
 import portfolio15 from "../../public/images/portfolio15.jpg";
 import portfolio16 from "../../public/images/portfolio16.jpg";
-
+import interior from "../../public/images/interior.jpg"
 
 export const PPC = [
     {
@@ -26,10 +26,10 @@ export const PPC = [
     },
     {
         id: 2,
-        image: portfolio1,
-        title: "Google Ads/SEO",
-        text: "Boosting Cafe Brands' Digital Presence",
-        link: "google_ads2"
+        image: interior,
+        title: " Google Ads/Facebook Ads/Web Dev/Digital Marketing",
+        text: "Custom Design and Building Services",
+        link: "interior"
     },
     {
         id: 3,
@@ -71,10 +71,10 @@ export const SEO = [
     },
     {
         id: 2,
-        image: portfolio7,
-        title: "SEO/Google Ads",
-        text: "Boosting Cafe Brands' Digital Presence",
-        link: "google_ads2"
+        image: interior,
+        title: " Google Ads/Facebook Ads/Web Dev/Digital Marketing",
+        text: "Custom Design and Building Services",
+        link: "interior"
     },
     {
         id: 3,
@@ -116,10 +116,10 @@ export const WEBSITE = [
     },
     {
         id: 2,
-        image: portfolio13,
-        title: "Website Dev",
-        text: "Intra Home Systems Transforms Online Presence with Comprehensive Web and SEO Overhaul",
-        link: "website_dev_2"
+        image: interior,
+        title: " Google Ads/Facebook Ads/Web Dev/Digital Marketing",
+        text: "Custom Design and Building Services",
+        link: "interior"
     },
     {
         id: 3,

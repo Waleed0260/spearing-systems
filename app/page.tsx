@@ -13,6 +13,7 @@ import Slider from '@/components/home/Slider';
 import Portfolio from '@/components/home/Portfolio';
 import Script from 'next/script';
 import CreativeWebsite from '@/components/home/CreativeWebsite';
+import Interior from '@/components/home/Interior';
 export default function Page() {
   const [loading, setLoading] = useState(true);
 
@@ -40,6 +41,7 @@ export default function Page() {
       <Process/>
       {/* <Portfolio/> */}
       <Portfolio/>
+      <Interior/>
       <Testimonial/>
       {/* <Technologies/> */}
       {/* <Testimonial /> */}

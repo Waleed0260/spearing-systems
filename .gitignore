@@ -36,3 +36,10 @@ yarn-error.log*
 next-env.d.ts
 
 .vercel
+
+# next-video
+y/*
+!y/*.json
+!y/*.js
+!y/*.ts
+public/_next-video

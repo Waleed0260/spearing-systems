@@ -23,6 +23,6 @@
       "@/lib/*": ["lib/*"]  
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/home/ConsultationPopup.jsx", "app/api/add-post/route.js", "lib/prisma.js"],
+  "include": ["video.d.ts", "next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/home/ConsultationPopup.jsx", "app/api/add-post/route.js", "lib/prisma.js"],
   "exclude": ["node_modules"]
 }

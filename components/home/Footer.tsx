@@ -3,7 +3,6 @@ import Image from 'next/image'
 import logo from "../../public/images/logo.png"
 import { FaLinkedin, FaInstagram , FaFacebook, FaTwitter } from "react-icons/fa";
 import Link from 'next/link';
-
 const Footer = () => {
   return (
     <>
@@ -41,7 +40,8 @@ const Footer = () => {
             <Link href={"/about"}>
             <p className='text hover:text-[#FF8E2B] transition-all'>About Us</p>
             </Link>
-            <p className='text hover:text-[#FF8E2B] transition-all'>Company Profile</p>
+            {/* <p className='text hover:text-[#FF8E2B] transition-all'>Company Profile</p> */}
+            <a href={"/images/CompanyProfile.pdf"} download className='text hover:text-[#FF8E2B] transition-all cursor-pointer'>Company Profile</a>
             <Link href={"/portfolio"}>
             <p className='text hover:text-[#FF8E2B] transition-all'>Case Studies</p>
             </Link>
