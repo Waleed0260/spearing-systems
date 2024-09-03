@@ -54,7 +54,7 @@ const Footer = () => {
             <div className='flex flex-row gap-5'>
                 <Link href={"https://www.facebook.com/profile.php?id=61562738654670"} className='text-xl hover:text-[#FF8E2B] transition-all'><FaFacebook/></Link>
                 <Link href={"https://facebook.com"} className='text-xl hover:text-[#FF8E2B] transition-all'><FaTwitter/></Link>
-                <Link href={"https://facebook.com"} className='text-xl hover:text-[#FF8E2B] transition-all'><FaInstagram/></Link>
+                <Link href={"https://www.instagram.com/spearingsystems/"} className='text-xl hover:text-[#FF8E2B] transition-all'><FaInstagram/></Link>
                 <Link href={"https://www.linkedin.com/company/spearing-systems/"} className='text-xl hover:text-[#FF8E2B] transition-all'><FaLinkedin/></Link>
 
             </div>

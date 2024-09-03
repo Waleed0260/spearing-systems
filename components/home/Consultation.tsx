@@ -38,7 +38,6 @@ const Consultation = () => {
         body: JSON.stringify(data),
       });
   
-      const result = await response.json();
   
       if (response.status === 200) {
         toast.success("Message sent successfully");
