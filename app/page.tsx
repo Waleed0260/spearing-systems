@@ -40,11 +40,8 @@ export default function Page() {
       <CreativeWebsite/>
       <Process/>
       {/* <Portfolio/> */}
-      <Portfolio/>
       <Interior/>
       <Testimonial/>
-      {/* <Technologies/> */}
-      {/* <Testimonial /> */}
       <Consultation/>
       <Footer />
 

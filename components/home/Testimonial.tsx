@@ -42,7 +42,7 @@ const Testimonial = () => {
     
 
   return (
-    <div className="flex flex-col justify-center items-center w-full ">
+    <div className="flex flex-col justify-center items-center w-full mb-6">
       <div className="w-[80%] flex flex-col items-center justify-center m-[30px]"></div>
       <p className="font-bold text-2xl m-3 heading text-center">What Our Clients Are Saying</p>
 

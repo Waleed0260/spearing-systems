@@ -17,8 +17,8 @@ const WhyUs = () => {
       }, []);
   return (
     <div className='w-full flex items-center justify-center ' data-aos="fade-up">
-        <div className='w-[90%] m-[30px] flex md:flex-row flex-col md:items-center items-start justify-between'>
-            <div className='flex flex-col md:w-[50%] ' >
+        <div className='w-[90%] m-[30px] flex md:flex-row flex-col md:items-start items-start justify-between'>
+            <div className='flex flex-col md:w-[45%] ' >
                 <b className='mid-heading'>WHy US</b>
                 <p className='font-bold text-4xl heading'>We Have an Incredibly Rich Past and Amazing Future Ahead </p>
                 <p className='text mt-[30px]'>Spearing Systems has a storied history of transforming brands and leading them to new heights. Our journey is marked by innovative campaigns, long-lasting partnerships, and a relentless pursuit of excellence. </p>

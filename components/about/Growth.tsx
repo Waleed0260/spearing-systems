@@ -18,11 +18,11 @@ const Growth = () => {
   return (
     <div className='w-full flex  justify-center items-center'>
         <div className='w-[90%] m-[30px] flex lg:flex-row flex-col'>
-            <div className='flex items-center justify-center' data-aos="fade-right">
-                <div className='w-[450px] h-[500px]'>
-                <Image src={about2} alt=""/>
+            <div className='flex items-start justify-center w-[50%]' data-aos="fade-right">
+                <div className='w-[550px] h-[350px]'>
+                <Image src={about2} alt="" className='w-full'/>
                     </div>
-                    <div className='w-[400px] h-[300px] hidden md:flex relative right-[60px] top-[90px]'>
+                    <div className='w-[550px] h-[300px] hidden md:flex relative right-[40px] top-[140px]'>
                 <Image src={about3} alt=""/>
                     </div>
             </div>
