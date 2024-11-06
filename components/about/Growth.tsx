@@ -17,7 +17,7 @@ const Growth = () => {
       }, []);
   return (
     <div className='w-full flex  justify-center items-center'>
-        <div className='w-[90%] m-[30px] flex lg:flex-row flex-col'>
+        <div className='lg:w-[1000px] w-[90%] m-[30px] flex lg:flex-row flex-col'>
             <div className='flex items-start justify-center w-[50%]' data-aos="fade-right">
                 <div className='w-[550px] h-[350px]'>
                 <Image src={about2} alt="" className='w-full'/>

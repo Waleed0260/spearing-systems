@@ -53,14 +53,14 @@ const Consultation = () => {
   return (
     <>
     <div className={`w-full flex items-center justify-center bg text-white`}>
-      <div className="w-[80%] flex flex-col items-center m-[20px] ">
+      <div className="lg:max-w-[1000px] w-[80%] flex flex-col items-center my-4">
         <p className="font-bold text-2xl heading">
           READY TO GROW YOUR BUSINESS
         </p>
-        <div className="flex md:flex-row flex-col m-6 gap-4">
+        <div className="flex md:flex-row flex-col mt-4 justify-between gap-4">
           <div className="md:w-[50%] flex flex-col mt-9 text-white">
             <div className="flex flex-row gap-4">
-              <p className="h-[40px] w-[40px] text-center flex  items-center justify-center rounded-[100px] bg-[#FF8E2B] gap-3">
+              <p className="h-[40px] w-[50px] text-center flex  items-center justify-center rounded-[100px] bg-[#FF8E2B] gap-3">
                 <FaArrowLeft />
               </p>
               <div>
@@ -73,7 +73,7 @@ const Consultation = () => {
               </div>
             </div>
             <div className="flex flex-row gap-4 mt-[20px]">
-              <p className="h-[40px] w-[70px] text-center flex  items-center justify-center rounded-[100px] bg-[#FF8E2B] gap-3">
+              <p className=" text-center flex  items-center justify-center rounded-full h-[40px] w-[90px] bg-[#FF8E2B] gap-3">
                 1
               </p>
               <div>
@@ -86,7 +86,7 @@ const Consultation = () => {
             </div>
 
             <div className="flex flex-row gap-4 mt-4">
-              <p className="h-[40px] w-[80px] text-center flex  items-center justify-center rounded-[100px] bg-[#FF8E2B]">
+              <p className="text-center flex  items-center justify-center rounded-full h-[40px] w-[100px] bg-[#FF8E2B] gap-3">
                 2
               </p>
               <div>
@@ -99,7 +99,7 @@ const Consultation = () => {
             </div>
 
             <div className="flex flex-row gap-4 mt-4">
-              <p className="h-[40px] w-[70px] text-center flex  items-center justify-center rounded-[100px] bg-[#FF8E2B]">
+              <p className="text-center flex  items-center justify-center rounded-full h-[40px] w-[90px] bg-[#FF8E2B] gap-3">
                 3
               </p>
               <div>
@@ -113,7 +113,7 @@ const Consultation = () => {
             <hr className="mt-5" />
           </div>
 
-          <div className=" flex flex-col md:w-[65%] m-4">
+          <div className=" flex flex-col md:w-[65%]">
             <p className="font-bold text-xl mid-heading">
               Get a Free consultation
             </p>
@@ -128,7 +128,7 @@ const Consultation = () => {
                 type="text"
                 id="name" // Ensure input ID matches the htmlFor in label
                 placeholder="Name"
-                className="p-4 bg-white border-[1px] border-[#F5F5F5]"
+                className="p-4 bg-white border-[1px] border-[#F5F5F5] rounded-[10px]"
                 {...register("name")}
                 />
               {errors.name && (
@@ -142,7 +142,7 @@ const Consultation = () => {
                 type="text"
                 id="email" // Ensure input ID matches the htmlFor in label
                 placeholder="Enter Email"
-                className="p-4 bg-white border-[1px] border-[#F5F5F5]"
+                className="p-4 bg-white border-[1px] border-[#F5F5F5] rounded-[10px]"
                 {...register("email")}
                 />
               {errors.email && (
@@ -156,7 +156,7 @@ const Consultation = () => {
                 type="text"
                 id="subject" // Ensure input ID matches the htmlFor in label
                 placeholder="Enter Subject"
-                className="p-4 bg-white border-[1px] border-[#F5F5F5]"
+                className="p-4 bg-white border-[1px] border-[#F5F5F5] rounded-[10px]"
                 {...register("subject")}
               />
               {errors.subject && (
@@ -169,7 +169,7 @@ const Consultation = () => {
               <textarea
                 id="message" // Ensure input ID matches the htmlFor in label
                 placeholder="Enter Message"
-                className="p-4 bg-white border-[1px] border-[#F5F5F5]"
+                className="p-4 bg-white border-[1px] border-[#F5F5F5] rounded-[10px]"
                 {...register("message")}
               />
               {errors.message && (

@@ -23,7 +23,7 @@ const CreativeWebsite = () => {
   }, []);
   return (
     <div className="w-full flex items-center justify-center">
-      <div className="m-[80px] w-[80%] flex items-center justify-between md:flex-row flex-col">
+      <div className="m-[80px] lg:max-w-[1000px]  flex items-center justify-between md:flex-row flex-col">
         <div className="flex flex-col gap-5 p-[30px] bg-white shadow-2xl text-black rounded-[15px] hover:rounded-[40px] transition-all md:w-[52%] relative z-20" data-aos="fade-right">
           <p className="text-6xl text-[#0D2137]">
             <TbDeviceImacCode />

@@ -42,11 +42,11 @@ const Testimonial = () => {
     
 
   return (
-    <div className="flex flex-col justify-center items-center w-full mb-6">
-      <div className="w-[80%] flex flex-col items-center justify-center m-[30px]"></div>
+    <div className="flex flex-col justify-center items-center w-full mb-6 mt-6">
+      {/* <div className="lg:max-w-[1000px] w-[80%] flex flex-col items-center justify-center m-[30px]"></div> */}
       <p className="font-bold text-2xl m-3 heading text-center">What Our Clients Are Saying</p>
 
-      <div className="w-[70%]">
+      <div className="lg:w-[1000px] w-[80%]">
             <Swiper
             slidesPerView={1}
           modules={[Autoplay]}
@@ -56,7 +56,7 @@ const Testimonial = () => {
             delay: 3000,
             disableOnInteraction: false,
           }}
-          className="w-full md:h-[150px] p-[15px]"
+          className="w-full md:h-[150px]"
             >
                 {testimonial?.map((item:any)=>{
                     return(

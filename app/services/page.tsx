@@ -31,7 +31,7 @@ const page = () => {
     <Hero/>
     <WhyUs/>
     <Services/>
-    <Portfolio/>
+    {/* <Portfolio/> */}
     <Testimonial/>
     <CallTo/>
     {/* <Video/> */}

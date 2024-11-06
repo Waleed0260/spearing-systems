@@ -14,12 +14,12 @@ const About = () => {
     });
   }, []);
   return (
-      <div className="md:w-[80%] m-[50px] w-[89vw] flex md:flex-row flex-col gap-5">
+      <div className="lg:max-w-[1000px] m-[50px] w-[89vw] flex md:flex-row flex-col gap-5">
         <div className="flex md:flex-col flex-col justify-between items-start md:w-[50%]" data-aos="fade-right">
         <div className="md:w-[80%] h-[330px] overflow-hidden" >
   <Image src={marketing} alt="" className="w-full h-full object-cover" />
 </div>
-          <p className="font-bold sm:text-4xl text-3xl heading mt-3">
+          <p className="font-bold sm:text-4xl text-3xl heading mt-3" data-aos="fade-up" data-ao-delay="300">
           We Have an Incredibly Rich Past and Amazing Future Ahead
           </p>
         </div>
@@ -32,19 +32,19 @@ const About = () => {
           <p className="mt-[10px] md:w-[70%]  mid-heading">
           At Spearing Systems, we don't just follow digital trends—we set them. As a premier digital marketing agency, we combine innovative strategies with creative excellence to deliver results that exceed expectations. 
           </p>
-          <div className="flex flex-row gap-3 items-center border-[1px] p-3 mt-2 bg-[#f5f4f2] border-[#1c1c1c]">
+          <div className="flex flex-row gap-3 items-center border-[1px] p-3 mt-2 bg-[#f5f4f2] border-[#1c1c1c]" data-aos="fade-up" data-ao-delay="300">
             <p className="text-[#FF8E2B]">
             <SiTicktick />
             </p>
             <p className="text ">Data Driven Strategies </p>
           </div>
-          <div className="flex flex-row gap-3 items-center border-[1px] p-3 mt-2 bg-[#f5f4f2] border-[#1c1c1c]">
+          <div className="flex flex-row gap-3 items-center border-[1px] p-3 mt-2 bg-[#f5f4f2] border-[#1c1c1c]" data-aos="fade-up" data-ao-delay="300">
             <p className="text-[#FF8E2B]">
             <SiTicktick />
             </p>
             <p className="text ">Client Centric Approach </p>
           </div>
-          <div className="flex flex-row gap-3 items-center border-[1px] p-3 mt-2 bg-[#f5f4f2] border-[#1c1c1c]">
+          <div className="flex flex-row gap-3 items-center border-[1px] p-3 mt-2 bg-[#f5f4f2] border-[#1c1c1c]" data-aos="fade-up" data-ao-delay="300">
             <p className="text-[#FF8E2B]">
             <SiTicktick />
             </p>

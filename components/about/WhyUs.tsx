@@ -17,7 +17,7 @@ const WhyUs = () => {
       }, []);
   return (
     <div className='w-full flex items-center justify-center ' data-aos="fade-up">
-        <div className='w-[90%] m-[30px] flex md:flex-row flex-col md:items-start items-start justify-between'>
+        <div className='lg:w-[1000px] w-[90%] m-[30px] flex md:flex-row flex-col md:items-start items-start justify-between'>
             <div className='flex flex-col md:w-[45%] ' >
                 <b className='mid-heading'>WHy US</b>
                 <p className='font-bold text-4xl heading'>We Have an Incredibly Rich Past and Amazing Future Ahead </p>

@@ -50,9 +50,11 @@ const Services = () => {
             },
         ]
   return (
-    <div className='flex flex-col sm:items-center items-start justify-center m-5 '>
+    <div className='w-full flex items-center justify-center'>
+
+    <div className='flex flex-col sm:items-center items-start justify-center lg:w-[1000px]'>
         <p className='font-bold text'>What we offer</p>
-        <p  className='font-bold text-5xl heading'> What We’re Offering Creative
+        <p  className='font-bold text-5xl heading text-center leading-16'> What We’re Offering Creative
         Digital Service</p>
         <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-3 sm:m-8'>
             {services.map((item:any)=>{
@@ -75,6 +77,7 @@ const Services = () => {
                 )
             })}
         </div>
+    </div>
     </div>
   )
 }

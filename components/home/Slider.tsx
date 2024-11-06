@@ -39,7 +39,7 @@ const Slider = () => {
         speed={1000}
         modules={[Navigation, Pagination, Autoplay]}
         loop={true}
-        className="w-[80%] h-[120px]"
+        className="lg:w-[1000px] w-[80%] h-[120px]"
       >
         <SwiperSlide>
           <div className="w-[150px] h-[110px] ">

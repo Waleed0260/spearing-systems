@@ -6,15 +6,17 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <>
-    <div className="flex md:flex-row flex-col items-start justify-around  w-full p-6 bg text-white">
+    <div className=" w-full flex items-center justify-center bg text-white pb-4">
+        <div className='lg:w-[1000px] w-full flex md:flex-row flex-col items-start justify-between'>
+
         <div className='flex flex-col'>
             <div className="w-[200px] h-[130px] ">
             <Image src={logo} alt=""  className='w-full h-fulll overflow-hidden'/>
             </div>
-            <p className='text md:w-[23vw]'>Your go-to for premium, punctual Full-service digital marketing agency Delivering exceptional digital marketing services on time, every time.</p>
+            <p className='text md:w-[23vw] ml-4 md:ml-0'>Your go-to for premium, punctual Full-service digital marketing agency Delivering exceptional digital marketing services on time, every time.</p>
         </div>
 
-        <div className='flex flex-col items-start'>
+        <div className='flex flex-col items-start ml-4 md:ml-0'>
             <p className='font-bold mid-heading md:mt-[70px] mt-[20px]'>Services</p>
             <Link href={"/service/website_development"}>
             <p className='text hover:text-[#FF8E2B] transition-all'>Web Design & Development</p>
@@ -35,7 +37,7 @@ const Footer = () => {
             <p className='text hover:text-[#FF8E2B] transition-all'>Email Marketing</p>
             </Link>
         </div>
-        <div className='flex flex-col items-start'>
+        <div className='flex flex-col items-start ml-4 md:ml-0'>
             <p className='font-bold mid-heading md:mt-[70px] mt-[20px]'>Company</p>
             <Link href={"/about"}>
             <p className='text hover:text-[#FF8E2B] transition-all'>About Us</p>
@@ -49,7 +51,7 @@ const Footer = () => {
             <p className='text hover:text-[#FF8E2B] transition-all'>Contact Us</p>
             </Link>
         </div>
-        <div className='flex flex-col items-start'>
+        <div className='flex flex-col items-start ml-4 md:ml-0'>
             <p className='font-bold mid-heading md:mt-[70px] mt-[20px]'>Follow</p>
             <div className='flex flex-row gap-5'>
                 <Link href={"https://www.facebook.com/profile.php?id=61562738654670"} className='text-xl hover:text-[#FF8E2B] transition-all'><FaFacebook/></Link>
@@ -59,6 +61,8 @@ const Footer = () => {
 
             </div>
         </div>
+        </div>
+
     </div>
     <div className='w-full flex md:flex-row flex-col justify-around bg-[#0b1724] text-white p-4'>
         <div className='flex flex-row gap-4'>
@@ -67,7 +71,7 @@ const Footer = () => {
             <p>Sitemap</p>
         </div>
 
-        <div>&copy; Spearing Systems All rights reserved</div>
+        <div className='md:mt-0 mt-3'>&copy; Spearing Systems All rights reserved</div>
     </div>
     </>
   )
