@@ -54,13 +54,13 @@ const Services = () => {
 
     <div className='flex flex-col sm:items-center items-start justify-center lg:w-[1000px]'>
         <p className='font-bold text'>What we offer</p>
-        <p  className='font-bold text-5xl heading text-center leading-16'> What We’re Offering Creative
+        <p  className='font-bold text-5xl heading text-center leading-tight'> What We’re Offering Creative
         Digital Service</p>
-        <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-3 sm:m-8'>
+        <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-3 '>
             {services.map((item:any)=>{
                 return (
                         <Link href={`/service/${item.href}`} key={item.id}>
-                    <div className='lg:w-[22vw] sm:w-[34vw] w-[92vw] h-[23rem] sm:m-4 mt-3 sm:mt-0 flex flex-col justify-center items-left border-[1px] border-black rounded-10px servicebox bg-[#f5f6f7] rounded-md' key={item.id}>
+                    <div className='lg:w-[300px] sm:w-[34vw] w-[92vw] h-[23rem] sm:m-4 mt-3 sm:mt-0 flex flex-col justify-center items-left border-[1px] border-[#38393b] rounded-10px servicebox bg-[#f5f6f7] rounded-md' key={item.id}>
                         <div className='p-5'>
                         <p className='font-bold text-4xl '>{item.icon}</p>
                         <p className='font-bold text-3xl heading mt-3'>{item.heading}</p>

@@ -4,7 +4,7 @@ import { FaCode, FaSearch, FaBullhorn, FaShareAlt, FaGoogle } from 'react-icons/
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import { Pagination } from "swiper/modules";
 import "swiper/css/pagination";
 import { FaArrowRight } from "react-icons/fa6";
@@ -68,7 +68,7 @@ const Services = () => {
       <b className="font-bold text-3xl heading">Services</b>
       <Swiper
         // navigation={true}
-        modules={[Pagination, Navigation]}
+        modules={[Pagination, Navigation, Autoplay]}
         // slidesPerView={3}
         pagination={{ clickable: true }}
         breakpoints={{
@@ -86,16 +86,20 @@ const Services = () => {
           },
         }}
         loop={true}
+        autoplay={{
+          delay: 3000, // 3 seconds delay
+          disableOnInteraction: false, // autoplay continues after user interaction
+        }}
         className="sm:max-w-[1000px] w-[98vw] sm:h-[580px] h-[650px] mr-[20px] sm:mr-0 mt-4"
       >
         {services.map((item) => {
           return (
             <SwiperSlide key={item.id} className="flex justify-between items-center ">
-              <Link className="flex flex-col gap-3 lg:w-[300px] md:w-[37vw] sm:h-[500px] h-[540px] servicebox transition-all items-center  bg-[#f2f2f2]  ml-3 shadow-2xl cursor-pointer " href={`/service/${item.href}`}>
+              <Link className="flex flex-col gap-3 lg:w-[300px] md:w-[37vw] w-[92vw] sm:h-[500px] h-[540px] servicebox transition-all items-center  bg-[#f2f2f2]  ml-3 shadow-2xl cursor-pointer relative" href={`/service/${item.href}`}>
                 <p className=" text-4xl mt-[30px] bg-[#FF8E2B] p-5 rounded-[100px]">{item.icon}</p>
                 <b className="font-bold text-2xl mid-heading mt-[15px] text-center">{item.heading}</b>
                 <p className="w-[90%] text-left text text-sm">{item.text}</p>
-                <p className='font-bold text-xl bg-gray-700 bg-opacity-20 text-center p-[15px] mt-[10px] flex items-center rounded-[100px] icon'><FaArrowRight/></p>
+                <p className='font-bold text-xl bg-gray-700 bg-opacity-20 text-center p-[15px] mt-[10px] flex items-center rounded-[100px] icon absolute bottom-10'><FaArrowRight/></p>
               </Link>
             </SwiperSlide>
           );
