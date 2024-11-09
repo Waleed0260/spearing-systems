@@ -12,7 +12,7 @@ const Hero = (text:any) => {
     style={{ backgroundImage: `url('/images/aboutBanner.png')` }}
   >
     <div className="absolute inset-0 bg-black opacity-50"></div>
-    <p className="font-bold text-3xl text-white heading relative">{text?.text}</p>
+    <p className="font-bold text-3xl text-white heading relative" data-aos="zoom-in" data-aos-delay="300">{text?.text}</p>
   </div>
 </div>
 

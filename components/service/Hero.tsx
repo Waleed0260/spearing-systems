@@ -15,7 +15,7 @@ const Hero = () => {
     style={{ backgroundImage: `url('/images/service.jpg')` }}
   >
     <div className="absolute inset-0 bg-black opacity-50"></div>
-    <p className="font-bold text-3xl text-white heading relative">Services</p>
+    <p className="font-bold text-3xl text-white heading relative" data-aos="zoom-in" data-aos-delay="300">Services</p>
   </div>
 </div>
     </div>  

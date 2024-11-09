@@ -10,14 +10,16 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 const Help = ({process}:any) => {
   return (
     <div className="w-full flex flex-col items-center justify-center">
-      <div className="w-[80%] flex flex-col items-center justify-center mt-[30px] m-[30px]">
-        <p className="font-bold heading text-4xl">{process?.heading}
+      <div className="w-[80%] flex flex-col items-center justify-center mt-[60px] ">
+        <p className="font-bold heading text-4xl text-center leading-tight">{process?.heading}
         </p>
-        <div className="grid sm:grid-cols-2 grid-cols-1 gap-4 mt-4 w-full max-w-6xl">
-          {process?.process.map((item:any)=>{
+        <div className="grid sm:grid-cols-2 grid-cols-1  mt-4 w-full max-w-6xl gap-8 mx-auto">
+          {process?.process.map((item:any, index:any)=>{
             return(
-              <div className="flex flex-col items-center sm:w-[32vw] w-[80vw] p-3 m-3 ">
-                {item.icon ? <i className={`fas fa-${item.icon}`} style={{ fontSize: '2rem', padding:"15px", borderRadius:"100px" }}></i>: 
+              <div key={index} className={`flex flex-col items-center w-full sm:w-auto p-3 rounded-lg shadow-2xl transition duration-300 ease-in-out ${
+                [1, 3, 5].includes(index) ? 'md:ml-8' : ''
+              } hover:bg-[#0D2137] hover:text-white`}>
+                {item.icon ? <i className={`fas fa-${item.icon}`} style={{ fontSize: '2rem', padding:"15px", borderRadius:"100px", color:"#FF8E2B" }}></i>: 
                 <>
             <div className="">
                 <Image

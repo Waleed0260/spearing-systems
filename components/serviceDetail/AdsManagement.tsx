@@ -3,9 +3,9 @@ import React from 'react'
 const AdsManagement = () => {
   return (
     <div className='w-full flex items-center justify-center'>
-        <div className='w-[90%] flex flex-col items-center justify-center m-[20px]'>
+        <div className='w-[80%] flex flex-col items-center justify-center my-8'>
         <p className='text-2xl font-bold heading'>Google Ads Mangement that makes a differnece</p>
-        <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 m-[30px] gap-2 w-[90%]'>
+        <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-4 '>
             <div className='w-[90%] flex flex-col p-2'>
                 <p className='mid-heading text-xl'>Home Service Industries</p>
                 <ul className='mt-3 ml-5 list-disc text'>
@@ -19,7 +19,7 @@ const AdsManagement = () => {
                 </ul>
             </div>
 
-            <div className='w-[90%] flex flex-col p-2'>
+            <div className='w-[90%] flex flex-col p-2 lg:ml-7'>
                 <p className='mid-heading text-xl'>Professional Services</p>
                 <ul className='mt-3 ml-5 list-disc text'>
                 <li>Doctors, Dentists, Lawyers, Therapists</li>
@@ -32,7 +32,7 @@ const AdsManagement = () => {
                 </ul>
             </div>
 
-            <div className='w-[90%] flex flex-col p-2'>
+            <div className='w-[90%] flex flex-col p-2 lg:ml-7'>
                 <p className='mid-heading text-xl'>Retail, Jewellery</p>
                 <ul className='mt-3 ml-5 list-disc text'>
                 <li>Jewelry, Weddings</li>

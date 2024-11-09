@@ -16,7 +16,7 @@ const Process = () => {
       }}>
         <div className='flex items-center justify-center'>
          <div className='absolute inset-0 bg-black opacity-50'></div>
-        <div className='lg:max-w-[1000px] w-[80%] flex flex-col items-center sm:items-center justify-center relative z-10 text-white m-[30px]' data-aos="fade-up" data-aos-delay="400">
+        <div className=' w-[80%] flex flex-col items-center sm:items-center justify-center relative z-10 text-white m-[30px]' data-aos="fade-up" data-aos-delay="400">
             <p className='text-4xl font-bold heading mt-6 '>Our flawless process</p>
             <p className='mt-[20px]  text'>We believe in a seamless approach to delivering results that exceed expectations. Our process is designed to be meticulous, efficient, and focused on your business goals, ensuring that every project we undertake is executed flawlessly from start to finish.
             </p>

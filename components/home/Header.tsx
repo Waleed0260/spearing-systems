@@ -47,11 +47,11 @@ const Header = (color: any) => {
   return (
     <>
       <div
-        className={`md:flex hidden flex-row items-center justify-evenly w-full fixed transition-all h-[80px] z-50 bg-${
+        className={`lg:flex hidden flex-row items-center justify-evenly w-full fixed transition-all h-[80px] z-50 bg-${
           color.color ? color.color : bgColor
         }`}
       >
-        <div className=" flex flex-row items-center justify-between lg:w-[1000px] w-[80%]">
+        <div className=" flex flex-row items-center justify-between w-[80%]">
 
         <Link href={"/"} className="h-[170px] z-10">
           <Image src={logo} alt="" className="w-full h-full " />
@@ -142,7 +142,7 @@ const Header = (color: any) => {
 
       </div>
 
-      <div className="flex md:hidden flex-row justify-around p-2 items-center w-full h-[100px] bg-[#0D2137]">
+      <div className="flex lg:hidden flex-row justify-between p-2 items-center w-full h-[100px] bg-[#0D2137]">
         <div className="h-[150px] w-[150px]  relative z-10">
           <Image src={logo} alt="" className="h-full w-full" />
         </div>
@@ -230,9 +230,9 @@ const Header = (color: any) => {
                       </ul>
                     )}
                   </li>
-                  <li className="list-none mid-heading">
+                  {/* <li className="list-none mid-heading">
                     <Link href={"/portfolio"}>Portfolio</Link>
-                  </li>
+                  </li> */}
                   <li className="list-none mid-heading">
                     <Link href={"/about"}>About</Link>
                   </li>

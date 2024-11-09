@@ -23,7 +23,7 @@ const CreativeWebsite = () => {
   }, []);
   return (
     <div className="w-full flex items-center justify-center">
-      <div className="m-[80px] lg:max-w-[1000px]  flex items-center justify-between md:flex-row flex-col">
+      <div className="sm:w-[80%] w-[90vw] md:h-[600px] flex items-center justify-between md:flex-row flex-col my-8 relative">
         <div className="flex flex-col gap-5 p-[30px] bg-white shadow-2xl text-black rounded-[15px] hover:rounded-[40px] transition-all md:w-[52%] relative z-20" data-aos="fade-right">
           <p className="text-6xl text-[#0D2137]">
             <TbDeviceImacCode />
@@ -40,15 +40,15 @@ const CreativeWebsite = () => {
             delivering customized e-commerce platforms and websites tailored to
             meet your business needs.
           </p>
-          <Link href={"/contact"} className="flex flex-row gap-2 items-center cursor-pointer ">
-            <p className="text-[#FF832B] hover:underline">CREATE ME A BEAUTIFUL WEBSITE</p>
-            <p className="text-[#FF832B] text-xl block">
+          <Link href={"/contact"} className="flex flex-row text-[#FF832B] gap-2 items-center cursor-pointer hover:text-[#0D2137] lg:w-[275px]">
+            <p className=" hover:underline ">CREATE ME A BEAUTIFUL WEBSITE</p>
+            <p className=" text-xl block">
               <FaRegArrowAltCircleRight />
             </p>
           </Link>
         </div>
 
-        <div className="bg-[#FF8E2B]  rounded-[30px] md:w-[40%] w-[80vw] md:absolute md:left-[50%] p-[50px] z-10"  data-aos="fade-left">
+        <div className="bg-[#FF8E2B]  rounded-[30px] md:w-[50%] w-[100%] md:absolute md:left-[50%] p-[50px] z-10 flex items-center justify-center"  data-aos="fade-left">
           {/* <Image src={mockup1} alt=""/> */}
           <Swiper
             slidesPerView={1}

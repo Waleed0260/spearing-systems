@@ -60,7 +60,7 @@ const Hero = () => {
                 Your browser does not support the video tag.
             </video>
             <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-                <h1 className="text-4xl md:text-6xl font-bold heading leading-10 lg:w-[1000px]" data-aos="zoom-in" data-aos-delay="300">Full Service Digital Marketing Agency</h1>
+                <h1 className="text-4xl md:text-6xl font-bold heading leading-10 w-[80%]" data-aos="zoom-in" data-aos-delay="300">Full Service Digital Marketing Agency</h1>
                 <p className="mt-4 text-lg md:text-2xl" data-aos="zoom-in" data-aos-delay="300"> Targeting-success through Innovative Solutions with Proven Results</p>
                 <button className="btn p-3 text-white rounded-[100px] mt-3 transition-all"><Link href={"/contact"}>Get Started Today</Link></button>
 

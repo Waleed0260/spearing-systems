@@ -8,7 +8,7 @@ import { Button } from "../ui/button";
 const Email = () => {
   return (
     <div className="w-full flex items-center justify-center">
-      <div className="w-[80%] flex flex-col items-center justify-center">
+      <div className="lg:w-[1000px] w-[80%] flex flex-col items-center justify-center">
         {/* FIRST SECTION */}
         <div className="flex md:flex-row flex-col-reverse items-start justify-between w-[100%]">
           <div className="flex flex-col md:w-[50%] md:mt-[50px]">

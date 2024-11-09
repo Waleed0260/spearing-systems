@@ -13,8 +13,8 @@ const AdsService = () => {
         <p className="heading text-2xl">
           Google Ads Management Services that Make a Difference
         </p>
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-3 m-6">
-          <div className="flex flex-col w-[95%] justify-between p-5 shadow-2xl">
+        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-3 mt-5">
+          <div className="flex flex-col w-[97%] justify-between p-5 shadow-2xl hover:bg-[#0D2137] hover:text-white transition duration-300 ease-in-out rounded-lg">
             <p className="mid-heading text-xl">Google Ads Setup and Launch</p>
             <Image src={setup} alt="" className="w-[200px] h-[200px]" />
             <p>
@@ -84,7 +84,7 @@ const AdsService = () => {
             <button className="sm:w-[200px] w-[170px] rounded-[100px] mt-3 p-2 btn text-white transition-all">GET FREE PURPOSAl</button>
           </div>
 
-          <div className="flex flex-col w-[95%] justify-between p-5 shadow-2xl">
+          <div className="flex flex-col w-[97%] justify-between p-5 shadow-2xl hover:bg-[#0D2137] hover:text-white transition duration-300 ease-in-out rounded-lg">
             <p className="mid-heading text-xl">Landing Page Design</p>
             <Image src={land} alt="" className="w-[200px] h-[200px]" />
             <p>
@@ -155,7 +155,7 @@ const AdsService = () => {
 
           </div>
 
-          <div className="flex flex-col w-[95%] justify-between p-5 shadow-2xl">
+          <div className="flex flex-col w-[97%] justify-between p-5 shadow-2xl hover:bg-[#0D2137] hover:text-white transition duration-300 ease-in-out rounded-lg">
             <p className="mid-heading text-xl">Google Ads Optimization</p>
             <Image src={optimize} alt="" className="w-[200px] h-[200px]" />
             <p>

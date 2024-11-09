@@ -86,6 +86,10 @@
   animation: rotate 7s linear infinite;
 }
 
+body, html{
+  overflow-x: hidden;
+}
+
 .mid-heading{
   font-family: "Poppins", sans-serif;
   font-weight: 500;

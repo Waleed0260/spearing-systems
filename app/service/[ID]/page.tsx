@@ -64,7 +64,7 @@ const page = ({ params }: { params: { ID: string } }) => {
     <AdsService/> 
     </>: data?.video_id === "email_marketing" ? <Email />:null}
 
-    <Portfolio id={params.ID}/>
+    {/* <Portfolio id={params.ID}/> */}
     <Testimonial testimonial={data?.testimonials}/>
     <CallTo tell={data?.tellUs}/>
     <Footer/>

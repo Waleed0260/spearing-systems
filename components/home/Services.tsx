@@ -62,7 +62,7 @@ const Services = () => {
 ];
   return (
     <div
-      className="flex flex-col justify-center items-center sm:p-6 "
+      className="flex flex-col justify-center items-center "
       data-aos="fade-up"
     >
       <b className="font-bold text-3xl heading">Services</b>
@@ -78,7 +78,7 @@ const Services = () => {
           480: {
             slidesPerView: 1,
           },
-          768: {
+          640: {
             slidesPerView: 2,
           },
           1050: {
@@ -90,12 +90,12 @@ const Services = () => {
           delay: 3000, // 3 seconds delay
           disableOnInteraction: false, // autoplay continues after user interaction
         }}
-        className="sm:max-w-[1000px] w-[98vw] sm:h-[580px] h-[650px] mr-[20px] sm:mr-0 mt-4"
+        className="sm:w-[80%] w-[98vw] md:h-[580px] sm:h-[630px] h-[550px] mr-[20px] sm:mr-0 mt-4"
       >
         {services.map((item) => {
           return (
             <SwiperSlide key={item.id} className="flex justify-between items-center ">
-              <Link className="flex flex-col gap-3 lg:w-[300px] md:w-[37vw] w-[92vw] sm:h-[500px] h-[540px] servicebox transition-all items-center  bg-[#f2f2f2]  ml-3 shadow-2xl cursor-pointer relative" href={`/service/${item.href}`}>
+              <Link className="flex flex-col gap-3 lg:w-[90%] md:w-[35vw] sm:w-[34vw] w-[90vw] md:h-[500px] sm:h-[600px] h-[480px] servicebox transition-all items-center  bg-[#f2f2f2]  ml-3 shadow-2xl cursor-pointer relative" href={`/service/${item.href}`}>
                 <p className=" text-4xl mt-[30px] bg-[#FF8E2B] p-5 rounded-[100px]">{item.icon}</p>
                 <b className="font-bold text-2xl mid-heading mt-[15px] text-center">{item.heading}</b>
                 <p className="w-[90%] text-left text text-sm">{item.text}</p>

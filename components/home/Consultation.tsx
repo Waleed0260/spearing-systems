@@ -53,7 +53,7 @@ const Consultation = () => {
   return (
     <>
     <div className={`w-full flex items-center justify-center bg text-white`}>
-      <div className="lg:max-w-[1000px] w-[80%] flex flex-col items-center my-4">
+      <div className="w-[80%] flex flex-col items-center my-4">
         <p className="font-bold text-2xl heading">
           READY TO GROW YOUR BUSINESS
         </p>

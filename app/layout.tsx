@@ -6,8 +6,8 @@ import Script from 'next/script'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Spearing System",
-  description: "Spearing System",
+  title: "Spearing Systems",
+  description: "Spearing Systems",
 };
 
 export default function RootLayout({

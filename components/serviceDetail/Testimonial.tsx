@@ -10,7 +10,7 @@ import {Autoplay, Navigation, Pagination} from "swiper/modules";
 const Testimonial = ({testimonial}:any) => {
   return (
     <div className='w-full flex items-center justify-center'>
-        <div className="w-[70%] m-[40px]">
+        <div className="lg:w-[1000px] w-[70%] m-[40px]">
             <Swiper
             slidesPerView={1}
           autoplay={{

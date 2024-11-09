@@ -14,7 +14,7 @@ const About = () => {
     });
   }, []);
   return (
-      <div className="lg:max-w-[1000px] m-[50px] w-[89vw] flex md:flex-row flex-col gap-5">
+      <div className="lg:w-[80%] m-[50px] w-[89vw] flex md:flex-row flex-col gap-5">
         <div className="flex md:flex-col flex-col justify-between items-start md:w-[50%]" data-aos="fade-right">
         <div className="md:w-[80%] h-[330px] overflow-hidden" >
   <Image src={marketing} alt="" className="w-full h-full object-cover" />

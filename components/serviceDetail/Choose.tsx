@@ -11,15 +11,24 @@ const Choose = ({choose}:any) => {
       }, []);
   return (
     <div className='w-full flex items-center justify-center ' data-aos='fade-up'>
-        <div className='w-[80%] flex flex-col items-center justify-center m-[20px]'>
-            <p className='font-bold text-2xl heading'>{choose?.heading}</p>
-            <div className='lg:flex lg:flex-row grid sm:grid-cols-2 grid-cols-1 m-4'>
+        <div className=' w-[80%] flex flex-col items-center justify-center mt-8'>
+            <p className='font-bold text-2xl heading text-center'>{choose?.heading}</p>
+            <div className='lg:flex lg:flex-row grid sm:grid-cols-2 grid-cols-1 gap-4 mt-5'>
 
             {choose?.choose.map((item:any)=>{
                 return(
-                    <div className='w-[90%]  m-3 p-4 flex flex-col items-center justify-center gap-3 shadow-2xl'>
-          <i className={`fas fa-${item.icon}`} style={{ fontSize: '2rem', backgroundColor:"#FF8E2B", padding:"15px", borderRadius:"100px" }}></i>
-          <p className='mid-heading font-bold text-2xl text-center'>{item.heading}</p>
+                    <div className='w-[100%]  p-4 flex flex-col items-center justify-between gap-3 shadow-2xl transition duration-300 ease-in-out hover:bg-[#0D2137] hover:text-white rounded-lg'>
+<p
+    className="flex items-center justify-center w-16 h-16 bg-[#FF8E2B] rounded-full"
+  >
+    <i
+      className={`fas fa-${item.icon}`}
+      style={{
+        fontSize: '2rem',
+        // color: '#FF8E2B'
+      }}
+    ></i>
+  </p>          <p className='mid-heading font-bold text-2xl text-center'>{item.heading}</p>
                         <p className='text-center text'>{item.text}</p>
                     </div>
                 )

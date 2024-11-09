@@ -46,7 +46,7 @@ const Testimonial = () => {
       {/* <div className="lg:max-w-[1000px] w-[80%] flex flex-col items-center justify-center m-[30px]"></div> */}
       <p className="font-bold text-2xl m-3 heading text-center">What Our Clients Are Saying</p>
 
-      <div className="lg:w-[1000px] w-[80%]">
+      <div className="sm:w-[80%] w-[90vw]">
             <Swiper
             slidesPerView={1}
           modules={[Autoplay]}

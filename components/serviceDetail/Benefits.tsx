@@ -2,7 +2,7 @@ import React from 'react'
 
 const Benefits = ({benefits}:any) => {
   return (
-    <div className='w-full flex items-center justify-center'>
+    <div className='w-full flex items-center justify-center mt-4'>
         <div className="w-[80%] flex flex-col items-start m-[30px]">
             {/* <div className='flex items-start '></div> */}
             <p className='heading text-2xl font-bold'>{benefits?.heading}</p>

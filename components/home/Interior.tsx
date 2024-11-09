@@ -54,7 +54,7 @@ const Interior = () => {
 
   return (
     <div className="bg-[#0D2137] w-full flex items-center justify-center">
-      <div className="lg:max-w-[1000px] w-[80%] flex md:flex-row flex-col  justify-between items-center m-[30px]">
+      <div className="w-[80%] flex md:flex-row flex-col  justify-between items-center m-[30px]">
         <div className="md:w-[40%]">
           <h1 className="heading text-2xl font-bold">
             Download The ultimate guide of digital marketing for interior design{" "}

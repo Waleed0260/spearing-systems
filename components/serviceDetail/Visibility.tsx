@@ -14,7 +14,7 @@ const Visibility = ({ heading, text, CTA, img }: any) => {
   }, []);
   return (
     <div className="w-full flex flex-col items-center justify-center overflow-x-hidden" data-aos="fade-up">
-      <div className="w-[80vw] flex flex-col items-start justify-center sm:mt-[70px] mt-[120px] ">
+      <div className="w-[80%] flex flex-col items-start justify-center sm:mt-[70px] mt-[120px] ">
         <p className="heading font-bold text-3xl">{heading}</p>
 
         <div className="flex lg:flex-row flex-col lg:justify-between lg:items-end items-start justify-center gap-3 mt-[50px]">
@@ -49,21 +49,21 @@ const Visibility = ({ heading, text, CTA, img }: any) => {
                   type="text"
                   name=""
                   id=""
-                  className="lg:w-[23vw] w-[60vw] h-[40px] mt-6 rounded-md p-5 border-[2px] border-black"
+                  className="lg:w-[300px] w-[60vw] h-[40px] mt-6 rounded-md p-5 border-[2px] border-black"
                   placeholder="Name*"
                 />
                 <input
                   type="text"
                   name=""
                   id=""
-                  className="lg:w-[23vw] w-[60vw] h-[40px] mt-6 rounded-md p-5 border-[2px] border-black"
+                  className="lg:w-[300px] w-[60vw] h-[40px] mt-6 rounded-md p-5 border-[2px] border-black"
                   placeholder="Email*"
                 />
                 <input
                   type="text"
                   name=""
                   id=""
-                  className="lg:w-[23vw] w-[60vw] h-[40px] mt-6 rounded-md p-5 border-[2px] border-black"
+                  className="lg:w-[300px] w-[60vw] h-[40px] mt-6 rounded-md p-5 border-[2px] border-black"
                   placeholder="Message*"
                 />
                 <Button

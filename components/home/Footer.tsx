@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <>
     <div className=" w-full flex items-center justify-center bg text-white pb-4">
-        <div className='lg:w-[1000px] w-full flex md:flex-row flex-col items-start justify-between'>
+        <div className='w-[80%] flex lg:flex-row flex-col items-start justify-between'>
 
         <div className='flex flex-col'>
             <div className="w-[200px] h-[130px] ">
@@ -64,14 +64,18 @@ const Footer = () => {
         </div>
 
     </div>
-    <div className='w-full flex md:flex-row flex-col justify-around bg-[#0b1724] text-white p-4'>
-        <div className='flex flex-row gap-4'>
+    <div className='w-full  bg-[#0b1724] text-white flex lg:items-center items-start justify-center py-3'>
+        <div className='w-[80%] flex lg:flex-row flex-col  lg:items-center justify-between  ml-4 md:ml-0'>
+
+        <div className='flex flex-row gap-4 '>
             <p>Terms & condition</p>
             <p>Privacy Policy</p>
             <p>Sitemap</p>
         </div>
 
-        <div className='md:mt-0 mt-3'>&copy; Spearing Systems All rights reserved</div>
+        <div className='md:mt-0 mt-6 '>&copy; Spearing Systems All rights reserved</div>
+        </div>
+
     </div>
     </>
   )
