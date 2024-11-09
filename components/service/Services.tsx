@@ -54,7 +54,7 @@ const Services = () => {
 
     <div className='flex flex-col sm:items-center items-start justify-center w-[80%]'>
         <p className='font-bold text'>What we offer</p>
-        <p  className='font-bold text-5xl heading sm:text-center leading-tight'> What We’re Offering Creative
+        <p  className='font-bold sm:text-4xl text-2xl heading sm:text-center leading-tight'> What We’re Offering Creative
         Digital Service</p>
         <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-3 '>
             {services.map((item:any)=>{
@@ -63,7 +63,7 @@ const Services = () => {
                     <div className='lg:w-[95%] sm:w-[34vw] w-[80vw] h-[23rem] sm:m-4 mt-3 sm:mt-0 flex flex-col justify-center items-left border-[1px] border-[#38393b] rounded-10px servicebox bg-[#f5f6f7] rounded-md' key={item.id}>
                         <div className='p-5'>
                         <p className='font-bold text-4xl '>{item.icon}</p>
-                        <p className='font-bold text-3xl heading mt-3'>{item.heading}</p>
+                        <p className='font-bold sm:text-3xl text-2xl heading mt-3'>{item.heading}</p>
                         <p className='text mt-6'>{item.text}</p>
                         <div className="flex flex-row gap-2 items-center cursor-pointer mt-3">
             <p className="text-[#FF8e2B] underline">See the full detail</p>

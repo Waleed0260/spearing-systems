@@ -11,7 +11,7 @@ const Help = ({process}:any) => {
   return (
     <div className="w-full flex flex-col items-center justify-center">
       <div className="w-[80%] flex flex-col items-center justify-center mt-[60px] ">
-        <p className="font-bold heading text-4xl text-center leading-tight">{process?.heading}
+        <p className="font-bold heading sm:text-4xl text-2xl text-center leading-tight">{process?.heading}
         </p>
         <div className="grid sm:grid-cols-2 grid-cols-1  mt-4 w-full max-w-6xl gap-8 mx-auto">
           {process?.process.map((item:any, index:any)=>{

@@ -19,7 +19,7 @@ const Growth = () => {
     <div className='w-full flex  justify-center items-center'>
         <div className='w-[80%] m-[30px] flex lg:flex-row flex-col'>
             <div className='flex items-start justify-center w-[50%]' data-aos="fade-right">
-                <div className='w-[550px] h-[350px]'>
+                <div className='w-[550px] sm:h-[350px] h-[300px]'>
                 <Image src={about2} alt="" className='w-full'/>
                     </div>
                     <div className='w-[550px] h-[300px] hidden md:flex relative right-[40px] top-[140px]'>
@@ -29,7 +29,7 @@ const Growth = () => {
 
             <div className="flex flex-col justify-between md:w-[50%]" data-aos="fade-left">
           <b className="font-bold text-md mid-heading">BUSINESS GROWTH</b>
-          <p className="text-3xl heading">
+          <p className="sm:text-3xl text-2xl heading">
             BEST DIGITAL CREATIVE AGENCY
           </p>
           <p className="mt-[10px] md:w-[70%]  mid-heading">

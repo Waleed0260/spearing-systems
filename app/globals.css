@@ -104,11 +104,11 @@ body, html{
     color: #FF8E2B;
   }
 
-  @media screen and (mamx-width: 480px) {
+  /* @media screen and (max-width: 480px) {
     .heading{
       font-weight: 500;
     }
-  }
+  } */
 
   .text{
     font-family: "inter", sans-serif;

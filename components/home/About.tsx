@@ -19,14 +19,14 @@ const About = () => {
         <div className="md:w-[80%] h-[330px] overflow-hidden" >
   <Image src={marketing} alt="" className="w-full h-full object-cover" />
 </div>
-          <p className="font-bold sm:text-4xl text-3xl heading mt-3" data-aos="fade-up" data-ao-delay="300">
+          <p className="font-bold sm:text-4xl text-2xl heading mt-3" data-aos="fade-up" data-ao-delay="300">
           We Have an Incredibly Rich Past and Amazing Future Ahead
           </p>
         </div>
 
         <div className="flex flex-col justify-between md:w-[50%]" data-aos="fade-left">
           <b className="font-bold text-md mid-heading">BUSINESS GROWTH</b>
-          <p className="text-3xl heading">
+          <p className="sm:text-3xl text-2xl heading">
             BEST DIGITAL CREATIVE AGENCY
           </p>
           <p className="mt-[10px] md:w-[70%]  mid-heading">

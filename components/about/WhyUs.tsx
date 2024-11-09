@@ -1,8 +1,8 @@
 "use client"
 import React, {useEffect} from 'react'
-import { Progress } from "@/components/ui/progress"
-import about3 from "../../public/images/about5.png"
-import digitalSolutions from "../../public/images/digitalSolutions.jpg"
+// import { Progress } from "@/components/ui/progress"
+// import about3 from "../../public/images/about5.png"
+// import digitalSolutions from "../../public/images/digitalSolutions.jpg"
 import Image from 'next/image'
 import AOS from "aos"
 import 'aos/dist/aos.css';
@@ -19,8 +19,8 @@ const WhyUs = () => {
     <div className='w-full flex items-center justify-center ' data-aos="fade-up">
         <div className='w-[80%] m-[30px] flex md:flex-row flex-col md:items-start items-start justify-between'>
             <div className='flex flex-col md:w-[45%] ' >
-                <b className='mid-heading'>WHy US</b>
-                <p className='font-bold text-4xl heading'>We Have an Incredibly Rich Past and Amazing Future Ahead </p>
+                <b className='mid-heading '>Why US</b>
+                <p className='font-bold sm:text-4xl text-2xl heading'>We Have an Incredibly Rich Past and Amazing Future Ahead </p>
                 <p className='text mt-[30px]'>Spearing Systems has a storied history of transforming brands and leading them to new heights. Our journey is marked by innovative campaigns, long-lasting partnerships, and a relentless pursuit of excellence. </p>
                 <ul className="list-disc pl-5">
   <li className='mt-2'>
@@ -52,7 +52,7 @@ const WhyUs = () => {
 
             </div>
 
-            <div className='md:w-[50%] h-full' >
+            <div className='md:w-[50%] h-full md:mt-0 mt-5' >
                 <Image src={whyAbout} alt="asas"/>
                 </div>
         </div>
