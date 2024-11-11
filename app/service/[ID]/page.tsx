@@ -57,10 +57,11 @@ const page = ({ params }: { params: { ID: string } }) => {
     <Choose choose={data?.choose}/>
     {data?.video_id === "website_development" ? <CreativeWebsite/>:null}
     <Help process={data?.process}/>
-    <Benefits benefits={data?.benefits}/>
+    {data.video_id === "google_ads" ? null : <Benefits benefits={data?.benefits}/>}
+    
     {data?.video_id === "google_ads" ? 
       <>
-    <AdsManagement/>
+    {/* <AdsManagement/> */}
     <AdsService/> 
     </>: data?.video_id === "email_marketing" ? <Email />:null}
 

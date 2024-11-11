@@ -51,7 +51,7 @@ const Hero = () => {
                 Your browser does not support the video tag.
             </video>
             <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-                <h1 className="sm:text-4xl text-2xl md:text-6xl font-bold heading leading-10 w-[80%]" data-aos="zoom-in" data-aos-delay="300">Full Service Digital Marketing Agency</h1>
+                <h1 className="sm:text-4xl text-2xl md:text-5xl font-bold heading leading-tight w-[80%]" data-aos="zoom-in" data-aos-delay="300">Full Service Digital Marketing Agency</h1>
                 <p className="mt-4 text-lg md:text-2xl" data-aos="zoom-in" data-aos-delay="300"> Targeting-success through Innovative Solutions with Proven Results</p>
                 <button className="btn p-3 text-white rounded-[100px] mt-3 transition-all"><Link href={"/contact"}>Get Started Today</Link></button>
 
@@ -78,7 +78,7 @@ const Hero = () => {
           <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
           <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
             <h1
-              className="sm:text-4xl text-2xl md:text-6xl font-bold heading leading-10 w-[80%]"
+              className="sm:text-4xl text-2xl md:text-5xl font-bold heading leading-tight w-[80%]"
               // data-aos="zoom-in"
               // data-aos-delay="300"
             >
@@ -96,7 +96,7 @@ const Hero = () => {
         >
           <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
           <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-                <h1 className="sm:text-4xl text-2xl md:text-6xl font-bold heading leading-10 w-[80%]" >Mobile: The Key to Your Business Success – We Optimize for Mobile Excellence</h1>
+                <h1 className="sm:text-4xl text-2xl md:text-5xl font-bold heading leading-tight w-[80%]" >Mobile: The Key to Your Business Success – We Optimize for Mobile Excellence</h1>
                 <button className="btn p-3 text-white rounded-[100px] mt-3 transition-all"><Link href={"/contact"}>Book a free Consultation</Link></button>
 
             </div>
@@ -108,7 +108,7 @@ const Hero = () => {
         >
           <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
           <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-                <h1 className="sm:text-4xl text-2xl md:text-6xl font-bold heading leading-10 w-[80%]" >Maximize Your Reach with Multi-Channel Marketing Solutions</h1>
+                <h1 className="sm:text-4xl text-2xl md:text-5xl font-bold heading leading-tight w-[80%]" >Maximize Your Reach with Multi-Channel Marketing Solutions</h1>
                 <button className="btn p-3 text-white rounded-[100px] mt-3 transition-all"><Link href={"/contact"}>Book a free Consultation</Link></button>
 
             </div>

@@ -58,10 +58,10 @@ const Header = (color: any) => {
         </Link>
         <div>
           <ul className={`flex flex-row gap-4 relative z-10`}>
-            <li className="list-none mid-heading text-white hover:text-[#FF8E2B]">
+            <li className="list-none mid-heading text-white hover:text-[#FF8E2B] transition-all">
               <Link href={"/"}>Home</Link>
             </li>
-            <li className="list-none mid-heading relative group transition-all text-white hover:text-[#FF8E2B]">
+            <li className="list-none mid-heading relative group transition-all text-white hover:text-[#FF8E2B] transition-all">
               <Link href={"/services"}>Our Services</Link>
               <ul className="absolute left-0 top-full mt-0  bg-gray-800 p-3 hidden group-hover:flex flex-col items-start w-[240px] transition-all">
                 <li className="py-1 w-full hover:text-[#FF8E2B] text-white transition-all">
@@ -118,10 +118,10 @@ const Header = (color: any) => {
             {/* <li className="list-none mid-heading hover:text-[#FF8E2B] text-white">
               <Link href={"/portfolio"}>Portfolio</Link>
             </li> */}
-            <li className="list-none mid-heading hover:text-[#FF8E2B] text-white">
+            <li className="list-none mid-heading hover:text-[#FF8E2B] transition-all text-white">
               <Link href={"/about"}>About</Link>
             </li>
-            <li className="list-none mid-heading hover:text-[#FF8E2B] text-white">
+            <li className="list-none mid-heading hover:text-[#FF8E2B] transition-all text-white">
               <Link href={"/contact"}>Contact</Link>
             </li>{" "}
           </ul>

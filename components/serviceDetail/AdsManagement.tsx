@@ -2,7 +2,7 @@ import React from 'react'
 
 const AdsManagement = () => {
   return (
-    <div className='w-full flex items-center justify-center'>
+    <div className='w-full flex items-center justify-center relative top-6'>
         <div className='w-[80%] flex flex-col items-center justify-center my-8'>
         <p className='text-2xl font-bold heading'>Google Ads Mangement that makes a differnece</p>
         <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-4 '>
