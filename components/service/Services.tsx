@@ -56,7 +56,7 @@ const Services = () => {
         <p className='font-bold text'>What we offer</p>
         <p  className='font-bold sm:text-4xl text-2xl heading sm:text-center leading-tight'> What We’re Offering Creative
         Digital Service</p>
-        <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-3 '>
+        <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-3 mt-5'>
             {services.map((item:any)=>{
                 return (
                         <Link href={`/service/${item.href}`} key={item.id}>

@@ -18,7 +18,7 @@ const Help = ({process}:any) => {
             return(
               <div key={index} className={`flex flex-col items-center w-full sm:w-auto p-3 rounded-lg shadow-2xl transition duration-300 ease-in-out ${
                 [1, 3, 5].includes(index) ? 'md:ml-8' : ''
-              } hover:bg-[#0D2137] hover:text-white`}>
+              } hover:bg-[#0D2137] hover:text-white`} data-aos="fade-up" data-aos-delay="300">
                 {item.icon ? <i className={`fas fa-${item.icon}`} style={{ fontSize: '2rem', padding:"15px", borderRadius:"100px", color:"#FF8E2B" }}></i>: 
                 <>
             <div className="">

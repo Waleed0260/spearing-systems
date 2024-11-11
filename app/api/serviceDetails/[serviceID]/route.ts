@@ -237,7 +237,7 @@ import ppc from "../../../../public/images/ppc.png"
           ]
         },
         benefits: {
-          heading:"The Benefits of SEO with Spearing Systems",
+          heading:"The Benefits of Website Development with Spearing Systems",
           benefits: [
             {
               heading: "Increased Visibility:",

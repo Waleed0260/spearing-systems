@@ -51,7 +51,7 @@ export default function Page() {
       <CreativeWebsite/>
       <Process/>
       {/* <Portfolio/> */}
-      <Interior/>
+      {/* <Interior/> */}
       <Testimonial/>
       <Consultation/>
       <Footer />

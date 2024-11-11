@@ -6,8 +6,8 @@ import React, {useEffect} from 'react'
 import Image from 'next/image'
 import AOS from "aos"
 import 'aos/dist/aos.css';
-import whyAbout from "../../public/images/whyAbout.png"
-
+import unique from "../../public/images/unique.webp"
+import Link from 'next/link';
 const WhyUs = () => {
     useEffect(() => {
         AOS.init({
@@ -19,10 +19,16 @@ const WhyUs = () => {
     <div className='w-full flex items-center justify-center ' data-aos="fade-up">
         <div className='w-[80%] m-[30px] flex md:flex-row flex-col md:items-start items-start justify-between'>
             <div className='flex flex-col md:w-[45%] ' >
-                <b className='mid-heading '>Why US</b>
-                <p className='font-bold sm:text-4xl text-2xl heading'>We Have an Incredibly Rich Past and Amazing Future Ahead </p>
-                <p className='text mt-[30px]'>Spearing Systems has a storied history of transforming brands and leading them to new heights. Our journey is marked by innovative campaigns, long-lasting partnerships, and a relentless pursuit of excellence. </p>
-                <ul className="list-disc pl-5">
+                {/* <b className='mid-heading '>Our Unique Selling Point</b> */}
+                <p className='font-bold sm:text-4xl text-2xl heading'>Our Unique Selling Point </p>
+                <p className='text mt-[30px]'>Our dedicated focus on the architect and Interior design industry which sets us apart. We understand your unique market challenges and leverage our niche expertise to develop creative, high-impact strategies that drive growth. With industry-aligned designs, innovative ad campaigns, and proven techniques, we help your brand stand out and succeed.
+                  <br />
+                  Our specialized approach means quicker, more effective solutions tailored precisely to your needs—allowing you to achieve measurable results and scale with confidence.
+                   </p>
+                   <button className="btn p-3 text-white rounded-[100px] mt-3 transition-all">
+              <Link href={"/contact"}>Book a free Consultation</Link>
+            </button>
+                {/* <ul className="list-disc pl-5">
   <li className='mt-2'>
     <div className='flex flex-col gap-2'>
       <p className='font-bold'>Proven Expertise:</p>
@@ -47,13 +53,13 @@ const WhyUs = () => {
       <p className='text'>We don’t just meet expectations—we exceed them. Our meticulous attention to detail ensures that every aspect of our work is of the highest quality.</p>
     </div>
   </li>
-</ul>
+</ul> */}
 
 
             </div>
 
             <div className='md:w-[50%] h-full md:mt-0 mt-5' >
-                <Image src={whyAbout} alt="asas"/>
+                <Image src={unique} alt="asas"/>
                 </div>
         </div>
     </div>
