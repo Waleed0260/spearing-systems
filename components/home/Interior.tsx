@@ -16,6 +16,9 @@ const Interior = () => {
   }
 
   return (
+
+
+    
     <div className="bg-[#0D2137] w-full flex items-center justify-center">
       <div className="w-[80%] flex md:flex-row flex-col  justify-between items-center m-[30px]">
         <div className="md:w-[40%]">
