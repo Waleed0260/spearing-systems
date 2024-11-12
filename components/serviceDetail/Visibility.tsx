@@ -15,7 +15,7 @@ const Visibility = ({ heading, text, CTA, img }: any) => {
   return (
     <div className="w-full flex flex-col items-center justify-center overflow-x-hidden" data-aos="fade-up">
       <div className="w-[80%] flex flex-col items-start justify-center sm:mt-[70px] mt-[120px] ">
-        <p className="heading font-bold sm:text-3xl text-2xl">{heading}</p>
+        <p className="heading font-bold md:text-4xl text-2xl">{heading}</p>
 
         <div className="flex lg:flex-row flex-col lg:justify-between lg:items-end items-start justify-center gap-3 sm:mt-[50px] mt-[20px]">
           <div className="flex flex-col lg:w-[65%] w-[90vw] gap-3 justify-between ">

@@ -40,7 +40,7 @@ const CreativeWebsite = () => {
             delivering customized e-commerce platforms and websites tailored to
             meet your business needs.
           </p>
-          <Link href={"/contact"} className="flex flex-row text-[#FF832B] gap-2 items-center cursor-pointer hover:text-[#0D2137] lg:w-[275px]">
+          <Link href={"/contact"} className="flex flex-row text-[#FF832B] gap-2 items-center cursor-pointer hover:text-[#0D2137] lg:w-[395px]">
             <p className=" hover:underline ">CREATE ME A BEAUTIFUL WEBSITE</p>
             <p className=" text-xl block">
               <FaRegArrowAltCircleRight />

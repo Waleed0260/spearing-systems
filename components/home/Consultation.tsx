@@ -54,7 +54,7 @@ const Consultation = () => {
     <>
     <div className={`w-full flex items-center justify-center bg text-white`}>
       <div className="w-[80%] flex flex-col items-center my-4">
-        <p className="font-bold text-2xl heading">
+        <p className="font-bold md:text-4xl text-2xl heading">
           READY TO GROW YOUR BUSINESS
         </p>
         <div className="flex md:flex-row flex-col mt-4 justify-between gap-4">

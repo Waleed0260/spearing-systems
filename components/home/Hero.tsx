@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import 'swiper/css/effect-fade';
-import { Autoplay, EffectFade } from "swiper/modules";
+import { Autoplay, EffectCoverflow, EffectFade, EffectFlip } from "swiper/modules";
 const Hero = () => {
   //   const videoRef = useRef(null);
 
@@ -64,16 +64,16 @@ const Hero = () => {
           delay: 2500,
           disableOnInteraction: false,
         }}
-        speed={3000}
-        modules={[Autoplay, EffectFade]}
-        effect="fade"
-        fadeEffect={{ crossFade: true }}
+        speed={1000}
+        modules={[Autoplay]}
+        // effect="flip"
+        // fadeEffect={{ crossFade: true }}
         loop={true}
         className="h-[44rem] "
       >
         <SwiperSlide
           className="relative w-full bg-cover bg-center"
-          style={{ backgroundImage: `url('/images/banner1.jpeg')` }}
+          style={{ backgroundImage: `url('/images/banner1.png')` }}
         >
           <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
           <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
@@ -92,7 +92,7 @@ const Hero = () => {
 
         <SwiperSlide
           className="relative w-full bg-cover bg-center"
-          style={{ backgroundImage: `url('/images/banner2.jpeg')` }}
+          style={{ backgroundImage: `url('/images/banner2.png')` }}
         >
           <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
           <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
@@ -104,7 +104,7 @@ const Hero = () => {
 
         <SwiperSlide
           className="relative w-full bg-cover bg-center"
-          style={{ backgroundImage: `url('/images/banner3.webp')` }}
+          style={{ backgroundImage: `url('/images/banner3.png')` }}
         >
           <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
           <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">

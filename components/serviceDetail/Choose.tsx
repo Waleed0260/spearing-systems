@@ -12,7 +12,7 @@ const Choose = ({choose}:any) => {
   return (
     <div className='w-full flex items-center justify-center ' data-aos='fade-up'>
         <div className=' w-[80%] flex flex-col items-center justify-center mt-8'>
-            <p className='font-bold text-2xl heading text-center'>{choose?.heading}</p>
+            <p className='font-bold text-2xl md:text-4xl heading text-center'>{choose?.heading}</p>
             <div className='lg:flex lg:flex-row grid sm:grid-cols-2 grid-cols-1 gap-4 mt-5'>
 
             {choose?.choose.map((item:any)=>{

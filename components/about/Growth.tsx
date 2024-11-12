@@ -30,9 +30,9 @@ const Growth = () => {
             <div className="flex flex-col justify-between md:w-[50%]" data-aos="fade-left">
           <b className="font-bold text-md mid-heading">BUSINESS GROWTH</b>
           <p className="sm:text-3xl text-2xl heading">
-            BEST DIGITAL CREATIVE AGENCY
+          We build Brands that stands out
           </p>
-          <p className="mt-[10px] md:w-[70%]  mid-heading">
+          <p className="mt-[10px] md:w-[70%]  text">
           At Spearing Systems, we don't just follow digital trends—we set them. As a premier digital marketing agency, we combine innovative strategies with creative excellence to deliver results that exceed expectations. 
           </p>
           <div className="flex flex-row gap-3 items-center border-[1px] p-3 mt-2 bg-[#f5f4f2] border-[#1c1c1c]">

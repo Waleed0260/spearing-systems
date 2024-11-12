@@ -53,7 +53,7 @@ const Testimonial = () => {
   return (
     <div className="flex flex-col justify-center items-center w-full mb-6 mt-6">
       {/* <div className="lg:max-w-[1000px] w-[80%] flex flex-col items-center justify-center m-[30px]"></div> */}
-      <p className="font-bold text-2xl m-3 heading text-center">What Our Clients Are Saying</p>
+      <p className="font-bold md:text-4xl text-2xl m-3 heading text-center">What Our Clients Are Saying</p>
 
       <div className="sm:w-[80%] w-[90vw] relative">
       <Swiper
@@ -83,10 +83,10 @@ const Testimonial = () => {
       </SwiperSlide>
     );
   })}
-   <div className="custom-prev md:flex hidden absolute top-1/2 left-4 transform -translate-y-1/2 bg-[#FEC544] text-black h-12 w-12 text-white rounded-full flex items-center justify-center cursor-pointer z-50 text-3xl">
+   <div className="custom-prev md:flex hidden absolute top-1/2 left-4 transform -translate-y-1/2 bg-[#FF8E2B] text-black h-12 w-12 text-white rounded-full flex items-center justify-center cursor-pointer z-50 text-3xl">
         <FaAngleLeft/>
       </div>
-      <div className="custom-next md:flex hidden absolute top-1/2 right-4 transform -translate-y-1/2 bg-[#FEC544] text-black h-12 w-12 rounded-full flex items-center justify-center cursor-pointer z-50 text-3xl text-white">
+      <div className="custom-next md:flex hidden absolute top-1/2 right-4 transform -translate-y-1/2 bg-[#FF8E2B] text-black h-12 w-12 rounded-full flex items-center justify-center cursor-pointer z-50 text-3xl text-white">
         <FaAngleRight/>
       </div>
 </Swiper>

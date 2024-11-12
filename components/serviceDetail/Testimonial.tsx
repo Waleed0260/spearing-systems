@@ -11,7 +11,7 @@ import { FaAngleRight } from "react-icons/fa";
 const Testimonial = ({testimonial}:any) => {
   return (
     <div className='w-full flex items-center justify-center'>
-        <div className="lg:w-[1000px] w-[70%] m-[40px] relative">
+        <div className="lg:w-[1000px] w-[70%] m-[40px] relative" data-aos="fade-up" data-aos-delay="300">
             <Swiper
             slidesPerView={1}
           autoplay={{
