@@ -65,7 +65,7 @@ const Services = () => {
       className="flex flex-col justify-center items-center "
       data-aos="fade-up"
     >
-      <b className="font-bold text-3xl heading">Services</b>
+      <b className="font-bold md:text-4xl text-2xl heading">Services</b>
       <Swiper
         // navigation={true}
         modules={[Pagination, Navigation, Autoplay]}

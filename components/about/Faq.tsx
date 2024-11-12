@@ -11,7 +11,7 @@ const Faq = () => {
   return (
     <div className="w-full flex items-center justify-center">
       <div className="w-[80%] flex flex-col items-center ">
-        <p className="sm:text-4xl text-2xl heading font-bold">FAQS</p>
+        <p className="md:text-4xl text-2xl heading font-bold">FAQS</p>
         <Accordion type="single" collapsible className="w-[100%]">
   <AccordionItem value="item-1">
     <AccordionTrigger className="text-left">What services does Spearing Systems offer?</AccordionTrigger>

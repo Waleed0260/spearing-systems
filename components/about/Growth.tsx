@@ -29,7 +29,7 @@ const Growth = () => {
 
             <div className="flex flex-col justify-between md:w-[50%]" data-aos="fade-left">
           <b className="font-bold text-md mid-heading">BUSINESS GROWTH</b>
-          <p className="sm:text-3xl text-2xl heading">
+          <p className="md:text-4xl text-2xl heading">
           We build Brands that stands out
           </p>
           <p className="mt-[10px] md:w-[70%]  text">

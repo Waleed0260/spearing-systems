@@ -19,7 +19,7 @@ const WhyUs = () => {
     <div className='w-full flex items-center justify-center ' data-aos="fade-up">
        <div className="w-[80%] m-[30px] flex md:flex-row flex-col md:items-start items-start justify-between">
   <div className="flex flex-col md:w-[45%] md:h-[500px] justify-between">
-    <p className="font-bold sm:text-4xl text-2xl heading">Our Unique Selling Point</p>
+    <p className="font-bold md:text-4xl text-2xl heading">Our Unique Selling Point</p>
     <p className="text mt-[30px]">
       Our dedicated focus on the architect and Interior design industry sets us apart. We understand your unique market challenges and leverage our niche expertise to develop creative, high-impact strategies that drive growth. With industry-aligned designs, innovative ad campaigns, and proven techniques, we help your brand stand out and succeed.
       <br />

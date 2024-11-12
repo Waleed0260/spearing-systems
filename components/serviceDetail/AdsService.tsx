@@ -8,8 +8,8 @@ import { Button } from "../ui/button";
 
 const AdsService = () => {
   return (
-    <div className="w-full flex items-center justify-center mt-9">
-      <div className="w-[80%] flex flex-col items-center justify-center" data-aos="fade-up" data-aos-delay="200">
+    <div className="w-full flex items-center justify-center mt-14">
+      <div className="w-[80%] flex flex-col items-center justify-center" data-aos="fade-up" >
         <p className="heading md:text-4xl text-2xl text-center">
           Google Ads Management Services that Make a Difference
         </p>

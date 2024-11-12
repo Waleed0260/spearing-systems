@@ -28,7 +28,7 @@ const CreativeWebsite = () => {
           <p className="text-6xl text-[#0D2137]">
             <TbDeviceImacCode />
           </p>
-          <p className="heading font-bold text-2xl">
+          <p className="heading font-bold md:text-4xl text-2xl">
             Innovative Web Development Solutions and Creative UI/UX Design
           </p>
           <p className="text ">

@@ -69,10 +69,10 @@ const Hero = () => {
         // effect="flip"
         // fadeEffect={{ crossFade: true }}
         loop={true}
-        className="h-[44rem] "
+        className="sm:h-[44rem] h-[20rem] w-full"
       >
         <SwiperSlide
-          className="relative w-full bg-cover bg-center"
+          className="relative w-full bg-cover sm:bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url('/images/banner1.png')` }}
         >
           <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
@@ -91,7 +91,7 @@ const Hero = () => {
         </SwiperSlide>
 
         <SwiperSlide
-          className="relative w-full bg-cover bg-center"
+          className="relative w-full bg-cover sm:bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url('/images/banner2.png')` }}
         >
           <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
@@ -103,7 +103,7 @@ const Hero = () => {
         </SwiperSlide>
 
         <SwiperSlide
-          className="relative w-full bg-cover bg-center"
+          className="relative w-full bg-cover sm:bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url('/images/banner3.png')` }}
         >
           <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
