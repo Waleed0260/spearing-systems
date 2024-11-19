@@ -8,7 +8,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import 'swiper/css/effect-fade';
-import { Autoplay, EffectCoverflow, EffectFade, EffectFlip } from "swiper/modules";
+import { Autoplay} from "swiper/modules";
+
 const Hero = () => {
   //   const videoRef = useRef(null);
 
